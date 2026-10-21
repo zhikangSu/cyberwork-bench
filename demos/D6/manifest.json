@@ -1,0 +1,236 @@
+{
+  "task": "D6",
+  "layout": 0,
+  "variant": "id",
+  "seed": 3871986787036561839,
+  "objects": [
+    {
+      "name": "bottle",
+      "role": "object",
+      "table_position": [
+        -0.06,
+        -0.06,
+        0.07499999999999996
+      ],
+      "yaw": 0,
+      "free": true,
+      "initial_table_pose_wxyz": [
+        -0.06,
+        -0.06,
+        0.07499999999999996,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "classification": "SIMULATION_ENVIRONMENT",
+  "approximations": [
+    "Screw kinematic constraint represents engagement; resolved thread friction is not modeled."
+  ],
+  "source_spec": "SPEC_v0.3.2.md",
+  "spec_version": "0.3.2",
+  "level": "L3",
+  "level_parameters": {
+    "required_angle_deg": 540,
+    "cap_tilt_deg": 0,
+    "cap_on_table": false
+  },
+  "seeds": {
+    "layout": 17663896891938432085,
+    "object": 17895403220993341554,
+    "instruction": 3009097368464333363
+  },
+  "track": "main",
+  "eval_only": false,
+  "initial_joints": {},
+  "axes": {},
+  "regions": {},
+  "targets": [],
+  "grader_status": "development_not_expert_validated",
+  "instruction_idx": null,
+  "scoring_source": "supplied task-local descriptions; common predicates inherited from v0.2.4",
+  "thread_engaged": true,
+  "thread_angle_at_engage": 0.0,
+  "thread_pitch_m_per_turn": 0.002,
+  "required_cap_angle_deg": 540,
+  "thread_full_turns": 2.5,
+  "instruction": "左手持瓶，右手把预套的瓶盖拧紧",
+  "robots": [
+    {
+      "prefix": "left_",
+      "kind": "r5",
+      "joint_names": [
+        "left_joint1",
+        "left_joint2",
+        "left_joint3",
+        "left_joint4",
+        "left_joint5",
+        "left_joint6"
+      ],
+      "arm_dim": 6,
+      "eef_dim": 1,
+      "home": [
+        0.0,
+        0.8,
+        1.25,
+        -0.3,
+        0.0,
+        0.0
+      ],
+      "ee": {
+        "kind": "arx_parallel",
+        "actuators": [
+          "left_joint7"
+        ],
+        "joints": [
+          "left_joint7"
+        ],
+        "coupled_joints": [
+          "left_joint8"
+        ],
+        "home": [
+          0.045
+        ],
+        "site": "left_tcp",
+        "camera": "left_cam_wrist",
+        "eef_dim": 1,
+        "travel_m": 0.045,
+        "hardware": "ARX L5 Pro original gripper",
+        "simulation": "R5 URDF, 45 mm travel per finger"
+      },
+      "site": "left_tcp",
+      "camera": "left_cam_wrist",
+      "base_table_xyz": [
+        -0.3,
+        -0.45,
+        0.0
+      ],
+      "base_quat_wxyz": [
+        0.7071067811865476,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "flange": "left_flange",
+      "hardware_fk_status": "pending_measured_sdk_pairs",
+      "model": "ARX_Model/R5/R5a"
+    },
+    {
+      "prefix": "right_",
+      "kind": "r5",
+      "joint_names": [
+        "right_joint1",
+        "right_joint2",
+        "right_joint3",
+        "right_joint4",
+        "right_joint5",
+        "right_joint6"
+      ],
+      "arm_dim": 6,
+      "eef_dim": 1,
+      "home": [
+        0.0,
+        0.8,
+        1.25,
+        -0.3,
+        0.0,
+        0.0
+      ],
+      "ee": {
+        "kind": "arx_parallel",
+        "actuators": [
+          "right_joint7"
+        ],
+        "joints": [
+          "right_joint7"
+        ],
+        "coupled_joints": [
+          "right_joint8"
+        ],
+        "home": [
+          0.045
+        ],
+        "site": "right_tcp",
+        "camera": "right_cam_wrist",
+        "eef_dim": 1,
+        "travel_m": 0.045,
+        "hardware": "ARX L5 Pro original gripper",
+        "simulation": "R5 URDF, 45 mm travel per finger"
+      },
+      "site": "right_tcp",
+      "camera": "right_cam_wrist",
+      "base_table_xyz": [
+        0.3,
+        -0.45,
+        0.0
+      ],
+      "base_quat_wxyz": [
+        0.7071067811865476,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "flange": "right_flange",
+      "hardware_fk_status": "pending_measured_sdk_pairs",
+      "model": "ARX_Model/R5/R5a"
+    }
+  ],
+  "world_from_table": [
+    0,
+    0,
+    0.75
+  ],
+  "base_spacing_m": 0.6,
+  "layout_sampling": "independent_rng_streams_with_geometry_checks",
+  "action_dim": 14,
+  "hand": null,
+  "physics_timestep": 0.002,
+  "control_hz": 25,
+  "action_type": "absolute_joint_radians_plus_ee_commands",
+  "cameras": {
+    "cam_head": "cam_head",
+    "cam_third_view": "cam_third_view",
+    "cam_top": "cam_top",
+    "cam_left_wrist": "left_cam_wrist",
+    "cam_right_wrist": "right_cam_wrist"
+  },
+  "camera_sizes": {
+    "cam_head": [
+      640,
+      400
+    ],
+    "cam_third_view": [
+      640,
+      480
+    ],
+    "cam_top": [
+      640,
+      480
+    ],
+    "cam_left_wrist": [
+      640,
+      480
+    ],
+    "cam_right_wrist": [
+      640,
+      480
+    ]
+  },
+  "camera_timing": "synchronous_simulation_time; physical camera is 30 fps latest-frame at 25 Hz control",
+  "depth_route": "audit_only_not_policy",
+  "model_nq": 25,
+  "model_nv": 24,
+  "model_nu": 14,
+  "flex_count": 0,
+  "flex_vertices": 0,
+  "max_joint_delta_rad": 0.08,
+  "layout_audit": {
+    "table_margin_m": 0.03,
+    "footprint_valid": true,
+    "violations": [],
+    "reachability": "not certified by this audit"
+  },
+  "layout_split": "public"
+}

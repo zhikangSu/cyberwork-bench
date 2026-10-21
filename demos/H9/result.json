@@ -1,0 +1,250 @@
+{
+  "task": "H9",
+  "layout": 0,
+  "level": "L2",
+  "instruction": "把侧躺杯子抓起，在手内翻正，再倒豆",
+  "controller": "operator_in_the_loop_motor_commands",
+  "classification": "DEMONSTRATION_NOT_BENCHMARK_SCORE",
+  "success": true,
+  "failure": null,
+  "info": {
+    "stages": {
+      "lift": true,
+      "in_hand_upright": true,
+      "pour": true
+    },
+    "progress": 1.0,
+    "score": 1.0,
+    "success": true,
+    "terminal_hold_steps": 50,
+    "error": null,
+    "details": {
+      "in_hand_axis_change_deg": 156.5412782450541,
+      "cup_tilt_deg": 101.98361999747108,
+      "external_support": false,
+      "beans_in_bowl": 24,
+      "valid_poured_beans_in_bowl": 24,
+      "observed_pour_departures": 30,
+      "bean_count": 30
+    },
+    "status": "development_grader_expert_validation_pending",
+    "terminal_current": true,
+    "done": true,
+    "reason": "success",
+    "time": 58.00000000002492,
+    "execution_time": 58.00000000002492,
+    "phase": "execution",
+    "ik": [],
+    "ik_pos_err": [],
+    "ik_rot_err": [],
+    "jerk_command_mean": 0.0,
+    "jerk_arm_joint_mean_rad_s3": 0.0020394633786839445,
+    "safety_stop": null,
+    "recovery_events": []
+  },
+  "events": [
+    {
+      "phase": "re-execute the observed successful motor commands under the strengthened pour checker",
+      "time": 0.0
+    }
+  ],
+  "steps": 1450,
+  "duration_s": 58.00000000002492,
+  "no_object_teleport": true,
+  "no_grasp_weld": true,
+  "physics": "MuJoCo env.step, 500 Hz physics / 25 Hz control",
+  "source_hashes": {
+    "cwbench/__init__.py": "f414b78723a0cee16f6378aff4814997c38ddf5e12edce9dfa1017849aa4256e",
+    "cwbench/dexterity_o6.py": "0e7b991b016003a32e19c751fb02465df44b320ac324a17cfebbabe6e6b19cbf",
+    "cwbench/experts.py": "981d171c0d39e46c7c6478fc37f70af800473c42d4c12f49b8bd52784b7bc9fa",
+    "cwbench/record.py": "7795bd357d43d75543c4e1dbeb51399deb966bd717df5152b3f07ff696db19e4",
+    "cwbench/geometry.py": "08bc854f00a86b2c3170bb6304b4caebfb29035aacaffed20931e29aaa3e0e99",
+    "cwbench/rubrics.py": "67a9a5dd960ac953c85e038cbe5e95a8239dc42a478b978301069da3f3b1d86f",
+    "cwbench/scenes_v024.py": "ad726a0cca666ed60ca1cb938f44404e15632b2c38af40e5182409e345941ec1",
+    "cwbench/errors.py": "324c0e1a2b4359e0f09e947adada58bdcebd6bce2ef72f3c6fe16be189c633e7",
+    "cwbench/scoring.py": "ebd1d2aa05ce231dd9d1d834ec3817612eb2d3c243b7a81fdf706d6e7c4384d8",
+    "cwbench/dexterity.py": "7976c1c5d66108864dc0c5225bd6ee2a84797709323824ec1ee05a1250af900f",
+    "cwbench/contact_ik.py": "a0d7b20f2e15faa3e985e8b0953db4ba1aed99203c99977d836a426e99f79591",
+    "cwbench/capabilities.py": "504d648d619e3a296e9a2a8be167302f9b356f0b598a1bbeb756e3e07652a1cc",
+    "cwbench/robots.py": "48e3e49dc5f06bc3790ddfd527c8ce319dfaa56917cfe9ecd8c9450ad8540be8",
+    "cwbench/ik.py": "dcebc5a182510725a3a093be8875f4d77f3d38bc9e8341cdaff3f6c7b0f52ce5",
+    "cwbench/scoring_v024.py": "64f98d048782991f7cc26f1a4b85f401e5b7ea7c0da6f7bc4b0704f533f7d6e2",
+    "cwbench/viewer.py": "1ae7503e5b198163767e6557668158e87e5b56fa021e65e66c2b1aaf0b342f32",
+    "cwbench/soft_control.py": "a3de14c4aca011d464d5ea8111b7cb7e48cbd314f1902e154edf39c37514267c",
+    "cwbench/scenes.py": "4862cef77a64bdd9d3c34258342e9f788cd5de621a29624c2315ce388b571e9a",
+    "cwbench/paperboard.py": "f47440a56d16b2c9c0197648fc36bf75453b8f49ee9d603eb7089aa5e0b04f48",
+    "cwbench/adaptive_towel.py": "24840ecd727a5c5fcc2efec586c1f04c88eff33d4c93c7f0cee2c40fa47b6225",
+    "cwbench/env.py": "631a7b266bc06e4411083a9e8cfb8b857be6672b8fbb6257e1308e8be4950f57",
+    "tools/direct_control.py": "867ffb2fb302f3a5fe6c318cb21ade6fe4c277a7202c545ec127a6b6557d933c",
+    "configs/scene.yaml": "832de190953e28096f4b1549732ebaa7cb53fa17bbc57404456b3768cbb063dc",
+    "configs/H9.yaml": "b641bd89dca769518332479eb55d8983b8466113a1f177664a30a9c260f5452f"
+  },
+  "initial_instruction_idx": null,
+  "final_objects": {
+    "cup": [
+      0.015558486498331789,
+      0.09675098084274587,
+      0.20700113273343546
+    ],
+    "bowl": [
+      0.10869375298817885,
+      0.05722043859923144,
+      0.007972944052403452
+    ],
+    "bean0": [
+      0.13639580461204293,
+      -0.003733233964307338,
+      0.014863886089887868
+    ],
+    "bean1": [
+      0.14128913187836462,
+      0.06162177935224049,
+      0.014864006268394125
+    ],
+    "bean2": [
+      0.07458003689099156,
+      0.0853518727493021,
+      0.014864694102067144
+    ],
+    "bean3": [
+      0.1306143853601266,
+      0.12080482416067191,
+      0.014864257186911312
+    ],
+    "bean4": [
+      0.1477288443801942,
+      0.08978158955890383,
+      0.014864017307844812
+    ],
+    "bean5": [
+      0.14508069779565821,
+      0.019756241351016054,
+      0.014863864133895621
+    ],
+    "bean6": [
+      0.05556335772102305,
+      0.0451975934534917,
+      0.014864770862144328
+    ],
+    "bean7": [
+      0.05778135952459993,
+      0.06292248814845836,
+      0.014864795074974957
+    ],
+    "bean8": [
+      0.28459584485221184,
+      0.1175028904384249,
+      0.010892244579784216
+    ],
+    "bean9": [
+      0.2822362906130106,
+      0.15335527806402308,
+      0.010892244579784105
+    ],
+    "bean10": [
+      0.16033092383464856,
+      0.09045265482376261,
+      0.014863900474912595
+    ],
+    "bean11": [
+      0.1699034380696581,
+      0.08727426874514749,
+      0.01486380234939455
+    ],
+    "bean12": [
+      0.11553023167300674,
+      0.008474524454178707,
+      0.014864113405026247
+    ],
+    "bean13": [
+      0.08641961338953578,
+      0.11642566836979334,
+      0.01486466175875878
+    ],
+    "bean14": [
+      0.1486178657604289,
+      0.10871023459808375,
+      0.014864057082862647
+    ],
+    "bean15": [
+      0.2905646253694453,
+      0.16633549619301374,
+      0.01089224457978355
+    ],
+    "bean16": [
+      0.06594528187581747,
+      0.005202273406945681,
+      0.01486457149473297
+    ],
+    "bean17": [
+      0.16112425345574152,
+      0.10074029017555909,
+      0.014863919175152396
+    ],
+    "bean18": [
+      0.12517764239776386,
+      -0.0019010365641861117,
+      0.014863996271557989
+    ],
+    "bean19": [
+      0.08856086144479174,
+      -0.005586906949474761,
+      0.014864331327579694
+    ],
+    "bean20": [
+      0.12584253300510692,
+      0.09622382558088977,
+      0.0148642395608376
+    ],
+    "bean21": [
+      0.17542118609694368,
+      0.0675971661248827,
+      0.014863700406044011
+    ],
+    "bean22": [
+      0.24573270249757986,
+      0.11059013371128204,
+      0.010892244579784105
+    ],
+    "bean23": [
+      0.07611294573127754,
+      0.11741513014228316,
+      0.014864761222082246
+    ],
+    "bean24": [
+      0.2886545211882003,
+      0.14253979931809863,
+      0.010892244579784216
+    ],
+    "bean25": [
+      0.047412788451554284,
+      0.061026520927065245,
+      0.014864887782646163
+    ],
+    "bean26": [
+      0.06874048663583522,
+      0.11048712656792382,
+      0.014864812950890927
+    ],
+    "bean27": [
+      0.15150421725120122,
+      0.006016442755991963,
+      0.014863768769436847
+    ],
+    "bean28": [
+      0.17132727370113787,
+      0.07708704657581847,
+      0.014863763048922563
+    ],
+    "bean29": [
+      0.18061479490420104,
+      0.22995119776110629,
+      0.010892244579784105
+    ],
+    "spill_tray": [
+      0.0,
+      0.05,
+      0.0030000000000000027
+    ]
+  }
+}

@@ -1,0 +1,440 @@
+{
+  "task": "D2",
+  "layout": 0,
+  "level": "L2",
+  "instruction": "双手抬箱子放到垫子上",
+  "engine_version": "3.10.0",
+  "controller": "privileged_scripted_expert",
+  "classification": "DEMONSTRATION_NOT_BENCHMARK_SCORE",
+  "success": true,
+  "failure": null,
+  "info": {
+    "stages": {
+      "both_handles": true,
+      "level_lift": true,
+      "place": true
+    },
+    "progress": 1.0,
+    "score": 1.0,
+    "success": true,
+    "terminal_hold_steps": 50,
+    "error": null,
+    "details": {
+      "tilt_deg": 0.0,
+      "tilt_peak_deg": 2.777633016556971,
+      "center_error_m": 0.00585989167606567
+    },
+    "status": "development_grader_expert_validation_pending",
+    "terminal_current": true,
+    "formal_spec_score": null,
+    "full_spec_conformance_verified": false,
+    "done": true,
+    "reason": "success",
+    "time": 18.120000000000836,
+    "execution_time": 18.120000000000836,
+    "phase": "execution",
+    "ik": [],
+    "ik_pos_err": [],
+    "ik_rot_err": [],
+    "jerk_command_mean": 4.497100173635775,
+    "jerk_arm_joint_mean_rad_s3": 2.183372331639449,
+    "safety_stop": null,
+    "recovery_events": []
+  },
+  "events": [
+    {
+      "phase": "reach above handles",
+      "time": 0.4000000000000003
+    },
+    {
+      "phase": "approach handles",
+      "time": 2.999999999999891
+    },
+    {
+      "phase": "close both grippers",
+      "time": 4.599999999999715
+    },
+    {
+      "phase": "level lift",
+      "time": 5.799999999999583
+    },
+    {
+      "phase": "carry box forward to mat",
+      "time": 8.479999999999501
+    },
+    {
+      "phase": "lower box onto mat",
+      "time": 14.160000000001398
+    },
+    {
+      "phase": "open both grippers",
+      "time": 15.960000000002
+    },
+    {
+      "phase": "withdraw both hands",
+      "time": 16.840000000001545
+    }
+  ],
+  "steps": 453,
+  "duration_s": 18.120000000000836,
+  "no_object_teleport": true,
+  "no_grasp_weld": true,
+  "physics": "MuJoCo env.step, 500 Hz physics / 25 Hz control",
+  "source_hashes": {
+    "cwbench/contact_grasp.py": "467514a8339b7933d4f35464357409d16f2c74c89c5d24f2f33197ddc5f584ef",
+    "cwbench/foam_ball.py": "fba434d3af9939eb4f00af953e9632279c72e85fb8356128aebd0233011eaacf",
+    "cwbench/__init__.py": "f414b78723a0cee16f6378aff4814997c38ddf5e12edce9dfa1017849aa4256e",
+    "cwbench/cloth_bag.py": "a8c2c0e9ea47f7d275ea99229ad31010b03dd4933c1bdc82c893fa27d4e54507",
+    "cwbench/dexterity_o6.py": "68d90a4b89e5de99793ca4f91a933d21e9ae72e78ed65526337bcfaa7d610652",
+    "cwbench/experts.py": "ef6bcf0789a993d0186795a0c8844a49e9658ad845bd8621f260eecc9ad1d654",
+    "cwbench/record.py": "39d4e7ee6b7664d9f5443766551da122973a6d8ba04d9d17be899891cf0c88c8",
+    "cwbench/flex_runtime.py": "b36ff07603e5e3e459fb16808008fafd567890048de59a21153816ee4e7398b0",
+    "cwbench/geometry.py": "08bc854f00a86b2c3170bb6304b4caebfb29035aacaffed20931e29aaa3e0e99",
+    "cwbench/rubrics.py": "13bc8655a7d41bfcbcd30ea24b444b1d5ca365c690657b965648fffc543a71fa",
+    "cwbench/scenes_v024.py": "ad726a0cca666ed60ca1cb938f44404e15632b2c38af40e5182409e345941ec1",
+    "cwbench/errors.py": "324c0e1a2b4359e0f09e947adada58bdcebd6bce2ef72f3c6fe16be189c633e7",
+    "cwbench/scoring.py": "6921d4b6a0f750b4a230a250d7ceec4010fee41874258373d5c2bfdad888cde8",
+    "cwbench/grasp_assist.py": "306e744c412f641564c1a1e3a25aeea75e2103f12579217279d2a0b5bab8074c",
+    "cwbench/arm_motion.py": "63ece840caaa51a1effd6aca447362491edb5452d0c6ce62ef624fe16987450c",
+    "cwbench/dexterity.py": "0d8f34390e4825c49c56f8626ff55af458d11dc0c69ad6610a62198bc7189c9b",
+    "cwbench/flow_v033.py": "70a03a35432b8d0112f0c590d371ab8462e193dfb9d235d10c7aae80faa6993c",
+    "cwbench/scene_expect_v033.py": "b41f81adc010adae746a0d8ed180d014c5bafe543980f2f33cca721e0fcf7462",
+    "cwbench/contact_ik.py": "18e4c66a2b543b4ebcee9a34bb95e48a702d46872e05f257cac47b8386fa48df",
+    "cwbench/adaptive_bag.py": "ff665a5c8d0e76f959dba9b6a3f19f49390571abc648537ebad5235322e3f3fa",
+    "cwbench/capabilities.py": "4910760472fa4c175729e3f3318b0cccfbd023c3f24762480b0a1e8a92393bca",
+    "cwbench/web_spec_v033.py": "0d9799ee7127911334c59d44f32ed7ede4248be89ae658bce33725eee0a45084",
+    "cwbench/robots.py": "48e3e49dc5f06bc3790ddfd527c8ce319dfaa56917cfe9ecd8c9450ad8540be8",
+    "cwbench/ik.py": "dcebc5a182510725a3a093be8875f4d77f3d38bc9e8341cdaff3f6c7b0f52ce5",
+    "cwbench/scoring_v024.py": "64f98d048782991f7cc26f1a4b85f401e5b7ea7c0da6f7bc4b0704f533f7d6e2",
+    "cwbench/spec_contract.py": "d5ca0550f4f780a109ecb11e6336b5e4c5d671f5478f1d8481018d86ec69768a",
+    "cwbench/viewer.py": "1ae7503e5b198163767e6557668158e87e5b56fa021e65e66c2b1aaf0b342f32",
+    "cwbench/soft_control.py": "a3de14c4aca011d464d5ea8111b7cb7e48cbd314f1902e154edf39c37514267c",
+    "cwbench/scenes.py": "b1824a5d2827509d5db6da257f70bb0f60edc5a2a4e8d8aa221e6790adc2fd7a",
+    "cwbench/paperboard.py": "d5e8d9e9e83362c77401ec85c9f4e57fd57ceaa8c6fc03f32c2a41162aa2dc86",
+    "cwbench/adaptive_towel.py": "392bbbb0b5551b9d1002ad93c1e8209242758ac97483974e9be1b3fd2b829810",
+    "cwbench/env.py": "8e96891268f704845b07e45c09927c03dafc4cdc83be4fa7a0f73937c4a02360",
+    "tools/demos_v033/d2_carry.py": "b2faf6f913c44b0f544f4bf5bb756e5a0cdee839ab6ddc6fdd88725be4eb4379",
+    "configs/scene.yaml": "51b146a1f469361ac9fca21c15d7a3941fa722ca42a5690c90298abfcd6c56b2",
+    "configs/D2.yaml": "6e34bcc1a36455e35bd6e56c15a79b7f356ded6f9c7fac27603cfea3dd66263f"
+  },
+  "initial_instruction_idx": null,
+  "final_objects": {
+    "box": [
+      0.011027354548142288,
+      0.22954681925877077,
+      0.0059726991943382934
+    ],
+    "mat": [
+      0.01048472290378814,
+      0.22371210578219206,
+      0.0020000000000000018
+    ]
+  },
+  "script": "tools/demos_v033/d2_carry.py",
+  "script_parameters": {
+    "tilt_deg": 60.0,
+    "roll_deg": 35.0,
+    "grip_y_m": 0.0,
+    "pre_grasp_m": 0.07,
+    "open_cmd": 0.6,
+    "lift_m": 0.11,
+    "carry_clear_m": 0.03,
+    "place_drop_m": 0.002,
+    "target_dy_m": 0.0,
+    "retreat_m": 0.08,
+    "lift_s": 2.2,
+    "carry_s": 4.5,
+    "lower_s": 1.6
+  },
+  "box_tilt_peak_deg": 2.777633016556971,
+  "checkpoints": [
+    {
+      "phase": "reach above handles",
+      "label": "pre-grasp",
+      "time": 3.0,
+      "box": [
+        0.0105,
+        -0.0663,
+        0.003
+      ],
+      "tilt_deg": 0.0,
+      "tcp": [
+        [
+          -0.2197,
+          -0.1269,
+          0.1117
+        ],
+        [
+          0.2406,
+          -0.1269,
+          0.1117
+        ]
+      ],
+      "opening": [
+        0.6,
+        0.6
+      ],
+      "grasped": [
+        false,
+        false
+      ],
+      "stages": {
+        "both_handles": false,
+        "level_lift": false,
+        "place": false
+      }
+    },
+    {
+      "phase": "approach handles",
+      "label": "at handles",
+      "time": 4.6,
+      "box": [
+        0.0105,
+        -0.0663,
+        0.003
+      ],
+      "tilt_deg": 0.0,
+      "tcp": [
+        [
+          -0.1996,
+          -0.0664,
+          0.0829
+        ],
+        [
+          0.2205,
+          -0.0664,
+          0.0829
+        ]
+      ],
+      "opening": [
+        0.6,
+        0.6
+      ],
+      "grasped": [
+        false,
+        false
+      ],
+      "stages": {
+        "both_handles": false,
+        "level_lift": false,
+        "place": false
+      }
+    },
+    {
+      "phase": "close both grippers",
+      "label": "closed",
+      "time": 5.8,
+      "box": [
+        0.0107,
+        -0.0664,
+        0.003
+      ],
+      "tilt_deg": 0.01,
+      "tcp": [
+        [
+          -0.2021,
+          -0.0666,
+          0.081
+        ],
+        [
+          0.2179,
+          -0.0662,
+          0.0849
+        ]
+      ],
+      "opening": [
+        0.142,
+        0.143
+      ],
+      "grasped": [
+        true,
+        true
+      ],
+      "stages": {
+        "both_handles": true,
+        "level_lift": false,
+        "place": false
+      }
+    },
+    {
+      "phase": "level lift",
+      "label": "lifted",
+      "time": 8.48,
+      "box": [
+        0.0126,
+        -0.0706,
+        0.1017
+      ],
+      "tilt_deg": 2.03,
+      "tcp": [
+        [
+          -0.1998,
+          -0.0684,
+          0.1823
+        ],
+        [
+          0.2205,
+          -0.0684,
+          0.1825
+        ]
+      ],
+      "opening": [
+        0.141,
+        0.131
+      ],
+      "grasped": [
+        true,
+        true
+      ],
+      "stages": {
+        "both_handles": true,
+        "level_lift": true,
+        "place": false
+      }
+    },
+    {
+      "phase": "carry box forward to mat",
+      "label": "above mat",
+      "time": 13.16,
+      "box": [
+        0.0127,
+        0.2181,
+        0.0171
+      ],
+      "tilt_deg": 2.71,
+      "tcp": [
+        [
+          -0.2,
+          0.221,
+          0.0982
+        ],
+        [
+          0.2208,
+          0.221,
+          0.0985
+        ]
+      ],
+      "opening": [
+        0.142,
+        0.13
+      ],
+      "grasped": [
+        true,
+        true
+      ],
+      "stages": {
+        "both_handles": true,
+        "level_lift": true,
+        "place": false
+      }
+    },
+    {
+      "phase": "carry box forward to mat",
+      "label": "aligned",
+      "time": 14.16,
+      "box": [
+        0.0105,
+        0.2237,
+        0.0168
+      ],
+      "tilt_deg": 2.75,
+      "tcp": [
+        [
+          -0.2023,
+          0.2267,
+          0.098
+        ],
+        [
+          0.2188,
+          0.2267,
+          0.0983
+        ]
+      ],
+      "opening": [
+        0.142,
+        0.13
+      ],
+      "grasped": [
+        true,
+        true
+      ],
+      "stages": {
+        "both_handles": true,
+        "level_lift": true,
+        "place": false
+      }
+    },
+    {
+      "phase": "lower box onto mat",
+      "label": "on mat, still held",
+      "time": 15.96,
+      "box": [
+        0.011,
+        0.2295,
+        0.006
+      ],
+      "tilt_deg": 0.01,
+      "tcp": [
+        [
+          -0.2027,
+          0.2286,
+          0.0852
+        ],
+        [
+          0.2189,
+          0.2291,
+          0.0893
+        ]
+      ],
+      "opening": [
+        0.138,
+        0.136
+      ],
+      "grasped": [
+        true,
+        true
+      ],
+      "stages": {
+        "both_handles": true,
+        "level_lift": true,
+        "place": false
+      }
+    },
+    {
+      "phase": "open both grippers",
+      "label": "released",
+      "time": 16.84,
+      "box": [
+        0.011,
+        0.2295,
+        0.006
+      ],
+      "tilt_deg": 0.0,
+      "tcp": [
+        [
+          -0.2017,
+          0.2294,
+          0.088
+        ],
+        [
+          0.2183,
+          0.2293,
+          0.088
+        ]
+      ],
+      "opening": [
+        0.6,
+        0.6
+      ],
+      "grasped": [
+        false,
+        false
+      ],
+      "stages": {
+        "both_handles": true,
+        "level_lift": true,
+        "place": true
+      }
+    }
+  ]
+}

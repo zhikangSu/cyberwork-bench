@@ -1,0 +1,364 @@
+{
+  "schema": "cyberwork.spec_audit.v033",
+  "spec_version": "0.3.3",
+  "spec_sha256": "23957455c1aa0c0cad76324ed84fae725a1c9021c6b3ab0426e2753cda1750e8",
+  "passed": true,
+  "task": "D6",
+  "episode": "v032_frozen01_D6",
+  "captured_spec_version": "0.3.2",
+  "method": "revalidated_saved_recording",
+  "source_run": "/home/meow/SO101/outputs/cyberwork_bench/20261019_v032/debug/frozen01_D6",
+  "audited_at": "2026-10-20T13:43:35.006353+00:00",
+  "engine_version": "3.10.0",
+  "interpreter": "/home/meow/SO101/experiments/cyberwork_bench/.venv/bin/python",
+  "task_success": true,
+  "scene_alignment_passed": true,
+  "scoring_alignment_passed": true,
+  "replay_passed": true,
+  "provenance_clean": true,
+  "artifact_sha256": {
+    "model.mjb": "ea0627d9ffe29984937c5991124e190f73541de1555673b2a161b7c764c52f47",
+    "trajectory.npz": "6b6527a6a1324d05936d53e26da449a0c82304422f2636750c53dbd81d01930f",
+    "demo.mp4": "aae7efc3ece9d0ccb094bdaf2dad6c1d16274e83a2b3cdf8b63905b7a18a6276",
+    "result.json": "3282b2e8a3ab4c6485f99fa62325aeab60ef6e81d3b550fae589ed1f7bd5fbe9",
+    "manifest.json": "087d41c4c939b25dcf2cf3210678c6e858818e5e3464e2954ec79185c213786d",
+    "replay_audit.json": "43a173d01bdd12725bf19ea27877b15053a67eac95baa1384c756d56a0f813bc"
+  },
+  "supplementary_sha256": {
+    "trace.jsonl": "8eddd965500cecfc9689835f6c8cc5b773fd5d427c405ec48d1b78e9d61066d4"
+  },
+  "progress": 1.0,
+  "stage_first_time_s": {
+    "left_grasp_upright_10": 3.6799999999998163,
+    "cap_turned_90": 14.040000000001358,
+    "tightened_alignment_30": 38.56000000000116
+  },
+  "terminal_hold_s": 1.9600000000023954,
+  "terminal_hold_note": "录像末尾终态持续时长只记录，仿真不要求 2.0 s（USER_DECISIONS_v0.3.3.md 第 1 条）",
+  "failure_reasons": [],
+  "simulation_scope": "仿真验收只核对道具、布局、阶段顺序、终态和任务特定失败；不考核时间精度（2.0 s 保持、超时、控制频率），真机评测按原文执行（USER_DECISIONS_v0.3.3.md 第 1、5 条）。演示由读取仿真真值的脚本或逐步控制完成，不是任何模型的 benchmark 成绩。",
+  "assumptions": [
+    "已释放（仿真）：物体与任何机器人手指或指垫（夹爪指垫、灵巧手各指节）都没有接触；接触距离阈值取 YAML thresholds.contact_distance_m。",
+    "静止（仿真）：物体 body 原点在最近 static_window_s（configs/scene.yaml v033）内相对当前位置的最大位移 < static_displacement_m（1 cm）；不要求 2 s。",
+    "仿真 success：录像最后一帧全部终态谓词成立、没有失败或安全中止、保持型阶段未违反。终态在录像末尾的持续时长只记录，不要求 2.0 s（USER_DECISIONS 第 1 条）。",
+    "inside：顶视投影取物体全部碰撞几何（盒角点、球与胶囊的圆盘、圆柱外切多边形、网格顶点）在容器坐标系水平面的投影；口沿取 model.mjb 中容器竖直壁朝向轴线的内表面（碗为 24 边形内壁），只允许 rim_tolerance_m 的接触数值穿透；\"落在底或内容物上\"= 物体最低点不低于容器底面（同一穿透容差，排除穿底），且与容器底几何接触，或与中心在口沿内的其他物体接触。投影完全在口沿内又由底或内容物承托，就不可能搭在沿上。",
+    "on：中心取 body 子树质心；支撑面范围取支撑物内壁（有壁时）或顶面足迹；高差 = 物体最低点 − 支撑面顶，|高差| ≤ thresholds.on_tol_m，且与支撑物接触。",
+    "lifted：以复位（或计分段开始）时物体最低点为基准，比较当前最低点；不用 body 原点。",
+    "顺序累计：某阶段只有在全部前序阶段都已首次成立之后成立才计（同一控制步内按阶段顺序处理）；原文\"按件/按球/按块均分\"的同组阶段之间不分先后。",
+    "失败（任务特定、episode 作用域、安全中止）发生时停止累计，进度分停在当时值，success = 0；保持型阶段违反不提前停止，其他阶段照常计分（§2.1 L108）。",
+    "安全中止按 §2.1 L115 的仿真四项，在每个重放控制步检查：关节超限、末端穿桌 >1 cm、臂–臂接触力 >50 N、物体离开桌面（自由物体中心越出桌面边缘超过 v033.safety.object_off_table_margin_m 或低于桌面超过 object_off_table_drop_m）；容差与录制时 env.py 的停止条件相同，数值来自 configs/scene.yaml 的 control 与 v033.safety。",
+    "方向约定（§2.2 L138）：左 = 桌面 −x，右 = +x，前 = +y（桌子远端），后 = −y。",
+    "判分数字全部来自 configs/scene.yaml（v033、world、control）与任务 YAML（thresholds、v033）；阶段名与权重照抄原文。",
+    "D6 转角只计啮合转动：有效转角 = min(盖子转角, 下降量 ÷ 螺距 × 360°)，螺距取 D6.yaml thread_pitch_m_per_turn；未啮合空转（无下降）不计（L612）。",
+    "对齐线夹角取 model.mjb 中盖子标记与瓶肩标记的实际几何角差；\"拧紧\"= 有效转角 ≥ 剩余拧紧角 − alignment_deg 且夹角 ≤ alignment_deg。剩余拧紧角 = 盖子转动关节上限 − 初始角（模型实测）。",
+    "终态只看结束时已拧紧（L611\"结束时对齐线夹角 ≤30°\"），不要求结束时左臂仍夹着瓶子（双臂审计 8.6 的建议）。",
+    "\"瓶倒\"（§9 L1137 禁止）按瓶身轴线偏离竖直 > v033.bottle_fallen_deg 判任务特定失败；该角度原文未给，为解释。",
+    "场景期望值照抄 SPEC_v0.3.3.md 原文数字（每项旁注行号）；H-open O2/O3 的 11 cm 大球取自 USER_APPROVED_EXTENSIONS.md（用户补充）。不从 configs 反推。",
+    "测量只用录像的 model.mjb 与 trajectory.npz 第 0 帧的 qpos/ctrl。容器口径/开口按竖直壁内外表面实测：原文尺寸落在\"内壁到外壁\"区间内（±length_tol_m）即符合；\"约\"值按 approx_rel_tol 比较；质量、扭矩、速度按 quantity_rel_tol；角度按 angle_tol_deg（容差都在 configs/scene.yaml v033.scene_check）。",
+    "§2.6 间距：两两检查桌面上的顶层道具，间距 = 顶视凸包之间的最小距离（重叠为负）；要求 ≥ 夹爪手指宽度 + 2 cm（L184）。手指宽度原文未给，取录像模型实测：平行夹爪取指体碰撞几何在（闭合方向 × 接近方向）上的外包络，灵巧手取各指远节截面的较宽边。原文规定的承托或容纳关系（如珠子在杯里、杯碗在防散托盘上、球在环座上）不计入间距。",
+    "§2.6 间距不适用于两个固定道具之间（USER_DECISIONS_v0.3.3.md 第 6 条）；固定道具与要抓、要放的物体之间照常检查。固定道具名单按原文写在本模块 FIXED（每项注明行号，如 S6 三桶 L448、S5 簸箕 L428、S3/S7-O2/S11 柜体 L375、D2/D7-O2 目标垫 L525、D3/D7-O2 管托 L551、H2 靶板 L691、H6 键盘 L740、H4 旋钮台 L945/L979），豁免的组合列在 spacing_exemptions。",
+    "工作区按物体中心判（单臂 L306、双臂 L487）；原文没说按中心还是外沿，外沿是否越界只记录不判。原文规定在工作区外的道具（S12 起点线与输送带上游端 L904、H2 桌边靶板 L691）不检查。",
+    "§2.6 中\"不放在臂展边缘 5 cm 以内\"\"手臂在 home 位时不遮挡目标\"\"不压线缆\"需要可达性/遮挡计算或实物，本核对不判。布局随机性（§9 各行\"随机项\"）需要多条布局才能判，单条录像不判。",
+    "孔径、孔深与孔口倒角用射线实测：从孔轴上向四周 64 条水平射线取最近壁面；孔径在孔口下 5 mm 处量，倒角在孔口下 0.25 mm 与 0.75 mm 处量两次半径，由半径差与深度差得出倒角宽度与角度（宽度容差 v033.scene_check.small_feature_tol_m，角度容差 angle_tol_deg）。孔深 = 孔口中心向下射线到第一个表面的距离。",
+    "§2.3 作用域核对读当前 configs/<任务>.yaml 的 error_scope（判分实际使用的配置），与原文 L145-L146 的列名比较；原文没列的任务只记录。",
+    "双臂\"仅左臂可达 / 仅右臂可达 / 共享\"（§4 L489）按 configs/reachability/arx_r5.json 查：取离物体顶面高度最近的地图层，物体中心最近的地图点的类别即所属集合；\"仅一侧\"另要求物体顶视轮廓到对侧可达点（对侧独占或共享）的距离 ≥ 5 cm（L489）。地图点为\"求解器未解出\"时不能归类，按不符合计。结果里同时报告地图指纹与按当前 scenes.GLOBAL、robots.py、R5a.urdf 计算的指纹是否一致（不一致即地图过期，需重算）。",
+    "抽屉把手\"与面板间距 ≥4 cm\"（L374）按净空算：把手横杆表面到抽屉面板外表面的最小距离 ≥ 40 mm（USER_DECISIONS_v0.3.3.md 第 6 条，理由是原文\"保证 AG-95 的指尖伸得进去\"）。S3、S7-O2、S11 共用。",
+    "软体道具（D4 袋、D5 方巾、H7 纸箱翻盖）按第 0 帧的 flex 顶点实测：袋口周长 = 袋口顶点折线长，袋深 = 袋口中心到袋底中心距离；方巾尺寸取顶点轴对齐外包框（与 30×30 cm 相符即同时说明边与桌面坐标轴平行、一边朝向机器人）。"
+  ],
+  "provenance_notes": [],
+  "flow": {
+    "supported": true,
+    "task": "D6",
+    "spec_lines": "§4 D6 L611（阶段）、L612（反例）、§9 L1137（瓶倒、未啮合空转作废）",
+    "progress": 1.0,
+    "success": true,
+    "stage_score": 1.0,
+    "stages": [
+      {
+        "name": "left_grasp_upright_10",
+        "weight": 0.2,
+        "requires": [],
+        "first_time_s": 3.6799999999998163,
+        "achieved": true,
+        "blocked_at_s": null
+      },
+      {
+        "name": "cap_turned_90",
+        "weight": 0.3,
+        "requires": [
+          "left_grasp_upright_10"
+        ],
+        "first_time_s": 14.040000000001358,
+        "achieved": true,
+        "blocked_at_s": null
+      },
+      {
+        "name": "tightened_alignment_30",
+        "weight": 0.5,
+        "requires": [
+          "left_grasp_upright_10",
+          "cap_turned_90"
+        ],
+        "first_time_s": 38.56000000000116,
+        "achieved": true,
+        "blocked_at_s": null
+      }
+    ],
+    "hold_stages": [],
+    "failure": null,
+    "wrong_item_present": false,
+    "terminal_at_end": true,
+    "terminal_since_s": 38.56000000000116,
+    "terminal_hold_s": 1.9600000000023954,
+    "end_time_s": 40.520000000003556,
+    "stage_order_complete": true,
+    "scoring_alignment_passed": true,
+    "failure_reasons": [],
+    "safety_abort": null,
+    "events_first_time_s": {},
+    "details_at_end": {
+      "cap_turn_deg": 540.0263265619923,
+      "engaged_turn_deg": 540.0263265619923,
+      "cap_descent_m": 0.0030689685261507857,
+      "alignment_error_deg": 0.026326561992217307,
+      "required_turn_deg": 540.0,
+      "bottle_tilt_deg": 0.25128900309285407
+    },
+    "replayed_control_steps": 1013,
+    "thresholds": {
+      "inside_fraction": 0.8,
+      "on_tol_m": 0.01,
+      "stable_speed_m_s": 0.01,
+      "lift_m": 0.05,
+      "grasp_opening_max": 0.95,
+      "released_opening_min": 0.9,
+      "min_finger_contacts": 2,
+      "containment_z_tolerance_m": 0.001,
+      "contact_distance_m": 0.001,
+      "handover_clearance_m": 0.03,
+      "peg_alignment_height_m": 0.05,
+      "peg_min_depth_m": 0.025,
+      "peg_max_depth_m": 0.035,
+      "upright_deg": 10,
+      "holding_lift_m": 0.015,
+      "key_press_depth_m": 0.002,
+      "static_window_s": 0.4,
+      "static_displacement_m": 0.01,
+      "rim_tolerance_m": 0.0005,
+      "pick_lift_m": 0.02,
+      "returned_m": 0.02,
+      "rel_edge_distance_m": [
+        0.01,
+        0.1
+      ],
+      "rel_direction_deg": 45,
+      "circle_samples": 64,
+      "single_arm_workspace_xy": [
+        [
+          -0.25,
+          0.25
+        ],
+        [
+          -0.1,
+          0.3
+        ]
+      ],
+      "dual_arm_workspace_xy": [
+        [
+          -0.45,
+          0.45
+        ],
+        [
+          -0.1,
+          0.4
+        ]
+      ],
+      "safety": {
+        "joint_limit_tolerance_rad": 0.01,
+        "object_off_table_drop_m": 0.08,
+        "object_off_table_margin_m": [
+          0.06,
+          0.07
+        ]
+      },
+      "scene_check": {
+        "length_tol_m": 0.002,
+        "approx_rel_tol": 0.1,
+        "quantity_rel_tol": 0.02,
+        "angle_tol_deg": 1.0,
+        "small_feature_tol_m": 0.0002
+      },
+      "cap_turn_deg": 90,
+      "alignment_deg": 30,
+      "bottle_fallen_deg": 45
+    },
+    "assumptions": [
+      "已释放（仿真）：物体与任何机器人手指或指垫（夹爪指垫、灵巧手各指节）都没有接触；接触距离阈值取 YAML thresholds.contact_distance_m。",
+      "静止（仿真）：物体 body 原点在最近 static_window_s（configs/scene.yaml v033）内相对当前位置的最大位移 < static_displacement_m（1 cm）；不要求 2 s。",
+      "仿真 success：录像最后一帧全部终态谓词成立、没有失败或安全中止、保持型阶段未违反。终态在录像末尾的持续时长只记录，不要求 2.0 s（USER_DECISIONS 第 1 条）。",
+      "inside：顶视投影取物体全部碰撞几何（盒角点、球与胶囊的圆盘、圆柱外切多边形、网格顶点）在容器坐标系水平面的投影；口沿取 model.mjb 中容器竖直壁朝向轴线的内表面（碗为 24 边形内壁），只允许 rim_tolerance_m 的接触数值穿透；\"落在底或内容物上\"= 物体最低点不低于容器底面（同一穿透容差，排除穿底），且与容器底几何接触，或与中心在口沿内的其他物体接触。投影完全在口沿内又由底或内容物承托，就不可能搭在沿上。",
+      "on：中心取 body 子树质心；支撑面范围取支撑物内壁（有壁时）或顶面足迹；高差 = 物体最低点 − 支撑面顶，|高差| ≤ thresholds.on_tol_m，且与支撑物接触。",
+      "lifted：以复位（或计分段开始）时物体最低点为基准，比较当前最低点；不用 body 原点。",
+      "顺序累计：某阶段只有在全部前序阶段都已首次成立之后成立才计（同一控制步内按阶段顺序处理）；原文\"按件/按球/按块均分\"的同组阶段之间不分先后。",
+      "失败（任务特定、episode 作用域、安全中止）发生时停止累计，进度分停在当时值，success = 0；保持型阶段违反不提前停止，其他阶段照常计分（§2.1 L108）。",
+      "安全中止按 §2.1 L115 的仿真四项，在每个重放控制步检查：关节超限、末端穿桌 >1 cm、臂–臂接触力 >50 N、物体离开桌面（自由物体中心越出桌面边缘超过 v033.safety.object_off_table_margin_m 或低于桌面超过 object_off_table_drop_m）；容差与录制时 env.py 的停止条件相同，数值来自 configs/scene.yaml 的 control 与 v033.safety。",
+      "方向约定（§2.2 L138）：左 = 桌面 −x，右 = +x，前 = +y（桌子远端），后 = −y。",
+      "判分数字全部来自 configs/scene.yaml（v033、world、control）与任务 YAML（thresholds、v033）；阶段名与权重照抄原文。",
+      "D6 转角只计啮合转动：有效转角 = min(盖子转角, 下降量 ÷ 螺距 × 360°)，螺距取 D6.yaml thread_pitch_m_per_turn；未啮合空转（无下降）不计（L612）。",
+      "对齐线夹角取 model.mjb 中盖子标记与瓶肩标记的实际几何角差；\"拧紧\"= 有效转角 ≥ 剩余拧紧角 − alignment_deg 且夹角 ≤ alignment_deg。剩余拧紧角 = 盖子转动关节上限 − 初始角（模型实测）。",
+      "终态只看结束时已拧紧（L611\"结束时对齐线夹角 ≤30°\"），不要求结束时左臂仍夹着瓶子（双臂审计 8.6 的建议）。",
+      "\"瓶倒\"（§9 L1137 禁止）按瓶身轴线偏离竖直 > v033.bottle_fallen_deg 判任务特定失败；该角度原文未给，为解释。"
+    ],
+    "simulation_scope": "仿真验收只核对道具、布局、阶段顺序、终态和任务特定失败；不考核时间精度（2.0 s 保持、超时、控制频率），真机评测按原文执行（USER_DECISIONS_v0.3.3.md 第 1、5 条）。演示由读取仿真真值的脚本或逐步控制完成，不是任何模型的 benchmark 成绩。"
+  },
+  "scene": {
+    "supported": true,
+    "passed": true,
+    "items": [
+      {
+        "id": "base_level",
+        "what": "BASE 档位",
+        "line": "§1.1 L11-L46",
+        "expected": "L3",
+        "measured": {
+          "level": "L3"
+        },
+        "passed": true
+      },
+      {
+        "id": "thread_pitch:screw_pitch",
+        "what": "单头螺纹，螺距 2 mm",
+        "line": 600,
+        "expected": 0.002,
+        "mode": "exact",
+        "measured": {
+          "pitch_m": 0.002
+        },
+        "passed": true
+      },
+      {
+        "id": "thread_turns:cap_rotation",
+        "what": "刚啮合到拧紧共 2.5 圈",
+        "line": 600,
+        "expected": 2.5,
+        "mode": "exact",
+        "measured": {
+          "turns": 2.5
+        },
+        "passed": true
+      },
+      {
+        "id": "remaining_deg:cap_rotation",
+        "what": "BASE 剩余拧紧角 540°",
+        "line": 609,
+        "expected": 540,
+        "mode": "exact",
+        "measured": {
+          "remaining_deg": 540.0
+        },
+        "passed": true
+      },
+      {
+        "id": "diameter:cap",
+        "what": "瓶盖直径约 40 mm",
+        "line": 601,
+        "expected": 0.04,
+        "mode": "approx",
+        "measured": {
+          "diameter_m": 0.0400482398588157
+        },
+        "passed": true
+      },
+      {
+        "id": "square:bottle_body",
+        "what": "方形瓶身",
+        "line": 599,
+        "expected": true,
+        "mode": "exact",
+        "measured": {
+          "half_xy_m": [
+            0.03,
+            0.03
+          ],
+          "type": 6
+        },
+        "passed": true
+      },
+      {
+        "id": "tilt:bottle",
+        "what": "瓶子直立放置",
+        "line": 608,
+        "expected": 0,
+        "mode": "exact",
+        "measured": {
+          "tilt_deg": 0.0
+        },
+        "passed": true
+      },
+      {
+        "id": "workspace:bottle",
+        "what": "物体中心在工作区内",
+        "line": 487,
+        "expected": [
+          [
+            -0.45,
+            0.45
+          ],
+          [
+            -0.1,
+            0.4
+          ]
+        ],
+        "measured": {
+          "center_xy": [
+            -0.06,
+            -0.06
+          ],
+          "footprint_x": [
+            -0.09,
+            -0.03
+          ],
+          "footprint_y": [
+            -0.09,
+            -0.03
+          ]
+        },
+        "passed": true
+      }
+    ],
+    "failed": [],
+    "measurements": [],
+    "finger_width_m": 0.036000000000000254,
+    "spacing_exemptions": [],
+    "unjudged": [
+      "\"瓶内装沙到 300 g\"指总重还是内容物原文没说清（L605），只记录",
+      "\"左臂可达区\"需要可达性地图（L608），不判"
+    ],
+    "assumptions": [
+      "场景期望值照抄 SPEC_v0.3.3.md 原文数字（每项旁注行号）；H-open O2/O3 的 11 cm 大球取自 USER_APPROVED_EXTENSIONS.md（用户补充）。不从 configs 反推。",
+      "测量只用录像的 model.mjb 与 trajectory.npz 第 0 帧的 qpos/ctrl。容器口径/开口按竖直壁内外表面实测：原文尺寸落在\"内壁到外壁\"区间内（±length_tol_m）即符合；\"约\"值按 approx_rel_tol 比较；质量、扭矩、速度按 quantity_rel_tol；角度按 angle_tol_deg（容差都在 configs/scene.yaml v033.scene_check）。",
+      "§2.6 间距：两两检查桌面上的顶层道具，间距 = 顶视凸包之间的最小距离（重叠为负）；要求 ≥ 夹爪手指宽度 + 2 cm（L184）。手指宽度原文未给，取录像模型实测：平行夹爪取指体碰撞几何在（闭合方向 × 接近方向）上的外包络，灵巧手取各指远节截面的较宽边。原文规定的承托或容纳关系（如珠子在杯里、杯碗在防散托盘上、球在环座上）不计入间距。",
+      "§2.6 间距不适用于两个固定道具之间（USER_DECISIONS_v0.3.3.md 第 6 条）；固定道具与要抓、要放的物体之间照常检查。固定道具名单按原文写在本模块 FIXED（每项注明行号，如 S6 三桶 L448、S5 簸箕 L428、S3/S7-O2/S11 柜体 L375、D2/D7-O2 目标垫 L525、D3/D7-O2 管托 L551、H2 靶板 L691、H6 键盘 L740、H4 旋钮台 L945/L979），豁免的组合列在 spacing_exemptions。",
+      "工作区按物体中心判（单臂 L306、双臂 L487）；原文没说按中心还是外沿，外沿是否越界只记录不判。原文规定在工作区外的道具（S12 起点线与输送带上游端 L904、H2 桌边靶板 L691）不检查。",
+      "§2.6 中\"不放在臂展边缘 5 cm 以内\"\"手臂在 home 位时不遮挡目标\"\"不压线缆\"需要可达性/遮挡计算或实物，本核对不判。布局随机性（§9 各行\"随机项\"）需要多条布局才能判，单条录像不判。",
+      "孔径、孔深与孔口倒角用射线实测：从孔轴上向四周 64 条水平射线取最近壁面；孔径在孔口下 5 mm 处量，倒角在孔口下 0.25 mm 与 0.75 mm 处量两次半径，由半径差与深度差得出倒角宽度与角度（宽度容差 v033.scene_check.small_feature_tol_m，角度容差 angle_tol_deg）。孔深 = 孔口中心向下射线到第一个表面的距离。",
+      "§2.3 作用域核对读当前 configs/<任务>.yaml 的 error_scope（判分实际使用的配置），与原文 L145-L146 的列名比较；原文没列的任务只记录。",
+      "双臂\"仅左臂可达 / 仅右臂可达 / 共享\"（§4 L489）按 configs/reachability/arx_r5.json 查：取离物体顶面高度最近的地图层，物体中心最近的地图点的类别即所属集合；\"仅一侧\"另要求物体顶视轮廓到对侧可达点（对侧独占或共享）的距离 ≥ 5 cm（L489）。地图点为\"求解器未解出\"时不能归类，按不符合计。结果里同时报告地图指纹与按当前 scenes.GLOBAL、robots.py、R5a.urdf 计算的指纹是否一致（不一致即地图过期，需重算）。",
+      "抽屉把手\"与面板间距 ≥4 cm\"（L374）按净空算：把手横杆表面到抽屉面板外表面的最小距离 ≥ 40 mm（USER_DECISIONS_v0.3.3.md 第 6 条，理由是原文\"保证 AG-95 的指尖伸得进去\"）。S3、S7-O2、S11 共用。",
+      "软体道具（D4 袋、D5 方巾、H7 纸箱翻盖）按第 0 帧的 flex 顶点实测：袋口周长 = 袋口顶点折线长，袋深 = 袋口中心到袋底中心距离；方巾尺寸取顶点轴对齐外包框（与 30×30 cm 相符即同时说明边与桌面坐标轴平行、一边朝向机器人）。"
+    ]
+  },
+  "replay": {
+    "steps": 1013,
+    "max_qpos_replay_error": 0.0,
+    "method": "initial state once, recorded ctrl, fresh mj_step; no intermediate pose overwrite"
+  },
+  "checker_sha256": {
+    "cwbench/flow_v033.py": "0ec232faf0abe6e079dec7f10cc6846c8f44fc21748407ddbbdf490416993e92",
+    "cwbench/scene_expect_v033.py": "b41f81adc010adae746a0d8ed180d014c5bafe543980f2f33cca721e0fcf7462",
+    "tools/audit_v033_run.py": "63b4bc7c8c6c9e0887350c34c1bea8efb8adbc592a9d71f95898569747467888",
+    "tools/replay_demo.py": "6af5acd96b622166b17acb5ea9a1b0bf22c15da4ffee8f186baec75f6e6c3bb0",
+    "configs/scene.yaml": "51b146a1f469361ac9fca21c15d7a3941fa722ca42a5690c90298abfcd6c56b2",
+    "configs/D6.yaml": "bcd0f1f94fd59dd1a37f315535f1e4486ffbcff60e305794af43e984e4cffdae"
+  }
+}

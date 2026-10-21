@@ -1,0 +1,128 @@
+{
+  "task": "H-open",
+  "layout": 0,
+  "level": "L1",
+  "instruction": "拿喷壶喷三下，再放进箱子",
+  "controller": "privileged_scripted_expert",
+  "classification": "DEMONSTRATION_NOT_BENCHMARK_SCORE",
+  "success": true,
+  "failure": null,
+  "info": {
+    "stages": {
+      "hold": true,
+      "spray_three": true,
+      "place": true
+    },
+    "progress": 1.0,
+    "score": 1.0,
+    "success": true,
+    "terminal_hold_steps": 50,
+    "error": null,
+    "details": {
+      "trigger_count": 3,
+      "laser_in_target": false
+    },
+    "status": "development_grader_expert_validation_pending",
+    "terminal_current": true,
+    "done": true,
+    "reason": "success",
+    "time": 25.23999999999689,
+    "execution_time": 25.23999999999689,
+    "phase": "execution",
+    "ik": [],
+    "ik_pos_err": [],
+    "ik_rot_err": [],
+    "jerk_command_mean": 0.0,
+    "jerk_arm_joint_mean_rad_s3": 1.7029291419461732e-05,
+    "safety_stop": null,
+    "recovery_events": []
+  },
+  "events": [
+    {
+      "phase": "hand preshape",
+      "time": 0.4000000000000003
+    },
+    {
+      "phase": "hand approach spray_bottle",
+      "time": 1.1200000000000008
+    },
+    {
+      "phase": "finger contact closure",
+      "time": 6.799999999999473
+    },
+    {
+      "phase": "hand lift",
+      "time": 8.519999999999515
+    },
+    {
+      "phase": "aim laser at target",
+      "time": 9.879999999999969
+    },
+    {
+      "phase": "pinky trigger press 1",
+      "time": 12.04000000000069
+    },
+    {
+      "phase": "pinky trigger press 2",
+      "time": 13.440000000001158
+    },
+    {
+      "phase": "pinky trigger press 3",
+      "time": 14.840000000001625
+    },
+    {
+      "phase": "clear container rim",
+      "time": 18.720000000000503
+    },
+    {
+      "phase": "hand carry",
+      "time": 19.67999999999997
+    },
+    {
+      "phase": "hand release",
+      "time": 22.039999999998663
+    }
+  ],
+  "steps": 631,
+  "duration_s": 25.23999999999689,
+  "no_object_teleport": true,
+  "no_grasp_weld": true,
+  "physics": "MuJoCo env.step, 500 Hz physics / 25 Hz control",
+  "source_hashes": {
+    "cwbench/__init__.py": "f414b78723a0cee16f6378aff4814997c38ddf5e12edce9dfa1017849aa4256e",
+    "cwbench/experts.py": "90905482da4bae2ec14fd2c0f55f88a0666ecd7bc864946a99989a2d6f07f943",
+    "cwbench/record.py": "7795bd357d43d75543c4e1dbeb51399deb966bd717df5152b3f07ff696db19e4",
+    "cwbench/geometry.py": "0f0b8fa241185059b2ebd954aee177ad6515971a13f98352f7a0a770b71c5899",
+    "cwbench/rubrics.py": "b3c6ba429adbc6f7ed22e9e9e8e19282b83807464aec5747589969670f07e679",
+    "cwbench/scenes_v024.py": "ad726a0cca666ed60ca1cb938f44404e15632b2c38af40e5182409e345941ec1",
+    "cwbench/scoring.py": "238215d7aa505e87ff4ddf60e29c9665165f04b23c0fa82861965c1bee226b2c",
+    "cwbench/dexterity.py": "ff13daaee945e989dc27e4846cd2b321d5a3c68645d9cf3155f3d6b88640a9f4",
+    "cwbench/capabilities.py": "504d648d619e3a296e9a2a8be167302f9b356f0b598a1bbeb756e3e07652a1cc",
+    "cwbench/robots.py": "79de53f7613b40737393d25066ab3a2df0bd14d2920f35fd46ae381861d901c0",
+    "cwbench/ik.py": "dcebc5a182510725a3a093be8875f4d77f3d38bc9e8341cdaff3f6c7b0f52ce5",
+    "cwbench/scoring_v024.py": "64f98d048782991f7cc26f1a4b85f401e5b7ea7c0da6f7bc4b0704f533f7d6e2",
+    "cwbench/viewer.py": "1ae7503e5b198163767e6557668158e87e5b56fa021e65e66c2b1aaf0b342f32",
+    "cwbench/scenes.py": "4e49546dea270f0df0122272bdaff7c7bd641b02a11adce21e354f258ae33306",
+    "cwbench/env.py": "1e740040903d20c2b5fa9b657c3da76efcf781991ed1118947a8cc2f2648d23b",
+    "configs/scene.yaml": "832de190953e28096f4b1549732ebaa7cb53fa17bbc57404456b3768cbb063dc",
+    "configs/H-open.yaml": "8d0f92ad8c72ba1ab679e55727363344988d5932a03cba728937125604b08562"
+  },
+  "initial_instruction_idx": null,
+  "final_objects": {
+    "spray_bottle": [
+      0.15638921982913379,
+      0.1745463999760686,
+      0.0473899216780308
+    ],
+    "spray_target": [
+      0.33,
+      -0.02,
+      0.0
+    ],
+    "container": [
+      0.13000309285749867,
+      0.19000930244028244,
+      0.002969077770851647
+    ]
+  }
+}

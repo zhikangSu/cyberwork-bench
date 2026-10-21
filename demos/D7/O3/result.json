@@ -1,0 +1,124 @@
+{
+  "task": "D7",
+  "layout": 5,
+  "level": "L1",
+  "instruction": "离左夹爪起始中心最近的物体交给右手放碗里",
+  "controller": "privileged_scripted_expert",
+  "classification": "DEMONSTRATION_NOT_BENCHMARK_SCORE",
+  "success": true,
+  "failure": null,
+  "info": {
+    "stages": {
+      "left_lift": true,
+      "handover": true,
+      "place": true
+    },
+    "progress": 1.0,
+    "score": 1.0,
+    "success": true,
+    "terminal_hold_steps": 50,
+    "error": null,
+    "details": {
+      "selected_at_instruction_start": "banana"
+    },
+    "status": "development_grader_expert_validation_pending",
+    "terminal_current": true,
+    "done": true,
+    "reason": "success",
+    "time": 23.479999999997865,
+    "execution_time": 23.479999999997865,
+    "phase": "execution",
+    "ik": [],
+    "ik_pos_err": [],
+    "ik_rot_err": [],
+    "jerk_command_mean": 0.0,
+    "jerk_arm_joint_mean_rad_s3": 0.00012050680346537926,
+    "safety_stop": null,
+    "recovery_events": []
+  },
+  "events": [
+    {
+      "phase": "approach banana",
+      "time": 0.8000000000000006
+    },
+    {
+      "phase": "grasp banana",
+      "time": 4.91999999999968
+    },
+    {
+      "phase": "lift banana",
+      "time": 6.439999999999513
+    },
+    {
+      "phase": "left to shared handover zone",
+      "time": 7.799999999999363
+    },
+    {
+      "phase": "right approach free end",
+      "time": 9.959999999999996
+    },
+    {
+      "phase": "handover release left",
+      "time": 16.440000000001767
+    },
+    {
+      "phase": "carry banana",
+      "time": 18.000000000000902
+    },
+    {
+      "phase": "release banana",
+      "time": 20.79999999999935
+    },
+    {
+      "phase": "terminal hold",
+      "time": 22.47999999999842
+    }
+  ],
+  "steps": 587,
+  "duration_s": 23.479999999997865,
+  "no_object_teleport": true,
+  "no_grasp_weld": true,
+  "physics": "MuJoCo env.step, 500 Hz physics / 25 Hz control",
+  "source_hashes": {
+    "cwbench/__init__.py": "f414b78723a0cee16f6378aff4814997c38ddf5e12edce9dfa1017849aa4256e",
+    "cwbench/experts.py": "0a7e4cd30e9281d5292cdb310d0f5ccc90520a65fc0c973fd91184386250f334",
+    "cwbench/record.py": "73ed121b376ca2a197a951092f484925b11c72a76af79539d3848edb412080fa",
+    "cwbench/geometry.py": "0f0b8fa241185059b2ebd954aee177ad6515971a13f98352f7a0a770b71c5899",
+    "cwbench/rubrics.py": "0dfc375532610ae6e306c22d1e901e8d20545984d4db0e89dc100301a06adff8",
+    "cwbench/scenes_v024.py": "ad726a0cca666ed60ca1cb938f44404e15632b2c38af40e5182409e345941ec1",
+    "cwbench/scoring.py": "49fbf48fbf46b1fd7238e69847748e10d52333055ff005d42ba583ad19dd729c",
+    "cwbench/dexterity.py": "712fc84a8da124efcd39ad39ac1f8a09e33e4573b61e7f29896d55e5dd0bd2f2",
+    "cwbench/capabilities.py": "504d648d619e3a296e9a2a8be167302f9b356f0b598a1bbeb756e3e07652a1cc",
+    "cwbench/robots.py": "79de53f7613b40737393d25066ab3a2df0bd14d2920f35fd46ae381861d901c0",
+    "cwbench/ik.py": "dcebc5a182510725a3a093be8875f4d77f3d38bc9e8341cdaff3f6c7b0f52ce5",
+    "cwbench/scoring_v024.py": "64f98d048782991f7cc26f1a4b85f401e5b7ea7c0da6f7bc4b0704f533f7d6e2",
+    "cwbench/viewer.py": "1ae7503e5b198163767e6557668158e87e5b56fa021e65e66c2b1aaf0b342f32",
+    "cwbench/scenes.py": "732f247ca2186a7dec7e9b163693756565cc9760ab38147199047a61ba1a70d9",
+    "cwbench/env.py": "2d2c351f7c732cccc9e3f3c6c9008c4df781fa69ac57cc1ee0b152f12b57a20a",
+    "configs/scene.yaml": "832de190953e28096f4b1549732ebaa7cb53fa17bbc57404456b3768cbb063dc",
+    "configs/D7.yaml": "41b1d21e3921c7e745397a3bed7b4c04dc4b34c8df5b4bb97cec2c5be80a2613"
+  },
+  "initial_instruction_idx": 2,
+  "final_objects": {
+    "cube": [
+      0.1499999999993558,
+      0.09999999999983346,
+      0.01997269919433753
+    ],
+    "orange": [
+      -0.1,
+      0.17,
+      0.03489224457978346
+    ],
+    "banana": [
+      0.38499047389977137,
+      0.08593976763062665,
+      0.021834945553016794
+    ],
+    "bowl": [
+      0.3700113518162745,
+      0.08999488551756595,
+      0.0019699456402936244
+    ]
+  }
+}

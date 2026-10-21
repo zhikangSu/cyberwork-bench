@@ -1,0 +1,207 @@
+{
+  "task": "S2",
+  "layout": 0,
+  "variant": "id",
+  "seed": 9029463263102943768,
+  "objects": [
+    {
+      "name": "socket",
+      "role": "fixture",
+      "table_position": [
+        0.05504117959401472,
+        0.18910794544474524,
+        0.0
+      ],
+      "yaw": 0,
+      "free": false,
+      "initial_table_pose_wxyz": [
+        0.05504117959401472,
+        0.18910794544474524,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "peg",
+      "role": "object",
+      "table_position": [
+        -0.11085854932141698,
+        -0.024883348345397974,
+        0.016000000000000014
+      ],
+      "yaw": -0.03012344443850201,
+      "free": true,
+      "initial_table_pose_wxyz": [
+        -0.11085854932141698,
+        -0.024883348345397974,
+        0.016000000000000014,
+        0.9998865744061874,
+        0.0,
+        0.0,
+        -0.01506115275334927
+      ]
+    }
+  ],
+  "classification": "SIMULATION_ENVIRONMENT",
+  "approximations": [
+    "The round bore is a 32-sided collision approximation with the specified minimum diameter; the square base is 100 x 100 x 30 mm and the entry has a modeled 1 mm x 45 degree chamfer. Real bore metrology remains pending."
+  ],
+  "source_spec": "SPEC_v0.3.3.md",
+  "spec_version": "0.3.3",
+  "level": "L2",
+  "level_parameters": {
+    "hole_diameter_m": 0.024,
+    "peg_diameter_m": 0.02,
+    "peg_length_m": 0.06
+  },
+  "seeds": {
+    "layout": 14818980018542652058,
+    "object": 15867112192911095117,
+    "instruction": 2576030473713926515
+  },
+  "track": "main",
+  "eval_only": false,
+  "initial_joints": {},
+  "axes": {},
+  "regions": {},
+  "targets": [],
+  "grader_status": "development_not_expert_validated",
+  "instruction_idx": null,
+  "scoring_source": "supplied task-local descriptions; common predicates inherited from v0.2.4",
+  "target": "peg",
+  "hole_diameter_m": 0.024,
+  "peg_diameter_m": 0.02,
+  "diametral_clearance_m": 0.004,
+  "peg_length_m": 0.06,
+  "fixture_type": "round",
+  "insertion_stages_mm": [
+    5,
+    25
+  ],
+  "socket_chamfer_m": 0.001,
+  "socket_chamfer_deg": 45,
+  "socket_size_m": [
+    0.1,
+    0.1,
+    0.03
+  ],
+  "instruction": "把插销插进底座孔里",
+  "robots": [
+    {
+      "prefix": "single_",
+      "kind": "rm75",
+      "joint_names": [
+        "single_joint_1",
+        "single_joint_2",
+        "single_joint_3",
+        "single_joint_4",
+        "single_joint_5",
+        "single_joint_6",
+        "single_joint_7"
+      ],
+      "arm_dim": 7,
+      "eef_dim": 1,
+      "home": [
+        -1.3,
+        -0.7,
+        0,
+        1.7,
+        0,
+        1.2,
+        0
+      ],
+      "ee": {
+        "kind": "arx_parallel",
+        "actuators": [
+          "single_tool_left_slide"
+        ],
+        "joints": [
+          "single_tool_left_slide"
+        ],
+        "home": [
+          0.0475
+        ],
+        "site": "single_tool_pinch",
+        "camera": "single_tool_cam_wrist",
+        "eef_dim": 1,
+        "hardware": "AG-95 (95 mm)",
+        "simulation": "AG95 parallel kinematic proxy: 95 mm opening, 1 kg; finger CAD/contact dimensions are explicit uncalibrated assumptions",
+        "coupled_joints": [
+          "single_tool_right_slide"
+        ],
+        "travel_m": 0.0475
+      },
+      "site": "single_tool_pinch",
+      "camera": "single_tool_cam_wrist",
+      "base_table_xyz": [
+        0.0,
+        -0.45,
+        0.0
+      ],
+      "base_quat_wxyz": [
+        0.7071067811865476,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "flange": "single_flange",
+      "hardware_fk_status": "pending_measured_sdk_pairs",
+      "model": "RM75-B"
+    }
+  ],
+  "world_from_table": [
+    0,
+    0,
+    0.75
+  ],
+  "base_spacing_m": null,
+  "layout_sampling": "independent_rng_streams_with_geometry_checks",
+  "action_dim": 8,
+  "hand": null,
+  "engine_version": "3.10.0",
+  "physics_timestep": 0.002,
+  "control_hz": 25,
+  "action_type": "absolute_joint_radians_plus_ee_commands",
+  "cameras": {
+    "cam_head": "cam_head",
+    "cam_third_view": "cam_third_view",
+    "cam_top": "cam_top",
+    "cam_wrist": "single_tool_cam_wrist"
+  },
+  "camera_sizes": {
+    "cam_head": [
+      640,
+      400
+    ],
+    "cam_third_view": [
+      640,
+      480
+    ],
+    "cam_top": [
+      640,
+      480
+    ],
+    "cam_wrist": [
+      640,
+      480
+    ]
+  },
+  "camera_timing": "synchronous_simulation_time; physical camera is 30 fps latest-frame at 25 Hz control",
+  "depth_route": "audit_only_not_policy",
+  "model_nq": 16,
+  "model_nv": 15,
+  "model_nu": 8,
+  "flex_count": 0,
+  "flex_vertices": 0,
+  "max_joint_delta_rad": 0.08,
+  "layout_audit": {
+    "table_margin_m": 0.03,
+    "footprint_valid": true,
+    "violations": [],
+    "reachability": "not certified by this audit"
+  },
+  "layout_split": "public"
+}

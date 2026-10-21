@@ -1,0 +1,183 @@
+{
+  "task": "H-open",
+  "layout": 0,
+  "level": "L1",
+  "instruction": "喷三下、喷壶入箱，最后大球也入箱",
+  "controller": "operator_in_the_loop_motor_commands",
+  "classification": "DEMONSTRATION_NOT_BENCHMARK_SCORE",
+  "success": true,
+  "failure": null,
+  "info": {
+    "stages": {
+      "spray_three": true,
+      "bottle_in_box": true,
+      "ball_in_box": true
+    },
+    "progress": 1.0,
+    "score": 1.0,
+    "success": true,
+    "terminal_hold_steps": 50,
+    "error": null,
+    "details": {
+      "composition_case": "O3",
+      "trigger_count": 3,
+      "laser_in_target": false
+    },
+    "status": "development_grader_expert_validation_pending",
+    "terminal_current": true,
+    "done": true,
+    "reason": "success",
+    "time": 41.08000000000424,
+    "execution_time": 41.08000000000424,
+    "phase": "execution",
+    "ik": [],
+    "ik_pos_err": [],
+    "ik_rot_err": [],
+    "jerk_command_mean": 0.8333178173537552,
+    "jerk_arm_joint_mean_rad_s3": 3.4348902402875656,
+    "safety_stop": null,
+    "recovery_events": []
+  },
+  "events": [
+    {
+      "phase": "O3：喷三次，先把喷壶放入箱子",
+      "time": 0.0
+    },
+    {
+      "phase": "hand preshape",
+      "time": 0.0
+    },
+    {
+      "phase": "hand approach spray_bottle",
+      "time": 0.7200000000000005
+    },
+    {
+      "phase": "finger contact closure",
+      "time": 6.319999999999526
+    },
+    {
+      "phase": "hand lift",
+      "time": 8.039999999999354
+    },
+    {
+      "phase": "aim laser at target",
+      "time": 9.399999999999809
+    },
+    {
+      "phase": "pinky trigger press 1",
+      "time": 11.56000000000053
+    },
+    {
+      "phase": "pinky trigger press 2",
+      "time": 12.960000000000997
+    },
+    {
+      "phase": "pinky trigger press 3",
+      "time": 14.360000000001465
+    },
+    {
+      "phase": "clear container rim",
+      "time": 18.24000000000077
+    },
+    {
+      "phase": "hand carry",
+      "time": 19.200000000000237
+    },
+    {
+      "phase": "hand release",
+      "time": 21.55999999999893
+    },
+    {
+      "phase": "O3：最后抓取大球，送到箱内剩余空间",
+      "time": 25.879999999996535
+    },
+    {
+      "phase": "hand preshape",
+      "time": 25.879999999996535
+    },
+    {
+      "phase": "hand approach oversize_object",
+      "time": 26.599999999996136
+    },
+    {
+      "phase": "finger contact closure",
+      "time": 30.279999999994097
+    },
+    {
+      "phase": "hand lift",
+      "time": 31.999999999993143
+    },
+    {
+      "phase": "O3：调整可达放球位置后释放并检查两物入箱",
+      "time": 37.39999999999974
+    }
+  ],
+  "steps": 1027,
+  "duration_s": 41.08000000000424,
+  "no_object_teleport": true,
+  "no_grasp_weld": true,
+  "physics": "MuJoCo env.step; recorded physics steps [0.002] s / 25 Hz control",
+  "source_hashes": {
+    "cwbench/contact_grasp.py": "467514a8339b7933d4f35464357409d16f2c74c89c5d24f2f33197ddc5f584ef",
+    "cwbench/__init__.py": "f414b78723a0cee16f6378aff4814997c38ddf5e12edce9dfa1017849aa4256e",
+    "cwbench/cloth_bag.py": "a8c2c0e9ea47f7d275ea99229ad31010b03dd4933c1bdc82c893fa27d4e54507",
+    "cwbench/dexterity_o6.py": "68d90a4b89e5de99793ca4f91a933d21e9ae72e78ed65526337bcfaa7d610652",
+    "cwbench/experts.py": "90b3ff255733af61405bd3c53343735b98fba8dbc0e15f6bcc1078fa4b67ef80",
+    "cwbench/record.py": "7795bd357d43d75543c4e1dbeb51399deb966bd717df5152b3f07ff696db19e4",
+    "cwbench/flex_runtime.py": "88541700318d157116fde2f672c94d521294094670da9d894111592e8afe5cc3",
+    "cwbench/geometry.py": "08bc854f00a86b2c3170bb6304b4caebfb29035aacaffed20931e29aaa3e0e99",
+    "cwbench/rubrics.py": "31efd1618a0d1aa0dc3db6b4d2f5e05a30bc78b4b0d2f374ee0ce5c787d7f20e",
+    "cwbench/scenes_v024.py": "ad726a0cca666ed60ca1cb938f44404e15632b2c38af40e5182409e345941ec1",
+    "cwbench/errors.py": "324c0e1a2b4359e0f09e947adada58bdcebd6bce2ef72f3c6fe16be189c633e7",
+    "cwbench/scoring.py": "649818a4e675bf7cfbc825079e93b21524c1ec124f3595f8e818c69027dbc8f1",
+    "cwbench/grasp_assist.py": "e95fe7871b9674b67d75b4f6b7d5662eca6e15a33bccfeec6f88ec4197703402",
+    "cwbench/dexterity.py": "bfb5d088d0ed6cb470a6a293aca39878472a836f1121b8f56328b4d2ebd1679a",
+    "cwbench/contact_ik.py": "17867990aa1000a137d1db599c2ec3655ab32806cf2ae9cb30eee96f1f57d90d",
+    "cwbench/adaptive_bag.py": "ff665a5c8d0e76f959dba9b6a3f19f49390571abc648537ebad5235322e3f3fa",
+    "cwbench/capabilities.py": "504d648d619e3a296e9a2a8be167302f9b356f0b598a1bbeb756e3e07652a1cc",
+    "cwbench/robots.py": "48e3e49dc5f06bc3790ddfd527c8ce319dfaa56917cfe9ecd8c9450ad8540be8",
+    "cwbench/ik.py": "dcebc5a182510725a3a093be8875f4d77f3d38bc9e8341cdaff3f6c7b0f52ce5",
+    "cwbench/scoring_v024.py": "64f98d048782991f7cc26f1a4b85f401e5b7ea7c0da6f7bc4b0704f533f7d6e2",
+    "cwbench/viewer.py": "1ae7503e5b198163767e6557668158e87e5b56fa021e65e66c2b1aaf0b342f32",
+    "cwbench/soft_control.py": "a3de14c4aca011d464d5ea8111b7cb7e48cbd314f1902e154edf39c37514267c",
+    "cwbench/scenes.py": "fe127f57a7030f11532a63e1cfac3c9c6abaacc384066c4582c629e1690c2ea1",
+    "cwbench/paperboard.py": "6b2ec7c85d501dab1b336a162b6eb25f19842ddc7eb3bbe326d3fb63bd3af9d4",
+    "cwbench/adaptive_towel.py": "392bbbb0b5551b9d1002ad93c1e8209242758ac97483974e9be1b3fd2b829810",
+    "cwbench/env.py": "02cbe810cfbcab42824607970fe86530e42d0ebb8b53df8198519e728db91a09",
+    "tools/direct_control.py": "4bca6a340bebbe013b10acb5bc6de9abf74683fca338a2a7f5f41215b280af41",
+    "configs/scene.yaml": "832de190953e28096f4b1549732ebaa7cb53fa17bbc57404456b3768cbb063dc",
+    "configs/H-open.yaml": "9c73545c60b822fb174210185e4595e0b06b923ddb34c7e3ba1e0e4c9878e2c5"
+  },
+  "initial_instruction_idx": 2,
+  "final_objects": {
+    "spray_bottle": [
+      0.14586519883667945,
+      0.1606977532643189,
+      0.04721916253148695
+    ],
+    "spray_target": [
+      0.33,
+      -0.02,
+      0.0
+    ],
+    "container": [
+      0.1300037120410885,
+      0.19003405937463505,
+      0.002966002736984552
+    ],
+    "ball_stand": [
+      -0.25,
+      0.035,
+      0.0
+    ],
+    "oversize_object": [
+      0.03799757489069455,
+      0.12959596184398686,
+      0.060844680177105315
+    ]
+  },
+  "engine_version": "3.10.0",
+  "physics_timestep_values_s": [
+    0.002
+  ]
+}

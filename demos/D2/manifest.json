@@ -1,0 +1,301 @@
+{
+  "task": "D2",
+  "layout": 0,
+  "variant": "id",
+  "seed": 14884525048403484944,
+  "objects": [
+    {
+      "name": "box",
+      "role": "container",
+      "table_position": [
+        0.01048472290378814,
+        -0.06628789421780792,
+        0.0030000000000000027
+      ],
+      "yaw": 0,
+      "free": true,
+      "dimensions": [
+        0.3,
+        0.2,
+        0.12
+      ],
+      "shape": "box_container",
+      "half_size": [
+        0.153,
+        0.10300000000000001,
+        0.06
+      ],
+      "bottom_offset": -0.003,
+      "initial_table_pose_wxyz": [
+        0.01048472290378814,
+        -0.06628789421780792,
+        0.0030000000000000027,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "mat",
+      "role": "object",
+      "table_position": [
+        0.01048472290378814,
+        0.22371210578219206,
+        0.0020000000000000018
+      ],
+      "yaw": 0,
+      "free": false,
+      "dimensions": [
+        0.35,
+        0.25,
+        0.002
+      ],
+      "shape": "box",
+      "half_size": [
+        0.175,
+        0.125,
+        0.001
+      ],
+      "bottom_offset": -0.001,
+      "initial_table_pose_wxyz": [
+        0.01048472290378814,
+        0.22371210578219206,
+        0.0020000000000000018,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "classification": "SIMULATION_ENVIRONMENT",
+  "approximations": [],
+  "source_spec": "SPEC_v0.3.3.md",
+  "spec_version": "0.3.3",
+  "level": "L2",
+  "level_parameters": {
+    "box_mass_kg": 0.8,
+    "ball_inside": false
+  },
+  "seeds": {
+    "layout": 8180381067997924927,
+    "object": 13212512336974006779,
+    "instruction": 1806549395966658685
+  },
+  "track": "main",
+  "eval_only": false,
+  "initial_joints": {},
+  "axes": {},
+  "regions": {
+    "box": {
+      "type": "box",
+      "half_xy": [
+        0.147,
+        0.097
+      ],
+      "bottom": 0.003,
+      "rim": 0.12
+    },
+    "mat": {
+      "type": "box",
+      "half_xy": [
+        0.175,
+        0.125
+      ],
+      "bottom": 0.001,
+      "rim": 0.001
+    }
+  },
+  "targets": [],
+  "grader_status": "development_not_expert_validated",
+  "instruction_idx": null,
+  "scoring_source": "supplied task-local descriptions; common predicates inherited from v0.2.4",
+  "handle_x_offsets_m": [
+    -0.21,
+    0.21
+  ],
+  "simulation_adaptations": [
+    "D2 lateral handles have 60 mm wall-to-bar center clearance plus physical end supports, to admit the R5 jaws; box dimensions and mass are unchanged.",
+    "Mat centre 29 cm in front of the box centre, leaving a 6.2 cm clear gap (SPEC §2.6 L184). Box mass, 8 cm lift, mat dimensions and final tolerances are unchanged."
+  ],
+  "box_mass_kg": 0.8,
+  "instruction": "双手抬箱子放到垫子上",
+  "robots": [
+    {
+      "prefix": "left_",
+      "kind": "r5",
+      "joint_names": [
+        "left_joint1",
+        "left_joint2",
+        "left_joint3",
+        "left_joint4",
+        "left_joint5",
+        "left_joint6"
+      ],
+      "arm_dim": 6,
+      "eef_dim": 1,
+      "home": [
+        0.0,
+        0.8,
+        1.25,
+        -0.3,
+        0.0,
+        0.0
+      ],
+      "ee": {
+        "kind": "arx_parallel",
+        "actuators": [
+          "left_joint7"
+        ],
+        "joints": [
+          "left_joint7"
+        ],
+        "coupled_joints": [
+          "left_joint8"
+        ],
+        "home": [
+          0.045
+        ],
+        "site": "left_tcp",
+        "camera": "left_cam_wrist",
+        "eef_dim": 1,
+        "travel_m": 0.045,
+        "hardware": "ARX L5 Pro original gripper",
+        "simulation": "R5 URDF, 45 mm travel per finger"
+      },
+      "site": "left_tcp",
+      "camera": "left_cam_wrist",
+      "base_table_xyz": [
+        -0.3,
+        -0.45,
+        0.0
+      ],
+      "base_quat_wxyz": [
+        0.7071067811865476,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "flange": "left_flange",
+      "hardware_fk_status": "pending_measured_sdk_pairs",
+      "model": "ARX_Model/R5/R5a"
+    },
+    {
+      "prefix": "right_",
+      "kind": "r5",
+      "joint_names": [
+        "right_joint1",
+        "right_joint2",
+        "right_joint3",
+        "right_joint4",
+        "right_joint5",
+        "right_joint6"
+      ],
+      "arm_dim": 6,
+      "eef_dim": 1,
+      "home": [
+        0.0,
+        0.8,
+        1.25,
+        -0.3,
+        0.0,
+        0.0
+      ],
+      "ee": {
+        "kind": "arx_parallel",
+        "actuators": [
+          "right_joint7"
+        ],
+        "joints": [
+          "right_joint7"
+        ],
+        "coupled_joints": [
+          "right_joint8"
+        ],
+        "home": [
+          0.045
+        ],
+        "site": "right_tcp",
+        "camera": "right_cam_wrist",
+        "eef_dim": 1,
+        "travel_m": 0.045,
+        "hardware": "ARX L5 Pro original gripper",
+        "simulation": "R5 URDF, 45 mm travel per finger"
+      },
+      "site": "right_tcp",
+      "camera": "right_cam_wrist",
+      "base_table_xyz": [
+        0.3,
+        -0.45,
+        0.0
+      ],
+      "base_quat_wxyz": [
+        0.7071067811865476,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "flange": "right_flange",
+      "hardware_fk_status": "pending_measured_sdk_pairs",
+      "model": "ARX_Model/R5/R5a"
+    }
+  ],
+  "world_from_table": [
+    0,
+    0,
+    0.75
+  ],
+  "base_spacing_m": 0.6,
+  "layout_sampling": "independent_rng_streams_with_geometry_checks",
+  "action_dim": 14,
+  "hand": null,
+  "engine_version": "3.10.0",
+  "physics_timestep": 0.002,
+  "control_hz": 25,
+  "action_type": "absolute_joint_radians_plus_ee_commands",
+  "cameras": {
+    "cam_head": "cam_head",
+    "cam_third_view": "cam_third_view",
+    "cam_top": "cam_top",
+    "cam_left_wrist": "left_cam_wrist",
+    "cam_right_wrist": "right_cam_wrist"
+  },
+  "camera_sizes": {
+    "cam_head": [
+      640,
+      400
+    ],
+    "cam_third_view": [
+      640,
+      480
+    ],
+    "cam_top": [
+      640,
+      480
+    ],
+    "cam_left_wrist": [
+      640,
+      480
+    ],
+    "cam_right_wrist": [
+      640,
+      480
+    ]
+  },
+  "camera_timing": "synchronous_simulation_time; physical camera is 30 fps latest-frame at 25 Hz control",
+  "depth_route": "audit_only_not_policy",
+  "model_nq": 23,
+  "model_nv": 22,
+  "model_nu": 14,
+  "flex_count": 0,
+  "flex_vertices": 0,
+  "max_joint_delta_rad": 0.08,
+  "layout_audit": {
+    "table_margin_m": 0.03,
+    "footprint_valid": true,
+    "violations": [],
+    "reachability": "not certified by this audit"
+  },
+  "layout_split": "public"
+}

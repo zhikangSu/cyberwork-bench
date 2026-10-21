@@ -1,0 +1,85 @@
+{
+  "task": "H4",
+  "layout": 0,
+  "level": "L2",
+  "instruction": "转动圆旋钮至少九十度",
+  "controller": "privileged_scripted_expert",
+  "classification": "DEMONSTRATION_NOT_BENCHMARK_SCORE",
+  "success": true,
+  "failure": null,
+  "info": {
+    "stages": {
+      "turn30": true,
+      "turn60": true,
+      "turn90": true
+    },
+    "progress": 1.0,
+    "score": 1.0,
+    "success": true,
+    "terminal_hold_steps": 50,
+    "error": null,
+    "details": {
+      "angle_deg": 106.82973289904231
+    },
+    "status": "development_grader_expert_validation_pending",
+    "terminal_current": true,
+    "done": true,
+    "reason": "success",
+    "time": 18.80000000000046,
+    "execution_time": 18.80000000000046,
+    "phase": "execution",
+    "ik": [],
+    "ik_pos_err": [],
+    "ik_rot_err": [],
+    "jerk_command_mean": 0.0,
+    "jerk_arm_joint_mean_rad_s3": 0.14211677141926943,
+    "safety_stop": null,
+    "recovery_events": []
+  },
+  "events": [
+    {
+      "phase": "preshape around knob",
+      "time": 0.4000000000000003
+    },
+    {
+      "phase": "grip knob",
+      "time": 6.359999999999522
+    },
+    {
+      "phase": "rotate knob with regrasp",
+      "time": 8.079999999999368
+    }
+  ],
+  "steps": 470,
+  "duration_s": 18.80000000000046,
+  "no_object_teleport": true,
+  "no_grasp_weld": true,
+  "physics": "MuJoCo env.step, 500 Hz physics / 25 Hz control",
+  "source_hashes": {
+    "cwbench/__init__.py": "1d80fcdc9715830d9e28bd56c999933846552a17b7a9a499e36d73243b868708",
+    "cwbench/experts.py": "26c22a5388090fb1477283a2cf3dabb8db9a6ca7dd2820ad14c50678e0bb4ba7",
+    "cwbench/record.py": "17594d68fc3ed29fff9d0869789724e3c09716d00f90a3bc0fd993a8757be5ec",
+    "cwbench/geometry.py": "0f0b8fa241185059b2ebd954aee177ad6515971a13f98352f7a0a770b71c5899",
+    "cwbench/rubrics.py": "91f0e2dca5ecfb4c6dfa131f40a30d350e5dcc1d3bcf5604ba16c619b5db7110",
+    "cwbench/scenes_v024.py": "ad726a0cca666ed60ca1cb938f44404e15632b2c38af40e5182409e345941ec1",
+    "cwbench/scoring.py": "a119c51acbad6fe3115c83eb3632ae91d1636df5c3b53ed4c2258e734ebf8b16",
+    "cwbench/dexterity.py": "b7b32b0748df48ea44e4e3cba80e95fab8534a53169d310ac14ae7fd2349ceae",
+    "cwbench/capabilities.py": "504d648d619e3a296e9a2a8be167302f9b356f0b598a1bbeb756e3e07652a1cc",
+    "cwbench/robots.py": "79de53f7613b40737393d25066ab3a2df0bd14d2920f35fd46ae381861d901c0",
+    "cwbench/ik.py": "dcebc5a182510725a3a093be8875f4d77f3d38bc9e8341cdaff3f6c7b0f52ce5",
+    "cwbench/scoring_v024.py": "64f98d048782991f7cc26f1a4b85f401e5b7ea7c0da6f7bc4b0704f533f7d6e2",
+    "cwbench/viewer.py": "21f5b37145d2e366290980a6243d7ee6ab4babb2178c8d13eb36b4df41ffff7a",
+    "cwbench/scenes.py": "cfe290b6d08d4a9c452d950fb9686261645b719bef68271f487c8fce81af278f",
+    "cwbench/env.py": "8d012007901c51eaa36069e694d6c163cc398826900ee411d2b7c81b4405f5a5",
+    "configs/scene.yaml": "832de190953e28096f4b1549732ebaa7cb53fa17bbc57404456b3768cbb063dc",
+    "configs/H4.yaml": "a230c8d0d066967372742038986439952056aac1cc9d90770c589d4883f5b413"
+  },
+  "initial_instruction_idx": null,
+  "final_objects": {
+    "knob_board": [
+      0.0,
+      0.18,
+      0.0
+    ]
+  }
+}

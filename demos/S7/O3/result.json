@@ -1,0 +1,124 @@
+{
+  "task": "S7",
+  "layout": 0,
+  "level": "L1",
+  "instruction": "把离机器人基座最近的物体放进篮子",
+  "engine_version": "3.10.0",
+  "controller": "privileged_scripted_expert",
+  "classification": "DEMONSTRATION_NOT_BENCHMARK_SCORE",
+  "success": true,
+  "failure": null,
+  "info": {
+    "stages": {
+      "place": true
+    },
+    "progress": 1.0,
+    "score": 1.0,
+    "success": true,
+    "terminal_hold_steps": 50,
+    "error": null,
+    "details": {},
+    "status": "development_grader_expert_validation_pending",
+    "terminal_current": true,
+    "formal_spec_score": null,
+    "full_spec_conformance_verified": false,
+    "done": true,
+    "reason": "success",
+    "time": 12.04000000000069,
+    "execution_time": 12.04000000000069,
+    "phase": "execution",
+    "ik": [],
+    "ik_pos_err": [],
+    "ik_rot_err": [],
+    "jerk_command_mean": 31.30971190703168,
+    "jerk_arm_joint_mean_rad_s3": 10.833215997379728,
+    "safety_stop": null,
+    "recovery_events": []
+  },
+  "events": [
+    {
+      "phase": "approach cube",
+      "time": 0.4000000000000003
+    },
+    {
+      "phase": "grasp cube",
+      "time": 4.1999999999997595
+    },
+    {
+      "phase": "lift cube",
+      "time": 5.079999999999663
+    },
+    {
+      "phase": "carry cube",
+      "time": 6.439999999999513
+    },
+    {
+      "phase": "release cube",
+      "time": 9.679999999999902
+    }
+  ],
+  "steps": 301,
+  "duration_s": 12.04000000000069,
+  "no_object_teleport": true,
+  "no_grasp_weld": true,
+  "physics": "MuJoCo env.step, 500 Hz physics / 25 Hz control",
+  "source_hashes": {
+    "cwbench/contact_grasp.py": "467514a8339b7933d4f35464357409d16f2c74c89c5d24f2f33197ddc5f584ef",
+    "cwbench/foam_ball.py": "fba434d3af9939eb4f00af953e9632279c72e85fb8356128aebd0233011eaacf",
+    "cwbench/__init__.py": "f414b78723a0cee16f6378aff4814997c38ddf5e12edce9dfa1017849aa4256e",
+    "cwbench/cloth_bag.py": "a8c2c0e9ea47f7d275ea99229ad31010b03dd4933c1bdc82c893fa27d4e54507",
+    "cwbench/dexterity_o6.py": "68d90a4b89e5de99793ca4f91a933d21e9ae72e78ed65526337bcfaa7d610652",
+    "cwbench/experts.py": "4836b9cdfc8d04cc8591faa45d520b64a5afb686aac458070ef213e4c1c1da9a",
+    "cwbench/record.py": "39d4e7ee6b7664d9f5443766551da122973a6d8ba04d9d17be899891cf0c88c8",
+    "cwbench/flex_runtime.py": "b36ff07603e5e3e459fb16808008fafd567890048de59a21153816ee4e7398b0",
+    "cwbench/geometry.py": "08bc854f00a86b2c3170bb6304b4caebfb29035aacaffed20931e29aaa3e0e99",
+    "cwbench/rubrics.py": "13bc8655a7d41bfcbcd30ea24b444b1d5ca365c690657b965648fffc543a71fa",
+    "cwbench/scenes_v024.py": "ad726a0cca666ed60ca1cb938f44404e15632b2c38af40e5182409e345941ec1",
+    "cwbench/errors.py": "324c0e1a2b4359e0f09e947adada58bdcebd6bce2ef72f3c6fe16be189c633e7",
+    "cwbench/scoring.py": "6921d4b6a0f750b4a230a250d7ceec4010fee41874258373d5c2bfdad888cde8",
+    "cwbench/grasp_assist.py": "306e744c412f641564c1a1e3a25aeea75e2103f12579217279d2a0b5bab8074c",
+    "cwbench/arm_motion.py": "63ece840caaa51a1effd6aca447362491edb5452d0c6ce62ef624fe16987450c",
+    "cwbench/dexterity.py": "0d8f34390e4825c49c56f8626ff55af458d11dc0c69ad6610a62198bc7189c9b",
+    "cwbench/flow_v033.py": "70a03a35432b8d0112f0c590d371ab8462e193dfb9d235d10c7aae80faa6993c",
+    "cwbench/scene_expect_v033.py": "b41f81adc010adae746a0d8ed180d014c5bafe543980f2f33cca721e0fcf7462",
+    "cwbench/contact_ik.py": "18e4c66a2b543b4ebcee9a34bb95e48a702d46872e05f257cac47b8386fa48df",
+    "cwbench/adaptive_bag.py": "ff665a5c8d0e76f959dba9b6a3f19f49390571abc648537ebad5235322e3f3fa",
+    "cwbench/capabilities.py": "4910760472fa4c175729e3f3318b0cccfbd023c3f24762480b0a1e8a92393bca",
+    "cwbench/web_spec_v033.py": "0d9799ee7127911334c59d44f32ed7ede4248be89ae658bce33725eee0a45084",
+    "cwbench/robots.py": "48e3e49dc5f06bc3790ddfd527c8ce319dfaa56917cfe9ecd8c9450ad8540be8",
+    "cwbench/ik.py": "dcebc5a182510725a3a093be8875f4d77f3d38bc9e8341cdaff3f6c7b0f52ce5",
+    "cwbench/scoring_v024.py": "64f98d048782991f7cc26f1a4b85f401e5b7ea7c0da6f7bc4b0704f533f7d6e2",
+    "cwbench/spec_contract.py": "d5ca0550f4f780a109ecb11e6336b5e4c5d671f5478f1d8481018d86ec69768a",
+    "cwbench/viewer.py": "1ae7503e5b198163767e6557668158e87e5b56fa021e65e66c2b1aaf0b342f32",
+    "cwbench/soft_control.py": "a3de14c4aca011d464d5ea8111b7cb7e48cbd314f1902e154edf39c37514267c",
+    "cwbench/scenes.py": "b1824a5d2827509d5db6da257f70bb0f60edc5a2a4e8d8aa221e6790adc2fd7a",
+    "cwbench/paperboard.py": "d5e8d9e9e83362c77401ec85c9f4e57fd57ceaa8c6fc03f32c2a41162aa2dc86",
+    "cwbench/adaptive_towel.py": "392bbbb0b5551b9d1002ad93c1e8209242758ac97483974e9be1b3fd2b829810",
+    "cwbench/env.py": "8e96891268f704845b07e45c09927c03dafc4cdc83be4fa7a0f73937c4a02360",
+    "configs/scene.yaml": "51b146a1f469361ac9fca21c15d7a3941fa722ca42a5690c90298abfcd6c56b2",
+    "configs/S7.yaml": "a1382f3db299a77a7854714712672c58e20f6617fab37525262fc7de3fd89c15"
+  },
+  "initial_instruction_idx": 2,
+  "final_objects": {
+    "cube": [
+      -0.0005461894033110959,
+      0.24713014525695112,
+      0.02594148921159667
+    ],
+    "cup": [
+      6.871874052622843e-09,
+      0.04000001851106738,
+      0.0019776199819055984
+    ],
+    "orange": [
+      0.15,
+      0.0,
+      0.03489224457978346
+    ],
+    "basket": [
+      -6.11355584954146e-10,
+      0.24000000359859885,
+      0.002970748722270322
+    ]
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "task": "D6",
+  "layout": 0,
+  "level": "L3",
+  "instruction": "左手持瓶，右手把预套的瓶盖拧紧",
+  "controller": "privileged_scripted_expert",
+  "classification": "DEMONSTRATION_NOT_BENCHMARK_SCORE",
+  "success": true,
+  "failure": null,
+  "info": {
+    "stages": {
+      "hold_bottle": true,
+      "engaged": true,
+      "tighten": true
+    },
+    "progress": 1.0,
+    "score": 1.0,
+    "success": true,
+    "terminal_hold_steps": 50,
+    "error": null,
+    "details": {
+      "cap_relative_angle_rad": 9.425237445956874,
+      "thread_engaged": true,
+      "alignment_error_deg": 0.02632656199223134,
+      "cap_descent_m": 0.0030689685261507857
+    },
+    "status": "development_grader_expert_validation_pending",
+    "terminal_current": true,
+    "done": true,
+    "reason": "success",
+    "time": 40.520000000003556,
+    "execution_time": 40.520000000003556,
+    "phase": "execution",
+    "ik": [],
+    "ik_pos_err": [],
+    "ik_rot_err": [],
+    "jerk_command_mean": 0.0,
+    "jerk_arm_joint_mean_rad_s3": 0.0003449139940130651,
+    "safety_stop": null,
+    "recovery_events": []
+  },
+  "events": [
+    {
+      "phase": "left hold square bottle",
+      "time": 0.4000000000000003
+    },
+    {
+      "phase": "right grasp cap",
+      "time": 4.119999999999768
+    },
+    {
+      "phase": "screw quarter-turn 1",
+      "time": 7.3599999999994115
+    },
+    {
+      "phase": "screw quarter-turn 2",
+      "time": 14.920000000001652
+    },
+    {
+      "phase": "screw quarter-turn 3",
+      "time": 22.519999999998397
+    },
+    {
+      "phase": "screw quarter-turn 4",
+      "time": 30.119999999994185
+    },
+    {
+      "phase": "screw quarter-turn 5",
+      "time": 37.720000000000134
+    }
+  ],
+  "steps": 1013,
+  "duration_s": 40.520000000003556,
+  "no_object_teleport": true,
+  "no_grasp_weld": true,
+  "physics": "MuJoCo env.step, 500 Hz physics / 25 Hz control",
+  "source_hashes": {
+    "cwbench/__init__.py": "1d80fcdc9715830d9e28bd56c999933846552a17b7a9a499e36d73243b868708",
+    "cwbench/experts.py": "d0aa7d4016e10da5eee7ab99ece78113ea1469fd1bdc68a29696b699f942a88b",
+    "cwbench/record.py": "17594d68fc3ed29fff9d0869789724e3c09716d00f90a3bc0fd993a8757be5ec",
+    "cwbench/geometry.py": "0f0b8fa241185059b2ebd954aee177ad6515971a13f98352f7a0a770b71c5899",
+    "cwbench/rubrics.py": "f496cb0dda5eda9f6f32040b75dbdb1b2e53803f154af9aed0682e6861a0110a",
+    "cwbench/scenes_v024.py": "ad726a0cca666ed60ca1cb938f44404e15632b2c38af40e5182409e345941ec1",
+    "cwbench/scoring.py": "a119c51acbad6fe3115c83eb3632ae91d1636df5c3b53ed4c2258e734ebf8b16",
+    "cwbench/dexterity.py": "b7b32b0748df48ea44e4e3cba80e95fab8534a53169d310ac14ae7fd2349ceae",
+    "cwbench/capabilities.py": "504d648d619e3a296e9a2a8be167302f9b356f0b598a1bbeb756e3e07652a1cc",
+    "cwbench/robots.py": "cbe43f6370d3da1f35c0cfc63f1eaf8495cdefd9391f2e8eb76048b58d90f125",
+    "cwbench/ik.py": "dcebc5a182510725a3a093be8875f4d77f3d38bc9e8341cdaff3f6c7b0f52ce5",
+    "cwbench/scoring_v024.py": "64f98d048782991f7cc26f1a4b85f401e5b7ea7c0da6f7bc4b0704f533f7d6e2",
+    "cwbench/viewer.py": "21f5b37145d2e366290980a6243d7ee6ab4babb2178c8d13eb36b4df41ffff7a",
+    "cwbench/scenes.py": "284cb17b2806acd0fdc01786dd11a41363364994d1e99b70e638f32ef595140e",
+    "cwbench/env.py": "8d012007901c51eaa36069e694d6c163cc398826900ee411d2b7c81b4405f5a5",
+    "configs/scene.yaml": "832de190953e28096f4b1549732ebaa7cb53fa17bbc57404456b3768cbb063dc",
+    "configs/D6.yaml": "ac1fcb31ada6357b7364e0e311a0dff7a96d66ead4568de9cb5d353bde7a7dc6"
+  },
+  "initial_instruction_idx": null,
+  "final_objects": {
+    "bottle": [
+      -0.05845027198562716,
+      -0.06353334495218686,
+      0.07506715414272758
+    ]
+  }
+}

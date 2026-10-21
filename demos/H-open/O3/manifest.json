@@ -1,0 +1,346 @@
+{
+  "task": "H-open",
+  "layout": 0,
+  "variant": "id",
+  "seed": 17462535705367609527,
+  "objects": [
+    {
+      "name": "spray_bottle",
+      "role": "object",
+      "table_position": [
+        -0.09684325535611996,
+        -0.03307226972295255,
+        0.09099999999999997
+      ],
+      "yaw": 0,
+      "free": true,
+      "kind": "spray_bottle",
+      "label": "扳机喷壶",
+      "half_size": [
+        0.06,
+        0.025,
+        0.126
+      ],
+      "body_height_m": 0.18,
+      "initial_table_pose_wxyz": [
+        -0.09684325535611996,
+        -0.03307226972295255,
+        0.09099999999999997,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "spray_target",
+      "role": "object",
+      "table_position": [
+        0.33,
+        -0.02,
+        0.0
+      ],
+      "yaw": 0,
+      "free": false,
+      "initial_table_pose_wxyz": [
+        0.33,
+        -0.02,
+        0.0,
+        0.7071067811865476,
+        0.0,
+        0.0,
+        -0.7071067811865475
+      ]
+    },
+    {
+      "name": "container",
+      "role": "container",
+      "table_position": [
+        0.13,
+        0.19,
+        0.0030000000000000027
+      ],
+      "yaw": 0,
+      "free": true,
+      "dimensions": [
+        0.3,
+        0.25,
+        0.2
+      ],
+      "shape": "box_container",
+      "half_size": [
+        0.153,
+        0.128,
+        0.1
+      ],
+      "bottom_offset": -0.003,
+      "initial_table_pose_wxyz": [
+        0.13,
+        0.19,
+        0.0030000000000000027,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "ball_stand",
+      "role": "fixture",
+      "table_position": [
+        -0.25,
+        0.035,
+        0.0
+      ],
+      "yaw": 0,
+      "free": false,
+      "initial_table_pose_wxyz": [
+        -0.25,
+        0.035,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "oversize_object",
+      "role": "object",
+      "table_position": [
+        -0.25,
+        0.035,
+        0.06640833264451418
+      ],
+      "yaw": 0,
+      "free": true,
+      "initial_table_pose_wxyz": [
+        -0.25,
+        0.035,
+        0.06640833264451418,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "classification": "SIMULATION_ENVIRONMENT",
+  "approximations": [],
+  "source_spec": "SPEC_v0.3.2.md",
+  "spec_version": "0.3.2",
+  "level": "L1",
+  "level_parameters": {},
+  "seeds": {
+    "layout": 3007896583355794794,
+    "object": 9702917865149110672,
+    "instruction": 11644251987890763313
+  },
+  "track": "frontier",
+  "eval_only": true,
+  "initial_joints": {},
+  "axes": {},
+  "regions": {
+    "container": {
+      "type": "box",
+      "half_xy": [
+        0.147,
+        0.122
+      ],
+      "bottom": 0.003,
+      "rim": 0.2
+    }
+  },
+  "targets": [],
+  "grader_status": "development_not_expert_validated",
+  "instruction_idx": 2,
+  "scoring_source": "supplied task-local descriptions; common predicates inherited from v0.2.4",
+  "trigger_force_n": 2.0,
+  "spray_target_local": [
+    0,
+    -0.007,
+    0.28
+  ],
+  "trigger_pivot_height_from_body_m": 0.1,
+  "simulation_adaptations": [
+    "A4 target stand to the right at x=33 cm, circle center 28 cm above table; radius 5.5 cm unchanged. Nozzle initially faces the board."
+  ],
+  "target": "oversize_object",
+  "container": "container",
+  "antiroll_stand": true,
+  "instruction": "喷三下、喷壶入箱，最后大球也入箱",
+  "composition_case": "O3",
+  "composition_definition_source": "O1: supplied spec; O2/O3: explicit user approval 2026-10-20",
+  "undefined_subproblems": [],
+  "oversize_diameter_m": 0.11,
+  "robots": [
+    {
+      "prefix": "single_",
+      "kind": "rm75",
+      "joint_names": [
+        "single_joint_1",
+        "single_joint_2",
+        "single_joint_3",
+        "single_joint_4",
+        "single_joint_5",
+        "single_joint_6",
+        "single_joint_7"
+      ],
+      "arm_dim": 7,
+      "eef_dim": 20,
+      "home": [
+        -1.3,
+        -0.7,
+        0,
+        1.7,
+        0,
+        1.2,
+        0
+      ],
+      "ee": {
+        "kind": "dexterous",
+        "actuators": [
+          "single_tool_r_THJ0",
+          "single_tool_r_THJ1",
+          "single_tool_r_THJ2",
+          "single_tool_r_THJ3",
+          "single_tool_r_FFJ0",
+          "single_tool_r_FFJ1",
+          "single_tool_r_FFJ2",
+          "single_tool_r_FFJ3",
+          "single_tool_r_MFJ0",
+          "single_tool_r_MFJ1",
+          "single_tool_r_MFJ2",
+          "single_tool_r_MFJ3",
+          "single_tool_r_RFJ0",
+          "single_tool_r_RFJ1",
+          "single_tool_r_RFJ2",
+          "single_tool_r_RFJ3",
+          "single_tool_r_LFJ0",
+          "single_tool_r_LFJ1",
+          "single_tool_r_LFJ2",
+          "single_tool_r_LFJ3"
+        ],
+        "joints": [
+          "single_tool_r_thumb_cmc_flex",
+          "single_tool_r_thumb_cmc_abd",
+          "single_tool_r_thumb_mcp",
+          "single_tool_r_thumb_ip",
+          "single_tool_r_index_finger_mcp_flex",
+          "single_tool_r_index_finger_mcp_abd",
+          "single_tool_r_index_finger_pip",
+          "single_tool_r_index_finger_dip",
+          "single_tool_r_middle_finger_mcp_flex",
+          "single_tool_r_middle_finger_mcp_abd",
+          "single_tool_r_middle_finger_pip",
+          "single_tool_r_middle_finger_dip",
+          "single_tool_r_ring_finger_mcp_flex",
+          "single_tool_r_ring_finger_mcp_abd",
+          "single_tool_r_ring_finger_pip",
+          "single_tool_r_ring_finger_dip",
+          "single_tool_r_pinky_mcp_flex",
+          "single_tool_r_pinky_mcp_abd",
+          "single_tool_r_pinky_pip",
+          "single_tool_r_pinky_dip"
+        ],
+        "home": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "site": "single_tool_tcp",
+        "camera": "single_tool_cam_wrist",
+        "eef_dim": 20,
+        "hardware": "wuji",
+        "simulation": "wuji official/source model; mounting transform provisional",
+        "arm_tool_gravity_compensation": "joint_motor_feedforward; finger gravity remains physical"
+      },
+      "site": "single_tool_tcp",
+      "camera": "single_tool_cam_wrist",
+      "base_table_xyz": [
+        0.0,
+        -0.45,
+        0.0
+      ],
+      "base_quat_wxyz": [
+        0.7071067811865476,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "flange": "single_flange",
+      "hardware_fk_status": "pending_measured_sdk_pairs",
+      "model": "RM75-B"
+    }
+  ],
+  "world_from_table": [
+    0,
+    0,
+    0.75
+  ],
+  "base_spacing_m": null,
+  "layout_sampling": "independent_rng_streams_with_geometry_checks",
+  "action_dim": 27,
+  "hand": "wuji",
+  "dni_status": "not_measured; not admitted to ranked H suite",
+  "engine_version": "3.10.0",
+  "physics_timestep": 0.002,
+  "control_hz": 25,
+  "action_type": "absolute_joint_radians_plus_ee_commands",
+  "cameras": {
+    "cam_head": "cam_head",
+    "cam_third_view": "cam_third_view",
+    "cam_top": "cam_top",
+    "cam_wrist": "single_tool_cam_wrist"
+  },
+  "camera_sizes": {
+    "cam_head": [
+      640,
+      400
+    ],
+    "cam_third_view": [
+      640,
+      480
+    ],
+    "cam_top": [
+      640,
+      480
+    ],
+    "cam_wrist": [
+      640,
+      480
+    ]
+  },
+  "camera_timing": "synchronous_simulation_time; physical camera is 30 fps latest-frame at 25 Hz control",
+  "depth_route": "audit_only_not_policy",
+  "model_nq": 49,
+  "model_nv": 46,
+  "model_nu": 34,
+  "flex_count": 0,
+  "flex_vertices": 0,
+  "max_joint_delta_rad": 0.08,
+  "layout_audit": {
+    "table_margin_m": 0.03,
+    "footprint_valid": true,
+    "violations": [],
+    "reachability": "not certified by this audit"
+  },
+  "layout_split": "public"
+}

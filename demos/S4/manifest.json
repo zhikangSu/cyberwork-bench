@@ -1,0 +1,870 @@
+{
+  "task": "S4",
+  "layout": 0,
+  "variant": "id",
+  "seed": 1516373370072711712,
+  "objects": [
+    {
+      "name": "cup",
+      "role": "container",
+      "table_position": [
+        -0.1,
+        0.0,
+        0.008000000000000007
+      ],
+      "yaw": 0,
+      "free": true,
+      "radius": 0.035,
+      "height": 0.09,
+      "collision": "compound hollow cylinder",
+      "shape": "cylinder_container",
+      "inner_radius": 0.033,
+      "bottom_z": 0.002,
+      "rim_z": 0.09,
+      "half_size": [
+        0.037000000000000005,
+        0.037000000000000005,
+        0.045
+      ],
+      "initial_table_pose_wxyz": [
+        -0.1,
+        0.0,
+        0.008000000000000007,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "bowl",
+      "role": "container",
+      "table_position": [
+        0.1,
+        0.1,
+        0.008000000000000007
+      ],
+      "yaw": 0,
+      "free": true,
+      "radius": 0.075,
+      "height": 0.06,
+      "collision": "compound hollow cylinder",
+      "shape": "cylinder_container",
+      "inner_radius": 0.073,
+      "bottom_z": 0.002,
+      "rim_z": 0.06,
+      "half_size": [
+        0.077,
+        0.077,
+        0.03
+      ],
+      "initial_table_pose_wxyz": [
+        0.1,
+        0.1,
+        0.008000000000000007,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "bean0",
+      "role": "object",
+      "table_position": [
+        -0.111,
+        -0.011,
+        0.017000000000000015
+      ],
+      "yaw": 0,
+      "free": true,
+      "initial_table_pose_wxyz": [
+        -0.111,
+        -0.011,
+        0.017000000000000015,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "bean1",
+      "role": "object",
+      "table_position": [
+        -0.1,
+        -0.011,
+        0.017000000000000015
+      ],
+      "yaw": 0,
+      "free": true,
+      "initial_table_pose_wxyz": [
+        -0.1,
+        -0.011,
+        0.017000000000000015,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "bean2",
+      "role": "object",
+      "table_position": [
+        -0.08900000000000001,
+        -0.011,
+        0.017000000000000015
+      ],
+      "yaw": 0,
+      "free": true,
+      "initial_table_pose_wxyz": [
+        -0.08900000000000001,
+        -0.011,
+        0.017000000000000015,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "bean3",
+      "role": "object",
+      "table_position": [
+        -0.111,
+        0.0,
+        0.017000000000000015
+      ],
+      "yaw": 0,
+      "free": true,
+      "initial_table_pose_wxyz": [
+        -0.111,
+        0.0,
+        0.017000000000000015,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "bean4",
+      "role": "object",
+      "table_position": [
+        -0.1,
+        0.0,
+        0.017000000000000015
+      ],
+      "yaw": 0,
+      "free": true,
+      "initial_table_pose_wxyz": [
+        -0.1,
+        0.0,
+        0.017000000000000015,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "bean5",
+      "role": "object",
+      "table_position": [
+        -0.08900000000000001,
+        0.0,
+        0.017000000000000015
+      ],
+      "yaw": 0,
+      "free": true,
+      "initial_table_pose_wxyz": [
+        -0.08900000000000001,
+        0.0,
+        0.017000000000000015,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "bean6",
+      "role": "object",
+      "table_position": [
+        -0.111,
+        0.011,
+        0.017000000000000015
+      ],
+      "yaw": 0,
+      "free": true,
+      "initial_table_pose_wxyz": [
+        -0.111,
+        0.011,
+        0.017000000000000015,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "bean7",
+      "role": "object",
+      "table_position": [
+        -0.1,
+        0.011,
+        0.017000000000000015
+      ],
+      "yaw": 0,
+      "free": true,
+      "initial_table_pose_wxyz": [
+        -0.1,
+        0.011,
+        0.017000000000000015,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "bean8",
+      "role": "object",
+      "table_position": [
+        -0.08900000000000001,
+        0.011,
+        0.017000000000000015
+      ],
+      "yaw": 0,
+      "free": true,
+      "initial_table_pose_wxyz": [
+        -0.08900000000000001,
+        0.011,
+        0.017000000000000015,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "bean9",
+      "role": "object",
+      "table_position": [
+        -0.111,
+        -0.011,
+        0.028000000000000025
+      ],
+      "yaw": 0,
+      "free": true,
+      "initial_table_pose_wxyz": [
+        -0.111,
+        -0.011,
+        0.028000000000000025,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "bean10",
+      "role": "object",
+      "table_position": [
+        -0.1,
+        -0.011,
+        0.028000000000000025
+      ],
+      "yaw": 0,
+      "free": true,
+      "initial_table_pose_wxyz": [
+        -0.1,
+        -0.011,
+        0.028000000000000025,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "bean11",
+      "role": "object",
+      "table_position": [
+        -0.08900000000000001,
+        -0.011,
+        0.028000000000000025
+      ],
+      "yaw": 0,
+      "free": true,
+      "initial_table_pose_wxyz": [
+        -0.08900000000000001,
+        -0.011,
+        0.028000000000000025,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "bean12",
+      "role": "object",
+      "table_position": [
+        -0.111,
+        0.0,
+        0.028000000000000025
+      ],
+      "yaw": 0,
+      "free": true,
+      "initial_table_pose_wxyz": [
+        -0.111,
+        0.0,
+        0.028000000000000025,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "bean13",
+      "role": "object",
+      "table_position": [
+        -0.1,
+        0.0,
+        0.028000000000000025
+      ],
+      "yaw": 0,
+      "free": true,
+      "initial_table_pose_wxyz": [
+        -0.1,
+        0.0,
+        0.028000000000000025,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "bean14",
+      "role": "object",
+      "table_position": [
+        -0.08900000000000001,
+        0.0,
+        0.028000000000000025
+      ],
+      "yaw": 0,
+      "free": true,
+      "initial_table_pose_wxyz": [
+        -0.08900000000000001,
+        0.0,
+        0.028000000000000025,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "bean15",
+      "role": "object",
+      "table_position": [
+        -0.111,
+        0.011,
+        0.028000000000000025
+      ],
+      "yaw": 0,
+      "free": true,
+      "initial_table_pose_wxyz": [
+        -0.111,
+        0.011,
+        0.028000000000000025,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "bean16",
+      "role": "object",
+      "table_position": [
+        -0.1,
+        0.011,
+        0.028000000000000025
+      ],
+      "yaw": 0,
+      "free": true,
+      "initial_table_pose_wxyz": [
+        -0.1,
+        0.011,
+        0.028000000000000025,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "bean17",
+      "role": "object",
+      "table_position": [
+        -0.08900000000000001,
+        0.011,
+        0.028000000000000025
+      ],
+      "yaw": 0,
+      "free": true,
+      "initial_table_pose_wxyz": [
+        -0.08900000000000001,
+        0.011,
+        0.028000000000000025,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "bean18",
+      "role": "object",
+      "table_position": [
+        -0.111,
+        -0.011,
+        0.039000000000000035
+      ],
+      "yaw": 0,
+      "free": true,
+      "initial_table_pose_wxyz": [
+        -0.111,
+        -0.011,
+        0.039000000000000035,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "bean19",
+      "role": "object",
+      "table_position": [
+        -0.1,
+        -0.011,
+        0.039000000000000035
+      ],
+      "yaw": 0,
+      "free": true,
+      "initial_table_pose_wxyz": [
+        -0.1,
+        -0.011,
+        0.039000000000000035,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "bean20",
+      "role": "object",
+      "table_position": [
+        -0.08900000000000001,
+        -0.011,
+        0.039000000000000035
+      ],
+      "yaw": 0,
+      "free": true,
+      "initial_table_pose_wxyz": [
+        -0.08900000000000001,
+        -0.011,
+        0.039000000000000035,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "bean21",
+      "role": "object",
+      "table_position": [
+        -0.111,
+        0.0,
+        0.039000000000000035
+      ],
+      "yaw": 0,
+      "free": true,
+      "initial_table_pose_wxyz": [
+        -0.111,
+        0.0,
+        0.039000000000000035,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "bean22",
+      "role": "object",
+      "table_position": [
+        -0.1,
+        0.0,
+        0.039000000000000035
+      ],
+      "yaw": 0,
+      "free": true,
+      "initial_table_pose_wxyz": [
+        -0.1,
+        0.0,
+        0.039000000000000035,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "bean23",
+      "role": "object",
+      "table_position": [
+        -0.08900000000000001,
+        0.0,
+        0.039000000000000035
+      ],
+      "yaw": 0,
+      "free": true,
+      "initial_table_pose_wxyz": [
+        -0.08900000000000001,
+        0.0,
+        0.039000000000000035,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "bean24",
+      "role": "object",
+      "table_position": [
+        -0.111,
+        0.011,
+        0.039000000000000035
+      ],
+      "yaw": 0,
+      "free": true,
+      "initial_table_pose_wxyz": [
+        -0.111,
+        0.011,
+        0.039000000000000035,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "bean25",
+      "role": "object",
+      "table_position": [
+        -0.1,
+        0.011,
+        0.039000000000000035
+      ],
+      "yaw": 0,
+      "free": true,
+      "initial_table_pose_wxyz": [
+        -0.1,
+        0.011,
+        0.039000000000000035,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "bean26",
+      "role": "object",
+      "table_position": [
+        -0.08900000000000001,
+        0.011,
+        0.039000000000000035
+      ],
+      "yaw": 0,
+      "free": true,
+      "initial_table_pose_wxyz": [
+        -0.08900000000000001,
+        0.011,
+        0.039000000000000035,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "bean27",
+      "role": "object",
+      "table_position": [
+        -0.111,
+        -0.011,
+        0.050000000000000044
+      ],
+      "yaw": 0,
+      "free": true,
+      "initial_table_pose_wxyz": [
+        -0.111,
+        -0.011,
+        0.050000000000000044,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "bean28",
+      "role": "object",
+      "table_position": [
+        -0.1,
+        -0.011,
+        0.050000000000000044
+      ],
+      "yaw": 0,
+      "free": true,
+      "initial_table_pose_wxyz": [
+        -0.1,
+        -0.011,
+        0.050000000000000044,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "bean29",
+      "role": "object",
+      "table_position": [
+        -0.08900000000000001,
+        -0.011,
+        0.050000000000000044
+      ],
+      "yaw": 0,
+      "free": true,
+      "initial_table_pose_wxyz": [
+        -0.08900000000000001,
+        -0.011,
+        0.050000000000000044,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "spill_tray",
+      "role": "container",
+      "table_position": [
+        0.0,
+        0.03,
+        0.0030000000000000027
+      ],
+      "yaw": 0,
+      "free": false,
+      "dimensions": [
+        0.6,
+        0.4,
+        0.02
+      ],
+      "shape": "box_container",
+      "half_size": [
+        0.303,
+        0.203,
+        0.01
+      ],
+      "bottom_offset": -0.003,
+      "initial_table_pose_wxyz": [
+        0.0,
+        0.03,
+        0.0030000000000000027,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "classification": "SIMULATION_ENVIRONMENT",
+  "approximations": [],
+  "source_spec": "SPEC_v0.3.2.md",
+  "spec_version": "0.3.2",
+  "level": "L2",
+  "level_parameters": {
+    "bowl_diameter_m": 0.15,
+    "bean_count": 30,
+    "cup_mass_multiplier": 1,
+    "cup_bowl_distance_m": 0.2
+  },
+  "seeds": {
+    "layout": 8859925055935929825,
+    "object": 12592648696033165042,
+    "instruction": 9634854826703987673
+  },
+  "track": "main",
+  "eval_only": false,
+  "initial_joints": {},
+  "axes": {},
+  "regions": {
+    "cup": {
+      "type": "cylinder",
+      "radius": 0.033,
+      "bottom": 0.002,
+      "rim": 0.09
+    },
+    "bowl": {
+      "type": "cylinder",
+      "radius": 0.073,
+      "bottom": 0.002,
+      "rim": 0.06
+    },
+    "spill_tray": {
+      "type": "box",
+      "half_xy": [
+        0.297,
+        0.197
+      ],
+      "bottom": 0.003,
+      "rim": 0.02
+    }
+  },
+  "targets": [],
+  "grader_status": "development_not_expert_validated",
+  "instruction_idx": null,
+  "scoring_source": "supplied task-local descriptions; common predicates inherited from v0.2.4",
+  "mass_multipliers": {
+    "cup": 1
+  },
+  "instruction": "把杯里的豆子倒进碗，再放回杯子",
+  "nominal_bead_count": 30,
+  "robots": [
+    {
+      "prefix": "single_",
+      "kind": "rm75",
+      "joint_names": [
+        "single_joint_1",
+        "single_joint_2",
+        "single_joint_3",
+        "single_joint_4",
+        "single_joint_5",
+        "single_joint_6",
+        "single_joint_7"
+      ],
+      "arm_dim": 7,
+      "eef_dim": 1,
+      "home": [
+        -1.3,
+        -0.7,
+        0,
+        1.7,
+        0,
+        1.2,
+        0
+      ],
+      "ee": {
+        "kind": "arx_parallel",
+        "actuators": [
+          "single_tool_left_slide"
+        ],
+        "joints": [
+          "single_tool_left_slide"
+        ],
+        "home": [
+          0.0475
+        ],
+        "site": "single_tool_pinch",
+        "camera": "single_tool_cam_wrist",
+        "eef_dim": 1,
+        "hardware": "AG-95 (95 mm)",
+        "simulation": "AG95 parallel kinematic proxy: 95 mm opening, 1 kg; finger CAD/contact dimensions are explicit uncalibrated assumptions",
+        "coupled_joints": [
+          "single_tool_right_slide"
+        ],
+        "travel_m": 0.0475
+      },
+      "site": "single_tool_pinch",
+      "camera": "single_tool_cam_wrist",
+      "base_table_xyz": [
+        0.0,
+        -0.45,
+        0.0
+      ],
+      "base_quat_wxyz": [
+        0.7071067811865476,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "flange": "single_flange",
+      "hardware_fk_status": "pending_measured_sdk_pairs",
+      "model": "RM75-B"
+    }
+  ],
+  "world_from_table": [
+    0,
+    0,
+    0.75
+  ],
+  "base_spacing_m": null,
+  "layout_sampling": "independent_rng_streams_with_geometry_checks",
+  "action_dim": 8,
+  "hand": null,
+  "physics_timestep": 0.002,
+  "control_hz": 25,
+  "action_type": "absolute_joint_radians_plus_ee_commands",
+  "cameras": {
+    "cam_head": "cam_head",
+    "cam_third_view": "cam_third_view",
+    "cam_top": "cam_top",
+    "cam_wrist": "single_tool_cam_wrist"
+  },
+  "camera_sizes": {
+    "cam_head": [
+      640,
+      400
+    ],
+    "cam_third_view": [
+      640,
+      480
+    ],
+    "cam_top": [
+      640,
+      480
+    ],
+    "cam_wrist": [
+      640,
+      480
+    ]
+  },
+  "camera_timing": "synchronous_simulation_time; physical camera is 30 fps latest-frame at 25 Hz control",
+  "depth_route": "audit_only_not_policy",
+  "model_nq": 233,
+  "model_nv": 201,
+  "model_nu": 8,
+  "flex_count": 0,
+  "flex_vertices": 0,
+  "max_joint_delta_rad": 0.08,
+  "layout_audit": {
+    "table_margin_m": 0.03,
+    "footprint_valid": true,
+    "violations": [],
+    "reachability": "not certified by this audit"
+  },
+  "layout_split": "public"
+}

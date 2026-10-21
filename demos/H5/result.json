@@ -1,0 +1,109 @@
+{
+  "task": "H5",
+  "layout": 0,
+  "level": "L2",
+  "instruction": "二十秒内一次把这些乒乓球拿进碗里",
+  "controller": "operator_in_the_loop_motor_commands",
+  "classification": "DEMONSTRATION_NOT_BENCHMARK_SCORE",
+  "success": true,
+  "failure": null,
+  "info": {
+    "stages": {
+      "ball0": true,
+      "ball1": true,
+      "ball2": true,
+      "single_trip": true
+    },
+    "progress": 0.9999999999999999,
+    "score": 0.9999999999999999,
+    "success": true,
+    "terminal_hold_steps": 50,
+    "error": null,
+    "details": {
+      "trips": 1,
+      "all_balls_carried_together": true
+    },
+    "status": "development_grader_expert_validation_pending",
+    "terminal_current": true,
+    "done": true,
+    "reason": "success",
+    "time": 19.200000000000237,
+    "execution_time": 19.200000000000237,
+    "phase": "execution",
+    "ik": [],
+    "ik_pos_err": [],
+    "ik_rot_err": [],
+    "jerk_command_mean": 0.0,
+    "jerk_arm_joint_mean_rad_s3": 1.3725379959567921e-09,
+    "safety_stop": null,
+    "recovery_events": []
+  },
+  "events": [
+    {
+      "phase": "verify the direct demonstration with simultaneous-carry checking",
+      "time": 0.0
+    }
+  ],
+  "steps": 480,
+  "duration_s": 19.200000000000237,
+  "no_object_teleport": true,
+  "no_grasp_weld": true,
+  "physics": "MuJoCo env.step, 500 Hz physics / 25 Hz control",
+  "source_hashes": {
+    "cwbench/__init__.py": "f414b78723a0cee16f6378aff4814997c38ddf5e12edce9dfa1017849aa4256e",
+    "cwbench/dexterity_o6.py": "0e7b991b016003a32e19c751fb02465df44b320ac324a17cfebbabe6e6b19cbf",
+    "cwbench/experts.py": "98c73702038815728b5798c73e46399e976756514c0df55b7ac3f9235e9469c4",
+    "cwbench/record.py": "7795bd357d43d75543c4e1dbeb51399deb966bd717df5152b3f07ff696db19e4",
+    "cwbench/geometry.py": "08bc854f00a86b2c3170bb6304b4caebfb29035aacaffed20931e29aaa3e0e99",
+    "cwbench/rubrics.py": "9a58310010ceb8a1d60f0440cc61370ce99495f30fe6f79517ee533478f29a12",
+    "cwbench/scenes_v024.py": "ad726a0cca666ed60ca1cb938f44404e15632b2c38af40e5182409e345941ec1",
+    "cwbench/errors.py": "324c0e1a2b4359e0f09e947adada58bdcebd6bce2ef72f3c6fe16be189c633e7",
+    "cwbench/scoring.py": "5385ac46247b33e0c8f0e60194c98e5c9e8449bdcc4d180707c5506545af784f",
+    "cwbench/dexterity.py": "7976c1c5d66108864dc0c5225bd6ee2a84797709323824ec1ee05a1250af900f",
+    "cwbench/contact_ik.py": "c15af309ca758c8688cf54010ff8a8fcf0139a29c4a6617ff02878ba5f981bcd",
+    "cwbench/capabilities.py": "504d648d619e3a296e9a2a8be167302f9b356f0b598a1bbeb756e3e07652a1cc",
+    "cwbench/robots.py": "48e3e49dc5f06bc3790ddfd527c8ce319dfaa56917cfe9ecd8c9450ad8540be8",
+    "cwbench/ik.py": "dcebc5a182510725a3a093be8875f4d77f3d38bc9e8341cdaff3f6c7b0f52ce5",
+    "cwbench/scoring_v024.py": "64f98d048782991f7cc26f1a4b85f401e5b7ea7c0da6f7bc4b0704f533f7d6e2",
+    "cwbench/viewer.py": "1ae7503e5b198163767e6557668158e87e5b56fa021e65e66c2b1aaf0b342f32",
+    "cwbench/soft_control.py": "a3de14c4aca011d464d5ea8111b7cb7e48cbd314f1902e154edf39c37514267c",
+    "cwbench/scenes.py": "614cb9a6a69c8908efc8ac3a3b15cc1a7c21228f328c36197aeb34768795043c",
+    "cwbench/env.py": "1e740040903d20c2b5fa9b657c3da76efcf781991ed1118947a8cc2f2648d23b",
+    "tools/direct_control.py": "da7afa9f864914821e8cf760a8c719a02078d5cf9a21334275d3ac583f73d3b9",
+    "configs/scene.yaml": "832de190953e28096f4b1549732ebaa7cb53fa17bbc57404456b3768cbb063dc",
+    "configs/H5.yaml": "c7717cd297e0d202a3369a834e402f4315eecfef060ad5c29fed4cdf5203f9f4"
+  },
+  "initial_instruction_idx": null,
+  "final_objects": {
+    "ball_tray_riser": [
+      -0.13,
+      0.03,
+      0.015000000000000013
+    ],
+    "ball_tray": [
+      -0.13,
+      0.03,
+      0.03300000000000003
+    ],
+    "ball0": [
+      0.1367749846392211,
+      0.2670137818724162,
+      0.023867019399449796
+    ],
+    "ball1": [
+      0.11582855042541751,
+      0.15359865453432148,
+      0.023867809888006963
+    ],
+    "ball2": [
+      0.09729998130192366,
+      0.20507498709191474,
+      0.023867474975098224
+    ],
+    "bowl": [
+      0.13000002451054737,
+      0.20000002755055116,
+      0.0019769180619678695
+    ]
+  }
+}

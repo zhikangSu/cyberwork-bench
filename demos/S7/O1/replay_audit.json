@@ -1,0 +1,13 @@
+{
+  "task": "S7",
+  "engine_version": "3.10.0",
+  "steps": 1266,
+  "max_qpos_replay_error": 0.0,
+  "passed": true,
+  "method": "initial state once, recorded ctrl, fresh mj_step; no intermediate pose overwrite",
+  "limitation": "Physics replay audit, separate from task success adjudication",
+  "assistance_event_count": 0,
+  "physics_timestep_values_s": [
+    0.002
+  ]
+}

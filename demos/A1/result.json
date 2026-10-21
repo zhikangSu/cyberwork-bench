@@ -1,0 +1,101 @@
+{
+  "task": "A1",
+  "layout": 0,
+  "level": "L1",
+  "instruction": "把小碗叠进大碗里",
+  "controller": "privileged_scripted_expert",
+  "classification": "DEMONSTRATION_NOT_BENCHMARK_SCORE",
+  "success": true,
+  "failure": null,
+  "info": {
+    "stages": {
+      "lift": true,
+      "place": true
+    },
+    "progress": 1.0,
+    "score": 1.0,
+    "success": true,
+    "terminal_hold_steps": 50,
+    "error": null,
+    "details": {
+      "containment_or_support_fraction_estimate": 1.0
+    },
+    "status": "development_grader_expert_validation_pending",
+    "terminal_current": true,
+    "done": true,
+    "reason": "success",
+    "time": 11.720000000000583,
+    "execution_time": 11.720000000000583,
+    "phase": "execution",
+    "ik": [],
+    "ik_pos_err": [],
+    "ik_rot_err": [],
+    "jerk_command_mean": 0.0,
+    "jerk_arm_joint_mean_rad_s3": 0.0023153857442448356,
+    "safety_stop": null,
+    "recovery_events": []
+  },
+  "events": [
+    {
+      "phase": "approach small_bowl",
+      "time": 0.4000000000000003
+    },
+    {
+      "phase": "grasp small_bowl",
+      "time": 4.519999999999724
+    },
+    {
+      "phase": "lift small_bowl",
+      "time": 5.639999999999601
+    },
+    {
+      "phase": "carry small_bowl",
+      "time": 6.999999999999451
+    },
+    {
+      "phase": "release small_bowl",
+      "time": 9.439999999999822
+    },
+    {
+      "phase": "terminal hold",
+      "time": 11.120000000000383
+    }
+  ],
+  "steps": 293,
+  "duration_s": 11.720000000000583,
+  "no_object_teleport": true,
+  "no_grasp_weld": true,
+  "physics": "MuJoCo env.step, 500 Hz physics / 25 Hz control",
+  "source_hashes": {
+    "cwbench/__init__.py": "1d80fcdc9715830d9e28bd56c999933846552a17b7a9a499e36d73243b868708",
+    "cwbench/experts.py": "d0aa7d4016e10da5eee7ab99ece78113ea1469fd1bdc68a29696b699f942a88b",
+    "cwbench/record.py": "17594d68fc3ed29fff9d0869789724e3c09716d00f90a3bc0fd993a8757be5ec",
+    "cwbench/geometry.py": "0f0b8fa241185059b2ebd954aee177ad6515971a13f98352f7a0a770b71c5899",
+    "cwbench/rubrics.py": "f496cb0dda5eda9f6f32040b75dbdb1b2e53803f154af9aed0682e6861a0110a",
+    "cwbench/scenes_v024.py": "ad726a0cca666ed60ca1cb938f44404e15632b2c38af40e5182409e345941ec1",
+    "cwbench/scoring.py": "a119c51acbad6fe3115c83eb3632ae91d1636df5c3b53ed4c2258e734ebf8b16",
+    "cwbench/dexterity.py": "b7b32b0748df48ea44e4e3cba80e95fab8534a53169d310ac14ae7fd2349ceae",
+    "cwbench/capabilities.py": "504d648d619e3a296e9a2a8be167302f9b356f0b598a1bbeb756e3e07652a1cc",
+    "cwbench/robots.py": "cbe43f6370d3da1f35c0cfc63f1eaf8495cdefd9391f2e8eb76048b58d90f125",
+    "cwbench/ik.py": "dcebc5a182510725a3a093be8875f4d77f3d38bc9e8341cdaff3f6c7b0f52ce5",
+    "cwbench/scoring_v024.py": "64f98d048782991f7cc26f1a4b85f401e5b7ea7c0da6f7bc4b0704f533f7d6e2",
+    "cwbench/viewer.py": "21f5b37145d2e366290980a6243d7ee6ab4babb2178c8d13eb36b4df41ffff7a",
+    "cwbench/scenes.py": "284cb17b2806acd0fdc01786dd11a41363364994d1e99b70e638f32ef595140e",
+    "cwbench/env.py": "8d012007901c51eaa36069e694d6c163cc398826900ee411d2b7c81b4405f5a5",
+    "configs/scene.yaml": "832de190953e28096f4b1549732ebaa7cb53fa17bbc57404456b3768cbb063dc",
+    "configs/A1.yaml": "196dafd8941b65ecc6cc3515250e30895a769d6881674bf1a745b087629f8d85"
+  },
+  "initial_instruction_idx": null,
+  "final_objects": {
+    "large_bowl": [
+      0.1301549737864706,
+      0.1800995587032543,
+      0.001961667395945499
+    ],
+    "small_bowl": [
+      0.13039720693341322,
+      0.18328955477180864,
+      0.0059240231904518215
+    ]
+  }
+}
