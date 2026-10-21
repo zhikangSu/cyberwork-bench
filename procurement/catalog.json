@@ -8,10 +8,10 @@
       "group": "日常道具",
       "route": "直接购买",
       "phase": "BASE 首批",
-      "spec": "约 Ø10 / 12.7 / 15 / 18 cm（4/5/6/7 英寸），多种颜色",
+      "spec": "合并成 3 只，口径各 ±1 cm：① Ø18 左右、内深 ≥8 cm（S1、D1、H5 的容器，兼 S4 L1）；② Ø15 左右（A1 大碗，兼 S4 BASE）；③ Ø12.7 左右（A1 小碗）。颜色与大碗不同即可；S4 L4（Ø10）以后测阶梯时再买",
       "tasks": "A1、S1、S4、S7、S10、D1、D7、H5",
-      "initial_qty": "Ø12.7、15、18 cm 各 1；另备 H5 深 ≥8 cm 的碗 1 只",
-      "note": "口径按内口实测。S1 的 Ø18×7 cm 碗与 H5 深 ≥8 cm 的防弹出碗应分别选型。其他阶梯 Ø10 cm 后补。",
+      "initial_qty": "每样先买 1 只（可行性闸门，§7.1、§8）：Ø18 深碗、Ø15、Ø12.7 各 1，共 3 只；Ø10 以后测 S4 阶梯时再买",
+      "note": "用户 2026-10-21 决定合并成 3 只。S1 原文“Ø18×7 cm”的 7 cm 只是标称深度，一只内深 ≥8 cm 的 Ø18 碗可兼做 S1、D1、H5。口径以实测为准（§8.1）。",
       "original_route": "A",
       "source_section": "8.1 物品与容器",
       "source_line": 1020,
@@ -32,8 +32,131 @@
       ],
       "plastic_print": false,
       "manufacturing_cad_available": null,
-      "search_terms": "密胺碗 约 Ø10 / 12.7 / 15 / 18 cm（4/5/6/7 英寸），多种颜色",
+      "search_terms": "密胺碗 7 英寸 深碗 6 英寸 5 英寸 纯色",
       "dimensions": {
+        "requirements": [
+          {
+            "kind": "explicit",
+            "scope": "Ø18 深碗（S1 / D1 / H5，兼 S4 L1）",
+            "value": "Ø18 左右（±1 cm）、内深 ≥8 cm、内口 ≥16 cm；S1 原文 Ø18×7 cm 的 7 cm 只是标称深度。",
+            "source_line": 324,
+            "source_lines": [
+              324,
+              503,
+              729,
+              409
+            ],
+            "references": [
+              {
+                "line": 324,
+                "text": "  - ID 容器：碗 Ø18×7 cm、收纳盒 25×20×10 cm。容器与候选物属于不同形状族、不同颜色族。",
+                "url": "../spec.html#line-321"
+              },
+              {
+                "line": 503,
+                "text": "  - 容器为碗 Ø18 cm。",
+                "url": "../spec.html#line-499"
+              },
+              {
+                "line": 729,
+                "text": "- 碗深 ≥8 cm，防止球弹出。",
+                "url": "../spec.html#line-727"
+              },
+              {
+                "line": 409,
+                "text": "- **阶梯**：碗口径 L1 约 18 cm；L2 约 15 cm（BASE）；L3 约 12.7 cm；L4 约 10 cm。",
+                "url": "../spec.html#line-401"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
+              }
+            ]
+          },
+          {
+            "kind": "approximate",
+            "scope": "Ø15 碗（A1 大碗，兼 S4 BASE）",
+            "value": "Ø15 左右（±1 cm）。",
+            "source_line": 311,
+            "source_lines": [
+              311,
+              409
+            ],
+            "references": [
+              {
+                "line": 311,
+                "text": "- **道具**：两只颜色不同的密胺碗，Ø15 与 Ø12.7 cm（约 6 英寸与 5 英寸），每种 3 只。",
+                "url": "../spec.html#line-310"
+              },
+              {
+                "line": 409,
+                "text": "- **阶梯**：碗口径 L1 约 18 cm；L2 约 15 cm（BASE）；L3 约 12.7 cm；L4 约 10 cm。",
+                "url": "../spec.html#line-401"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
+              }
+            ]
+          },
+          {
+            "kind": "approximate",
+            "scope": "Ø12.7 碗（A1 小碗）",
+            "value": "Ø12.7 左右（±1 cm），颜色与大碗不同，要能落到大碗底（inside）。",
+            "source_line": 311,
+            "source_lines": [
+              311,
+              128
+            ],
+            "references": [
+              {
+                "line": 311,
+                "text": "- **道具**：两只颜色不同的密胺碗，Ø15 与 Ø12.7 cm（约 6 英寸与 5 英寸），每种 3 只。",
+                "url": "../spec.html#line-310"
+              },
+              {
+                "line": 128,
+                "text": "| `inside(obj, container)` | 物体顶视投影完全在容器口沿以内；物体落在容器底或其他内容物上，没有搭在沿上；已释放；2 s 内位移 <1 cm | cam_head 点云初判 + 人工 |",
+                "url": "../spec.html#line-122"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
+              }
+            ]
+          },
+          {
+            "kind": "approximate",
+            "scope": "S4 L4（以后再买）",
+            "value": "Ø10 左右，等以后测难度阶梯时再买。",
+            "source_line": 409,
+            "source_lines": [
+              409
+            ],
+            "references": [
+              {
+                "line": 409,
+                "text": "- **阶梯**：碗口径 L1 约 18 cm；L2 约 15 cm（BASE）；L3 约 12.7 cm；L4 约 10 cm。",
+                "url": "../spec.html#line-401"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
+              }
+            ]
+          }
+        ],
+        "note": "口径以实测为准（§8.1），到货量内口径和内深写进 YAML；S4 相邻档实测差 ≥1.5 cm。",
+        "category": "explicit",
+        "label": "有尺寸要求 · 数值 / 上下限",
+        "has_numeric_size": true
+      },
+      "original_spec": "约 Ø10 / 12.7 / 15 / 18 cm（4/5/6/7 英寸），多种颜色",
+      "dimensions_spec": {
         "requirements": [
           {
             "kind": "explicit",
@@ -100,6 +223,18 @@
         "category": "explicit",
         "label": "有尺寸要求 · 数值 / 上下限",
         "has_numeric_size": true
+      },
+      "strictness": {
+        "level": "B",
+        "must": "Ø18 碗内深 ≥8 cm、内口 ≥16 cm（要放得进 15 cm 的香蕉和方棒，L139）；A1 小碗要能落到大碗底，不能搭在碗沿上（inside，L128）；S4 各档口径单调。",
+        "tolerance": "合并成 3 只，每只口径 ±1 cm：Ø18 左右（深 ≥8 cm）、Ø15 左右、Ø12.7 左右；到货量内口径和内深写进 YAML；S4 相邻档实测差 ≥1.5 cm。颜色与大碗不同即可；Ø18 碗是 S1 容器，还要避开候选物的红、橙、绿、黄、灰（L324）。碗沿先用 AG-95 试夹。",
+        "critical": [
+          "Ø18 碗要同时满足 S1 / D1 的内口 ≥16 cm 和 H5 的内深 ≥8 cm（防球弹出，L729）；商品标的口径多是外径，到货量内口。"
+        ],
+        "pending": null,
+        "label": "B 有硬约束、范围内随便买",
+        "short": "B 有硬约束",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -138,7 +273,7 @@
           {
             "kind": "approximate",
             "scope": "H1 / H-open",
-            "value": "大收纳箱约 30×25×20 cm。",
+            "value": "大收纳箱约 30×25×20 cm：25–35 × 20–30 × 15–25 cm 都行；放得下最大的球和喷壶。",
             "source_line": 678,
             "source_lines": [
               678
@@ -148,14 +283,29 @@
                 "line": 678,
                 "text": "- OOD：仿真面包、大号塑料瓶。箱子约 30×25×20 cm。",
                 "url": "../spec.html#line-674"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
               }
             ]
           }
         ],
         "note": "",
         "category": "approximate",
-        "label": "有尺寸要求 · 约尺寸",
+        "label": "有尺寸要求 · 约尺寸 / 范围",
         "has_numeric_size": true
+      },
+      "strictness": {
+        "level": "C",
+        "must": "内口放得下最大的 Ø15 球加手；H-open 还要放得进所选喷壶（L139）。",
+        "tolerance": "买接近的现货即可：25–35 × 20–30 × 15–25 cm 都行；到货后把最大的球和喷壶实际放一次。",
+        "critical": [],
+        "pending": null,
+        "label": "C 差不多就行",
+        "short": "C 差不多就行",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -164,9 +314,9 @@
       "group": "日常道具",
       "route": "直接购买",
       "phase": "BASE 首批",
-      "spec": "Ø18 cm",
+      "spec": "约 Ø18 cm：Ø16–20 cm、沿高 ≤2 cm 的现货即可（原文 Ø18 cm）",
       "tasks": "S3、S8",
-      "initial_qty": "1–2 个",
+      "initial_qty": "1 个（S3、S8 共用）",
       "note": "",
       "original_route": "A",
       "source_section": "8.1 物品与容器",
@@ -192,9 +342,9 @@
       "dimensions": {
         "requirements": [
           {
-            "kind": "explicit",
+            "kind": "approximate",
             "scope": "S3 / S8",
-            "value": "盘子直径 Ø18 cm。",
+            "value": "盘子约 Ø18 cm：Ø16–20 cm、沿高 ≤2 cm 的现货都行。",
             "source_line": 381,
             "source_lines": [
               381
@@ -204,14 +354,30 @@
                 "line": 381,
                 "text": "  - 目标盘 Ø18 cm，放在近端随机位置。",
                 "url": "../spec.html#line-371"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
               }
             ]
           }
         ],
         "note": "",
-        "category": "explicit",
-        "label": "有尺寸要求 · 数值 / 上下限",
+        "category": "approximate",
+        "label": "有尺寸要求 · 约尺寸 / 范围",
         "has_numeric_size": true
+      },
+      "original_spec": "Ø18 cm",
+      "strictness": {
+        "level": "C",
+        "must": "只作放置面（判据 on，L129）：平底、低沿。",
+        "tolerance": "买接近的现货即可：Ø16–20 cm，沿高 ≤2 cm，和方块、桌面颜色有对比。",
+        "critical": [],
+        "pending": null,
+        "label": "C 差不多就行",
+        "short": "C 差不多就行",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -222,7 +388,7 @@
       "phase": "BASE 首批",
       "spec": "约 25×20×10 cm",
       "tasks": "S1、S10、S12",
-      "initial_qty": "1–2 个",
+      "initial_qty": "1 个",
       "note": "",
       "original_route": "A",
       "source_section": "8.1 物品与容器",
@@ -250,7 +416,7 @@
           {
             "kind": "approximate",
             "scope": "S1 / S10 / S12",
-            "value": "收纳盒约 25×20×10 cm。",
+            "value": "收纳盒约 25×20×10 cm：22–30 × 17–24 × 8–13 cm 都行。",
             "source_line": 344,
             "source_lines": [
               344
@@ -260,14 +426,29 @@
                 "line": 344,
                 "text": "| 收纳盒（ID 容器） | 约 25×20×10 cm | 3 | A |",
                 "url": "../spec.html#line-321"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
               }
             ]
           }
         ],
         "note": "S10 复用 S1 收纳盒；S12 未另规定盒子尺寸。",
         "category": "approximate",
-        "label": "有尺寸要求 · 约尺寸",
+        "label": "有尺寸要求 · 约尺寸 / 范围",
         "has_numeric_size": true
+      },
+      "strictness": {
+        "level": "C",
+        "must": "内口放得下 15 cm 的香蕉等候选物（L139）。",
+        "tolerance": "买接近的现货即可：22–30 × 17–24 × 8–13 cm；颜色与候选物不同色族（L324）。",
+        "critical": [],
+        "pending": null,
+        "label": "C 差不多就行",
+        "short": "C 差不多就行",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -324,6 +505,16 @@
         "category": "explicit",
         "label": "有尺寸要求 · 数值 / 上下限",
         "has_numeric_size": true
+      },
+      "strictness": {
+        "level": "B",
+        "must": "内口窄边 ≥20 cm（下限）。",
+        "tolerance": "只卡这个下限，形状和颜色随意。",
+        "critical": [],
+        "pending": null,
+        "label": "B 有硬约束、范围内随便买",
+        "short": "B 有硬约束",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -332,7 +523,7 @@
       "group": "日常道具",
       "route": "直接购买",
       "phase": "BASE 首批",
-      "spec": "约 25×18 cm",
+      "spec": "约 25×18 cm：22–30 × 15–22 cm、沿高 ≤3 cm 的现货即可",
       "tasks": "S1（OOD）、S9、S7、D7",
       "initial_qty": "2 个",
       "note": "",
@@ -362,7 +553,7 @@
           {
             "kind": "approximate",
             "scope": "S1 OOD / S9",
-            "value": "浅边托盘约 25×18 cm；S7 / D7 复用时沿用。",
+            "value": "浅边托盘约 25×18 cm：22–30 × 15–22 cm、沿高 ≤3 cm 都行；S7 / D7 复用时沿用。",
             "source_line": 849,
             "source_lines": [
               849
@@ -372,14 +563,30 @@
                 "line": 849,
                 "text": "| 浅边托盘 | 约 25×18 cm | 共用 S1 OOD | A |",
                 "url": "../spec.html#line-828"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
               }
             ]
           }
         ],
         "note": "",
         "category": "approximate",
-        "label": "有尺寸要求 · 约尺寸",
+        "label": "有尺寸要求 · 约尺寸 / 范围",
         "has_numeric_size": true
+      },
+      "original_spec": "约 25×18 cm",
+      "strictness": {
+        "level": "C",
+        "must": "只作放置面（判据 on，L129）：沿要浅。",
+        "tolerance": "买接近的现货即可：22–30 × 15–22 cm，沿高 ≤3 cm；S7-O1 同场要 2 个，测 S7 时再补。",
+        "critical": [],
+        "pending": null,
+        "label": "C 差不多就行",
+        "short": "C 差不多就行",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -388,7 +595,7 @@
       "group": "日常道具",
       "route": "直接购买",
       "phase": "BASE 首批",
-      "spec": "橙子 Ø7、苹果、草莓",
+      "spec": "橙子约 Ø7 cm（6.5–7.5 cm）、苹果、草莓；整体不能拆开",
       "tasks": "S1、S3、S10、S11、S12、D4",
       "initial_qty": "橙子、苹果各 1；草莓先不买（OOD）",
       "note": "买不能拆开的仿真道具；不要买魔术贴切切乐。橙子 Ø7 cm；图中尺寸不作为采购验收。",
@@ -429,9 +636,9 @@
       "dimensions": {
         "requirements": [
           {
-            "kind": "explicit",
+            "kind": "approximate",
             "scope": "S1 / D4",
-            "value": "仿真橙子 Ø7 cm。",
+            "value": "仿真橙子约 Ø7 cm：6.5–7.5 cm 都行。",
             "source_line": 323,
             "source_lines": [
               323
@@ -441,6 +648,11 @@
                 "line": 323,
                 "text": "  - ID 候选：红色木方块 4 cm、仿真橙子 Ø7 cm、绿色小 PET 瓶（不超过 Ø5×12 cm）、黄色香蕉玩具 15 cm、深灰色海绵 10×7×3 cm。",
                 "url": "../spec.html#line-321"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
               }
             ]
           },
@@ -465,6 +677,19 @@
         "category": "explicit",
         "label": "有尺寸要求 · 数值 / 上下限",
         "has_numeric_size": true
+      },
+      "original_spec": "橙子 Ø7、苹果、草莓",
+      "strictness": {
+        "level": "B",
+        "must": "整体不能拆开；要放进抽屉的（S11）高 ≤8 cm（L880）。",
+        "tolerance": "橙子 Ø6.5–7.5 cm 都行；苹果没有尺寸要求；草莓 ≤8 cm。",
+        "critical": [
+          "45 N 试夹不变形（L307）。"
+        ],
+        "pending": null,
+        "label": "B 有硬约束、范围内随便买",
+        "short": "B 有硬约束",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -473,7 +698,7 @@
       "group": "日常道具",
       "route": "直接购买",
       "phase": "BASE 首批",
-      "spec": "15 cm，黄色",
+      "spec": "长 ≤15 cm（12–15 cm），黄色",
       "tasks": "S1",
       "initial_qty": "1 个",
       "note": "长约 15 cm、黄色；示例照片含其他水果，仅参考外形。",
@@ -503,7 +728,7 @@
           {
             "kind": "explicit",
             "scope": "S1",
-            "value": "香蕉玩具长 15 cm。",
+            "value": "香蕉玩具长 ≤15 cm（12–15 cm），比所用碗、收纳盒的内口短 ≥1.5 cm。",
             "source_line": 323,
             "source_lines": [
               323
@@ -513,6 +738,11 @@
                 "line": 323,
                 "text": "  - ID 候选：红色木方块 4 cm、仿真橙子 Ø7 cm、绿色小 PET 瓶（不超过 Ø5×12 cm）、黄色香蕉玩具 15 cm、深灰色海绵 10×7×3 cm。",
                 "url": "../spec.html#line-321"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
               }
             ]
           }
@@ -521,6 +751,19 @@
         "category": "explicit",
         "label": "有尺寸要求 · 数值 / 上下限",
         "has_numeric_size": true
+      },
+      "original_spec": "15 cm，黄色",
+      "strictness": {
+        "level": "B",
+        "must": "长 ≤15 cm，要比 S1 碗和收纳盒的内口短（L139），否则不能出“放进碗”的指令。",
+        "tolerance": "12–15 cm，比碗内口短 ≥1.5 cm；不要买 18–20 cm 的大号；黄色。",
+        "critical": [
+          "香蕉别超过 15 cm：物体最长边超过容器口内径的组合不能出指令（L139）。"
+        ],
+        "pending": null,
+        "label": "B 有硬约束、范围内随便买",
+        "short": "B 有硬约束",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -529,7 +772,7 @@
       "group": "日常道具",
       "route": "直接购买",
       "phase": "BASE 首批",
-      "spec": "10×7×3 cm，深灰色",
+      "spec": "约 10×7×3 cm（各边 ±1.5 cm），深灰色，不用黑色",
       "tasks": "S1、S11",
       "initial_qty": "1 块",
       "note": "",
@@ -557,9 +800,9 @@
       "dimensions": {
         "requirements": [
           {
-            "kind": "explicit",
+            "kind": "approximate",
             "scope": "S1",
-            "value": "海绵 10×7×3 cm。",
+            "value": "海绵约 10×7×3 cm，各边 ±1.5 cm；颜色深灰或中灰，不用黑色。",
             "source_line": 323,
             "source_lines": [
               323
@@ -569,6 +812,11 @@
                 "line": 323,
                 "text": "  - ID 候选：红色木方块 4 cm、仿真橙子 Ø7 cm、绿色小 PET 瓶（不超过 Ø5×12 cm）、黄色香蕉玩具 15 cm、深灰色海绵 10×7×3 cm。",
                 "url": "../spec.html#line-321"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
               }
             ]
           },
@@ -593,6 +841,17 @@
         "category": "explicit",
         "label": "有尺寸要求 · 数值 / 上下限",
         "has_numeric_size": true
+      },
+      "original_spec": "10×7×3 cm，深灰色",
+      "strictness": {
+        "level": "B",
+        "must": "颜色：深灰或中灰，不能是黑色（黑色在深度图上是空洞，L342）。",
+        "tolerance": "尺寸约 10×7×3 cm，各边 ±1.5 cm 都行。",
+        "critical": [],
+        "pending": null,
+        "label": "B 有硬约束、范围内随便买",
+        "short": "B 有硬约束",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -603,7 +862,7 @@
       "phase": "BASE 首批",
       "spec": "≤12 cm，绿色，带盖",
       "tasks": "S1、S6",
-      "initial_qty": "1–2 个",
+      "initial_qty": "1 个",
       "note": "带盖总高 ≤12 cm、直径 ≤5 cm；不要按商品容量猜高度。",
       "original_route": "A",
       "source_section": "8.1 物品与容器",
@@ -655,6 +914,18 @@
         "category": "explicit",
         "label": "有尺寸要求 · 数值 / 上下限",
         "has_numeric_size": true
+      },
+      "strictness": {
+        "level": "B",
+        "must": "直径 ≤5 cm、带盖总高 ≤12 cm；夹持 45 N 不瘪。",
+        "tolerance": "100–200 mL 迷你装按实物量；空瓶被夹瘪就换厚壁款或装干燥填料（现场不出现液体，L988）。",
+        "critical": [
+          "45 N 试夹：空的迷你 PET 瓶可能被夹瘪（L307、L455）。"
+        ],
+        "pending": null,
+        "label": "B 有硬约束、范围内随便买",
+        "short": "B 有硬约束",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -740,6 +1011,18 @@
         "category": "explicit",
         "label": "有尺寸要求 · 数值 / 上下限",
         "has_numeric_size": true
+      },
+      "strictness": {
+        "level": "B",
+        "must": "白色马克杯高 ≤9 cm；蓝杯厚壁、能抗 45 N，外径小于碗内口。",
+        "tolerance": "蓝杯尺寸随意，建议外径 ≤9 cm，方便 AG-95 夹。",
+        "critical": [
+          "45 N 试夹：蓝色塑料杯不能被夹瘪或夹裂（L307）。"
+        ],
+        "pending": null,
+        "label": "B 有硬约束、范围内随便买",
+        "short": "B 有硬约束",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -796,6 +1079,18 @@
         "category": "none",
         "label": "清单未规定具体尺寸",
         "has_numeric_size": false
+      },
+      "strictness": {
+        "level": "B",
+        "must": "材质必须是钢，45 N 不扁；罐口封住。",
+        "tolerance": "标准八宝粥空钢罐即可，尺寸随意。",
+        "critical": [
+          "不用铝罐，会被夹扁（L1035）。"
+        ],
+        "pending": null,
+        "label": "B 有硬约束、范围内随便买",
+        "short": "B 有硬约束",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -868,6 +1163,16 @@
         "category": "explicit",
         "label": "有尺寸要求 · 数值 / 上下限",
         "has_numeric_size": true
+      },
+      "strictness": {
+        "level": "C",
+        "must": "外径 ≤8 cm，自动满足 S11 抽屉限高（L880）。",
+        "tolerance": "任意小号卷，外径 5–8 cm。",
+        "critical": [],
+        "pending": null,
+        "label": "C 差不多就行",
+        "short": "C 差不多就行",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -906,7 +1211,7 @@
           {
             "kind": "explicit",
             "scope": "S1 / A2 / S9 / S10 / S11",
-            "value": "木方块边长 4 cm。",
+            "value": "木方块边长 4 cm，±2 mm。",
             "source_line": 1037,
             "source_lines": [
               1037
@@ -916,13 +1221,18 @@
                 "line": 1037,
                 "text": "| 木方块 | 4 cm 红色 ×8；4 cm 四色 ×2 套；3 cm 五色 ×2 套；2 cm ×20 | S1、S3、S5、S8、S9、S10、S11、S12、A2、D4 | A/B | 现货彩色木块，或原木块自己喷漆 |",
                 "url": "../spec.html#line-1020"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
               }
             ]
           },
           {
             "kind": "explicit",
             "scope": "S3 / S8",
-            "value": "木方块边长 3 cm。",
+            "value": "木方块边长 3 cm，±2 mm。",
             "source_line": 379,
             "source_lines": [
               379,
@@ -938,13 +1248,18 @@
                 "line": 805,
                 "text": "  - 5 色木方块 3 cm（红、黄、蓝、绿、紫）。",
                 "url": "../spec.html#line-801"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
               }
             ]
           },
           {
             "kind": "explicit",
             "scope": "S5",
-            "value": "木方块边长 2 cm，同一批次。",
+            "value": "木方块边长 2 cm，±2 mm，同一批次。",
             "source_line": 429,
             "source_lines": [
               429
@@ -954,6 +1269,11 @@
                 "line": 429,
                 "text": "  - 方块：2 cm 木方块，同一批次，质量一致。",
                 "url": "../spec.html#line-425"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
               }
             ]
           }
@@ -962,6 +1282,18 @@
         "category": "explicit",
         "label": "有尺寸要求 · 数值 / 上下限",
         "has_numeric_size": true
+      },
+      "strictness": {
+        "level": "B",
+        "must": "同一用途内同批次、外观一致；S9 顶面贴得下 20 mm ArUco。",
+        "tolerance": "边长 ±2 mm 都行；红色 4 cm 一次买齐 8 块以上同批；2 cm 一次买 20 块以上，逐块称重，剔除离群的。",
+        "critical": [
+          "S10 的 5 个红方块同款（L856）；S5 的 2 cm 方块同批、质量一致（L429）。"
+        ],
+        "pending": null,
+        "label": "B 有硬约束、范围内随便买",
+        "short": "B 有硬约束",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -1000,7 +1332,7 @@
           {
             "kind": "explicit",
             "scope": "S3",
-            "value": "木圆柱 Ø4×3 cm。",
+            "value": "木圆柱 Ø4×3 cm，±2 mm。",
             "source_line": 379,
             "source_lines": [
               379
@@ -1010,13 +1342,18 @@
                 "line": 379,
                 "text": "  - ID：3 cm 木方块、Ø4×3 cm 木圆柱、小号胶带卷。",
                 "url": "../spec.html#line-371"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
               }
             ]
           },
           {
             "kind": "explicit",
             "scope": "S1-C / S9 OOD / S10 OOD",
-            "value": "木圆柱 Ø4×4 cm。",
+            "value": "木圆柱 Ø4×4 cm，±2 mm。",
             "source_line": 1038,
             "source_lines": [
               1038
@@ -1026,13 +1363,18 @@
                 "line": 1038,
                 "text": "| 木圆柱 | Ø4×3 cm；红色 Ø4×4 cm；绿色 Ø4×4 cm ×5；Ø4×4 cm 四色；Ø3×3 cm 五色 | S3、S1-C、S10（OOD）、S9（OOD）、S8（OOD） | A/B | |",
                 "url": "../spec.html#line-1020"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
               }
             ]
           },
           {
             "kind": "explicit",
             "scope": "S8 OOD",
-            "value": "木圆柱 Ø3×3 cm。",
+            "value": "木圆柱 Ø3×3 cm，±2 mm。",
             "source_line": 807,
             "source_lines": [
               807
@@ -1042,6 +1384,11 @@
                 "line": 807,
                 "text": "  - OOD：被盖物换成 5 色木圆柱 Ø3×3 cm。",
                 "url": "../spec.html#line-801"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
               }
             ]
           }
@@ -1050,6 +1397,18 @@
         "category": "explicit",
         "label": "有尺寸要求 · 数值 / 上下限",
         "has_numeric_size": true
+      },
+      "strictness": {
+        "level": "B",
+        "must": "S1-C 圆柱与红方块同色；S9 OOD 与 4 cm 方块同尺寸；S8 OOD 能被杯子盖住。",
+        "tolerance": "尺寸 ±2 mm；最好和方块用同一批漆。",
+        "critical": [
+          "S1-C 的红圆柱与红方块同色（L328）。"
+        ],
+        "pending": null,
+        "label": "B 有硬约束、范围内随便买",
+        "short": "B 有硬约束",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -1128,6 +1487,18 @@
         "category": "explicit",
         "label": "有尺寸要求 · 数值 / 上下限",
         "has_numeric_size": true
+      },
+      "strictness": {
+        "level": "A",
+        "must": "长度就是阶梯本身（15 / 10 / 8 / 6 cm）；同档三色等长。",
+        "tolerance": "长度 ±1 mm，同档三根互差 ≤1 mm；截面 24–26 mm，各档用同一根 25 mm 方条自己切。",
+        "critical": [
+          "目标棒和干扰棒尺寸相同、只换颜色（L502）。"
+        ],
+        "pending": null,
+        "label": "A 必须严格",
+        "short": "A 必须严格",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -1136,7 +1507,7 @@
       "group": "日常道具",
       "route": "直接购买",
       "phase": "BASE 首批",
-      "spec": "Ø10 mm 实心，约 200 颗",
+      "spec": "实心，约 Ø10 mm（8–12 mm 都行），同批次，约 200 颗",
       "tasks": "S4、H9",
       "initial_qty": "同批次约 200 颗（单次只装 30）",
       "note": "",
@@ -1164,9 +1535,9 @@
       "dimensions": {
         "requirements": [
           {
-            "kind": "explicit",
+            "kind": "approximate",
             "scope": "S4 / H9",
-            "value": "实心木珠或塑料珠直径 Ø10 mm。",
+            "value": "实心木珠或塑料珠约 Ø10 mm：8–12 mm 都行；同批次、单颗质量一致。",
             "source_line": 404,
             "source_lines": [
               404
@@ -1176,14 +1547,32 @@
                 "line": 404,
                 "text": "  - 珠子：Ø10 mm 实心木珠或塑料珠，30 颗，颜色与杯、碗、桌面都要有对比。不用真豆子，真豆子大小不一，还会碎。",
                 "url": "../spec.html#line-401"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
               }
             ]
           }
         ],
         "note": "",
-        "category": "explicit",
-        "label": "有尺寸要求 · 数值 / 上下限",
+        "category": "approximate",
+        "label": "有尺寸要求 · 约尺寸 / 范围",
         "has_numeric_size": true
+      },
+      "original_spec": "Ø10 mm 实心，约 200 颗",
+      "strictness": {
+        "level": "B",
+        "must": "单颗质量一致（同批次）；颜色与杯、碗、桌面有对比（L404）。",
+        "tolerance": "直径 8–12 mm 都行；优先实心塑料珠，单颗更重，对 0.1 g 秤的分辨率更友好。",
+        "critical": [
+          "珠子同批次，到货称 30 颗验证单颗质量和离散：真机按“颗数 = 重量 ÷ 单颗重”计数（L279），离散大会把 30 颗算成 29 或 31。"
+        ],
+        "pending": null,
+        "label": "B 有硬约束、范围内随便买",
+        "short": "B 有硬约束",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -1192,7 +1581,7 @@
       "group": "日常道具",
       "route": "直接购买",
       "phase": "BASE 首批",
-      "spec": "约 60×40 cm，边高 2 cm",
+      "spec": "约 60×40 cm：50–70 × 35–50 cm、边高 ≥1.5 cm 的现货即可（原文边高 2 cm）",
       "tasks": "S4、H9",
       "initial_qty": "1 个",
       "note": "",
@@ -1222,7 +1611,7 @@
           {
             "kind": "approximate",
             "scope": "S4 / H9",
-            "value": "防散托盘平面约 60×40 cm。",
+            "value": "防散托盘约 60×40 cm：50–70 × 35–50 cm 都行。",
             "source_line": 422,
             "source_lines": [
               422
@@ -1232,13 +1621,18 @@
                 "line": 422,
                 "text": "| 防散托盘 | 约 60×40 cm，边高 2 cm | 1 | A |",
                 "url": "../spec.html#line-401"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
               }
             ]
           },
           {
             "kind": "explicit",
             "scope": "S4 / H9",
-            "value": "托盘边高 2 cm。",
+            "value": "托盘边高 ≥1.5 cm（原文 2 cm，起兜底作用，按下限核对）。",
             "source_line": 407,
             "source_lines": [
               407
@@ -1248,6 +1642,11 @@
                 "line": 407,
                 "text": "  - 倾倒区下方铺一个带 2 cm 边的浅托盘，防止珠子滚丢。",
                 "url": "../spec.html#line-401"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
               }
             ]
           }
@@ -1256,6 +1655,17 @@
         "category": "explicit",
         "label": "有尺寸要求 · 数值 / 上下限",
         "has_numeric_size": true
+      },
+      "original_spec": "约 60×40 cm，边高 2 cm",
+      "strictness": {
+        "level": "C",
+        "must": "能兜住倾倒区的散珠。",
+        "tolerance": "买接近的现货即可：50–70 × 35–50 cm，边高 ≥1.5 cm。",
+        "critical": [],
+        "pending": null,
+        "label": "C 差不多就行",
+        "short": "C 差不多就行",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -1310,7 +1720,7 @@
           {
             "kind": "explicit",
             "scope": "S5 簸箕",
-            "value": "簸箕开口 15 cm；打印替代件入口斜坡 ≤15°。",
+            "value": "簸箕开口 ≥15 cm（15–20 cm 都行）；打印替代件入口斜坡 ≤15°。",
             "source_line": 428,
             "source_lines": [
               428
@@ -1320,6 +1730,11 @@
                 "line": 428,
                 "text": "  - 簸箕：开口 15 cm，口沿薄、入口斜坡平缓，底部用磁铁固定在右侧。现货口沿太厚时，改用 3D 打印的簸箕（入口斜坡 ≤15°）。",
                 "url": "../spec.html#line-425"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
               }
             ]
           }
@@ -1328,6 +1743,16 @@
         "category": "explicit",
         "label": "有尺寸要求 · 数值 / 上下限",
         "has_numeric_size": true
+      },
+      "strictness": {
+        "level": "B",
+        "must": "簸箕开口 ≥15 cm、口沿薄、入口斜坡 ≤15°，2 cm 方块要能被扫上去。",
+        "tolerance": "簸箕开口 15–20 cm 都行；刷子按约值买，柄 Ø2–3 cm 好夹，柄别比 15 cm 短；簸箕不合格再打印 P04。",
+        "critical": [],
+        "pending": null,
+        "label": "B 有硬约束、范围内随便买",
+        "short": "B 有硬约束",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -1366,7 +1791,7 @@
           {
             "kind": "approximate",
             "scope": "S6",
-            "value": "三个分类桶各约 20×15×15 cm。",
+            "value": "三个分类桶各约 20×15×15 cm，±3 cm。",
             "source_line": 448,
             "source_lines": [
               448
@@ -1376,14 +1801,29 @@
                 "line": 448,
                 "text": "  - **桶**：三个约 20×15×15 cm 的塑料收纳盒，颜色和类别为蓝（塑料）、灰（金属）、黄（纸），正面贴回收标识，固定在远端。",
                 "url": "../spec.html#line-446"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
               }
             ]
           }
         ],
         "note": "",
         "category": "approximate",
-        "label": "有尺寸要求 · 约尺寸",
+        "label": "有尺寸要求 · 约尺寸 / 范围",
         "has_numeric_size": true
+      },
+      "strictness": {
+        "level": "B",
+        "must": "颜色对应类别（蓝、灰、黄）；口内放得下所有 S6 物品（L139）。",
+        "tolerance": "约 20×15×15 cm，±3 cm；三只最好同款只换颜色。",
+        "critical": [],
+        "pending": null,
+        "label": "B 有硬约束、范围内随便买",
+        "short": "B 有硬约束",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -1556,6 +1996,18 @@
         "category": "explicit",
         "label": "有尺寸要求 · 数值 / 上下限",
         "has_numeric_size": true
+      },
+      "strictness": {
+        "level": "B",
+        "must": "45 N 不变形；OOD 物品与 ID 物品大小相当（L191）。",
+        "tolerance": "按“手里一握大小、AG-95 能夹（≤9 cm）”挑；S11 用的两件 ≤8 cm。",
+        "critical": [
+          "45 N 试夹，不用空易拉罐和薄塑料杯（L455）。"
+        ],
+        "pending": null,
+        "label": "B 有硬约束、范围内随便买",
+        "short": "B 有硬约束",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -1594,7 +2046,7 @@
           {
             "kind": "approximate",
             "scope": "D2 / D7",
-            "value": "带把手开口箱约 30×20×12 cm；OOD 选另一款尺寸相近的。",
+            "value": "带把手开口箱约 30×20×12 cm，±4 cm；OOD 选另一款尺寸相近的。",
             "source_line": 523,
             "source_lines": [
               523
@@ -1604,6 +2056,11 @@
                 "line": 523,
                 "text": "  - 开口塑料收纳箱，约 30×20×12 cm，两侧带横杆把手。现货把手不适合 ARX 夹爪时，3D 打印把手，用螺丝装上。",
                 "url": "../spec.html#line-521"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
               }
             ]
           },
@@ -1626,8 +2083,20 @@
         ],
         "note": "S3 抽屉把手的 ≥4 cm 净空不是 D2 箱把手的原文尺寸。",
         "category": "approximate",
-        "label": "有尺寸要求 · 约尺寸",
+        "label": "有尺寸要求 · 约尺寸 / 范围",
         "has_numeric_size": true
+      },
+      "strictness": {
+        "level": "B",
+        "must": "箱子空重 ≤0.5 kg（含把手和 ArUco）；把手要 ARX 夹得住；箱体够硬。",
+        "tolerance": "外形约 30×20×12 cm，±4 cm 都行；到货先称空重；把手不合适就换打印把手。",
+        "critical": [
+          "D2 箱子空重 ≤0.5 kg：阶梯是含箱总质量，L1 只有 0.5 kg（L528），箱子加打印把手超重，L1 档就做不出来。"
+        ],
+        "pending": null,
+        "label": "B 有硬约束、范围内随便买",
+        "short": "B 有硬约束",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -1684,6 +2153,16 @@
         "category": "none",
         "label": "清单未规定具体尺寸",
         "has_numeric_size": false
+      },
+      "strictness": {
+        "level": "B",
+        "must": "总质量（不是尺寸）；固定牢，不能在箱内滑动（L524）。",
+        "tolerance": "每档 ±20 g，用 5 kg 秤实测记录；垫圈、钢片都可以。",
+        "critical": [],
+        "pending": null,
+        "label": "B 有硬约束、范围内随便买",
+        "short": "B 有硬约束",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -1692,7 +2171,7 @@
       "group": "日常道具",
       "route": "直接购买",
       "phase": "BASE 首批",
-      "spec": "35×25 cm",
+      "spec": "约 35×25 cm：30–40 × 20–30 cm 的现货即可（原文 35×25 cm）",
       "tasks": "D2、D7",
       "initial_qty": "1 块",
       "note": "",
@@ -1720,9 +2199,9 @@
       "dimensions": {
         "requirements": [
           {
-            "kind": "explicit",
+            "kind": "approximate",
             "scope": "D2 / D7",
-            "value": "防滑目标垫 35×25 cm。",
+            "value": "防滑目标垫约 35×25 cm：30–40 × 20–30 cm 都行。",
             "source_line": 525,
             "source_lines": [
               525
@@ -1732,14 +2211,30 @@
                 "line": 525,
                 "text": "  - 目标垫：35×25 cm 防滑垫。",
                 "url": "../spec.html#line-521"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
               }
             ]
           }
         ],
         "note": "",
-        "category": "explicit",
-        "label": "有尺寸要求 · 数值 / 上下限",
+        "category": "approximate",
+        "label": "有尺寸要求 · 约尺寸 / 范围",
         "has_numeric_size": true
+      },
+      "original_spec": "35×25 cm",
+      "strictness": {
+        "level": "C",
+        "must": "只作目标垫：判据 on(mat)，中心偏差 ≤5 cm（L530）。",
+        "tolerance": "买接近的现货即可：30–40 × 20–30 cm 的任意防滑垫。",
+        "critical": [],
+        "pending": null,
+        "label": "C 差不多就行",
+        "short": "C 差不多就行",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -1827,6 +2322,16 @@
         "url": "../cad/previews/printed_tube_12x75.png",
         "source": "../cad/#B25",
         "caption": "本项目打印试管（配套试管架） CAD 预览；尚未实体试印"
+      },
+      "strictness": {
+        "level": "A",
+        "must": "外径实测值决定间隙；距底 30 mm 色带是阶段线（L278）。",
+        "tolerance": "和 P05 一起试印，外径逐支实测；色带 ±1 mm；夹持时不能变形；OOD 铝棒按实测外径另记间隙。",
+        "critical": [],
+        "pending": null,
+        "label": "A 必须严格",
+        "short": "A 必须严格",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -1835,10 +2340,10 @@
       "group": "日常道具",
       "route": "购买后加工",
       "phase": "先取样验证",
-      "spec": "袋口周长 50/44/38 cm，每档 10 个",
+      "spec": "买现成帆布束口袋，按平铺口宽约 25 / 22 / 19 cm 分档（袋口周长约 50 / 44 / 38 cm），每档 ±1.5 cm，到货实测周长；每档 10 个（通过闸门后）",
       "tasks": "D4、H8",
-      "initial_qty": "BASE 周长 44 cm、深约 20 cm 样品 1 个",
-      "note": "44 cm 是袋口一圈的长度，平铺袋口宽约 22 cm；袋深约 20 cm。参考照片是同类帆布袋，不是按图中 15×20 cm 直接下单。",
+      "initial_qty": "BASE 档：平铺口宽约 22 cm（±1.5 cm）的现成束口袋 1 个，到货量周长；25 / 19 cm 档以后测阶梯时再买",
+      "note": "不必定做（原文 L566 只是允许定做）。44 cm 是袋口一圈的长度，周长 ≈ 2 × 平铺口宽；参考照片是同类帆布袋，不是按图中尺寸直接下单。",
       "original_route": "A/B",
       "source_section": "8.1 物品与容器",
       "source_line": 1020,
@@ -1859,13 +2364,13 @@
       ],
       "plastic_print": false,
       "manufacturing_cad_available": null,
-      "search_terms": "帆布束口袋 袋口周长 50/44/38 cm，每档 10 个",
+      "search_terms": "帆布束口袋 抽绳 现货 宽 22cm 深 20cm",
       "dimensions": {
         "requirements": [
           {
             "kind": "explicit",
             "scope": "D4 / H8",
-            "value": "袋口周长 50 / 44 / 38 cm；BASE 为 44 cm。",
+            "value": "袋口周长按档单调：约 50 / 44 / 38 cm，BASE 约 44 cm。买现成束口袋，按平铺口宽约 25 / 22 / 19 cm 分档，每档 ±1.5 cm，相邻档实测周长差 ≥4 cm，到货实测周长。",
             "source_line": 568,
             "source_lines": [
               568
@@ -1875,13 +2380,18 @@
                 "line": 568,
                 "text": "- **阶梯**：袋口周长 L1 50 cm；L2 44 cm（BASE）；L3 38 cm。D4 是 H8 的夹爪版本，袋子相同，装的是能从窄缝放进去的小物件。",
                 "url": "../spec.html#line-564"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
               }
             ]
           },
           {
             "kind": "approximate",
             "scope": "D4 / H8",
-            "value": "袋深约 20 cm。",
+            "value": "袋深约 20 cm：17–23 cm 都行。",
             "source_line": 566,
             "source_lines": [
               566
@@ -1891,6 +2401,11 @@
                 "line": 566,
                 "text": "  - 帆布束口袋，袋口缝成周长 50/44/38 cm（约 Ø16/14/12 cm），袋深约 20 cm，每档 10 个。帆布袋可以按尺寸定做。塑料袋容易撕、会反光，不用。",
                 "url": "../spec.html#line-564"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
               }
             ]
           },
@@ -1911,10 +2426,21 @@
             ]
           }
         ],
-        "note": "44 cm 是一圈周长，不是平铺口宽；平铺宽约 22 cm 是换算参考。",
+        "note": "44 cm 是一圈周长，不是平铺口宽；周长 ≈ 2 × 平铺口宽。阶梯按实测周长记录（原文第 5 行）。",
         "category": "explicit",
         "label": "有尺寸要求 · 数值 / 上下限",
         "has_numeric_size": true
+      },
+      "original_spec": "袋口周长 50/44/38 cm，每档 10 个",
+      "strictness": {
+        "level": "B",
+        "must": "袋口周长按档单调，实测写进 YAML。",
+        "tolerance": "不必定做：买现成束口袋，按平铺口宽约 25 / 22 / 19 cm 分档（周长 ≈ 2 × 平铺口宽），每档 ±1.5 cm，相邻档实测周长差 ≥4 cm；到货实测周长。深 17–23 cm；用帆布，不用塑料袋；同档同款。19 cm 档（周长 38）先别批量，仿真里 R5 夹爪外壳约 10 cm，对小袋口太宽。",
+        "critical": [],
+        "pending": null,
+        "label": "B 有硬约束、范围内随便买",
+        "short": "B 有硬约束",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -1923,7 +2449,7 @@
       "group": "日常道具",
       "route": "购买后加工",
       "phase": "先取样验证",
-      "spec": "25/30/40 cm，每档 10 条",
+      "spec": "约 25 / 30 / 40 cm 见方，每档 ±1.5 cm；同批次洗涤，每档 10 条（通过闸门后）",
       "tasks": "D5",
       "initial_qty": "BASE 30×30 cm 1 条，四角各缝 3×3 cm 色贴",
       "note": "同批次材质，先 30×30 cm；缝 4 块不同色 3×3 cm 布贴。布厚 k 实测后确定。",
@@ -1953,7 +2479,7 @@
           {
             "kind": "explicit",
             "scope": "D5",
-            "value": "方巾 25×25 / 30×30 / 40×40 cm；BASE 为 30×30 cm。",
+            "value": "方巾约 25 / 30 / 40 cm 见方，每档 ±1.5 cm；BASE 约 30 cm。",
             "source_line": 581,
             "source_lines": [
               581
@@ -1963,13 +2489,18 @@
                 "line": 581,
                 "text": "  - 超细纤维方巾 25×25 / 30×30 / 40×40 cm（市售常见尺寸），每档 10 条，同一批次洗涤。",
                 "url": "../spec.html#line-579"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
               }
             ]
           },
           {
             "kind": "explicit",
             "scope": "D5",
-            "value": "四角各缝一块 3×3 cm 的不同色布贴。",
+            "value": "四角各缝一块 3×3 cm 的不同色布贴，紧贴四角，四角偏移相同。",
             "source_line": 582,
             "source_lines": [
               582
@@ -1979,6 +2510,11 @@
                 "line": 582,
                 "text": "  - 四个角各缝一块 3×3 cm 的布贴，颜色各不相同；训练和评测都带着。",
                 "url": "../spec.html#line-579"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
               }
             ]
           }
@@ -1987,6 +2523,19 @@
         "category": "explicit",
         "label": "有尺寸要求 · 数值 / 上下限",
         "has_numeric_size": true
+      },
+      "original_spec": "25/30/40 cm，每档 10 条",
+      "strictness": {
+        "level": "B",
+        "must": "四角色块四色各不相同、位置一致贴角；同档同批同洗；布厚 k 实测（L586）。",
+        "tolerance": "边长每档 ±1.5 cm（原文本来就是市售常见尺寸，L581）。",
+        "critical": [
+          "四角色块位置一致：判据是配对两角色块中心距 ≤3 cm（L586），色块缝偏 1–2 cm 就可能把折好的方巾判不过；紧贴四角，四角偏移相同。"
+        ],
+        "pending": null,
+        "label": "B 有硬约束、范围内随便买",
+        "short": "B 有硬约束",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -2025,7 +2574,7 @@
           {
             "kind": "approximate",
             "scope": "H1",
-            "value": "直径约 Ø9 / 11 / 13 / 15 cm，BASE 为约 Ø11 cm；买最接近的现货并实测。",
+            "value": "直径约 Ø9 / 11 / 13 / 15 cm，每档 ±1 cm、相邻差 ≥1.5 cm；BASE 约 Ø11 cm，买最接近的现货并实测；L2 起要大于 AG-95 实测开口。",
             "source_line": 682,
             "source_lines": [
               682
@@ -2035,14 +2584,31 @@
                 "line": 682,
                 "text": "| 橡胶球 | 带纹理，最接近 Ø9/11/13/15 cm 的现货 | 每档 2 | A |",
                 "url": "../spec.html#line-674"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
               }
             ]
           }
         ],
         "note": "这些是难度档的目标直径；保留“最接近、实测”的原文口径。",
         "category": "approximate",
-        "label": "有尺寸要求 · 约尺寸",
+        "label": "有尺寸要求 · 约尺寸 / 范围",
         "has_numeric_size": true
+      },
+      "strictness": {
+        "level": "B",
+        "must": "L2–L4 球径要大于 AG-95 的实测开口，否则 DNI 无意义；四档单调。",
+        "tolerance": "每档 ±1 cm，相邻差 ≥1.5 cm；先实测 AG-95 开口，BASE 球径 ≥ 开口 + 1 cm。",
+        "critical": [
+          "球要大于 AG-95 实测开口，这是结构原因 (a) 的前提（L641、L677）。"
+        ],
+        "pending": null,
+        "label": "B 有硬约束、范围内随便买",
+        "short": "B 有硬约束",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -2099,6 +2665,16 @@
         "category": "explicit",
         "label": "有尺寸要求 · 数值 / 上下限",
         "has_numeric_size": true
+      },
+      "strictness": {
+        "level": "C",
+        "must": "软、可压缩，用 PU，不用 EPS。",
+        "tolerance": "Ø9–11 cm；H8 推迟，本期不买。",
+        "critical": [],
+        "pending": null,
+        "label": "C 差不多就行",
+        "short": "C 差不多就行",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -2168,6 +2744,18 @@
         "category": "none",
         "label": "清单未规定具体尺寸",
         "has_numeric_size": false
+      },
+      "strictness": {
+        "level": "B",
+        "must": "最窄的可夹方向也要大于 AG-95 实测开口；放得进大收纳箱。",
+        "tolerance": "到货后用 AG-95 试夹，能夹起来的不要。",
+        "critical": [
+          "OOD 大塑料瓶如果能被夹爪夹起来，就失去这个任务的意义（结构原因 (a)，L641）。"
+        ],
+        "pending": null,
+        "label": "B 有硬约束、范围内随便买",
+        "short": "B 有硬约束",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -2224,6 +2812,16 @@
         "category": "fit",
         "label": "需实测适配 · 未定固定尺寸",
         "has_numeric_size": false
+      },
+      "strictness": {
+        "level": "B",
+        "must": "必须是扳机式；放得进 H1 大收纳箱（H-open，L139）；手握得住，食指够得到扳机；喷嘴装得下激光。",
+        "tolerance": "中小号即可；买前量最长边，要小于箱子内口长边。",
+        "critical": [],
+        "pending": null,
+        "label": "B 有硬约束、范围内随便买",
+        "short": "B 有硬约束",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -2311,6 +2909,18 @@
         "url": "../cad/previews/card_t2.png",
         "source": "../cad/#B32",
         "caption": "本项目打印卡片（配套卡槽） CAD 预览；尚未实体试印"
+      },
+      "strictness": {
+        "level": "B",
+        "must": "厚度单调，薄档要真的薄；卡片平整。",
+        "tolerance": "平面 ±1 mm；厚度 L1 / L2 ±0.15 mm，L3 / L4 ±0.08 mm，且 L4 < L3；翘曲 ≤0.2 mm；四档同一圆角。",
+        "critical": [
+          "卡片必须平：结构原因 (c) 是薄片平贴桌面（L641、L661），翘边会把难度降下来，每张都查翘曲。"
+        ],
+        "pending": null,
+        "label": "B 有硬约束、范围内随便买",
+        "short": "B 有硬约束",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -2344,15 +2954,12 @@
       "plastic_print": true,
       "manufacturing_cad_available": true,
       "search_terms": "卡槽 名片座",
-      "cad_url": "../cad/#B33",
-      "cad_status": "尺寸原型 · 尚未实体试印",
-      "cad_part_count": 4,
       "dimensions": {
         "requirements": [
           {
             "kind": "fit",
             "scope": "H3",
-            "value": "卡槽要匹配 85×54 mm、四档厚度的 打印卡片；清单未固定槽宽、槽深、底座外形。",
+            "value": "卡槽匹配 85×54 mm、四档厚度的打印卡片；槽间隙 0.4–1.0 mm 都行，四档用同一个值。",
             "source_line": 703,
             "source_lines": [
               703
@@ -2362,11 +2969,16 @@
                 "line": 703,
                 "text": "- 卡片：PVC 白卡 0.76 mm 对应 0.8 mm 档，另用 1/2/3 mm 的 PVC 板切成 85×54 mm，圆角统一。",
                 "url": "../spec.html#line-701"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
               }
             ]
           }
         ],
-        "note": "当前 CAD 的槽间隙和底座大小是设计值，不属于任务清单的固定尺寸。",
+        "note": "0.6 mm 槽间隙是当前 CAD 设计值，不是硬性要求；四档保持同一间隙即可。",
         "category": "fit",
         "label": "需实测适配 · 未定固定尺寸",
         "has_numeric_size": false
@@ -2375,7 +2987,20 @@
       "update_source": "../USER_PROP_UPDATES_2026-10-21.md",
       "update_notice": "当前配套：B32 打印卡片 + B33 卡槽。",
       "paired_zip": "../cad/packages/H3_cards_and_slots.zip",
-      "paired_label": "下载四档卡片 + 卡槽整套"
+      "paired_label": "下载四档卡片 + 卡槽整套",
+      "cad_url": "../cad/#B33",
+      "cad_status": "尺寸原型 · 尚未实体试印",
+      "cad_part_count": 4,
+      "strictness": {
+        "level": "B",
+        "must": "卡片能插进去并立住；四档间隙相同，阶梯只变卡片厚度一个量（L197）。",
+        "tolerance": "间隙 0.4–1.0 mm 都行，四档用同一个值；0.6 mm 只是当前设计值。原文是一个现成名片座，是否改回由用户定。",
+        "critical": [],
+        "pending": null,
+        "label": "B 有硬约束、范围内随便买",
+        "short": "B 有硬约束",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
+      }
     },
     {
       "id": "B34",
@@ -2431,6 +3056,16 @@
         "category": "none",
         "label": "清单未规定具体尺寸",
         "has_numeric_size": false
+      },
+      "strictness": {
+        "level": "C",
+        "must": "同款就行，H5 凹槽按球来做。",
+        "tolerance": "标准 40 mm 球，一盒同款。",
+        "critical": [],
+        "pending": null,
+        "label": "C 差不多就行",
+        "short": "C 差不多就行",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -2487,6 +3122,16 @@
         "category": "none",
         "label": "清单未规定具体尺寸",
         "has_numeric_size": false
+      },
+      "strictness": {
+        "level": "C",
+        "must": "放得进抽屉；抓取难度与 ID 物品相当（L191）。",
+        "tolerance": "任意小号。",
+        "critical": [],
+        "pending": null,
+        "label": "C 差不多就行",
+        "short": "C 差不多就行",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -2525,7 +3170,7 @@
           {
             "kind": "approximate",
             "scope": "H7",
-            "value": "同款四翻盖纸箱约 20×15×12 cm。",
+            "value": "同款四翻盖纸箱约 20×15×12 cm，±2 cm，宁小勿大。",
             "source_line": 750,
             "source_lines": [
               750
@@ -2535,14 +3180,32 @@
                 "line": 750,
                 "text": "- 用同款上开口、四翻盖的小纸箱（约 20×15×12 cm）。",
                 "url": "../spec.html#line-749"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
               }
             ]
           }
         ],
         "note": "三层 / 五层是瓦楞结构，不是毫米厚度；翻盖刚度另外实测分档。",
         "category": "approximate",
-        "label": "有尺寸要求 · 约尺寸",
+        "label": "有尺寸要求 · 约尺寸 / 范围",
         "has_numeric_size": true
+      },
+      "strictness": {
+        "level": "B",
+        "must": "全部同款；四片翻盖能互扣；按压到 45° 的力排档。",
+        "tolerance": "外形约 20×15×12 cm，±2 cm，宁小勿大：仿真里 19 cm 宽的翻盖超过了 Wuji 手约 17 cm 的跨度。",
+        "critical": [
+          "H7 所有纸箱同款（L750）。",
+          "相邻档压翻盖的实测力至少差约 1.5 倍：刚度漂移超过 20% 就要换箱（L752），否则两档会重叠。"
+        ],
+        "pending": null,
+        "label": "B 有硬约束、范围内随便买",
+        "short": "B 有硬约束",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -2594,7 +3257,7 @@
           {
             "kind": "approximate",
             "scope": "S8",
-            "value": "同款亚克力直筒杯约 Ø8×10 cm；透明与不透明组形状一致。",
+            "value": "同款亚克力直筒杯约 Ø8×10 cm，透明与不透明组形状一致；内径 >4.3 cm 盖得住 3 cm 方块；外径宁小勿大（L4 摆法待定）。",
             "source_line": 804,
             "source_lines": [
               804
@@ -2604,14 +3267,32 @@
                 "line": 804,
                 "text": "  - 同款透明亚克力直筒杯 12 只（约 Ø8×10 cm），其中 6 只外壁喷哑光漆，做成不透明组，两组形状完全一样。",
                 "url": "../spec.html#line-801"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
               }
             ]
           }
         ],
         "note": "",
         "category": "approximate",
-        "label": "有尺寸要求 · 约尺寸",
+        "label": "有尺寸要求 · 约尺寸 / 范围",
         "has_numeric_size": true
+      },
+      "strictness": {
+        "level": "B",
+        "must": "12 只同款同形；内径 >4.3 cm，能完全盖住 3 cm 方块；AG-95 夹得住；45 N 不裂。",
+        "tolerance": "只喷外壁；外径宁小勿大。",
+        "critical": [
+          "S8 两组杯子同款同形：透明组和不透明组形状完全一样，只在外壁喷漆（L804、L823）。",
+          "45 N 试夹：薄亚克力杯可能夹裂（L307）。"
+        ],
+        "pending": "S8 的 L4 档 5 只杯排成一排：按仿真口径（AG-95 指宽 2 cm，杯间距 ≥4 cm），5D + 4 × 4 cm ≤ 50 cm 工作区宽（L306），杯径要 ≤约 6.8 cm，约 Ø8 的杯子摆不下。需用户二选一：改用 Ø6.5–7 cm 的杯子（偏离原文“约 Ø8”），或 L4 换一种摆法。先实测 AG-95 指宽再重算。",
+        "label": "B 有硬约束、范围内随便买",
+        "short": "B 有硬约束",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -2620,7 +3301,7 @@
       "group": "日常道具",
       "route": "直接购买",
       "phase": "BASE 首批",
-      "spec": "Ø9 cm",
+      "spec": "约 Ø9 cm：Ø8–10 cm、厚 ≤5 mm 的现货即可（原文 Ø9 cm）",
       "tasks": "S9",
       "initial_qty": "Ø9 cm 4 个",
       "note": "",
@@ -2648,9 +3329,9 @@
       "dimensions": {
         "requirements": [
           {
-            "kind": "explicit",
+            "kind": "approximate",
             "scope": "S9 对照组",
-            "value": "杯垫直径 Ø9 cm。",
+            "value": "杯垫约 Ø9 cm：Ø8–10 cm、厚 ≤5 mm 都行。",
             "source_line": 833,
             "source_lines": [
               833
@@ -2660,14 +3341,30 @@
                 "line": 833,
                 "text": "  - 对照组用杯垫 Ø9 cm。",
                 "url": "../spec.html#line-828"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
               }
             ]
           }
         ],
         "note": "",
-        "category": "explicit",
-        "label": "有尺寸要求 · 数值 / 上下限",
+        "category": "approximate",
+        "label": "有尺寸要求 · 约尺寸 / 范围",
         "has_numeric_size": true
+      },
+      "original_spec": "Ø9 cm",
+      "strictness": {
+        "level": "C",
+        "must": "只作看得见的对照标记：薄。",
+        "tolerance": "买接近的现货即可：Ø8–10 cm，厚 ≤5 mm，与方块颜色有对比。",
+        "critical": [],
+        "pending": null,
+        "label": "C 差不多就行",
+        "short": "C 差不多就行",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -2740,6 +3437,16 @@
         "category": "explicit",
         "label": "有尺寸要求 · 数值 / 上下限",
         "has_numeric_size": true
+      },
+      "strictness": {
+        "level": "B",
+        "must": "低速能稳定调到 2–6 cm/s；急停能联动。",
+        "tolerance": "带宽 8–15 cm 都行；长度够伸出工作区即可。",
+        "critical": [],
+        "pending": null,
+        "label": "B 有硬约束、范围内随便买",
+        "short": "B 有硬约束",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -2773,15 +3480,12 @@
       "plastic_print": true,
       "manufacturing_cad_available": true,
       "search_terms": "销与底座 见 S2：4 档孔径各 2 套，另加方销方孔、80 mm 长销",
-      "cad_url": "../cad/#P01",
-      "cad_status": "尺寸原型 · 尚未实体试印",
-      "cad_part_count": 12,
       "dimensions": {
         "requirements": [
           {
             "kind": "explicit",
             "scope": "S2 销",
-            "value": "圆销 Ø20×60 mm；OOD 方销截面 20×20 mm、长销 80 mm；色带距底 5 / 25 mm。",
+            "value": "圆销 Ø20×60 mm（销长 ±5 mm 不质检）；OOD 方销截面 20×20 mm、长销 80 mm；色带距底 5 / 25 mm，±0.5 mm。",
             "source_line": 351,
             "source_lines": [
               351,
@@ -2797,13 +3501,18 @@
                 "line": 354,
                 "text": "  - OOD：方销 20×20 mm 配方孔（间隙同档）；销长 80 mm。",
                 "url": "../spec.html#line-349"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
               }
             ]
           },
           {
             "kind": "explicit",
             "scope": "S2 底座",
-            "value": "100×100×30 mm；孔深 30 mm，孔口倒角 1 mm×45°。",
+            "value": "底座约 100×100×30 mm（外廓 ±5 mm 不质检）；孔深 30 mm，孔口倒角 1 mm×45°，四档一致。",
             "source_line": 352,
             "source_lines": [
               352
@@ -2813,13 +3522,18 @@
                 "line": 352,
                 "text": "  - 底座 100×100×30 mm，中央圆孔深 30 mm，孔口倒角 1 mm × 45°（四档一致）。底部嵌 4 颗钕磁铁，吸在桌面贴图下面的钢板上。",
                 "url": "../spec.html#line-349"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
               }
             ]
           },
           {
             "kind": "explicit",
             "scope": "S2 孔径",
-            "value": "圆孔 Ø28 / 24 / 22 / 21 mm，BASE Ø24 mm；方孔按相同间隙档。",
+            "value": "圆孔 Ø28 / 24 / 22 / 21 mm，BASE Ø24 mm；按实测间隙验收：L1 8±0.5、L2 4±0.3、L3 2±0.2、L4 1±0.15 mm；方孔按相同间隙档。",
             "source_line": 353,
             "source_lines": [
               353,
@@ -2835,6 +3549,11 @@
                 "line": 354,
                 "text": "  - OOD：方销 20×20 mm 配方孔（间隙同档）；销长 80 mm。",
                 "url": "../spec.html#line-349"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
               }
             ]
           }
@@ -2843,6 +3562,23 @@
         "category": "explicit",
         "label": "有尺寸要求 · 数值 / 上下限",
         "has_numeric_size": true
+      },
+      "cad_url": "../cad/#P01",
+      "cad_status": "尺寸原型 · 尚未实体试印",
+      "cad_part_count": 12,
+      "strictness": {
+        "level": "A",
+        "must": "实测间隙（孔径 − 销径）；四档倒角一致；色带位置；孔深要大于 25 mm 色带并留余量。",
+        "tolerance": "间隙 L1 8±0.5、L2 4±0.3、L3 2±0.2、L4 1±0.15 mm；四档同一套倒角参数；色带 ±0.5 mm；底座外廓、销长 ±5 mm 都行，外廓不质检。",
+        "critical": [
+          "S2 四档倒角一致（L352）：倒角越大越好插，四档不一样，阶梯就不再是单变量。",
+          "L3 / L4 不用 FDM：原文说 FDM 误差 ±0.2–0.3 mm 还有层纹，不适合 L3、L4（L356）。H2S 打的 L3 / L4 只当试配样件，正式件外协 CNC 或光固化后铰孔（L1103）；卡尺实测孔径，每 100 次复测（L357、L998）。",
+          "色带距底 5 / 25 mm 决定阶段线（L277），误差 ±0.5 mm。"
+        ],
+        "pending": null,
+        "label": "A 必须严格",
+        "short": "A 必须严格",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -2902,15 +3638,12 @@
       "plastic_print": true,
       "manufacturing_cad_available": true,
       "search_terms": "抽屉柜与分度转台 见 S3",
-      "cad_url": "../cad/#P02",
-      "cad_status": "接口待测 · 尚未实体试印",
-      "cad_part_count": 6,
       "dimensions": {
         "requirements": [
           {
             "kind": "approximate",
             "scope": "S3 / S11 柜体",
-            "value": "柜体约 25×30×15 cm；S11 抽屉内高约 10 cm。",
+            "value": "柜体约 25×30×15 cm，±3 cm；S11 抽屉内高约 10 cm。",
             "source_line": 373,
             "source_lines": [
               373,
@@ -2926,13 +3659,18 @@
                 "line": 880,
                 "text": "  - 收纳物只用矮的：4 cm 木方块、海绵、小号胶带卷、仿真橙子。抽屉内高约 10 cm，物体高度 ≤8 cm。",
                 "url": "../spec.html#line-876"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
               }
             ]
           },
           {
             "kind": "explicit",
             "scope": "S3 行程 / 把手",
-            "value": "抽屉行程 ≥20 cm；横杆把手 Ø2 cm，与面板净空 ≥4 cm（已确认口径）。",
+            "value": "抽屉行程 ≥20 cm；横杆把手约 Ø2 cm（Ø18–25 mm），与面板净空 ≥4 cm（已确认口径）。",
             "source_line": 373,
             "source_lines": [
               373,
@@ -2948,13 +3686,18 @@
                 "line": 374,
                 "text": "  - 把手为 Ø2 cm 横杆，与面板间距 ≥4 cm，保证 AG-95 的指尖伸得进去。",
                 "url": "../spec.html#line-371"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
               }
             ]
           },
           {
             "kind": "explicit",
             "scope": "S3 分度",
-            "value": "分度孔对应 0°、±10°、±20°、±30°。",
+            "value": "分度孔对应 0°、±10°、±20°、±30°，±1°，倾角仪实测。",
             "source_line": 375,
             "source_lines": [
               375
@@ -2964,6 +3707,11 @@
                 "line": 375,
                 "text": "  - 柜体装在带分度孔的转台上（0°、±10°、±20°、±30°），转台夹紧在桌面远端中央。",
                 "url": "../spec.html#line-371"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
               }
             ]
           }
@@ -2972,6 +3720,21 @@
         "category": "explicit",
         "label": "有尺寸要求 · 数值 / 上下限",
         "has_numeric_size": true
+      },
+      "cad_url": "../cad/#P02",
+      "cad_status": "接口待测 · 尚未实体试印",
+      "cad_part_count": 6,
+      "strictness": {
+        "level": "B",
+        "must": "把手净空 ≥4 cm；行程 ≥20 cm；抽屉内高约 10 cm（L880）；分度角。",
+        "tolerance": "柜体外形 ±3 cm；把手 Ø18–25 mm；分度角 ±1°，用倾角仪实测；滑轨买 ≥250 mm 的三节轨；拉开力用阻尼调到 2 N，实测记录。",
+        "critical": [
+          "S3 把手净空 ≥4 cm：按把手与面板之间的空隙算，不按中心距（用户第 6 条）；旧仿真按中心距 4.3 cm 做，净空只有 3.3 cm，曾被审计判不合格。"
+        ],
+        "pending": null,
+        "label": "B 有硬约束、范围内随便买",
+        "short": "B 有硬约束",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -3005,15 +3768,12 @@
       "plastic_print": true,
       "manufacturing_cad_available": true,
       "search_terms": "配重杯 Ø7×9 cm，带配重腔",
-      "cad_url": "../cad/#P03",
-      "cad_status": "尺寸原型 · 尚未实体试印",
-      "cad_part_count": 2,
       "dimensions": {
         "requirements": [
           {
-            "kind": "explicit",
+            "kind": "approximate",
             "scope": "S4 / H9",
-            "value": "杯体 Ø7×9 cm，底部带配重腔。",
+            "value": "杯体约 Ø7×9 cm，按 CAD 打印，外形不质检；底部带配重腔。",
             "source_line": 403,
             "source_lines": [
               403
@@ -3023,6 +3783,11 @@
                 "line": 403,
                 "text": "  - 杯 Ø7×9 cm，3D 打印，底部留配重腔（P 轴用）。",
                 "url": "../spec.html#line-401"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
               }
             ]
           },
@@ -3044,9 +3809,22 @@
           }
         ],
         "note": "",
-        "category": "explicit",
-        "label": "有尺寸要求 · 数值 / 上下限",
+        "category": "approximate",
+        "label": "有尺寸要求 · 约尺寸 / 范围",
         "has_numeric_size": true
+      },
+      "cad_url": "../cad/#P03",
+      "cad_status": "尺寸原型 · 尚未实体试印",
+      "cad_part_count": 2,
+      "strictness": {
+        "level": "C",
+        "must": "能装下 30 颗珠（PROBE 60 颗）；配重腔装得下 P 轴的 ×2 质量。",
+        "tolerance": "按 CAD 打印，外形不用质检，只查配重腔和盖的配合；称重记录。",
+        "critical": [],
+        "pending": null,
+        "label": "C 差不多就行",
+        "short": "C 差不多就行",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -3080,15 +3858,12 @@
       "plastic_print": true,
       "manufacturing_cad_available": true,
       "search_terms": "簸箕 开口 15 cm，入口斜坡 ≤15°",
-      "cad_url": "../cad/#P04",
-      "cad_status": "尺寸原型 · 尚未实体试印",
-      "cad_part_count": 1,
       "dimensions": {
         "requirements": [
           {
             "kind": "explicit",
             "scope": "S5",
-            "value": "净开口 15 cm，入口斜坡 ≤15°。",
+            "value": "净开口 ≥15 cm（15–20 cm），入口斜坡 ≤15°。",
             "source_line": 428,
             "source_lines": [
               428
@@ -3098,6 +3873,11 @@
                 "line": 428,
                 "text": "  - 簸箕：开口 15 cm，口沿薄、入口斜坡平缓，底部用磁铁固定在右侧。现货口沿太厚时，改用 3D 打印的簸箕（入口斜坡 ≤15°）。",
                 "url": "../spec.html#line-425"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
               }
             ]
           }
@@ -3106,6 +3886,19 @@
         "category": "explicit",
         "label": "有尺寸要求 · 数值 / 上下限",
         "has_numeric_size": true
+      },
+      "cad_url": "../cad/#P04",
+      "cad_status": "尺寸原型 · 尚未实体试印",
+      "cad_part_count": 1,
+      "strictness": {
+        "level": "B",
+        "must": "入口斜坡 ≤15°，口沿薄，开口 ≥15 cm。",
+        "tolerance": "只有现货簸箕不合格才打印。",
+        "critical": [],
+        "pending": null,
+        "label": "B 有硬约束、范围内随便买",
+        "short": "B 有硬约束",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -3152,15 +3945,12 @@
       "plastic_print": true,
       "manufacturing_cad_available": true,
       "search_terms": "试管架与管托 见 D3，4 档各 2 套",
-      "cad_url": "../cad/#P05",
-      "cad_status": "尺寸原型 · 尚未实体试印",
-      "cad_part_count": 7,
       "dimensions": {
         "requirements": [
           {
             "kind": "approximate",
             "scope": "D3 架体",
-            "value": "试管架约 100×60×80 mm。",
+            "value": "试管架约 100×60×80 mm，外形不质检。",
             "source_line": 547,
             "source_lines": [
               547
@@ -3170,13 +3960,18 @@
                 "line": 547,
                 "text": "    - 3D 打印，约 100×60×80 mm，4 个孔；孔深 ≥40 mm，孔口倒角 1 mm × 45°（四档一致）。",
                 "url": "../spec.html#line-543"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
               }
             ]
           },
           {
             "kind": "explicit",
             "scope": "D3 导向孔",
-            "value": "4 个孔；孔深 ≥40 mm，入口倒角 1 mm×45°；孔径 Ø16 / 15 / 14 / 13.5 mm，BASE Ø15 mm。",
+            "value": "4 个孔；孔深 ≥40 mm，入口倒角 1 mm×45°（四档一致）；孔径 Ø16 / 15 / 14 / 13.5 mm，BASE Ø15 mm；按实测间隙验收：L1 4±0.3、L2 3±0.3、L3 2±0.15、L4 1.5±0.15 mm。",
             "source_line": 547,
             "source_lines": [
               547,
@@ -3192,6 +3987,11 @@
                 "line": 552,
                 "text": "- **阶梯**：孔径 L1 16 mm（间隙 4 mm）；L2 15 mm（3 mm，BASE）；L3 14 mm（2 mm）；L4 13.5 mm（1.5 mm）。实测孔径写入记录。",
                 "url": "../spec.html#line-543"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
               }
             ]
           },
@@ -3221,7 +4021,23 @@
       "update_source": "../USER_PROP_UPDATES_2026-10-21.md",
       "update_notice": "当前配套：B25 打印试管 + P05 架体与 V 托。",
       "paired_zip": "../cad/packages/D3_tubes_and_rack.zip",
-      "paired_label": "下载试管 + 试管架 + V 托整套"
+      "paired_label": "下载试管 + 试管架 + V 托整套",
+      "cad_url": "../cad/#P05",
+      "cad_status": "尺寸原型 · 尚未实体试印",
+      "cad_part_count": 7,
+      "strictness": {
+        "level": "A",
+        "must": "实测间隙（孔径 − 试管外径）；四档倒角一致；孔深 ≥40 mm，保证 30 mm 色带能没入；架重和脚垫一致。",
+        "tolerance": "间隙 L1 4±0.3、L2 3±0.3、L3 2±0.15、L4 1.5±0.15 mm；先打孔径试片；架子外形不用质检；四档用同一款毛毡脚垫；配重到 0.15 kg 称重。",
+        "critical": [
+          "D3 四档倒角一致（L547）：四档不一样，阶梯就不再是单变量。",
+          "L3 和 L4 只差 0.5 mm 间隙，孔径必须先打试片、逐件实测。"
+        ],
+        "pending": null,
+        "label": "A 必须严格",
+        "short": "A 必须严格",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
+      }
     },
     {
       "id": "P06",
@@ -3345,7 +4161,20 @@
         "label": "有尺寸要求 · 数值 / 上下限",
         "has_numeric_size": true
       },
-      "update_notice": "用户调整：瓶体和瓶盖均用现成品，已从默认打印清单移除。"
+      "update_notice": "用户调整：瓶体和瓶盖均用现成品，已从默认打印清单移除。",
+      "strictness": {
+        "level": "A",
+        "must": "有效啮合角（从刚啮合到拧紧）：BASE 需 ≥540°，L4 需 ≥720°；拧紧终点可复现；瓶身被夹时不瘪、不打滑。",
+        "tolerance": "同款瓶一次备足；在盖上贴角度刻度实测啮合角；建议用扭力计定一个固定拧紧力矩，让对齐线位置可复现（建议项，原文没有）；配重 300 g 称重。",
+        "critical": [
+          "圆瓶要单独试夹：原文用方瓶就是为了左夹爪夹住不打滑（L602）。",
+          "拧紧终点不可复现，“对齐线夹角 ≤30°”的判定会漂（L611、L283）。"
+        ],
+        "pending": "D6 改用现成矿泉水瓶后，先实测有效啮合角：BASE 需 ≥540°，L4 需 ≥720°（L604、L609）。不到 540° 则 D6 的 BASE 不成立，要用户另定瓶子或档位；测完之前不要批量备瓶。",
+        "label": "A 必须严格",
+        "short": "A 必须严格",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
+      }
     },
     {
       "id": "P07",
@@ -3404,9 +4233,6 @@
       "plastic_print": true,
       "manufacturing_cad_available": true,
       "search_terms": "防滚底座、凹槽托盘、配重盒 见 H1、H5、H6",
-      "cad_url": "../cad/#P07",
-      "cad_status": "尺寸原型 · 尚未实体试印",
-      "cad_part_count": 11,
       "dimensions": {
         "requirements": [
           {
@@ -3428,7 +4254,7 @@
           {
             "kind": "explicit",
             "scope": "H5 浅槽托盘",
-            "value": "球距 5 cm；托盘外形、厚度和高度未给固定数值。",
+            "value": "球距 5 cm（±3 mm）；托盘要让手指伸到球下，离桌净空用 Wuji 指尖实际试。",
             "source_line": 728,
             "source_lines": [
               728
@@ -3438,13 +4264,18 @@
                 "line": 728,
                 "text": "- 乒乓球放在 3D 打印的浅凹槽托盘里，球距 5 cm。",
                 "url": "../spec.html#line-727"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
               }
             ]
           },
           {
-            "kind": "explicit",
+            "kind": "approximate",
             "scope": "H6 配重盒",
-            "value": "盒子 10×6×4 cm。",
+            "value": "盒子约 10×6×4 cm，外形不质检；配重称到 150±5 g。",
             "source_line": 741,
             "source_lines": [
               741
@@ -3454,6 +4285,11 @@
                 "line": 741,
                 "text": "- 盒子 10×6×4 cm、150 g，3D 打印，内带配重。",
                 "url": "../spec.html#line-738"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
               }
             ]
           }
@@ -3462,6 +4298,21 @@
         "category": "explicit",
         "label": "有尺寸要求 · 数值 / 上下限",
         "has_numeric_size": true
+      },
+      "cad_url": "../cad/#P07",
+      "cad_status": "尺寸原型 · 尚未实体试印",
+      "cad_part_count": 11,
+      "strictness": {
+        "level": "B",
+        "must": "H5 手指要能伸到球下面；球距 5 cm；H1 环座按实际球径做。",
+        "tolerance": "球距 ±3 mm；托盘离桌净空用 Wuji 指尖实际试，仿真总高 4.5 cm 只作参考；环座等球到货按实测球径打印；H6 盒子外形不质检，称到 150±5 g。",
+        "critical": [
+          "H5 托盘要让手指伸到球下：贴桌的薄板兜不到球底（hands 审计、PROGRESS L60）；球距 5 cm 只是一半要求。"
+        ],
+        "pending": null,
+        "label": "B 有硬约束、范围内随便买",
+        "short": "B 有硬约束",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -3534,15 +4385,12 @@
       "plastic_print": true,
       "manufacturing_cad_available": true,
       "search_terms": "旋钮台 旋钮 + 轴承 + 摩擦刹车 + 电位器",
-      "cad_url": "../cad/#P08",
-      "cad_status": "接口待测 · 尚未实体试印",
-      "cad_part_count": 9,
       "dimensions": {
         "requirements": [
           {
             "kind": "explicit",
             "scope": "H4",
-            "value": "旋钮 Ø5 cm；OOD 罐盖造型旋钮 Ø8 cm。",
+            "value": "旋钮 Ø5 cm（Ø48–52 mm 都行）；OOD 罐盖造型旋钮约 Ø8 cm。",
             "source_line": 714,
             "source_lines": [
               714,
@@ -3558,6 +4406,11 @@
                 "line": 718,
                 "text": "- OOD：Ø8 cm 罐盖造型的旋钮。不用真罐子，因为每次拧紧的松紧都不一样，复位也不一致。",
                 "url": "../spec.html#line-712"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
               }
             ]
           },
@@ -3594,6 +4447,19 @@
         "category": "explicit",
         "label": "有尺寸要求 · 数值 / 上下限",
         "has_numeric_size": true
+      },
+      "cad_url": "../cad/#P08",
+      "cad_status": "接口待测 · 尚未实体试印",
+      "cad_part_count": 9,
+      "strictness": {
+        "level": "B",
+        "must": "阻力矩分档实测；旋钮是光滑圆钮、不带齿（结构原因 (d)）。",
+        "tolerance": "旋钮 Ø48–52 mm；阻力矩每档 ±0.02 N·m，开工前复测；轴承、轴、电位器按 CAD 的假设买（608 轴承、Ø8 轴、6 mm 电位器轴），否则改 CAD。",
+        "critical": [],
+        "pending": null,
+        "label": "B 有硬约束、范围内随便买",
+        "short": "B 有硬约束",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -3653,15 +4519,12 @@
       "plastic_print": true,
       "manufacturing_cad_available": true,
       "search_terms": "大键键盘 4 个 Ø30 mm 街机按钮 + Pro Micro",
-      "cad_url": "../cad/#P09",
-      "cad_status": "接口待测 · 尚未实体试印",
-      "cad_part_count": 3,
       "dimensions": {
         "requirements": [
           {
             "kind": "explicit",
             "scope": "H6",
-            "value": "4 个 Ø30 mm 街机按钮，间距 ≥2 cm。",
+            "value": "4 个 Ø30 mm 街机按钮（买不到时 Ø28–33 mm 也行），按钮边缘净距 ≥2 cm。",
             "source_line": 739,
             "source_lines": [
               739
@@ -3671,6 +4534,11 @@
                 "line": 739,
                 "text": "- 自制大键键盘：4 个 Ø30 mm 街机按钮，间距 ≥2 cm，接 Pro Micro 模拟 USB 键盘，键面印 1–4。标准 19 mm 键距下，机器手指容易按到相邻键。",
                 "url": "../spec.html#line-738"
+              },
+              {
+                "label": "用户第 8 条：物料从宽（2026-10-21）",
+                "url": "SIZE_TOLERANCE_REVIEW.md",
+                "text": "按尺寸严格度复核放宽：只有决定任务可行性或难度的尺寸才严格控制"
               }
             ]
           },
@@ -3695,6 +4563,19 @@
         "category": "explicit",
         "label": "有尺寸要求 · 数值 / 上下限",
         "has_numeric_size": true
+      },
+      "cad_url": "../cad/#P09",
+      "cad_status": "接口待测 · 尚未实体试印",
+      "cad_part_count": 3,
+      "strictness": {
+        "level": "B",
+        "must": "按钮边缘净距 ≥2 cm。",
+        "tolerance": "Ø30 是常见规格，照买；买不到时 Ø28–33 也能用，面板孔按实物改；外壳外形不质检，只查按钮孔配合。",
+        "critical": [],
+        "pending": null,
+        "label": "B 有硬约束、范围内随便买",
+        "short": "B 有硬约束",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -3754,9 +4635,6 @@
       "plastic_print": true,
       "manufacturing_cad_available": true,
       "search_terms": "扳机计数与激光 微动开关 + ≤1 mW 激光模块 + Arduino，含靶板支架",
-      "cad_url": "../cad/#P10",
-      "cad_status": "接口待测 · 尚未实体试印",
-      "cad_part_count": 7,
       "dimensions": {
         "requirements": [
           {
@@ -3808,6 +4686,21 @@
         "category": "explicit",
         "label": "有尺寸要求 · 数值 / 上下限",
         "has_numeric_size": true
+      },
+      "cad_url": "../cad/#P10",
+      "cad_status": "接口待测 · 尚未实体试印",
+      "cad_part_count": 7,
+      "strictness": {
+        "level": "B",
+        "must": "激光功率 ≤1 mW（安全硬要求）；激光管装得进喷嘴。",
+        "tolerance": "支架和夹环按实际喷壶打印；靶纸用 A4。",
+        "critical": [
+          "H2 激光 ≤1 mW（L690、L990），是安全底线，不能放宽；不要随手买 5 mW 模块。"
+        ],
+        "pending": null,
+        "label": "B 有硬约束、范围内随便买",
+        "short": "B 有硬约束",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -3864,6 +4757,16 @@
         "category": "fit",
         "label": "需实测适配 · 未定固定尺寸",
         "has_numeric_size": false
+      },
+      "strictness": {
+        "level": "B",
+        "must": "扳机端的实测力，测量点固定。",
+        "tolerance": "每档 ±0.15 N，相邻档差 ≥0.7 N；每次在同一行程位置测（如开关触发点）；弹簧外形随意。",
+        "critical": [],
+        "pending": null,
+        "label": "B 有硬约束、范围内随便买",
+        "short": "B 有硬约束",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -3897,9 +4800,6 @@
       "plastic_print": true,
       "manufacturing_cad_available": true,
       "search_terms": "翻盖复位夹具 把翻盖立到 90°",
-      "cad_url": "../cad/#P12",
-      "cad_status": "尺寸原型 · 尚未实体试印",
-      "cad_part_count": 2,
       "dimensions": {
         "requirements": [
           {
@@ -3923,6 +4823,19 @@
         "category": "fit",
         "label": "需实测适配 · 未定固定尺寸",
         "has_numeric_size": false
+      },
+      "cad_url": "../cad/#P12",
+      "cad_status": "尺寸原型 · 尚未实体试印",
+      "cad_part_count": 2,
+      "strictness": {
+        "level": "C",
+        "must": "按到货的纸箱来做；执行任务时不能锁住翻盖。",
+        "tolerance": "纸箱到货、量好尺寸后再打印。",
+        "critical": [],
+        "pending": null,
+        "label": "C 差不多就行",
+        "short": "C 差不多就行",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -3969,9 +4882,6 @@
       "plastic_print": true,
       "manufacturing_cad_available": true,
       "search_terms": "D405 夹爪支架、Gemini 2 L 门架座、手–RM75-B 法兰转接 见总规范 §9",
-      "cad_url": "../cad/#P13",
-      "cad_status": "接口待测 · 尚未实体试印",
-      "cad_part_count": 3,
       "dimensions": {
         "requirements": [
           {
@@ -3995,6 +4905,19 @@
         "category": "fit",
         "label": "需实测适配 · 未定固定尺寸",
         "has_numeric_size": false
+      },
+      "cad_url": "../cad/#P13",
+      "cad_status": "接口待测 · 尚未实体试印",
+      "cad_part_count": 3,
+      "strictness": {
+        "level": "A",
+        "must": "孔距、螺纹、止口要与现有 D405、Gemini、RM75-B 和手精确配合。",
+        "tolerance": "先实测设备接口再出图；先打测量毛坯试装。",
+        "critical": [],
+        "pending": null,
+        "label": "A 必须严格",
+        "short": "A 必须严格",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -4051,6 +4974,16 @@
         "category": "none",
         "label": "清单未规定具体尺寸",
         "has_numeric_size": false
+      },
+      "strictness": {
+        "level": "C",
+        "must": "没有尺寸要求，只看量具规格。",
+        "tolerance": "0–150 mm，分辨率 0.01–0.02 mm，带内测爪和深度尺。",
+        "critical": [],
+        "pending": null,
+        "label": "C 差不多就行",
+        "short": "C 差不多就行",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -4120,6 +5053,16 @@
         "category": "none",
         "label": "清单未规定具体尺寸",
         "has_numeric_size": false
+      },
+      "strictness": {
+        "level": "C",
+        "must": "0.1 g 秤的量程和秤盘要托得住最大的碗加珠子。",
+        "tolerance": "0.1 g 那台量程选 ≥1 kg 左右；5 kg 那台用来测 D2 的 1.4 kg。",
+        "critical": [],
+        "pending": null,
+        "label": "C 差不多就行",
+        "short": "C 差不多就行",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -4176,6 +5119,16 @@
         "category": "none",
         "label": "清单未规定具体尺寸",
         "has_numeric_size": false
+      },
+      "strictness": {
+        "level": "C",
+        "must": "要分得清 1 N 一档。",
+        "tolerance": "分辨率 0.01 N；精度 ±0.5% FS 时误差约 ±0.25 N，测 1 N 档偏粗，建议另备一支 0–10 N 小量程。",
+        "critical": [],
+        "pending": null,
+        "label": "C 差不多就行",
+        "short": "C 差不多就行",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -4232,6 +5185,16 @@
         "category": "none",
         "label": "清单未规定具体尺寸",
         "has_numeric_size": false
+      },
+      "strictness": {
+        "level": "C",
+        "must": "要分得清 0.1 N·m 一档。",
+        "tolerance": "分辨率 ≤0.005 N·m；也可以用推拉力计测力再乘半径（L717）。",
+        "critical": [],
+        "pending": null,
+        "label": "C 差不多就行",
+        "short": "C 差不多就行",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -4288,6 +5251,16 @@
         "category": "none",
         "label": "清单未规定具体尺寸",
         "has_numeric_size": false
+      },
+      "strictness": {
+        "level": "C",
+        "must": "没有尺寸要求。",
+        "tolerance": "任意一台。",
+        "critical": [],
+        "pending": null,
+        "label": "C 差不多就行",
+        "short": "C 差不多就行",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -4344,6 +5317,16 @@
         "category": "none",
         "label": "清单未规定具体尺寸",
         "has_numeric_size": false
+      },
+      "strictness": {
+        "level": "C",
+        "must": "没有尺寸要求。",
+        "tolerance": "分辨率 0.1°。",
+        "critical": [],
+        "pending": null,
+        "label": "C 差不多就行",
+        "short": "C 差不多就行",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -4416,6 +5399,16 @@
         "category": "explicit",
         "label": "有尺寸要求 · 数值 / 上下限",
         "has_numeric_size": true
+      },
+      "strictness": {
+        "level": "B",
+        "must": "打印后实际边长准确、贴平、不缩放。",
+        "tolerance": "S9 用 20 mm，4 cm 方块和 Ø4 圆柱顶面都贴得下；量实际边长写进配置。",
+        "critical": [],
+        "pending": null,
+        "label": "B 有硬约束、范围内随便买",
+        "short": "B 有硬约束",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -4472,6 +5465,16 @@
         "category": "fit",
         "label": "需实测适配 · 未定固定尺寸",
         "has_numeric_size": false
+      },
+      "strictness": {
+        "level": "C",
+        "must": "图案精度和平整度靠现货保证。",
+        "tolerance": "买现成的铝基或玻璃硬板；格距按厂家标值或实测写进标定配置；大小按视场选。",
+        "critical": [],
+        "pending": null,
+        "label": "C 差不多就行",
+        "short": "C 差不多就行",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -4541,6 +5544,16 @@
         "category": "none",
         "label": "清单未规定具体尺寸",
         "has_numeric_size": false
+      },
+      "strictness": {
+        "level": "C",
+        "must": "没有尺寸要求。",
+        "tolerance": "盘点后补齐。",
+        "critical": [],
+        "pending": null,
+        "label": "C 差不多就行",
+        "short": "C 差不多就行",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -4603,6 +5616,16 @@
         "category": "fit",
         "label": "需实测适配 · 未定固定尺寸",
         "has_numeric_size": false
+      },
+      "strictness": {
+        "level": "B",
+        "must": "孔位能重复定位；偏移量（±2/5/10 cm、±3/6/10°）要实测。",
+        "tolerance": "型材规格随意；三组孔位装好后，实测相机位姿写进记录。",
+        "critical": [],
+        "pending": null,
+        "label": "B 有硬约束、范围内随便买",
+        "short": "B 有硬约束",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -4659,6 +5682,16 @@
         "category": "fit",
         "label": "需实测适配 · 未定固定尺寸",
         "has_numeric_size": false
+      },
+      "strictness": {
+        "level": "C",
+        "must": "磁铁要和打印件上的凹槽匹配。",
+        "tolerance": "按 CAD 凹槽（Ø10.2×3.2）买 Ø10×3 磁铁，或按到货磁铁改 CAD 参数；钢板覆盖 S2、S5、H4 的摆放区。",
+        "critical": [],
+        "pending": null,
+        "label": "C 差不多就行",
+        "short": "C 差不多就行",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -4715,6 +5748,18 @@
         "category": "fit",
         "label": "需实测适配 · 未定固定尺寸",
         "has_numeric_size": false
+      },
+      "strictness": {
+        "level": "B",
+        "must": "同材质、同厚度，只换印刷（L193、L978）。",
+        "tolerance": "5 张一次向同一家定制；长宽覆盖工作区就行。",
+        "critical": [
+          "5 张桌垫同材质、同厚度（L193）。"
+        ],
+        "pending": null,
+        "label": "B 有硬约束、范围内随便买",
+        "short": "B 有硬约束",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     },
     {
@@ -4771,19 +5816,315 @@
         "category": "none",
         "label": "清单未规定具体尺寸",
         "has_numeric_size": false
+      },
+      "strictness": {
+        "level": "C",
+        "must": "没有尺寸要求。",
+        "tolerance": "复用机器人原有的急停。",
+        "critical": [],
+        "pending": null,
+        "label": "C 差不多就行",
+        "short": "C 差不多就行",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
+      }
+    },
+    {
+      "id": "X01",
+      "name": "H3 硬质台面（亚克力板）",
+      "route": "直接购买",
+      "phase": "BASE 首批",
+      "spec": "硬质平整台面，如亚克力板；固定在桌上，不参与桌面贴图变化（原文 L702、L708）",
+      "tasks": "H3",
+      "initial_qty": "1 块（原文数量 1）",
+      "note": "原文 H3 道具表第 708 行点名，§8 汇总和原 65 组清单漏了。原文没有给长宽厚，按卡片摆放区和卡槽位置选。",
+      "source_line": 701,
+      "source_section": "5.4 H3 拿薄片",
+      "search_terms": "亚克力板 硬质 平整 台面 透明 厚",
+      "group": "原文点名·清单补漏",
+      "original_route": "",
+      "photos": [],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "photo_placeholder": "原文点名的小件，按规格自行选购",
+      "spec_line": 708,
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "fit",
+            "scope": "H3",
+            "value": "硬质平整台面（如亚克力板），固定在桌上；原文未给长宽厚，盖住卡片摆放区和卡槽位置即可。",
+            "source_line": 702,
+            "source_lines": [
+              702,
+              708
+            ],
+            "references": [
+              {
+                "line": 702,
+                "text": "- 固定一块硬质平整的台面（如亚克力板），不参与桌面贴图变化。",
+                "url": "../spec.html#line-701"
+              },
+              {
+                "line": 708,
+                "text": "| 硬质台面 | 亚克力板 | 1 | A |",
+                "url": "../spec.html#line-701"
+              }
+            ]
+          }
+        ],
+        "note": "卡片摆放区离桌沿 ≥10 cm（L704）。",
+        "category": "fit",
+        "label": "需实测适配 · 未定固定尺寸",
+        "has_numeric_size": false
+      },
+      "strictness": {
+        "level": "B",
+        "must": "硬质、平整，卡片平贴不翘（结构原因 (c)）；固定在桌上，不参与桌面贴图变化（L702）。",
+        "tolerance": "原文没给长宽厚：盖住卡片摆放区（离桌沿 ≥10 cm 的中央区，L704）和卡槽位置即可；选平放不弯的厚亚克力板现货。",
+        "critical": [
+          "H3 原文点名的硬质平整台面（L702、L708）原清单漏了，别漏买。"
+        ],
+        "pending": null,
+        "label": "B 有硬约束、范围内随便买",
+        "short": "B 有硬约束",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
+      }
+    },
+    {
+      "id": "X02",
+      "name": "S4 OOD 方杯 + 异色珠子",
+      "route": "直接购买",
+      "phase": "后续 OOD",
+      "spec": "方杯；另一种颜色和材质的珠子（原文 L408、L423）",
+      "tasks": "S4（OOD）",
+      "initial_qty": "先不买；OOD 阶段方杯、异色珠子各 2（原文 L423）",
+      "note": "原文 S4 道具表第 423 行点名，原 65 组清单漏了。OOD 物体的尺寸和抓取难度要与 ID 物体相当（L191）。",
+      "source_line": 401,
+      "source_section": "3 S4 pour_beans",
+      "search_terms": "方形杯 小号 塑料 实心珠 另一种颜色",
+      "group": "原文点名·清单补漏",
+      "original_route": "",
+      "photos": [],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "photo_placeholder": "原文点名的小件，按规格自行选购",
+      "spec_line": 423,
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "fit",
+            "scope": "S4 OOD 方杯",
+            "value": "方杯；尺寸和抓取难度与 ID 杯（Ø7×9 cm）相当，原文未给数值。",
+            "source_line": 408,
+            "source_lines": [
+              408,
+              191
+            ],
+            "references": [
+              {
+                "line": 408,
+                "text": "  - OOD：方杯；另一种颜色和材质的珠子。",
+                "url": "../spec.html#line-401"
+              },
+              {
+                "line": 191,
+                "text": "  - `ood_obj`：未见实例。OOD 物体的尺寸和抓取难度要与 ID 物体相当，这样掉分只反映\"认不出\"，不混入\"抓不起来\"。",
+                "url": "../spec.html#line-177"
+              }
+            ]
+          },
+          {
+            "kind": "none",
+            "scope": "S4 OOD 珠子",
+            "value": "另一种颜色和材质的珠子；原文未给直径。",
+            "source_line": 408,
+            "source_lines": [
+              408,
+              423
+            ],
+            "references": [
+              {
+                "line": 408,
+                "text": "  - OOD：方杯；另一种颜色和材质的珠子。",
+                "url": "../spec.html#line-401"
+              },
+              {
+                "line": 423,
+                "text": "| OOD | 方杯；另一种颜色材质的珠子 | 各 2 | A |",
+                "url": "../spec.html#line-401"
+              }
+            ]
+          }
+        ],
+        "note": "",
+        "category": "fit",
+        "label": "需实测适配 · 未定固定尺寸",
+        "has_numeric_size": false
+      },
+      "strictness": {
+        "level": "B",
+        "must": "方杯大小和抓取难度与 ID 杯（Ø7×9 cm）相当（L191）；能装下 30 颗珠；45 N 不变形。",
+        "tolerance": "口宽、高度和 Ø7×9 cm 杯差 1–2 cm 都行，现货或打印均可；OOD 珠子另买一种颜色、材质，直径仍 8–12 mm，同批次。",
+        "critical": [],
+        "pending": null,
+        "label": "B 有硬约束、范围内随便买",
+        "short": "B 有硬约束",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
+      }
+    },
+    {
+      "id": "X03",
+      "name": "S3 刻度贴纸 + 拉绳与 10 cm 限位",
+      "route": "购买后加工",
+      "phase": "BASE 首批",
+      "spec": "抽屉侧面刻度贴纸；抽屉背面拉绳，从柜子后方引出，绳上设 10 cm 限位，R 轴用（原文 L377、L387、L394–395）",
+      "tasks": "S3",
+      "initial_qty": "刻度贴纸 1 张；拉绳 + 10 cm 限位 1 套（测 R 探针时装）",
+      "note": "原文 S3 道具表第 394–395 行点名，原 65 组清单漏了。面板 ArUco 见 T07。",
+      "source_line": 371,
+      "source_section": "3 S3 drawer_take_out",
+      "search_terms": "刻度尺贴纸 厘米 拉绳 限位扣",
+      "group": "原文点名·清单补漏",
+      "original_route": "",
+      "photos": [],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "photo_placeholder": "原文点名的小件，按规格自行选购",
+      "spec_line": 394,
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "explicit",
+            "scope": "S3 R 轴",
+            "value": "抽屉背面拉绳从柜子后方引出，绳上设 10 cm 限位。",
+            "source_line": 387,
+            "source_lines": [
+              387,
+              395
+            ],
+            "references": [
+              {
+                "line": 387,
+                "text": "  - 真机：抽屉背面系一根拉绳，从柜子后方引出，绳上设 10 cm 限位；评测员站在工作区外拉。",
+                "url": "../spec.html#line-371"
+              },
+              {
+                "line": 395,
+                "text": "| 拉绳 + 10 cm 限位 | R 轴用 | 1 | B |",
+                "url": "../spec.html#line-371"
+              }
+            ]
+          },
+          {
+            "kind": "none",
+            "scope": "S3 刻度",
+            "value": "抽屉侧面刻度贴纸；原文未给尺寸。",
+            "source_line": 377,
+            "source_lines": [
+              377,
+              394
+            ],
+            "references": [
+              {
+                "line": 377,
+                "text": "  - 抽屉侧面贴刻度贴纸，面板贴 ArUco。",
+                "url": "../spec.html#line-371"
+              },
+              {
+                "line": 394,
+                "text": "| 刻度贴纸 + 面板 ArUco | — | 1 套 | B |",
+                "url": "../spec.html#line-371"
+              }
+            ]
+          }
+        ],
+        "note": "",
+        "category": "explicit",
+        "label": "有尺寸要求 · 数值 / 上下限",
+        "has_numeric_size": true
+      },
+      "strictness": {
+        "level": "B",
+        "must": "R 探针要把抽屉推回 10 cm（L385、L387）：绳上限位定在 10 cm；刻度贴纸要读得出拉开 ≥10 cm、推回 ≤2 cm（L384）。",
+        "tolerance": "刻度贴纸用现成 cm 刻度尺贴纸；限位 ±1 cm，装好后用刻度贴纸核对；拉绳从柜子后方引出，评测员站在工作区外拉。",
+        "critical": [],
+        "pending": null,
+        "label": "B 有硬约束、范围内随便买",
+        "short": "B 有硬约束",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
+      }
+    },
+    {
+      "id": "X04",
+      "name": "D5 平铺模板（桌面四角标记）",
+      "route": "自制标记",
+      "phase": "BASE 首批",
+      "spec": "桌面四角标记，平铺时四角对准（原文 L583、L595）",
+      "tasks": "D5",
+      "initial_qty": "BASE 30 cm 档 1 套；其他档随方巾补",
+      "note": "原文 D5 道具表第 595 行点名，原 65 组清单漏了。按到货方巾实测边长定标记位置。",
+      "source_line": 579,
+      "source_section": "4 D5 fold_towel",
+      "search_terms": "定位贴纸 桌面标记 角标",
+      "group": "原文点名·清单补漏",
+      "original_route": "",
+      "photos": [],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "photo_placeholder": "原文点名的小件，按规格自行选购",
+      "spec_line": 595,
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "fit",
+            "scope": "D5",
+            "value": "桌面四角标记，按所用方巾的实测边长定位置；原文未给标记尺寸。",
+            "source_line": 583,
+            "source_lines": [
+              583,
+              595
+            ],
+            "references": [
+              {
+                "line": 583,
+                "text": "- **初始状态**：按模板平铺：抖开，四角对准桌面模板上的标记，再抚平；一条边朝向机器人。",
+                "url": "../spec.html#line-579"
+              },
+              {
+                "line": 595,
+                "text": "| 平铺模板 | 桌面四角标记 | 1 | B |",
+                "url": "../spec.html#line-579"
+              }
+            ]
+          }
+        ],
+        "note": "",
+        "category": "fit",
+        "label": "需实测适配 · 未定固定尺寸",
+        "has_numeric_size": false
+      },
+      "strictness": {
+        "level": "C",
+        "must": "四角标记与所用方巾的实测边长对应，每次平铺位置一致（L583）。",
+        "tolerance": "原文只写“桌面四角标记”（L595）：按到货方巾实测边长贴或打印标记即可，每档一套；一条边朝向机器人。",
+        "critical": [],
+        "pending": null,
+        "label": "C 差不多就行",
+        "short": "C 差不多就行",
+        "source": "SIZE_TOLERANCE_REVIEW.md"
       }
     }
   ],
   "source_sha256": "23957455c1aa0c0cad76324ed84fae725a1c9021c6b3ab0426e2753cda1750e8",
   "dimension_counts": {
-    "explicit": 34,
-    "approximate": 8,
-    "fit": 10,
+    "explicit": 30,
+    "approximate": 13,
+    "fit": 13,
     "none": 13
   },
   "dimension_labels": {
     "explicit": "有尺寸要求 · 数值 / 上下限",
-    "approximate": "有尺寸要求 · 约尺寸",
+    "approximate": "有尺寸要求 · 约尺寸 / 范围",
     "fit": "需实测适配 · 未定固定尺寸",
     "none": "清单未规定具体尺寸"
   },
@@ -4802,5 +6143,21 @@
   "dimension_policy": "仅将任务清单中的标称数值、上下限和约尺寸标为有尺寸要求；制造公差未给定时不推定零公差。CAD 默认尺寸、数量、质量、力、力矩和功率不冒充任务物体尺寸。接口适配单独标注。",
   "print_policy": "用户指定：所有新增 3D 打印件均用塑料；金属加工不作为打印方案。现成滑轨、轴承、螺钉、配重与电子件外购。",
   "photograph_policy": "照片来自公开商品/作者/机构页面，只用于辨认外观；不是本项目已采购或已打印实物，不保证图中商品尺寸与任务一致。定制件需要按任务重新设计。每图保留来源链接，图片原字节保存，未用 AI 生成。",
-  "scope": "完整 §8.1–§8.3 共 65 组，含 BASE 首批、后续评测、暂缓项目和盘点后补购的共用设备。机器人整机不重复列入。"
+  "strictness_counts": {
+    "A": 6,
+    "B": 39,
+    "C": 24,
+    "pending": 2
+  },
+  "strictness_labels": {
+    "A": "A 必须严格",
+    "B": "B 有硬约束、范围内随便买",
+    "C": "C 差不多就行"
+  },
+  "strictness_policy": "只有 A 级需要严格控制，B 级满足硬条件即可，C 级买接近的现货、到货实测记录。阶梯和扰动的物理量一律以实测值为准（原文第 5 行），碗口径以实测为准（§8.1）；可行性闸门阶段每样先买 1 份（§7.1、§8）。",
+  "strictness_source": {
+    "review": "SIZE_TOLERANCE_REVIEW.md",
+    "decision": "USER_DECISIONS_v0.3.3.md 第 8 条（2026-10-21）"
+  },
+  "scope": "完整 §8.1–§8.3 共 65 组，另补 4 组任务道具表点名、§8 汇总漏掉的小件，共 69 组；含 BASE 首批、后续评测、暂缓项目和盘点后补购的共用设备。机器人整机不重复列入。"
 }
