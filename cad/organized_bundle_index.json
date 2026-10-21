@@ -1,0 +1,191 @@
+{
+  "version": "0.2",
+  "parts": 72,
+  "nested_zips": 11,
+  "families": [
+    {
+      "name": "H3_卡片与卡槽",
+      "type": "配套",
+      "path": "02_配套打印件_小压缩包/H3_卡片与卡槽.zip",
+      "part_ids": [
+        "card_t3",
+        "card_t2",
+        "card_t1",
+        "card_t0p8",
+        "card_slot_t3",
+        "card_slot_t2",
+        "card_slot_t1",
+        "card_slot_t0p8"
+      ],
+      "base_print_note": "先打印 card_t2 ×3、card_slot_t2 ×1。其他厚度配同编号卡槽。"
+    },
+    {
+      "name": "D3_试管_试管架_V形管托",
+      "type": "配套",
+      "path": "02_配套打印件_小压缩包/D3_试管_试管架_V形管托.zip",
+      "part_ids": [
+        "printed_tube_12x75",
+        "rack_weight_base",
+        "rack_weight_lid",
+        "rack_guide_16",
+        "rack_guide_15",
+        "rack_guide_14",
+        "rack_guide_13p5",
+        "tube_v_rest"
+      ],
+      "base_print_note": "BASE：printed_tube_12x75 ×2、rack_weight_base ×1、rack_weight_lid ×1、rack_guide_15 ×1、tube_v_rest ×2。其他孔径是替换的阶梯档。"
+    },
+    {
+      "name": "S2_插销与孔座",
+      "type": "配套",
+      "path": "02_配套打印件_小压缩包/S2_插销与孔座.zip",
+      "part_ids": [
+        "round_base_28",
+        "round_base_24",
+        "round_base_22",
+        "round_base_21",
+        "square_base_28",
+        "square_base_24",
+        "square_base_22",
+        "square_base_21",
+        "round_peg_60",
+        "round_peg_80",
+        "square_peg_60",
+        "peg_fit_coupon"
+      ],
+      "base_print_note": "先打印 peg_fit_coupon；BASE 用 round_peg_60 与 round_base_24。其余孔径、方销和长销是阶梯/OOD 备选。"
+    },
+    {
+      "name": "S3_抽屉柜_把手_分度转台",
+      "type": "配套",
+      "path": "02_配套打印件_小压缩包/S3_抽屉柜_把手_分度转台.zip",
+      "part_ids": [
+        "cabinet_shell",
+        "cabinet_roof",
+        "drawer_tub",
+        "drawer_handle",
+        "index_base",
+        "index_rotor"
+      ],
+      "base_print_note": "柜壳、顶板、抽屉、把手、底盘、转盘各 1。滑轨、紧固件外购，接口待测。"
+    },
+    {
+      "name": "S4_配重杯与底盖",
+      "type": "配套",
+      "path": "02_配套打印件_小压缩包/S4_配重杯与底盖.zip",
+      "part_ids": [
+        "weighted_cup",
+        "cup_ballast_lid"
+      ],
+      "base_print_note": "weighted_cup 与 cup_ballast_lid 各 1；配重和螺钉另备。"
+    },
+    {
+      "name": "H5_球托盘与脚柱",
+      "type": "配套",
+      "path": "02_配套打印件_小压缩包/H5_球托盘与脚柱.zip",
+      "part_ids": [
+        "tray_2_balls",
+        "tray_3_balls",
+        "tray_4_balls",
+        "tray_5_balls",
+        "tray_foot"
+      ],
+      "base_print_note": "BASE：tray_3_balls ×1、tray_foot ×4。2/4/5 球托盘为替换档；球另购。"
+    },
+    {
+      "name": "H6_配重盒与盒盖",
+      "type": "配套",
+      "path": "02_配套打印件_小压缩包/H6_配重盒与盒盖.zip",
+      "part_ids": [
+        "weight_box_body",
+        "weight_box_lid"
+      ],
+      "base_print_note": "weight_box_body 与 weight_box_lid 各 1；装配后按要求配重。"
+    },
+    {
+      "name": "H4_旋钮台与轴系支架",
+      "type": "配套",
+      "path": "02_配套打印件_小压缩包/H4_旋钮台与轴系支架.zip",
+      "part_ids": [
+        "knob_50",
+        "knob_80",
+        "knob_bearing_stand",
+        "bearing_retainer",
+        "friction_brake_block",
+        "brake_pressure_shoe",
+        "brake_riser",
+        "potentiometer_bracket",
+        "shaft_coupler_8_6"
+      ],
+      "base_print_note": "BASE 用 knob_50；knob_80 为 OOD。bearing_retainer 打印 2 个，其余基础结构按清单；轴承、轴、电位器和螺钉另购。"
+    },
+    {
+      "name": "H6_四键键盘外壳与控制板座",
+      "type": "配套",
+      "path": "02_配套打印件_小压缩包/H6_四键键盘外壳与控制板座.zip",
+      "part_ids": [
+        "keypad_body",
+        "keypad_top",
+        "keypad_pcb_carrier"
+      ],
+      "base_print_note": "外壳、面板、PCB 座各 1；按钮和控制板另购，安装孔待实测。"
+    },
+    {
+      "name": "H2_喷壶改装夹件与靶板支架",
+      "type": "配套",
+      "path": "02_配套打印件_小压缩包/H2_喷壶改装夹件与靶板支架.zip",
+      "part_ids": [
+        "spray_neck_front",
+        "spray_neck_back",
+        "trigger_switch_bracket",
+        "laser_front",
+        "laser_back",
+        "a4_target_backing",
+        "target_foot"
+      ],
+      "base_print_note": "各夹环和开关支架按件打印；A4 背板 1、target_foot ×2。喷壶、激光、开关接口待实测。"
+    },
+    {
+      "name": "H7_纸箱复位与底角夹具",
+      "type": "配套",
+      "path": "02_配套打印件_小压缩包/H7_纸箱复位与底角夹具.zip",
+      "part_ids": [
+        "flap_right_angle_gauge",
+        "carton_corner_fixture"
+      ],
+      "base_print_note": "flap_right_angle_gauge ×2、carton_corner_fixture ×4；纸箱另购，复位角尺在任务开始前撤下。"
+    },
+    {
+      "name": "S5_薄口簸箕",
+      "type": "独立",
+      "path": "03_独立打印件/S5_薄口簸箕",
+      "part_ids": [
+        "dustpan"
+      ],
+      "base_print_note": "独立簸箕模型；磁铁另购。"
+    },
+    {
+      "name": "H1_防滚球托_四种尺寸",
+      "type": "独立",
+      "path": "03_独立打印件/H1_防滚球托_四种尺寸",
+      "part_ids": [
+        "ball_ring_90",
+        "ball_ring_110",
+        "ball_ring_130",
+        "ball_ring_150"
+      ],
+      "base_print_note": "按所购球的尺寸选择 90/110/130/150 之一，BASE 为 ball_ring_110。"
+    },
+    {
+      "name": "P13_相机支架与法兰毛坯_需实测",
+      "type": "独立",
+      "path": "03_独立打印件/P13_相机支架与法兰毛坯_需实测",
+      "part_ids": [
+        "d405_universal_plate",
+        "gemini_tripod_bracket",
+        "rm75_hand_flange_blank"
+      ],
+      "base_print_note": "通用相机接口草模和无孔法兰毛坯；需测量真实设备孔位后修改。"
+    }
+  ]
+}

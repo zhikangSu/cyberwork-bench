@@ -1,0 +1,31 @@
+{
+  "prop_id": "P06",
+  "variant": "existing_mineral_water_bottle",
+  "authorization": "USER_PROP_UPDATES_2026-10-21.md",
+  "status": "physical_measurement_pending",
+  "brand": null,
+  "product_name": null,
+  "capacity_ml": null,
+  "bottle_height_mm": null,
+  "bottle_max_diameter_mm": null,
+  "grasp_section_diameter_mm": null,
+  "cap_outer_diameter_mm": null,
+  "cap_height_mm": null,
+  "thread_starts": null,
+  "axial_travel_mm_per_revolution": null,
+  "effective_engagement_angle_deg": null,
+  "tightening_torque_nm": null,
+  "dry_ballast_g": null,
+  "total_mass_g": null,
+  "grasp_does_not_crush_bottle": null,
+  "cap_grasp_verified": null,
+  "tamper_band_state": null,
+  "start_angle_checks": [
+    {"angle_deg": 180, "still_engaged": null},
+    {"angle_deg": 360, "still_engaged": null},
+    {"angle_deg": 540, "still_engaged": null},
+    {"angle_deg": 720, "still_engaged": null}
+  ],
+  "simulation_migrated": false,
+  "notes": "所有实测字段保持 null；原打印方瓶 2 mm/圈、2.5 圈及 Ø40 mm 盖不适用于未经测量的现成矿泉水瓶。"
+}

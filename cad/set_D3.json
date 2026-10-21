@@ -1,0 +1,42 @@
+{
+  "id": "D3",
+  "name": "试管 + 试管架 + V 托",
+  "groups": [
+    "B25",
+    "P05"
+  ],
+  "zip": "packages/D3_tubes_and_rack.zip",
+  "description": "Ø12×75 mm 空心封底试管，配四档孔架；BASE 用 Ø15 mm 导向架。",
+  "base_print": [
+    {
+      "part": "printed_tube_12x75",
+      "quantity": 2
+    },
+    {
+      "part": "rack_weight_base",
+      "quantity": 1
+    },
+    {
+      "part": "rack_weight_lid",
+      "quantity": 1
+    },
+    {
+      "part": "rack_guide_15",
+      "quantity": 1
+    },
+    {
+      "part": "tube_v_rest",
+      "quantity": 2
+    }
+  ],
+  "part_ids": [
+    "printed_tube_12x75",
+    "rack_weight_base",
+    "rack_weight_lid",
+    "rack_guide_16",
+    "rack_guide_15",
+    "rack_guide_14",
+    "rack_guide_13p5",
+    "tube_v_rest"
+  ]
+}

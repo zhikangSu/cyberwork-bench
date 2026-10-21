@@ -1,0 +1,200 @@
+{
+  "version": "0.2",
+  "spec": "v0.3.3",
+  "units": "mm",
+  "printer": {
+    "name": "Bambu Lab H2S",
+    "build_mm": [
+      340,
+      320,
+      340
+    ],
+    "edge_margin_mm": 5,
+    "assumed_nozzle_mm": 0.4
+  },
+  "manufacturing": {
+    "wall": 3,
+    "m3_clearance": 3.4,
+    "m3_pilot": 2.5,
+    "m4_clearance": 4.5,
+    "magnet_d": 10.2,
+    "magnet_depth": 3.2
+  },
+  "card": {
+    "length": 85,
+    "width": 54,
+    "thicknesses": [
+      3,
+      2,
+      1,
+      0.8
+    ],
+    "slot_clearance": 0.6,
+    "corner_radius": 3
+  },
+  "peg": {
+    "diameter": 20,
+    "lengths": [
+      60,
+      80
+    ],
+    "holes": [
+      28,
+      24,
+      22,
+      21
+    ],
+    "base": [
+      100,
+      100,
+      30
+    ],
+    "chamfer": 1
+  },
+  "drawer": {
+    "cabinet": [
+      250,
+      300,
+      150
+    ],
+    "wall": 4,
+    "rail_thickness_assumed": 12.7,
+    "rail_side_clearance": 0.3,
+    "drawer_depth": 250,
+    "drawer_height": 112,
+    "handle_d": 20,
+    "handle_net_gap": 42,
+    "handle_span": 120,
+    "index_radius": 160,
+    "index_angles": [
+      -30,
+      -20,
+      -10,
+      0,
+      10,
+      20,
+      30
+    ]
+  },
+  "cup": {
+    "diameter": 70,
+    "height": 90,
+    "wall": 3,
+    "ballast_d": 46,
+    "ballast_height": 8
+  },
+  "dustpan": {
+    "opening": 150,
+    "depth": 150,
+    "wall": 3,
+    "floor": 2,
+    "ramp_run": 20,
+    "toe": 0.4
+  },
+  "rack": {
+    "outer": [
+      100,
+      60,
+      80
+    ],
+    "holes": [
+      16,
+      15,
+      14,
+      13.5
+    ],
+    "pitch": 23,
+    "guide_depth": 45,
+    "tube_d": 12,
+    "tube_length": 75,
+    "support_z": 15
+  },
+  "balls": {
+    "diameters": [
+      90,
+      110,
+      130,
+      150
+    ],
+    "seat_height": 8,
+    "tray": [
+      220,
+      200,
+      45
+    ],
+    "pingpong_d": 40,
+    "pitch": 50,
+    "pocket_depth": 2.5
+  },
+  "weight_box": {
+    "outer": [
+      100,
+      60,
+      40
+    ],
+    "wall": 3,
+    "lid": 2,
+    "target_mass_g": 150
+  },
+  "knob": {
+    "diameters": [
+      50,
+      80
+    ],
+    "length": 25,
+    "shaft_d": 8,
+    "bearing_od": 22,
+    "bearing_width": 7,
+    "pot_shaft_assumed": 6
+  },
+  "keypad": {
+    "outer": [
+      240,
+      65,
+      80
+    ],
+    "button_hole_assumed": 30.2,
+    "button_pitch": 55,
+    "max_bezel_d": 35
+  },
+  "spray": {
+    "bottle_neck_assumed": 25,
+    "laser_d_assumed": 8,
+    "target": [
+      210,
+      297,
+      3
+    ]
+  },
+  "camera": {
+    "plate": [
+      60,
+      60,
+      5
+    ],
+    "tripod_clearance": 6.6,
+    "flange_blank_od_assumed": 70,
+    "flange_thickness_assumed": 10,
+    "flange_center_assumed": 20,
+    "robot_holes_xy": [],
+    "hand_holes_xy": [],
+    "hole_d_assumed": 4.5
+  },
+  "tube": {
+    "outer_d": 12,
+    "length": 75,
+    "wall": 1.6,
+    "bottom": 2,
+    "bottom_edge_radius": 1.2
+  },
+  "existing_bottle": {
+    "route": "same mineral-water bottle + its original cap",
+    "brand": null,
+    "capacity_ml": null,
+    "cap_outer_d_mm": null,
+    "thread_lead_mm_per_turn": null,
+    "effective_engaged_turns": null,
+    "usable_start_angles_deg": null,
+    "status": "physical_measurement_pending"
+  }
+}

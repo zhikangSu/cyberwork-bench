@@ -1,0 +1,1005 @@
+{
+  "source": "exported STEP geometry; v0.3.3 dimensions with user-approved printed cards and tubes; purchased bottle excluded",
+  "manifest_sha256": "496189fe2abf507f419806627ca7243ec9e04426a09dbcd653dee2b3cf3d1dec",
+  "checks": [
+    {
+      "check": "card_3_size_0",
+      "measured": 85.0,
+      "expected": 85,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "card_3_size_1",
+      "measured": 54.0,
+      "expected": 54,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "card_3_size_2",
+      "measured": 3.0,
+      "expected": 3,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "card_3_rounded_corner",
+      "passed": true
+    },
+    {
+      "check": "card_3_slot_interference_mm3",
+      "measured": 0.0,
+      "expected": 0,
+      "tolerance": 0.001,
+      "passed": true
+    },
+    {
+      "check": "card_2_size_0",
+      "measured": 85.0,
+      "expected": 85,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "card_2_size_1",
+      "measured": 54.0,
+      "expected": 54,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "card_2_size_2",
+      "measured": 2.0,
+      "expected": 2,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "card_2_rounded_corner",
+      "passed": true
+    },
+    {
+      "check": "card_2_slot_interference_mm3",
+      "measured": 0.0,
+      "expected": 0,
+      "tolerance": 0.001,
+      "passed": true
+    },
+    {
+      "check": "card_1_size_0",
+      "measured": 85.0,
+      "expected": 85,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "card_1_size_1",
+      "measured": 54.0,
+      "expected": 54,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "card_1_size_2",
+      "measured": 1.0,
+      "expected": 1,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "card_1_rounded_corner",
+      "passed": true
+    },
+    {
+      "check": "card_1_slot_interference_mm3",
+      "measured": 0.0,
+      "expected": 0,
+      "tolerance": 0.001,
+      "passed": true
+    },
+    {
+      "check": "card_0.8_size_0",
+      "measured": 85.0,
+      "expected": 85,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "card_0.8_size_1",
+      "measured": 54.0,
+      "expected": 54,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "card_0.8_size_2",
+      "measured": 0.8,
+      "expected": 0.8,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "card_0.8_rounded_corner",
+      "passed": true
+    },
+    {
+      "check": "card_0.8_slot_interference_mm3",
+      "measured": 0.0,
+      "expected": 0,
+      "tolerance": 0.001,
+      "passed": true
+    },
+    {
+      "check": "printed_tube_size_0",
+      "measured": 12.0,
+      "expected": 12,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "printed_tube_size_1",
+      "measured": 12.0,
+      "expected": 12,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "printed_tube_size_2",
+      "measured": 75.0,
+      "expected": 75,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "tube_open_top_closed_bottom",
+      "passed": true
+    },
+    {
+      "check": "tube_hollow_wall",
+      "passed": true
+    },
+    {
+      "check": "tube_in_rack_16_-34.5_interference_mm3",
+      "measured": 0.0,
+      "expected": 0,
+      "tolerance": 0.001,
+      "passed": true
+    },
+    {
+      "check": "tube_in_rack_16_-11.5_interference_mm3",
+      "measured": 0.0,
+      "expected": 0,
+      "tolerance": 0.001,
+      "passed": true
+    },
+    {
+      "check": "tube_in_rack_16_11.5_interference_mm3",
+      "measured": 0.0,
+      "expected": 0,
+      "tolerance": 0.001,
+      "passed": true
+    },
+    {
+      "check": "tube_in_rack_16_34.5_interference_mm3",
+      "measured": 0.0,
+      "expected": 0,
+      "tolerance": 0.001,
+      "passed": true
+    },
+    {
+      "check": "tube_in_rack_15_-34.5_interference_mm3",
+      "measured": 0.0,
+      "expected": 0,
+      "tolerance": 0.001,
+      "passed": true
+    },
+    {
+      "check": "tube_in_rack_15_-11.5_interference_mm3",
+      "measured": 0.0,
+      "expected": 0,
+      "tolerance": 0.001,
+      "passed": true
+    },
+    {
+      "check": "tube_in_rack_15_11.5_interference_mm3",
+      "measured": 0.0,
+      "expected": 0,
+      "tolerance": 0.001,
+      "passed": true
+    },
+    {
+      "check": "tube_in_rack_15_34.5_interference_mm3",
+      "measured": 0.0,
+      "expected": 0,
+      "tolerance": 0.001,
+      "passed": true
+    },
+    {
+      "check": "tube_in_rack_14_-34.5_interference_mm3",
+      "measured": 0.0,
+      "expected": 0,
+      "tolerance": 0.001,
+      "passed": true
+    },
+    {
+      "check": "tube_in_rack_14_-11.5_interference_mm3",
+      "measured": 0.0,
+      "expected": 0,
+      "tolerance": 0.001,
+      "passed": true
+    },
+    {
+      "check": "tube_in_rack_14_11.5_interference_mm3",
+      "measured": 0.0,
+      "expected": 0,
+      "tolerance": 0.001,
+      "passed": true
+    },
+    {
+      "check": "tube_in_rack_14_34.5_interference_mm3",
+      "measured": 0.0,
+      "expected": 0,
+      "tolerance": 0.001,
+      "passed": true
+    },
+    {
+      "check": "tube_in_rack_13.5_-34.5_interference_mm3",
+      "measured": 0.0,
+      "expected": 0,
+      "tolerance": 0.001,
+      "passed": true
+    },
+    {
+      "check": "tube_in_rack_13.5_-11.5_interference_mm3",
+      "measured": 0.0,
+      "expected": 0,
+      "tolerance": 0.001,
+      "passed": true
+    },
+    {
+      "check": "tube_in_rack_13.5_11.5_interference_mm3",
+      "measured": 0.0,
+      "expected": 0,
+      "tolerance": 0.001,
+      "passed": true
+    },
+    {
+      "check": "tube_in_rack_13.5_34.5_interference_mm3",
+      "measured": 0.0,
+      "expected": 0,
+      "tolerance": 0.001,
+      "passed": true
+    },
+    {
+      "check": "round_28_bbox_0",
+      "measured": 100.0,
+      "expected": 100,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "round_28_bbox_1",
+      "measured": 100.0,
+      "expected": 100,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "round_28_bbox_2",
+      "measured": 30.0,
+      "expected": 30,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "round_28_bore_at_1",
+      "passed": true
+    },
+    {
+      "check": "round_28_bore_at_10",
+      "passed": true
+    },
+    {
+      "check": "round_28_bore_at_25",
+      "passed": true
+    },
+    {
+      "check": "round_28_bore_at_28.5",
+      "passed": true
+    },
+    {
+      "check": "round_28_chamfer",
+      "passed": true
+    },
+    {
+      "check": "round_24_bbox_0",
+      "measured": 100.0,
+      "expected": 100,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "round_24_bbox_1",
+      "measured": 100.0,
+      "expected": 100,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "round_24_bbox_2",
+      "measured": 30.0,
+      "expected": 30,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "round_24_bore_at_1",
+      "passed": true
+    },
+    {
+      "check": "round_24_bore_at_10",
+      "passed": true
+    },
+    {
+      "check": "round_24_bore_at_25",
+      "passed": true
+    },
+    {
+      "check": "round_24_bore_at_28.5",
+      "passed": true
+    },
+    {
+      "check": "round_24_chamfer",
+      "passed": true
+    },
+    {
+      "check": "round_22_bbox_0",
+      "measured": 100.0,
+      "expected": 100,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "round_22_bbox_1",
+      "measured": 100.0,
+      "expected": 100,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "round_22_bbox_2",
+      "measured": 30.0,
+      "expected": 30,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "round_22_bore_at_1",
+      "passed": true
+    },
+    {
+      "check": "round_22_bore_at_10",
+      "passed": true
+    },
+    {
+      "check": "round_22_bore_at_25",
+      "passed": true
+    },
+    {
+      "check": "round_22_bore_at_28.5",
+      "passed": true
+    },
+    {
+      "check": "round_22_chamfer",
+      "passed": true
+    },
+    {
+      "check": "round_21_bbox_0",
+      "measured": 100.0,
+      "expected": 100,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "round_21_bbox_1",
+      "measured": 100.0,
+      "expected": 100,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "round_21_bbox_2",
+      "measured": 30.0,
+      "expected": 30,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "round_21_bore_at_1",
+      "passed": true
+    },
+    {
+      "check": "round_21_bore_at_10",
+      "passed": true
+    },
+    {
+      "check": "round_21_bore_at_25",
+      "passed": true
+    },
+    {
+      "check": "round_21_bore_at_28.5",
+      "passed": true
+    },
+    {
+      "check": "round_21_chamfer",
+      "passed": true
+    },
+    {
+      "check": "square_28_bbox_0",
+      "measured": 100.0,
+      "expected": 100,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "square_28_bbox_1",
+      "measured": 100.0,
+      "expected": 100,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "square_28_bbox_2",
+      "measured": 30.0000001,
+      "expected": 30,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "square_28_bore_at_1",
+      "passed": true
+    },
+    {
+      "check": "square_28_bore_at_10",
+      "passed": true
+    },
+    {
+      "check": "square_28_bore_at_25",
+      "passed": true
+    },
+    {
+      "check": "square_28_bore_at_28.5",
+      "passed": true
+    },
+    {
+      "check": "square_28_chamfer",
+      "passed": true
+    },
+    {
+      "check": "square_24_bbox_0",
+      "measured": 100.0,
+      "expected": 100,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "square_24_bbox_1",
+      "measured": 100.0,
+      "expected": 100,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "square_24_bbox_2",
+      "measured": 30.0000001,
+      "expected": 30,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "square_24_bore_at_1",
+      "passed": true
+    },
+    {
+      "check": "square_24_bore_at_10",
+      "passed": true
+    },
+    {
+      "check": "square_24_bore_at_25",
+      "passed": true
+    },
+    {
+      "check": "square_24_bore_at_28.5",
+      "passed": true
+    },
+    {
+      "check": "square_24_chamfer",
+      "passed": true
+    },
+    {
+      "check": "square_22_bbox_0",
+      "measured": 100.0,
+      "expected": 100,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "square_22_bbox_1",
+      "measured": 100.0,
+      "expected": 100,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "square_22_bbox_2",
+      "measured": 30.0000001,
+      "expected": 30,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "square_22_bore_at_1",
+      "passed": true
+    },
+    {
+      "check": "square_22_bore_at_10",
+      "passed": true
+    },
+    {
+      "check": "square_22_bore_at_25",
+      "passed": true
+    },
+    {
+      "check": "square_22_bore_at_28.5",
+      "passed": true
+    },
+    {
+      "check": "square_22_chamfer",
+      "passed": true
+    },
+    {
+      "check": "square_21_bbox_0",
+      "measured": 100.0,
+      "expected": 100,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "square_21_bbox_1",
+      "measured": 100.0,
+      "expected": 100,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "square_21_bbox_2",
+      "measured": 30.0000001,
+      "expected": 30,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "square_21_bore_at_1",
+      "passed": true
+    },
+    {
+      "check": "square_21_bore_at_10",
+      "passed": true
+    },
+    {
+      "check": "square_21_bore_at_25",
+      "passed": true
+    },
+    {
+      "check": "square_21_bore_at_28.5",
+      "passed": true
+    },
+    {
+      "check": "square_21_chamfer",
+      "passed": true
+    },
+    {
+      "check": "peg_60_length",
+      "measured": 60.0,
+      "expected": 60,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "peg_60_shaft_20",
+      "passed": true
+    },
+    {
+      "check": "peg_80_length",
+      "measured": 80.0,
+      "expected": 80,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "peg_80_shaft_20",
+      "passed": true
+    },
+    {
+      "check": "rack_16_assembled_height",
+      "measured": 80.0,
+      "expected": 80,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "rack_16_guide_-34.5",
+      "passed": true
+    },
+    {
+      "check": "rack_16_depth_-34.5",
+      "passed": true
+    },
+    {
+      "check": "rack_16_guide_-11.5",
+      "passed": true
+    },
+    {
+      "check": "rack_16_depth_-11.5",
+      "passed": true
+    },
+    {
+      "check": "rack_16_guide_11.5",
+      "passed": true
+    },
+    {
+      "check": "rack_16_depth_11.5",
+      "passed": true
+    },
+    {
+      "check": "rack_16_guide_34.5",
+      "passed": true
+    },
+    {
+      "check": "rack_16_depth_34.5",
+      "passed": true
+    },
+    {
+      "check": "rack_15_assembled_height",
+      "measured": 80.0,
+      "expected": 80,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "rack_15_guide_-34.5",
+      "passed": true
+    },
+    {
+      "check": "rack_15_depth_-34.5",
+      "passed": true
+    },
+    {
+      "check": "rack_15_guide_-11.5",
+      "passed": true
+    },
+    {
+      "check": "rack_15_depth_-11.5",
+      "passed": true
+    },
+    {
+      "check": "rack_15_guide_11.5",
+      "passed": true
+    },
+    {
+      "check": "rack_15_depth_11.5",
+      "passed": true
+    },
+    {
+      "check": "rack_15_guide_34.5",
+      "passed": true
+    },
+    {
+      "check": "rack_15_depth_34.5",
+      "passed": true
+    },
+    {
+      "check": "rack_14_assembled_height",
+      "measured": 80.0,
+      "expected": 80,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "rack_14_guide_-34.5",
+      "passed": true
+    },
+    {
+      "check": "rack_14_depth_-34.5",
+      "passed": true
+    },
+    {
+      "check": "rack_14_guide_-11.5",
+      "passed": true
+    },
+    {
+      "check": "rack_14_depth_-11.5",
+      "passed": true
+    },
+    {
+      "check": "rack_14_guide_11.5",
+      "passed": true
+    },
+    {
+      "check": "rack_14_depth_11.5",
+      "passed": true
+    },
+    {
+      "check": "rack_14_guide_34.5",
+      "passed": true
+    },
+    {
+      "check": "rack_14_depth_34.5",
+      "passed": true
+    },
+    {
+      "check": "rack_13.5_assembled_height",
+      "measured": 80.0,
+      "expected": 80,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "rack_13.5_guide_-34.5",
+      "passed": true
+    },
+    {
+      "check": "rack_13.5_depth_-34.5",
+      "passed": true
+    },
+    {
+      "check": "rack_13.5_guide_-11.5",
+      "passed": true
+    },
+    {
+      "check": "rack_13.5_depth_-11.5",
+      "passed": true
+    },
+    {
+      "check": "rack_13.5_guide_11.5",
+      "passed": true
+    },
+    {
+      "check": "rack_13.5_depth_11.5",
+      "passed": true
+    },
+    {
+      "check": "rack_13.5_guide_34.5",
+      "passed": true
+    },
+    {
+      "check": "rack_13.5_depth_34.5",
+      "passed": true
+    },
+    {
+      "check": "cup_bbox_0",
+      "measured": 70.0,
+      "expected": 70,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "cup_bbox_1",
+      "measured": 70.0,
+      "expected": 70,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "cup_bbox_2",
+      "measured": 90.0,
+      "expected": 90,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "weight_box_bbox_0",
+      "measured": 100.0,
+      "expected": 100,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "weight_box_bbox_1",
+      "measured": 60.0,
+      "expected": 60,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "weight_box_assembled_height",
+      "measured": 40.0,
+      "expected": 40,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "tray_2_seat_count",
+      "measured": 2,
+      "expected": 2,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "check": "tray_2_nearest_pitch_0",
+      "measured": 49.99999999999848,
+      "expected": 50,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "tray_2_nearest_pitch_1",
+      "measured": 49.99999999999848,
+      "expected": 50,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "tray_3_seat_count",
+      "measured": 3,
+      "expected": 3,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "check": "tray_3_nearest_pitch_0",
+      "measured": 49.99999999999843,
+      "expected": 50,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "tray_3_nearest_pitch_1",
+      "measured": 49.99999999999848,
+      "expected": 50,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "tray_3_nearest_pitch_2",
+      "measured": 49.99999999999843,
+      "expected": 50,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "tray_4_seat_count",
+      "measured": 4,
+      "expected": 4,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "check": "tray_4_nearest_pitch_0",
+      "measured": 49.99999999999848,
+      "expected": 50,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "tray_4_nearest_pitch_1",
+      "measured": 49.99999999999848,
+      "expected": 50,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "tray_4_nearest_pitch_2",
+      "measured": 49.99999999999848,
+      "expected": 50,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "tray_4_nearest_pitch_3",
+      "measured": 49.99999999999848,
+      "expected": 50,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "tray_5_seat_count",
+      "measured": 5,
+      "expected": 5,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "check": "tray_5_nearest_pitch_0",
+      "measured": 50.0,
+      "expected": 50,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "tray_5_nearest_pitch_1",
+      "measured": 49.99999999999848,
+      "expected": 50,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "tray_5_nearest_pitch_2",
+      "measured": 49.99999999999848,
+      "expected": 50,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "tray_5_nearest_pitch_3",
+      "measured": 50.0,
+      "expected": 50,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "tray_5_nearest_pitch_4",
+      "measured": 50.0,
+      "expected": 50,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "knob_50_diameter_x",
+      "measured": 50.0000002,
+      "expected": 50,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "knob_50_diameter_y",
+      "measured": 50.0000002,
+      "expected": 50,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "knob_80_diameter_x",
+      "measured": 80.0000002,
+      "expected": 80,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "knob_80_diameter_y",
+      "measured": 80.0000002,
+      "expected": 80,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "cabinet_roof_width",
+      "measured": 250.0,
+      "expected": 250,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "cabinet_roof_depth",
+      "measured": 300.0,
+      "expected": 300,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "cabinet_body_height_with_roof",
+      "measured": 150.0,
+      "expected": 150,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "handle_net_gap_42",
+      "passed": true
+    }
+  ],
+  "passed": 177,
+  "total": 177,
+  "physical_fit_verified": false
+}

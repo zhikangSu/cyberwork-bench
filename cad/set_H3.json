@@ -1,0 +1,30 @@
+{
+  "id": "H3",
+  "name": "卡片 + 卡槽",
+  "groups": [
+    "B32",
+    "B33"
+  ],
+  "zip": "packages/H3_cards_and_slots.zip",
+  "description": "四档 85×54 mm 卡片与对应槽座；BASE 先打 2 mm 卡片和 2 mm 卡槽。",
+  "base_print": [
+    {
+      "part": "card_t2",
+      "quantity": 3
+    },
+    {
+      "part": "card_slot_t2",
+      "quantity": 1
+    }
+  ],
+  "part_ids": [
+    "card_t3",
+    "card_t2",
+    "card_t1",
+    "card_t0p8",
+    "card_slot_t3",
+    "card_slot_t2",
+    "card_slot_t1",
+    "card_slot_t0p8"
+  ]
+}

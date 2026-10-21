@@ -1,0 +1,3082 @@
+{
+  "version": "0.2",
+  "spec": "v0.3.3",
+  "units": "mm",
+  "printer": {
+    "name": "Bambu Lab H2S",
+    "build_mm": [
+      340,
+      320,
+      340
+    ],
+    "edge_margin_mm": 5,
+    "assumed_nozzle_mm": 0.4
+  },
+  "groups": [
+    {
+      "id": "B32",
+      "name": "打印卡片",
+      "tasks": "H3",
+      "status": "用户调整 · 待试印",
+      "notes": "85×54 mm，厚度 3 / 2 / 1 / 0.8 mm，四档配对应卡槽。按用户要求改为塑料打印，材质、摩擦和厚度需实测。",
+      "part_count": 4,
+      "preview": "previews/card_t2.png",
+      "zip": "packages/B32.zip",
+      "paired_set": "H3",
+      "paired_zip": "packages/H3_cards_and_slots.zip"
+    },
+    {
+      "id": "B25",
+      "name": "打印试管",
+      "tasks": "D3 / D7",
+      "status": "用户调整 · 待试印",
+      "notes": "外径 12 mm、总长 75 mm，开口空心管，封底；与四档试管架及 V 托配套打印。打印后核对外径和夹持刚度。",
+      "part_count": 1,
+      "preview": "previews/printed_tube_12x75.png",
+      "zip": "packages/B25.zip",
+      "paired_set": "D3",
+      "paired_zip": "packages/D3_tubes_and_rack.zip"
+    },
+    {
+      "id": "B33",
+      "name": "卡槽",
+      "tasks": "H3",
+      "status": "尺寸原型",
+      "notes": "四档卡槽与打印卡片配套；槽间隙是设计参数，首件需实测试插。",
+      "part_count": 4,
+      "preview": "previews/B33_assembly.png",
+      "assembly_files": {
+        "step": "assemblies/B33.step",
+        "glb": "assemblies/B33.glb"
+      },
+      "assembly_note": "装配位置示意；未显示外购轴承、滑轨、紧固件和电子件；不是完整机械验收",
+      "zip": "packages/B33.zip",
+      "paired_set": "H3",
+      "paired_zip": "packages/H3_cards_and_slots.zip"
+    },
+    {
+      "id": "P01",
+      "name": "销与孔座",
+      "tasks": "S2",
+      "status": "尺寸原型",
+      "notes": "含圆孔四档、方孔四档及长销；H2S 打印后必须量孔与修孔，L3/L4 未经实测不得用于正式精度评测。",
+      "part_count": 12,
+      "preview": "previews/P01_assembly.png",
+      "assembly_files": {
+        "step": "assemblies/P01.step",
+        "glb": "assemblies/P01.glb"
+      },
+      "assembly_note": "装配位置示意；未显示外购轴承、滑轨、紧固件和电子件；不是完整机械验收",
+      "zip": "packages/P01.zip"
+    },
+    {
+      "id": "P02",
+      "name": "抽屉柜与分度转台",
+      "tasks": "S3 / S7 / S11",
+      "status": "接口待测",
+      "notes": "柜体与抽屉尺寸已建；滑轨按单侧厚 12.7 mm 假设，采购后核实厚度、孔位、200 mm 行程及 2 N 拉力。",
+      "part_count": 6,
+      "preview": "previews/P02_assembly.png",
+      "assembly_files": {
+        "step": "assemblies/P02.step",
+        "glb": "assemblies/P02.glb"
+      },
+      "assembly_note": "装配位置示意；未显示外购轴承、滑轨、紧固件和电子件；不是完整机械验收",
+      "zip": "packages/P02.zip"
+    },
+    {
+      "id": "P03",
+      "name": "配重杯",
+      "tasks": "S4 / H9",
+      "status": "尺寸原型",
+      "notes": "70×90 mm 杯体，底部配重腔与螺钉盖。配重及打印支撑清理后称重。",
+      "part_count": 2,
+      "preview": "previews/P03_assembly.png",
+      "assembly_files": {
+        "step": "assemblies/P03.step",
+        "glb": "assemblies/P03.glb"
+      },
+      "assembly_note": "装配位置示意；未显示外购轴承、滑轨、紧固件和电子件；不是完整机械验收",
+      "zip": "packages/P03.zip"
+    },
+    {
+      "id": "P04",
+      "name": "薄口簸箕",
+      "tasks": "S5",
+      "status": "尺寸原型",
+      "notes": "150 mm 净开口，0.4 mm 入口，斜坡约 4.6°，后侧磁铁座。",
+      "part_count": 1,
+      "preview": "previews/dustpan.png",
+      "zip": "packages/P04.zip"
+    },
+    {
+      "id": "P05",
+      "name": "试管架与 V 形管托",
+      "tasks": "D3 / D7",
+      "status": "尺寸原型",
+      "notes": "四档孔径及 45 mm 导向孔；总高 80 mm。独立配重底座与导向架以 M3 螺钉连接，装配后配重到 150 g 并贴毛毡。",
+      "part_count": 7,
+      "preview": "previews/P05_assembly.png",
+      "assembly_files": {
+        "step": "assemblies/P05.step",
+        "glb": "assemblies/P05.glb"
+      },
+      "assembly_note": "装配位置示意；未显示外购轴承、滑轨、紧固件和电子件；不是完整机械验收",
+      "zip": "packages/P05.zip",
+      "paired_set": "D3",
+      "paired_zip": "packages/D3_tubes_and_rack.zip"
+    },
+    {
+      "id": "P07",
+      "name": "球托、浅槽托盘与配重盒",
+      "tasks": "H1 / H5 / H6",
+      "status": "尺寸原型",
+      "notes": "球托四档、2/3/4/5 球布局，邻近球心距 50 mm；配重盒外形 100×60×40 mm，装好后称到 150 g。",
+      "part_count": 11,
+      "preview": "previews/P07_assembly.png",
+      "assembly_files": {
+        "step": "assemblies/P07.step",
+        "glb": "assemblies/P07.glb"
+      },
+      "assembly_note": "装配位置示意；未显示外购轴承、滑轨、紧固件和电子件；不是完整机械验收",
+      "zip": "packages/P07.zip"
+    },
+    {
+      "id": "P08",
+      "name": "旋钮台",
+      "tasks": "H4",
+      "status": "接口待测",
+      "notes": "50 / 80 mm 旋钮、双 608 轴承座、摩擦制动座及电位器架；轴承、8 mm 轴、O 形圈、电位器外购。阻力矩必须实测标定。",
+      "part_count": 9,
+      "preview": "previews/P08_assembly.png",
+      "assembly_files": {
+        "step": "assemblies/P08.step",
+        "glb": "assemblies/P08.glb"
+      },
+      "assembly_note": "装配位置示意；未显示外购轴承、滑轨、紧固件和电子件；不是完整机械验收",
+      "zip": "packages/P08.zip"
+    },
+    {
+      "id": "P09",
+      "name": "四键键盘",
+      "tasks": "H6",
+      "status": "接口待测",
+      "notes": "四个名义 30 mm 安装孔，55 mm 中心距；按钮外沿直径须 ≤35 mm 才能保持 ≥20 mm 净距。实际按钮型号待选。",
+      "part_count": 3,
+      "preview": "previews/P09_assembly.png",
+      "assembly_files": {
+        "step": "assemblies/P09.step",
+        "glb": "assemblies/P09.glb"
+      },
+      "assembly_note": "装配位置示意；未显示外购轴承、滑轨、紧固件和电子件；不是完整机械验收",
+      "zip": "packages/P09.zip"
+    },
+    {
+      "id": "P10",
+      "name": "喷壶改装件与靶板架",
+      "tasks": "H2 / H-open",
+      "status": "接口待测",
+      "notes": "喷壶颈 25 mm、激光模块 8 mm 均为可调假设；微动开关与电子器件外购。A4 靶板不预设任务命中区域大小。",
+      "part_count": 7,
+      "preview": "previews/P10_assembly.png",
+      "assembly_files": {
+        "step": "assemblies/P10.step",
+        "glb": "assemblies/P10.glb"
+      },
+      "assembly_note": "装配位置示意；未显示外购轴承、滑轨、紧固件和电子件；不是完整机械验收",
+      "zip": "packages/P10.zip"
+    },
+    {
+      "id": "P12",
+      "name": "纸箱复位与底角夹具",
+      "tasks": "H7",
+      "status": "尺寸原型",
+      "notes": "90° 角尺仅供复位，开始任务前撤走；底角固定件不接触翻盖，不替代纸箱自互锁。",
+      "part_count": 2,
+      "preview": "previews/flap_right_angle_gauge.png",
+      "zip": "packages/P12.zip"
+    },
+    {
+      "id": "P13",
+      "name": "相机支架与法兰测量毛坯",
+      "tasks": "共用工位",
+      "status": "接口待测",
+      "notes": "相机板为通用长孔草模；手—RM75-B 转接件是无孔位毛坯，必须实测两端接口再补孔，不可直接安装承载。R5 即 L5 Pro。",
+      "part_count": 3,
+      "preview": "previews/d405_universal_plate.png",
+      "zip": "packages/P13.zip"
+    }
+  ],
+  "parts": [
+    {
+      "group": "B32",
+      "id": "card_t3",
+      "name": "配套卡片 · 3 mm",
+      "quantity": 3,
+      "variant": "阶梯",
+      "notes": "85×54×3 mm，圆角 R3 为设计值；平放打印，保持表面平整，不做凸字。配 card_slot_t3。材质改为打印塑料，厚度和摩擦需实测。",
+      "dimensions_mm": [
+        85.0,
+        54.0,
+        3.0
+      ],
+      "solid_volume_cm3": 13.747,
+      "files": {
+        "stl": "models/B32/card_t3.stl",
+        "step": "models/B32/card_t3.step",
+        "glb": "models/B32/card_t3.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "e2e00955cdfab1c67fbf1b0d75def976c1c3eaea76a26e4ed7088ad7fc87eb3b",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/card_t3.png"
+    },
+    {
+      "group": "B32",
+      "id": "card_t2",
+      "name": "配套卡片 · 2 mm",
+      "quantity": 3,
+      "variant": "BASE",
+      "notes": "85×54×2 mm，圆角 R3 为设计值；平放打印，保持表面平整，不做凸字。配 card_slot_t2。材质改为打印塑料，厚度和摩擦需实测。",
+      "dimensions_mm": [
+        85.0,
+        54.0,
+        2.0
+      ],
+      "solid_volume_cm3": 9.165,
+      "files": {
+        "stl": "models/B32/card_t2.stl",
+        "step": "models/B32/card_t2.step",
+        "glb": "models/B32/card_t2.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "94833c12002c53e640bb1426d2bc6a2c098961e6b2c20ac809188a87e2815080",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/card_t2.png"
+    },
+    {
+      "group": "B32",
+      "id": "card_t1",
+      "name": "配套卡片 · 1 mm",
+      "quantity": 3,
+      "variant": "阶梯",
+      "notes": "85×54×1 mm，圆角 R3 为设计值；平放打印，保持表面平整，不做凸字。配 card_slot_t1。材质改为打印塑料，厚度和摩擦需实测。",
+      "dimensions_mm": [
+        85.0,
+        54.0,
+        1.0
+      ],
+      "solid_volume_cm3": 4.582,
+      "files": {
+        "stl": "models/B32/card_t1.stl",
+        "step": "models/B32/card_t1.step",
+        "glb": "models/B32/card_t1.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "72f45cc16db0b01a67eb55f2586dbef1cce9b5f4cecbb0d39333158abfff59b9",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/card_t1.png"
+    },
+    {
+      "group": "B32",
+      "id": "card_t0p8",
+      "name": "配套卡片 · 0.8 mm",
+      "quantity": 3,
+      "variant": "阶梯",
+      "notes": "85×54×0.8 mm，圆角 R3 为设计值；平放打印，保持表面平整，不做凸字。配 card_slot_t0.8。材质改为打印塑料，厚度和摩擦需实测。",
+      "dimensions_mm": [
+        85.0,
+        54.0,
+        0.8
+      ],
+      "solid_volume_cm3": 3.666,
+      "files": {
+        "stl": "models/B32/card_t0p8.stl",
+        "step": "models/B32/card_t0p8.step",
+        "glb": "models/B32/card_t0p8.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "a9578d1f4b2bfd2a927c363072eb6a485fe486028ed7d445b4825865d17a471c",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/card_t0p8.png"
+    },
+    {
+      "group": "B33",
+      "id": "card_slot_t3",
+      "name": "卡槽：卡厚 3 mm",
+      "quantity": 1,
+      "variant": "阶梯",
+      "notes": "槽宽 3.6 mm；槽深 27 mm；配同档打印卡片，卡片与卡槽一起试印。",
+      "dimensions_mm": [
+        120.0,
+        60.0,
+        36.0
+      ],
+      "solid_volume_cm3": 94.261,
+      "files": {
+        "stl": "models/B33/card_slot_t3.stl",
+        "step": "models/B33/card_slot_t3.step",
+        "glb": "models/B33/card_slot_t3.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "fd9dff21fd7fb51b6975e0e8936ce2e91aff2f5dd490806b09dea2f9ac10976a",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/card_slot_t3.png"
+    },
+    {
+      "group": "B33",
+      "id": "card_slot_t2",
+      "name": "卡槽：卡厚 2 mm",
+      "quantity": 1,
+      "variant": "BASE",
+      "notes": "槽宽 2.6 mm；槽深 27 mm；配同档打印卡片，卡片与卡槽一起试印。",
+      "dimensions_mm": [
+        120.0,
+        60.0,
+        36.0
+      ],
+      "solid_volume_cm3": 96.691,
+      "files": {
+        "stl": "models/B33/card_slot_t2.stl",
+        "step": "models/B33/card_slot_t2.step",
+        "glb": "models/B33/card_slot_t2.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "43dc140d24b0ccc4b1276346612b921118903b231f5a70ff0bb5257cff773ddd",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/card_slot_t2.png"
+    },
+    {
+      "group": "B33",
+      "id": "card_slot_t1",
+      "name": "卡槽：卡厚 1 mm",
+      "quantity": 1,
+      "variant": "阶梯",
+      "notes": "槽宽 1.6 mm；槽深 27 mm；配同档打印卡片，卡片与卡槽一起试印。",
+      "dimensions_mm": [
+        120.0,
+        60.0,
+        36.0
+      ],
+      "solid_volume_cm3": 99.121,
+      "files": {
+        "stl": "models/B33/card_slot_t1.stl",
+        "step": "models/B33/card_slot_t1.step",
+        "glb": "models/B33/card_slot_t1.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "2f7c1ce92059bbbbc19dcd93a00dff732a8aa178edb44fac60cc767a74adf443",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/card_slot_t1.png"
+    },
+    {
+      "group": "B33",
+      "id": "card_slot_t0p8",
+      "name": "卡槽：卡厚 0.8 mm",
+      "quantity": 1,
+      "variant": "阶梯",
+      "notes": "槽宽 1.4 mm；槽深 27 mm；配同档打印卡片，卡片与卡槽一起试印。",
+      "dimensions_mm": [
+        120.0,
+        60.0,
+        36.0
+      ],
+      "solid_volume_cm3": 99.607,
+      "files": {
+        "stl": "models/B33/card_slot_t0p8.stl",
+        "step": "models/B33/card_slot_t0p8.step",
+        "glb": "models/B33/card_slot_t0p8.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "bca878ca11585308c24d8bff44c8f11b94a769612cb2c966c2bb853c1f9563d0",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/card_slot_t0p8.png"
+    },
+    {
+      "group": "B25",
+      "id": "printed_tube_12x75",
+      "name": "配套空心试管 · Ø12×75 mm",
+      "quantity": 2,
+      "variant": "BASE",
+      "notes": "外径 12、总长 75；上端开口，底厚 2、壁厚 1.6 mm，底边 R1.2 为设计值。竖直打印，切片检查附着；距底 30 mm 画色带，不做凸环。打印后量外径、长和夹持刚度。",
+      "dimensions_mm": [
+        12.0,
+        12.0,
+        75.0
+      ],
+      "solid_volume_cm3": 4.031,
+      "files": {
+        "stl": "models/B25/printed_tube_12x75.stl",
+        "step": "models/B25/printed_tube_12x75.step",
+        "glb": "models/B25/printed_tube_12x75.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "650dbb879af63637b7811a5408e4db531086e1ba3e9d39a9c5f44db73b72f194",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/printed_tube_12x75.png"
+    },
+    {
+      "group": "P01",
+      "id": "round_base_28",
+      "name": "圆孔底座",
+      "quantity": 2,
+      "variant": "阶梯",
+      "notes": "通孔 28 mm，入口 1×45°；桌面作为孔底。4 颗 Ø10×3 mm 磁铁需购买。",
+      "dimensions_mm": [
+        100.0,
+        100.0,
+        30.0
+      ],
+      "solid_volume_cm3": 280.436,
+      "files": {
+        "stl": "models/P01/round_base_28.stl",
+        "step": "models/P01/round_base_28.step",
+        "glb": "models/P01/round_base_28.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "bc9b53b200745c5bb08e231e8eb36aa82d71e33f6fcbebf9420472ebdd10886c",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/round_base_28.png"
+    },
+    {
+      "group": "P01",
+      "id": "round_base_24",
+      "name": "圆孔底座",
+      "quantity": 2,
+      "variant": "BASE",
+      "notes": "通孔 24 mm，入口 1×45°；桌面作为孔底。4 颗 Ø10×3 mm 磁铁需购买。",
+      "dimensions_mm": [
+        100.0,
+        100.0,
+        30.0
+      ],
+      "solid_volume_cm3": 285.344,
+      "files": {
+        "stl": "models/P01/round_base_24.stl",
+        "step": "models/P01/round_base_24.step",
+        "glb": "models/P01/round_base_24.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "4f6597b30d0a20c3efe9418544c4aa8cdc4027ecf30e81d2e45e5938c2ad7cef",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/round_base_24.png"
+    },
+    {
+      "group": "P01",
+      "id": "round_base_22",
+      "name": "圆孔底座",
+      "quantity": 2,
+      "variant": "阶梯",
+      "notes": "通孔 22 mm，入口 1×45°；桌面作为孔底。4 颗 Ø10×3 mm 磁铁需购买。",
+      "dimensions_mm": [
+        100.0,
+        100.0,
+        30.0
+      ],
+      "solid_volume_cm3": 287.514,
+      "files": {
+        "stl": "models/P01/round_base_22.stl",
+        "step": "models/P01/round_base_22.step",
+        "glb": "models/P01/round_base_22.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "698d255d7b55120fea6b6a7fff760f479dad26c36a3382439224878254e45f55",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/round_base_22.png"
+    },
+    {
+      "group": "P01",
+      "id": "round_base_21",
+      "name": "圆孔底座",
+      "quantity": 2,
+      "variant": "阶梯",
+      "notes": "通孔 21 mm，入口 1×45°；桌面作为孔底。4 颗 Ø10×3 mm 磁铁需购买。",
+      "dimensions_mm": [
+        100.0,
+        100.0,
+        30.0
+      ],
+      "solid_volume_cm3": 288.529,
+      "files": {
+        "stl": "models/P01/round_base_21.stl",
+        "step": "models/P01/round_base_21.step",
+        "glb": "models/P01/round_base_21.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "41dab8364d10280e28ba67f3226611380bdb79f70ecee64d9ef40d259c3bf403",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/round_base_21.png"
+    },
+    {
+      "group": "P01",
+      "id": "square_base_28",
+      "name": "方孔底座",
+      "quantity": 2,
+      "variant": "OOD",
+      "notes": "通孔 28 mm，入口 1×45°；桌面作为孔底。4 颗 Ø10×3 mm 磁铁需购买。",
+      "dimensions_mm": [
+        100.0,
+        100.0,
+        30.0
+      ],
+      "solid_volume_cm3": 275.377,
+      "files": {
+        "stl": "models/P01/square_base_28.stl",
+        "step": "models/P01/square_base_28.step",
+        "glb": "models/P01/square_base_28.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "38f2ce55ccff023c9368b2837682bee11e773ad4037ee09e0da7141981dcd1fa",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/square_base_28.png"
+    },
+    {
+      "group": "P01",
+      "id": "square_base_24",
+      "name": "方孔底座",
+      "quantity": 2,
+      "variant": "OOD",
+      "notes": "通孔 24 mm，入口 1×45°；桌面作为孔底。4 颗 Ø10×3 mm 磁铁需购买。",
+      "dimensions_mm": [
+        100.0,
+        100.0,
+        30.0
+      ],
+      "solid_volume_cm3": 281.625,
+      "files": {
+        "stl": "models/P01/square_base_24.stl",
+        "step": "models/P01/square_base_24.step",
+        "glb": "models/P01/square_base_24.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "a1ea7fb21c1a073f6db688163c3fe6467bf539d26b5ce6e2cbe527214fcb890e",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/square_base_24.png"
+    },
+    {
+      "group": "P01",
+      "id": "square_base_22",
+      "name": "方孔底座",
+      "quantity": 2,
+      "variant": "OOD",
+      "notes": "通孔 22 mm，入口 1×45°；桌面作为孔底。4 颗 Ø10×3 mm 磁铁需购买。",
+      "dimensions_mm": [
+        100.0,
+        100.0,
+        30.0
+      ],
+      "solid_volume_cm3": 284.389,
+      "files": {
+        "stl": "models/P01/square_base_22.stl",
+        "step": "models/P01/square_base_22.step",
+        "glb": "models/P01/square_base_22.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "aea4dde66bc9123c813776f73c62439c81c50d9b00d9fed58c5c07845741cac9",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/square_base_22.png"
+    },
+    {
+      "group": "P01",
+      "id": "square_base_21",
+      "name": "方孔底座",
+      "quantity": 2,
+      "variant": "OOD",
+      "notes": "通孔 21 mm，入口 1×45°；桌面作为孔底。4 颗 Ø10×3 mm 磁铁需购买。",
+      "dimensions_mm": [
+        100.0,
+        100.0,
+        30.0
+      ],
+      "solid_volume_cm3": 285.681,
+      "files": {
+        "stl": "models/P01/square_base_21.stl",
+        "step": "models/P01/square_base_21.step",
+        "glb": "models/P01/square_base_21.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "2143963ece83a7f52de0123e7b45ad723d5b1a2fb683447f361838f3743aed68",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/square_base_21.png"
+    },
+    {
+      "group": "P01",
+      "id": "round_peg_60",
+      "name": "六角法兰圆销",
+      "quantity": 4,
+      "variant": "BASE",
+      "notes": "以底端为零，在 5、25 mm 处画色带；销身不增加凸环。",
+      "dimensions_mm": [
+        30.0,
+        25.981,
+        60.0
+      ],
+      "solid_volume_cm3": 20.472,
+      "files": {
+        "stl": "models/P01/round_peg_60.stl",
+        "step": "models/P01/round_peg_60.step",
+        "glb": "models/P01/round_peg_60.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "c55f1695d67712003c64c39a1605871da028ff663b83ad223477337cd2458802",
+      "placement": null,
+      "print_origin_mm": [
+        -1.7763568394002505e-15,
+        -2.6645352591003757e-15,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/round_peg_60.png"
+    },
+    {
+      "group": "P01",
+      "id": "round_peg_80",
+      "name": "六角法兰圆销",
+      "quantity": 2,
+      "variant": "OOD",
+      "notes": "以底端为零，在 5、25 mm 处画色带；销身不增加凸环。",
+      "dimensions_mm": [
+        30.0,
+        25.981,
+        80.0
+      ],
+      "solid_volume_cm3": 26.755,
+      "files": {
+        "stl": "models/P01/round_peg_80.stl",
+        "step": "models/P01/round_peg_80.step",
+        "glb": "models/P01/round_peg_80.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "9b07e32d3927cd32e0dbc4e9bbacfad52746f19cbac86183ebe9d11263d32b3d",
+      "placement": null,
+      "print_origin_mm": [
+        -1.7763568394002505e-15,
+        -2.6645352591003757e-15,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/round_peg_80.png"
+    },
+    {
+      "group": "P01",
+      "id": "square_peg_60",
+      "name": "方销",
+      "quantity": 1,
+      "variant": "OOD",
+      "notes": "方截面 20×20；总长 60。",
+      "dimensions_mm": [
+        28.0,
+        28.0,
+        60.0
+      ],
+      "solid_volume_cm3": 26.304,
+      "files": {
+        "stl": "models/P01/square_peg_60.stl",
+        "step": "models/P01/square_peg_60.step",
+        "glb": "models/P01/square_peg_60.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "a386de9a78b48c10587f557ae7f17ec2b0a78008e29c7915262f1a681a037d81",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/square_peg_60.png"
+    },
+    {
+      "group": "P01",
+      "id": "peg_fit_coupon",
+      "name": "孔径试印片",
+      "quantity": 1,
+      "variant": "试样",
+      "notes": "只用于打印尺寸检查，不替代 30 mm 深任务底座。",
+      "dimensions_mm": [
+        125.0,
+        36.0,
+        8.0
+      ],
+      "solid_volume_cm3": 21.49,
+      "files": {
+        "stl": "models/P01/peg_fit_coupon.stl",
+        "step": "models/P01/peg_fit_coupon.step",
+        "glb": "models/P01/peg_fit_coupon.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "003c7cdb92ca9b3b80b2670ff5930341127407230585611792557179b7d1aefd",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/peg_fit_coupon.png"
+    },
+    {
+      "group": "P02",
+      "id": "cabinet_shell",
+      "name": "柜体开顶壳",
+      "quantity": 1,
+      "variant": "BASE",
+      "notes": "开口朝前；顶部装独立盖板。侧壁长孔为通用滑轨调节孔，购买滑轨后复核。",
+      "dimensions_mm": [
+        250.0,
+        300.0,
+        146.0
+      ],
+      "solid_volume_cm3": 775.995,
+      "files": {
+        "stl": "models/P02/cabinet_shell.stl",
+        "step": "models/P02/cabinet_shell.step",
+        "glb": "models/P02/cabinet_shell.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "a34ee0ac3ee42fbfaa8a4f504fcedb9bb1e15a764b4c76e5d33b5bf4cc57f41e",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/cabinet_shell.png"
+    },
+    {
+      "group": "P02",
+      "id": "cabinet_roof",
+      "name": "柜体顶板",
+      "quantity": 1,
+      "variant": "BASE",
+      "notes": "4 个 M3 自攻或塑料螺纹螺钉；拧紧前实测。",
+      "dimensions_mm": [
+        250.0,
+        300.0,
+        4.0
+      ],
+      "solid_volume_cm3": 299.855,
+      "files": {
+        "stl": "models/P02/cabinet_roof.stl",
+        "step": "models/P02/cabinet_roof.step",
+        "glb": "models/P02/cabinet_roof.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "7c478b4a6eaa0fb53d2535a9dd32b000e0f63648e145e835a7290e8f9e3cfbdb",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/cabinet_roof.png"
+    },
+    {
+      "group": "P02",
+      "id": "drawer_tub",
+      "name": "抽屉",
+      "quantity": 1,
+      "variant": "BASE",
+      "notes": "外宽 216 mm；内高 108 mm；只含塑料箱体，滑轨外购。",
+      "dimensions_mm": [
+        216.0,
+        250.0,
+        112.0
+      ],
+      "solid_volume_cm3": 604.233,
+      "files": {
+        "stl": "models/P02/drawer_tub.stl",
+        "step": "models/P02/drawer_tub.step",
+        "glb": "models/P02/drawer_tub.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "809a61d56f641f30e1cd685e7afd5a496c2d541bcc1ad0310a22c8385e215d57",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/drawer_tub.png"
+    },
+    {
+      "group": "P02",
+      "id": "drawer_handle",
+      "name": "Ø20 横杆把手",
+      "quantity": 1,
+      "variant": "BASE",
+      "notes": "横杆至安装面净空 42 mm，M4 螺钉底装。横杆悬空需支撑。",
+      "dimensions_mm": [
+        146.0,
+        26.0,
+        62.0
+      ],
+      "solid_volume_cm3": 68.372,
+      "files": {
+        "stl": "models/P02/drawer_handle.stl",
+        "step": "models/P02/drawer_handle.step",
+        "glb": "models/P02/drawer_handle.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "60a07d267cef59bfed9108068aba05d613810630acc68b4d4a511531b0a3a0ab",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/drawer_handle.png"
+    },
+    {
+      "group": "P02",
+      "id": "index_base",
+      "name": "分度底盘",
+      "quantity": 1,
+      "variant": "BASE",
+      "notes": "M8 中心轴，M5 定位销；0/±10/±20/±30° 孔。底盘已转 90° 适配 H2S 平台，装配时复原方向并与桌面夹紧。",
+      "dimensions_mm": [
+        318.896,
+        299.842,
+        8.0
+      ],
+      "solid_volume_cm3": 601.952,
+      "files": {
+        "stl": "models/P02/index_base.stl",
+        "step": "models/P02/index_base.step",
+        "glb": "models/P02/index_base.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "31b280b473b8587e2abe025b48b5240c2feda4eadc3ad0e08d63fe80151f487b",
+      "placement": null,
+      "print_origin_mm": [
+        9.500000000000014,
+        0.0,
+        0.0
+      ],
+      "print_rotation": [
+        [
+          0,
+          0,
+          1
+        ],
+        90
+      ],
+      "preview": "previews/index_base.png"
+    },
+    {
+      "group": "P02",
+      "id": "index_rotor",
+      "name": "柜底转盘与分度臂",
+      "quantity": 1,
+      "variant": "BASE",
+      "notes": "4 个 M4 螺栓连接柜底；分度臂在柜体下方，先拔销再转动。加薄垫片消除盘间摩擦。",
+      "dimensions_mm": [
+        249.999,
+        295.0,
+        8.0
+      ],
+      "solid_volume_cm3": 398.781,
+      "files": {
+        "stl": "models/P02/index_rotor.stl",
+        "step": "models/P02/index_rotor.step",
+        "glb": "models/P02/index_rotor.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "438f67760a8c4526cc576fde2f3a6db7355e86e9afe1e24d6ed5b530c4254ced",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        -22.499999999999993,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/index_rotor.png"
+    },
+    {
+      "group": "P03",
+      "id": "weighted_cup",
+      "name": "配重杯体",
+      "quantity": 1,
+      "variant": "BASE",
+      "notes": "底部配重腔朝下；腔顶需支撑，支撑从底部开口取出。4×M3 螺钉固定底盖。",
+      "dimensions_mm": [
+        70.0,
+        70.0,
+        90.0
+      ],
+      "solid_volume_cm3": 76.877,
+      "files": {
+        "stl": "models/P03/weighted_cup.stl",
+        "step": "models/P03/weighted_cup.step",
+        "glb": "models/P03/weighted_cup.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "4c0aa864803f4abdb6ab6c0d9b93575488dd9be04a3fd6374ddd73dfe3a7e160",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/weighted_cup.png"
+    },
+    {
+      "group": "P03",
+      "id": "cup_ballast_lid",
+      "name": "杯底配重盖",
+      "quantity": 1,
+      "variant": "BASE",
+      "notes": "腔体内填固定的配重；不要让金属块自由晃动。",
+      "dimensions_mm": [
+        57.6,
+        57.6,
+        2.0
+      ],
+      "solid_volume_cm3": 5.139,
+      "files": {
+        "stl": "models/P03/cup_ballast_lid.stl",
+        "step": "models/P03/cup_ballast_lid.step",
+        "glb": "models/P03/cup_ballast_lid.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "f1210b6e46f95ab9380877b5e1112947f418d3a1abe1c45bdc3bb45ba1f87b77",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/cup_ballast_lid.png"
+    },
+    {
+      "group": "P04",
+      "id": "dustpan",
+      "name": "薄口磁吸簸箕",
+      "quantity": 2,
+      "variant": "BASE",
+      "notes": "开口净宽 150；薄边易翘曲，试印后放在实际桌垫上检查贴合。",
+      "dimensions_mm": [
+        156.0,
+        185.0,
+        32.0
+      ],
+      "solid_volume_cm3": 93.617,
+      "files": {
+        "stl": "models/P04/dustpan.stl",
+        "step": "models/P04/dustpan.step",
+        "glb": "models/P04/dustpan.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "23764139efa0ba6f8cab9361fb9f3efa3a791508f8415b32020138b5430577ce",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        -2.5,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/dustpan.png"
+    },
+    {
+      "group": "P05",
+      "id": "rack_weight_base",
+      "name": "试管架配重底座",
+      "quantity": 2,
+      "variant": "BASE",
+      "notes": "两侧开放腔放配重，装上导向架后封住；毛毡脚垫另贴，不固定到桌上。",
+      "dimensions_mm": [
+        100.0,
+        60.0,
+        15.0
+      ],
+      "solid_volume_cm3": 38.272,
+      "files": {
+        "stl": "models/P05/rack_weight_base.stl",
+        "step": "models/P05/rack_weight_base.step",
+        "glb": "models/P05/rack_weight_base.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "36317864398e06c1ee6ba7c7f37a0074cec079b59a5043f9904b58bd9beebb74",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/rack_weight_base.png"
+    },
+    {
+      "group": "P05",
+      "id": "rack_weight_lid",
+      "name": "试管架配重盖板",
+      "quantity": 2,
+      "variant": "BASE",
+      "notes": "放在 15 mm 底座上，四根长螺钉穿过导向架和盖板进入底座。",
+      "dimensions_mm": [
+        100.0,
+        60.0,
+        3.0
+      ],
+      "solid_volume_cm3": 17.891,
+      "files": {
+        "stl": "models/P05/rack_weight_lid.stl",
+        "step": "models/P05/rack_weight_lid.step",
+        "glb": "models/P05/rack_weight_lid.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "8bc1c8658bdc4c6c1a4542ad958d8272c2f0783fbd28f41be7172795ff85b843",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/rack_weight_lid.png"
+    },
+    {
+      "group": "P05",
+      "id": "rack_guide_16",
+      "name": "四孔试管导向架",
+      "quantity": 2,
+      "variant": "阶梯",
+      "notes": "孔 Ø16，孔口 1×45°。与底座及盖板组合总高 80。导向架倒置打印，顶板贴平台；4 根 M3×75 螺钉。",
+      "dimensions_mm": [
+        100.0,
+        60.0,
+        62.0
+      ],
+      "solid_volume_cm3": 61.462,
+      "files": {
+        "stl": "models/P05/rack_guide_16.stl",
+        "step": "models/P05/rack_guide_16.step",
+        "glb": "models/P05/rack_guide_16.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "3e40a00ede8a684b1abcd4c3a31015adf3c325b0776695b72466bf6165e4fd72",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        -7.105427357601002e-15,
+        -62.00000000000001
+      ],
+      "print_rotation": [
+        [
+          1,
+          0,
+          0
+        ],
+        180
+      ],
+      "preview": "previews/rack_guide_16.png"
+    },
+    {
+      "group": "P05",
+      "id": "rack_guide_15",
+      "name": "四孔试管导向架",
+      "quantity": 2,
+      "variant": "BASE",
+      "notes": "孔 Ø15，孔口 1×45°。与底座及盖板组合总高 80。导向架倒置打印，顶板贴平台；4 根 M3×75 螺钉。",
+      "dimensions_mm": [
+        100.0,
+        60.0,
+        62.0
+      ],
+      "solid_volume_cm3": 60.699,
+      "files": {
+        "stl": "models/P05/rack_guide_15.stl",
+        "step": "models/P05/rack_guide_15.step",
+        "glb": "models/P05/rack_guide_15.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "759c5c9236e90458083ffc1b4f5db5b33baa122483f2afc1a6168f8baddd03ec",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        -7.105427357601002e-15,
+        -62.00000000000001
+      ],
+      "print_rotation": [
+        [
+          1,
+          0,
+          0
+        ],
+        180
+      ],
+      "preview": "previews/rack_guide_15.png"
+    },
+    {
+      "group": "P05",
+      "id": "rack_guide_14",
+      "name": "四孔试管导向架",
+      "quantity": 2,
+      "variant": "阶梯",
+      "notes": "孔 Ø14，孔口 1×45°。与底座及盖板组合总高 80。导向架倒置打印，顶板贴平台；4 根 M3×75 螺钉。",
+      "dimensions_mm": [
+        100.0,
+        60.0,
+        62.0
+      ],
+      "solid_volume_cm3": 59.904,
+      "files": {
+        "stl": "models/P05/rack_guide_14.stl",
+        "step": "models/P05/rack_guide_14.step",
+        "glb": "models/P05/rack_guide_14.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "ff4790165a6aefcce3c19018dca3ed21d64e775f3df7f2a644e01bcf0ff5e49c",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        -7.105427357601002e-15,
+        -62.00000000000001
+      ],
+      "print_rotation": [
+        [
+          1,
+          0,
+          0
+        ],
+        180
+      ],
+      "preview": "previews/rack_guide_14.png"
+    },
+    {
+      "group": "P05",
+      "id": "rack_guide_13p5",
+      "name": "四孔试管导向架",
+      "quantity": 2,
+      "variant": "阶梯",
+      "notes": "孔 Ø13.5，孔口 1×45°。与底座及盖板组合总高 80。导向架倒置打印，顶板贴平台；4 根 M3×75 螺钉。",
+      "dimensions_mm": [
+        100.0,
+        60.0,
+        62.0
+      ],
+      "solid_volume_cm3": 59.495,
+      "files": {
+        "stl": "models/P05/rack_guide_13p5.stl",
+        "step": "models/P05/rack_guide_13p5.step",
+        "glb": "models/P05/rack_guide_13p5.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "053b472f02a5e9700e0200970c38b9cfe83a28fef1603d0189c78b6fd308c91b",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        -7.105427357601002e-15,
+        -62.00000000000001
+      ],
+      "print_rotation": [
+        [
+          1,
+          0,
+          0
+        ],
+        180
+      ],
+      "preview": "previews/rack_guide_13p5.png"
+    },
+    {
+      "group": "P05",
+      "id": "tube_v_rest",
+      "name": "V 形管托",
+      "quantity": 2,
+      "variant": "BASE",
+      "notes": "两只薄管托沿管长分开摆放，中间留给夹爪。",
+      "dimensions_mm": [
+        10.0,
+        32.0,
+        40.0
+      ],
+      "solid_volume_cm3": 11.11,
+      "files": {
+        "stl": "models/P05/tube_v_rest.stl",
+        "step": "models/P05/tube_v_rest.step",
+        "glb": "models/P05/tube_v_rest.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "2e879766cd038c821fd3df4114f9d1a6ee2ec47f4c8bd3fe3a1bfee62660851b",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/tube_v_rest.png"
+    },
+    {
+      "group": "P07",
+      "id": "ball_ring_90",
+      "name": "低矮球托",
+      "quantity": 1,
+      "variant": "阶梯",
+      "notes": "用于约 Ø90 球；实际球径与软硬程度需试摆。",
+      "dimensions_mm": [
+        52.0,
+        52.0,
+        8.0
+      ],
+      "solid_volume_cm3": 8.31,
+      "files": {
+        "stl": "models/P07/ball_ring_90.stl",
+        "step": "models/P07/ball_ring_90.step",
+        "glb": "models/P07/ball_ring_90.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "4e71bb39bdc883c5fbb21762da7e060e463f035264e6cf067fc33298c242ece5",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/ball_ring_90.png"
+    },
+    {
+      "group": "P07",
+      "id": "ball_ring_110",
+      "name": "低矮球托",
+      "quantity": 1,
+      "variant": "BASE",
+      "notes": "用于约 Ø110 球；实际球径与软硬程度需试摆。",
+      "dimensions_mm": [
+        60.0,
+        60.0,
+        8.0
+      ],
+      "solid_volume_cm3": 9.805,
+      "files": {
+        "stl": "models/P07/ball_ring_110.stl",
+        "step": "models/P07/ball_ring_110.step",
+        "glb": "models/P07/ball_ring_110.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "c67694d1fec197de3949d52897037d851883b27045580d36188ce0ff90671dd1",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/ball_ring_110.png"
+    },
+    {
+      "group": "P07",
+      "id": "ball_ring_130",
+      "name": "低矮球托",
+      "quantity": 1,
+      "variant": "阶梯",
+      "notes": "用于约 Ø130 球；实际球径与软硬程度需试摆。",
+      "dimensions_mm": [
+        68.0,
+        68.0,
+        8.0
+      ],
+      "solid_volume_cm3": 11.3,
+      "files": {
+        "stl": "models/P07/ball_ring_130.stl",
+        "step": "models/P07/ball_ring_130.step",
+        "glb": "models/P07/ball_ring_130.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "37b967b4e73be7af914927b11f195985ccdeb5338080b8a136758daf294e1836",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/ball_ring_130.png"
+    },
+    {
+      "group": "P07",
+      "id": "ball_ring_150",
+      "name": "低矮球托",
+      "quantity": 1,
+      "variant": "阶梯",
+      "notes": "用于约 Ø150 球；实际球径与软硬程度需试摆。",
+      "dimensions_mm": [
+        76.0,
+        76.0,
+        8.0
+      ],
+      "solid_volume_cm3": 12.796,
+      "files": {
+        "stl": "models/P07/ball_ring_150.stl",
+        "step": "models/P07/ball_ring_150.step",
+        "glb": "models/P07/ball_ring_150.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "195e8ed78af3a687bf438bec41c6217a62f61bc1956d45a69fa9216ea6e75fcd",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/ball_ring_150.png"
+    },
+    {
+      "group": "P07",
+      "id": "tray_2_balls",
+      "name": "2 球浅槽托盘",
+      "quantity": 1,
+      "variant": "阶梯",
+      "notes": "单独平放打印。4 只 40 mm 脚柱由上方 M3 螺钉连接；装好总高 45 mm。",
+      "dimensions_mm": [
+        220.0,
+        200.0,
+        5.0
+      ],
+      "solid_volume_cm3": 219.058,
+      "files": {
+        "stl": "models/P07/tray_2_balls.stl",
+        "step": "models/P07/tray_2_balls.step",
+        "glb": "models/P07/tray_2_balls.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 2
+      },
+      "sha256": "f98f88ae3c1911978eaa368f286b607d94cb7fd995d67ef11321799cedf3b1eb",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/tray_2_balls.png"
+    },
+    {
+      "group": "P07",
+      "id": "tray_3_balls",
+      "name": "3 球浅槽托盘",
+      "quantity": 1,
+      "variant": "BASE",
+      "notes": "单独平放打印。4 只 40 mm 脚柱由上方 M3 螺钉连接；装好总高 45 mm。",
+      "dimensions_mm": [
+        220.0,
+        200.0,
+        5.0
+      ],
+      "solid_volume_cm3": 218.678,
+      "files": {
+        "stl": "models/P07/tray_3_balls.stl",
+        "step": "models/P07/tray_3_balls.step",
+        "glb": "models/P07/tray_3_balls.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 3
+      },
+      "sha256": "050d0ff6297269265175f3b96f09aeb5fc71b6bad0276e1c8f6f5bb4ed8dcece",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/tray_3_balls.png"
+    },
+    {
+      "group": "P07",
+      "id": "tray_4_balls",
+      "name": "4 球浅槽托盘",
+      "quantity": 1,
+      "variant": "阶梯",
+      "notes": "单独平放打印。4 只 40 mm 脚柱由上方 M3 螺钉连接；装好总高 45 mm。",
+      "dimensions_mm": [
+        220.0,
+        200.0,
+        5.0
+      ],
+      "solid_volume_cm3": 218.297,
+      "files": {
+        "stl": "models/P07/tray_4_balls.stl",
+        "step": "models/P07/tray_4_balls.step",
+        "glb": "models/P07/tray_4_balls.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 4
+      },
+      "sha256": "c0e10c465ec0102b29127117bbccecd51f713a0d1af32b7329897f05b5a8cc48",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/tray_4_balls.png"
+    },
+    {
+      "group": "P07",
+      "id": "tray_5_balls",
+      "name": "5 球浅槽托盘",
+      "quantity": 1,
+      "variant": "阶梯",
+      "notes": "单独平放打印。4 只 40 mm 脚柱由上方 M3 螺钉连接；装好总高 45 mm。",
+      "dimensions_mm": [
+        220.0,
+        200.0,
+        5.0
+      ],
+      "solid_volume_cm3": 217.917,
+      "files": {
+        "stl": "models/P07/tray_5_balls.stl",
+        "step": "models/P07/tray_5_balls.step",
+        "glb": "models/P07/tray_5_balls.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 5
+      },
+      "sha256": "e1ac5fc91c929b8cf394b6c1b72f8f3253af385ebabc15983a9e1ff3bc8a47ef",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/tray_5_balls.png"
+    },
+    {
+      "group": "P07",
+      "id": "tray_foot",
+      "name": "托盘脚柱",
+      "quantity": 4,
+      "variant": "BASE",
+      "notes": "M3×12 螺钉；同一套脚可换不同球数托盘。",
+      "dimensions_mm": [
+        20.0,
+        20.0,
+        40.0
+      ],
+      "solid_volume_cm3": 12.493,
+      "files": {
+        "stl": "models/P07/tray_foot.stl",
+        "step": "models/P07/tray_foot.step",
+        "glb": "models/P07/tray_foot.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "dde0a017c64bab4f3b325b0db06128b6c301b9d2bd762a457e256be3ea3ba830",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/tray_foot.png"
+    },
+    {
+      "group": "P07",
+      "id": "weight_box_body",
+      "name": "150 g 配重盒主体",
+      "quantity": 2,
+      "variant": "BASE",
+      "notes": "添加固定的配重，装盖后称总质量 150 g。",
+      "dimensions_mm": [
+        100.0,
+        60.0,
+        38.0
+      ],
+      "solid_volume_cm3": 64.403,
+      "files": {
+        "stl": "models/P07/weight_box_body.stl",
+        "step": "models/P07/weight_box_body.step",
+        "glb": "models/P07/weight_box_body.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "341bb2d486a19b06b8f41083a95e27b9b43e01c7d60cd4c16bc3ee3ae2f95f86",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/weight_box_body.png"
+    },
+    {
+      "group": "P07",
+      "id": "weight_box_lid",
+      "name": "配重盒平盖",
+      "quantity": 2,
+      "variant": "BASE",
+      "notes": "4×M3×10；盖板装好外高 40 mm。",
+      "dimensions_mm": [
+        100.0,
+        60.0,
+        2.0
+      ],
+      "solid_volume_cm3": 11.927,
+      "files": {
+        "stl": "models/P07/weight_box_lid.stl",
+        "step": "models/P07/weight_box_lid.step",
+        "glb": "models/P07/weight_box_lid.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "056907097f97f9231487d56235509f48a64c8b98ebbc3516356968c8489c562d",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/weight_box_lid.png"
+    },
+    {
+      "group": "P08",
+      "id": "knob_50",
+      "name": "光滑圆旋钮",
+      "quantity": 1,
+      "variant": "BASE",
+      "notes": "M4 紧定螺钉不得凸出外圆；8 mm 轴的平面或防滑位置需实测。",
+      "dimensions_mm": [
+        50.0,
+        50.0,
+        25.0
+      ],
+      "solid_volume_cm3": 47.556,
+      "files": {
+        "stl": "models/P08/knob_50.stl",
+        "step": "models/P08/knob_50.step",
+        "glb": "models/P08/knob_50.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "70f87656fc140eb8f2ce95d5279026fa1d33f8559d8dafcb85de473c05483a8b",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        -1e-07
+      ],
+      "print_rotation": null,
+      "preview": "previews/knob_50.png"
+    },
+    {
+      "group": "P08",
+      "id": "knob_80",
+      "name": "光滑圆旋钮",
+      "quantity": 1,
+      "variant": "OOD",
+      "notes": "M4 紧定螺钉不得凸出外圆；8 mm 轴的平面或防滑位置需实测。",
+      "dimensions_mm": [
+        80.0,
+        80.0,
+        25.0
+      ],
+      "solid_volume_cm3": 124.003,
+      "files": {
+        "stl": "models/P08/knob_80.stl",
+        "step": "models/P08/knob_80.step",
+        "glb": "models/P08/knob_80.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "1babdb3340c9d726fc70b7594627b492cabce63b48b6fca656ba12c6fee25903",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        -1e-07
+      ],
+      "print_rotation": null,
+      "preview": "previews/knob_80.png"
+    },
+    {
+      "group": "P08",
+      "id": "knob_bearing_stand",
+      "name": "旋钮双轴承支座",
+      "quantity": 1,
+      "variant": "BASE",
+      "notes": "2 个 608 轴承背靠背放入；前后盖板约束轴向位置，4×M3 贯穿螺栓。轴线高 75，实测轴承孔配合。底部 4 颗磁铁。",
+      "dimensions_mm": [
+        120.0,
+        90.0,
+        103.0
+      ],
+      "solid_volume_cm3": 233.472,
+      "files": {
+        "stl": "models/P08/knob_bearing_stand.stl",
+        "step": "models/P08/knob_bearing_stand.step",
+        "glb": "models/P08/knob_bearing_stand.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "f9d93f2587f3ec20645ea7ccab1f2b45ddb6d7e3608f8e333a698b7896f250bd",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/knob_bearing_stand.png"
+    },
+    {
+      "group": "P08",
+      "id": "bearing_retainer",
+      "name": "轴承外圈限位盖",
+      "quantity": 2,
+      "variant": "BASE",
+      "notes": "4×M3×25 螺栓贯穿前盖、支架和后盖并用螺母固定；中央 Ø18 避开轴与内圈。需实测盖板与轴承外圈的间隙。",
+      "dimensions_mm": [
+        40.0,
+        40.0,
+        3.0
+      ],
+      "solid_volume_cm3": 3.928,
+      "files": {
+        "stl": "models/P08/bearing_retainer.stl",
+        "step": "models/P08/bearing_retainer.step",
+        "glb": "models/P08/bearing_retainer.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "486bc7827a8780589cfcb38fbe3e55f5f7b2436ce556c28d3b6cf38003276369",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/bearing_retainer.png"
+    },
+    {
+      "group": "P08",
+      "id": "friction_brake_block",
+      "name": "O 形圈摩擦刹车块",
+      "quantity": 1,
+      "variant": "BASE",
+      "notes": "12 mm 腔容纳 8 mm 轴和 O 形圈；顶部 M4 螺钉压滑块，需加外置 M4 螺母。装在另设可调高支架上，按扭力计调到 0.1/0.2/0.3/0.4 N·m。",
+      "dimensions_mm": [
+        64.0,
+        24.0,
+        38.0
+      ],
+      "solid_volume_cm3": 37.353,
+      "files": {
+        "stl": "models/P08/friction_brake_block.stl",
+        "step": "models/P08/friction_brake_block.step",
+        "glb": "models/P08/friction_brake_block.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "cba454364a2354dad08dbc178baaa3b7f7d179f519e46f73ce37c0bb3e702f07",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/friction_brake_block.png"
+    },
+    {
+      "group": "P08",
+      "id": "brake_pressure_shoe",
+      "name": "刹车压块",
+      "quantity": 1,
+      "variant": "BASE",
+      "notes": "位于 M4 螺钉与 O 形圈之间，保护橡胶。",
+      "dimensions_mm": [
+        9.0,
+        8.0,
+        5.0
+      ],
+      "solid_volume_cm3": 0.222,
+      "files": {
+        "stl": "models/P08/brake_pressure_shoe.stl",
+        "step": "models/P08/brake_pressure_shoe.step",
+        "glb": "models/P08/brake_pressure_shoe.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "417af3fcf36512709bd5d939610e14050710df5383b0e532c3c451c7c83abe23",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        -3.219646771412954e-15
+      ],
+      "print_rotation": null,
+      "preview": "previews/brake_pressure_shoe.png"
+    },
+    {
+      "group": "P08",
+      "id": "brake_riser",
+      "name": "刹车增高块",
+      "quantity": 1,
+      "variant": "BASE",
+      "notes": "底座 8 + 增高 45 + 刹车轴心 22 = 75 mm；2×M4 长螺栓。",
+      "dimensions_mm": [
+        64.0,
+        24.0,
+        45.0
+      ],
+      "solid_volume_cm3": 67.689,
+      "files": {
+        "stl": "models/P08/brake_riser.stl",
+        "step": "models/P08/brake_riser.step",
+        "glb": "models/P08/brake_riser.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "fb338ca181cb1a454637fba7345117013eba5b529a70f44d0be20a3dbfaaf817",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/brake_riser.png"
+    },
+    {
+      "group": "P08",
+      "id": "potentiometer_bracket",
+      "name": "电位器调节架",
+      "quantity": 1,
+      "variant": "BASE",
+      "notes": "电位器螺纹安装段和本体待测；轴高可调。该架独立固定桌面，防止给电位器轴施加侧向载荷。",
+      "dimensions_mm": [
+        70.0,
+        30.0,
+        90.0
+      ],
+      "solid_volume_cm3": 38.001,
+      "files": {
+        "stl": "models/P08/potentiometer_bracket.stl",
+        "step": "models/P08/potentiometer_bracket.step",
+        "glb": "models/P08/potentiometer_bracket.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "e1dfd45754c64b7df629f2c304b0055201542d37fa3664653e556f17f2e8ea26",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/potentiometer_bracket.png"
+    },
+    {
+      "group": "P08",
+      "id": "shaft_coupler_8_6",
+      "name": "8→6 mm 轴联轴套",
+      "quantity": 1,
+      "variant": "BASE",
+      "notes": "6 mm 为电位器轴径假设；2×M4 紧定螺钉。",
+      "dimensions_mm": [
+        16.0,
+        16.0,
+        24.0
+      ],
+      "solid_volume_cm3": 3.727,
+      "files": {
+        "stl": "models/P08/shaft_coupler_8_6.stl",
+        "step": "models/P08/shaft_coupler_8_6.step",
+        "glb": "models/P08/shaft_coupler_8_6.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "6292fd4c57f050bd7f5da4ee699b7d5a3521c945ecef18ee2ce5ba7076f04fb3",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        -1e-07
+      ],
+      "print_rotation": null,
+      "preview": "previews/shaft_coupler_8_6.png"
+    },
+    {
+      "group": "P09",
+      "id": "keypad_body",
+      "name": "四键键盘壳",
+      "quantity": 1,
+      "variant": "BASE",
+      "notes": "4×M3 固定盖板；用桌面夹具固定键盘，线缆由后窗穿出。",
+      "dimensions_mm": [
+        240.0,
+        65.0,
+        76.0
+      ],
+      "solid_volume_cm3": 195.381,
+      "files": {
+        "stl": "models/P09/keypad_body.stl",
+        "step": "models/P09/keypad_body.step",
+        "glb": "models/P09/keypad_body.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "8c4340cacbdea1d6f338332fb3571c3752e7cc43e3fe4493353cc6da59e5e1e9",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/keypad_body.png"
+    },
+    {
+      "group": "P09",
+      "id": "keypad_top",
+      "name": "四键键盘面板",
+      "quantity": 1,
+      "variant": "BASE",
+      "notes": "键帽贴 1–4，按实际按钮本体与卡扣长度修改安装孔。",
+      "dimensions_mm": [
+        240.0,
+        65.0,
+        4.0
+      ],
+      "solid_volume_cm3": 50.794,
+      "files": {
+        "stl": "models/P09/keypad_top.stl",
+        "step": "models/P09/keypad_top.step",
+        "glb": "models/P09/keypad_top.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "874a54c78f1e3c6e892635225a4d35b7b2330214d5d470512099f11ace1f65f6",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/keypad_top.png"
+    },
+    {
+      "group": "P09",
+      "id": "keypad_pcb_carrier",
+      "name": "USB 控制板绑扎座",
+      "quantity": 1,
+      "variant": "BASE",
+      "notes": "Pro Micro 用扎带固定；底部胶贴固定到键盘壳内，避免假设 PCB 孔位。",
+      "dimensions_mm": [
+        55.0,
+        30.0,
+        3.0
+      ],
+      "solid_volume_cm3": 4.588,
+      "files": {
+        "stl": "models/P09/keypad_pcb_carrier.stl",
+        "step": "models/P09/keypad_pcb_carrier.step",
+        "glb": "models/P09/keypad_pcb_carrier.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "0c91d515c4d36def07ff0cff86455e7654acae36de3f1b1c7374961a76683992",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/keypad_pcb_carrier.png"
+    },
+    {
+      "group": "P10",
+      "id": "spray_neck_front",
+      "name": "喷壶颈前夹环",
+      "quantity": 1,
+      "variant": "BASE",
+      "notes": "默认 Ø25 颈；测量喷壶后修改。前后夹环以 2 根 M3 螺钉连接，夹缝不应完全压死。",
+      "dimensions_mm": [
+        49.0,
+        31.25,
+        12.0
+      ],
+      "solid_volume_cm3": 4.572,
+      "files": {
+        "stl": "models/P10/spray_neck_front.stl",
+        "step": "models/P10/spray_neck_front.step",
+        "glb": "models/P10/spray_neck_front.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "945d0f99cb9ab410a0349e70f97ac8040d38f74ea6d04860e3961f02a5b028d7",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        15.874999999999762,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/spray_neck_front.png"
+    },
+    {
+      "group": "P10",
+      "id": "spray_neck_back",
+      "name": "喷壶颈后夹环",
+      "quantity": 1,
+      "variant": "BASE",
+      "notes": "",
+      "dimensions_mm": [
+        49.0,
+        17.238,
+        12.0
+      ],
+      "solid_volume_cm3": 3.444,
+      "files": {
+        "stl": "models/P10/spray_neck_back.stl",
+        "step": "models/P10/spray_neck_back.step",
+        "glb": "models/P10/spray_neck_back.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "dc232583cedf78d7e5f4b444aa22cb0c9c3b4bea5e62d5f2d63ecbc5e09e6b71",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        -8.874999999999766,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/spray_neck_back.png"
+    },
+    {
+      "group": "P10",
+      "id": "trigger_switch_bracket",
+      "name": "扳机微动开关长孔支架",
+      "quantity": 1,
+      "variant": "BASE",
+      "notes": "开关触发行程与按钮孔距待选型，不应增加或绕过任务规定扳机阻力。",
+      "dimensions_mm": [
+        40.0,
+        22.0,
+        35.0
+      ],
+      "solid_volume_cm3": 7.661,
+      "files": {
+        "stl": "models/P10/trigger_switch_bracket.stl",
+        "step": "models/P10/trigger_switch_bracket.step",
+        "glb": "models/P10/trigger_switch_bracket.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "1de54117abf999782f75a7bdd9055785c1f3be1f9e5493eb71d41c86ad89c1f9",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/trigger_switch_bracket.png"
+    },
+    {
+      "group": "P10",
+      "id": "laser_front",
+      "name": "激光模块前夹环",
+      "quantity": 1,
+      "variant": "BASE",
+      "notes": "默认 Ø8 激光管；测量实际模块后调整。与支架螺栓/小型角片连接。",
+      "dimensions_mm": [
+        32.0,
+        8.744,
+        10.0
+      ],
+      "solid_volume_cm3": 1.599,
+      "files": {
+        "stl": "models/P10/laser_front.stl",
+        "step": "models/P10/laser_front.step",
+        "glb": "models/P10/laser_front.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "dfc116bd5415cebfed275a384b6991db2f1d7b55488f2e4d3a89e505a8dfd375",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        4.624999999999974,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/laser_front.png"
+    },
+    {
+      "group": "P10",
+      "id": "laser_back",
+      "name": "激光模块后夹环",
+      "quantity": 1,
+      "variant": "BASE",
+      "notes": "",
+      "dimensions_mm": [
+        32.0,
+        8.744,
+        10.0
+      ],
+      "solid_volume_cm3": 1.599,
+      "files": {
+        "stl": "models/P10/laser_back.stl",
+        "step": "models/P10/laser_back.step",
+        "glb": "models/P10/laser_back.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "2fec4a7eac425a8df8599cfd8628cbcf77cf17d9f276d78e4dce45acbfb31263",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        -4.624999999999976,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/laser_back.png"
+    },
+    {
+      "group": "P10",
+      "id": "a4_target_backing",
+      "name": "A4 靶纸背板",
+      "quantity": 1,
+      "variant": "BASE",
+      "notes": "210×297×3；粘贴实际任务靶纸，本 CAD 不擅自定义命中半径。",
+      "dimensions_mm": [
+        210.0,
+        297.0,
+        3.0
+      ],
+      "solid_volume_cm3": 186.919,
+      "files": {
+        "stl": "models/P10/a4_target_backing.stl",
+        "step": "models/P10/a4_target_backing.step",
+        "glb": "models/P10/a4_target_backing.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "a0b30e036341b15fa57e56008e188f8306600f3da4fe7ff541ce5efe43342722",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/a4_target_backing.png"
+    },
+    {
+      "group": "P10",
+      "id": "target_foot",
+      "name": "靶板立式底座",
+      "quantity": 2,
+      "variant": "BASE",
+      "notes": "两个底座托住背板下沿；现场加压重或夹紧。",
+      "dimensions_mm": [
+        90.0,
+        45.0,
+        15.0
+      ],
+      "solid_volume_cm3": 58.23,
+      "files": {
+        "stl": "models/P10/target_foot.stl",
+        "step": "models/P10/target_foot.step",
+        "glb": "models/P10/target_foot.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "26b2d605314ac39bc1a44b6e9171e4dde2a756fababbdc6faa95f9b79d9c267a",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/target_foot.png"
+    },
+    {
+      "group": "P12",
+      "id": "flap_right_angle_gauge",
+      "name": "翻盖 90° 复位角尺",
+      "quantity": 2,
+      "variant": "BASE",
+      "notes": "复位用，任务开始前撤掉。",
+      "dimensions_mm": [
+        60.0,
+        20.0,
+        60.0
+      ],
+      "solid_volume_cm3": 17.92,
+      "files": {
+        "stl": "models/P12/flap_right_angle_gauge.stl",
+        "step": "models/P12/flap_right_angle_gauge.step",
+        "glb": "models/P12/flap_right_angle_gauge.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "3f99b60312ad548396e16824af3d5f3da7739b632d9de57b4912f04ebe749e99",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/flap_right_angle_gauge.png"
+    },
+    {
+      "group": "P12",
+      "id": "carton_corner_fixture",
+      "name": "纸箱底角限位夹具",
+      "quantity": 4,
+      "variant": "BASE",
+      "notes": "4 个底角靠住纸箱底部；M4 螺栓/桌面夹具固定。不会固定上方翻盖。",
+      "dimensions_mm": [
+        55.0,
+        55.0,
+        24.0
+      ],
+      "solid_volume_cm3": 23.567,
+      "files": {
+        "stl": "models/P12/carton_corner_fixture.stl",
+        "step": "models/P12/carton_corner_fixture.step",
+        "glb": "models/P12/carton_corner_fixture.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "5db0fda75d63d3e31c16876d83bda45a01aeb13e4435ea1d6e393479f8c05d3d",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/carton_corner_fixture.png"
+    },
+    {
+      "group": "P13",
+      "id": "d405_universal_plate",
+      "name": "D405 通用长孔测量板",
+      "quantity": 1,
+      "variant": "BASE",
+      "notes": "并非已匹配 D405 的孔位；需要相机本体孔距、螺纹、线缆避让和夹爪安装空间实测。",
+      "dimensions_mm": [
+        60.0,
+        60.0,
+        5.0
+      ],
+      "solid_volume_cm3": 15.793,
+      "files": {
+        "stl": "models/P13/d405_universal_plate.stl",
+        "step": "models/P13/d405_universal_plate.step",
+        "glb": "models/P13/d405_universal_plate.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "02df6bb48945404fba2361d438aa57f3709472f1f1c2931ebb27ccdd437d826a",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/d405_universal_plate.png"
+    },
+    {
+      "group": "P13",
+      "id": "gemini_tripod_bracket",
+      "name": "Gemini 2 L 门架角座",
+      "quantity": 1,
+      "variant": "BASE",
+      "notes": "1/4 英寸相机螺钉穿孔；相机朝向、底部孔位、型材 M6 滑块实测后安装。",
+      "dimensions_mm": [
+        70.0,
+        60.0,
+        60.0
+      ],
+      "solid_volume_cm3": 44.936,
+      "files": {
+        "stl": "models/P13/gemini_tripod_bracket.stl",
+        "step": "models/P13/gemini_tripod_bracket.step",
+        "glb": "models/P13/gemini_tripod_bracket.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "99157f42861fe52ac7bd118ceceb5f2f423d10c9d9795e227bd98dd5c356ce41",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/gemini_tripod_bracket.png"
+    },
+    {
+      "group": "P13",
+      "id": "rm75_hand_flange_blank",
+      "name": "RM75-B—手接口测量毛坯",
+      "quantity": 1,
+      "variant": "测量毛坯",
+      "notes": "无安装孔；OD70 / ID20 / 厚10 为占位尺寸。未核实孔位、定位止口、紧固深度、负载与刚度，不能用于带电机械臂承载。",
+      "dimensions_mm": [
+        70.0,
+        70.0,
+        10.0
+      ],
+      "solid_volume_cm3": 35.343,
+      "files": {
+        "stl": "models/P13/rm75_hand_flange_blank.stl",
+        "step": "models/P13/rm75_hand_flange_blank.step",
+        "glb": "models/P13/rm75_hand_flange_blank.glb"
+      },
+      "validation": {
+        "occ_valid": true,
+        "solid_count": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "h2s_fits_with_5mm_margin": true,
+        "bed_rotation_deg": 0,
+        "zero_area_triangles_removed": 0
+      },
+      "sha256": "7ca523f1c560dcf9d1171dead50a13cc78ccb39fabc20a09aeaa874f9d3c24f9",
+      "placement": null,
+      "print_origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "print_rotation": null,
+      "preview": "previews/rm75_hand_flange_blank.png"
+    }
+  ],
+  "checks": [],
+  "errors": [],
+  "elapsed_s": 5.8,
+  "parameters_sha256": "d7faf8e9674e8f4f8cceba3ab30ba232126cd3cfefdac7cbde116aac0763e3f4",
+  "source_sha256": "5ab6d90076c00c39ae292a407ff6d13412b398ec592db2d8701173736484fa09",
+  "spec_sha256": "23957455c1aa0c0cad76324ed84fae725a1c9021c6b3ab0426e2753cda1750e8",
+  "user_prop_updates": {
+    "source": "PROP_UPDATES.md",
+    "sha256": "48aa9eb0a8964737f18a4ebbf3cc711b71b7398c6266816f8010aa7e5d5e198a",
+    "overrides": [
+      "H3 printed plastic card instead of PVC sheet",
+      "D3 printed tube instead of purchased PS/PP tube",
+      "D6 existing mineral-water bottle instead of printed square bottle"
+    ]
+  },
+  "artifact_class": "manufacturing_prototype_with_user_material_substitutions",
+  "paired_sets": [
+    {
+      "id": "H3",
+      "name": "卡片 + 卡槽",
+      "groups": [
+        "B32",
+        "B33"
+      ],
+      "zip": "packages/H3_cards_and_slots.zip",
+      "description": "四档 85×54 mm 卡片与对应槽座；BASE 先打 2 mm 卡片和 2 mm 卡槽。",
+      "base_print": [
+        {
+          "part": "card_t2",
+          "quantity": 3
+        },
+        {
+          "part": "card_slot_t2",
+          "quantity": 1
+        }
+      ],
+      "part_ids": [
+        "card_t3",
+        "card_t2",
+        "card_t1",
+        "card_t0p8",
+        "card_slot_t3",
+        "card_slot_t2",
+        "card_slot_t1",
+        "card_slot_t0p8"
+      ]
+    },
+    {
+      "id": "D3",
+      "name": "试管 + 试管架 + V 托",
+      "groups": [
+        "B25",
+        "P05"
+      ],
+      "zip": "packages/D3_tubes_and_rack.zip",
+      "description": "Ø12×75 mm 空心封底试管，配四档孔架；BASE 用 Ø15 mm 导向架。",
+      "base_print": [
+        {
+          "part": "printed_tube_12x75",
+          "quantity": 2
+        },
+        {
+          "part": "rack_weight_base",
+          "quantity": 1
+        },
+        {
+          "part": "rack_weight_lid",
+          "quantity": 1
+        },
+        {
+          "part": "rack_guide_15",
+          "quantity": 1
+        },
+        {
+          "part": "tube_v_rest",
+          "quantity": 2
+        }
+      ],
+      "part_ids": [
+        "printed_tube_12x75",
+        "rack_weight_base",
+        "rack_weight_lid",
+        "rack_guide_16",
+        "rack_guide_15",
+        "rack_guide_14",
+        "rack_guide_13p5",
+        "tube_v_rest"
+      ]
+    }
+  ],
+  "prop_updates": "PROP_UPDATES.md",
+  "purchased_bottle": {
+    "prop_id": "P06",
+    "route": "矿泉水瓶 + 原装盖",
+    "status": "待实测；不在默认打印包",
+    "measurements": "../procurement/existing_bottle_measurements.json"
+  },
+  "glb_units": "metres",
+  "physical_print_tested": false
+}

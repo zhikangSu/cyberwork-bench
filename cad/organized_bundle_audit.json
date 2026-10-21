@@ -1,0 +1,12 @@
+{
+  "version": "0.2",
+  "archive": "CyberWork_print_designs_v0.2_organized.zip",
+  "parts": 72,
+  "nested_zips": 11,
+  "standalone_families": 3,
+  "bytes": 4949820,
+  "sha256": "bf5a380443eecd4bd7e33e3d47f17aa2730a355d3ca30de9298646c0dbe85bff",
+  "crc_verified": true,
+  "stl_hashes_verified": true,
+  "all_parts_once": true
+}

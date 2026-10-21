@@ -1,0 +1,4806 @@
+{
+  "version": "0.3.3",
+  "date": "2026-10-21",
+  "items": [
+    {
+      "id": "B01",
+      "name": "密胺碗",
+      "group": "日常道具",
+      "route": "直接购买",
+      "phase": "BASE 首批",
+      "spec": "约 Ø10 / 12.7 / 15 / 18 cm（4/5/6/7 英寸），多种颜色",
+      "tasks": "A1、S1、S4、S7、S10、D1、D7、H5",
+      "initial_qty": "Ø12.7、15、18 cm 各 1；另备 H5 深 ≥8 cm 的碗 1 只",
+      "note": "口径按内口实测。S1 的 Ø18×7 cm 碗与 H5 深 ≥8 cm 的防弹出碗应分别选型。其他阶梯 Ø10 cm 后补。",
+      "original_route": "A",
+      "source_section": "8.1 物品与容器",
+      "source_line": 1020,
+      "photos": [
+        {
+          "key": "bowl-0",
+          "title": "Serroni Melamine Bowl 15cm Royal Blue | Kitchen Warehouse",
+          "source": "https://www.kitchenwarehouse.com.au/product/serroni-melamine-bowl-15cm-royal-blue",
+          "image": "https://media.kitchenwarehouse.com.au/kitchenwarehouse/image/upload/c_fill%2Cg_face%2Cw_3840%2Cf_auto%2Cq_auto%3Abest/Supplier%20Images%20/2000px/Serroni-Melamine-Bowl-15cm-Royal-Blue_1_2000px.jpg",
+          "caption": "密胺碗外观",
+          "local_file": "reference_photos/bowl-0.jpg",
+          "sha256": "727901bcd4e2fa3efa21521d65f96f39e17508b426207d7f41a8a105f01aaf22",
+          "bytes": 91871,
+          "width": 3840,
+          "height": 3840,
+          "url": "images/bowl-0.jpg"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "密胺碗 约 Ø10 / 12.7 / 15 / 18 cm（4/5/6/7 英寸），多种颜色",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "explicit",
+            "scope": "A1 / S1 / D1",
+            "value": "A1：碗口 Ø15、Ø12.7 cm；S1：Ø18×7 cm；D1：Ø18 cm。",
+            "source_line": 311,
+            "source_lines": [
+              311,
+              324,
+              503
+            ],
+            "references": [
+              {
+                "line": 311,
+                "text": "- **道具**：两只颜色不同的密胺碗，Ø15 与 Ø12.7 cm（约 6 英寸与 5 英寸），每种 3 只。",
+                "url": "../spec.html#line-310"
+              },
+              {
+                "line": 324,
+                "text": "  - ID 容器：碗 Ø18×7 cm、收纳盒 25×20×10 cm。容器与候选物属于不同形状族、不同颜色族。",
+                "url": "../spec.html#line-321"
+              },
+              {
+                "line": 503,
+                "text": "  - 容器为碗 Ø18 cm。",
+                "url": "../spec.html#line-499"
+              }
+            ]
+          },
+          {
+            "kind": "approximate",
+            "scope": "S4 阶梯",
+            "value": "口径约 Ø18 / 15 / 12.7 / 10 cm；BASE 为约 Ø15 cm。",
+            "source_line": 409,
+            "source_lines": [
+              409
+            ],
+            "references": [
+              {
+                "line": 409,
+                "text": "- **阶梯**：碗口径 L1 约 18 cm；L2 约 15 cm（BASE）；L3 约 12.7 cm；L4 约 10 cm。",
+                "url": "../spec.html#line-401"
+              }
+            ]
+          },
+          {
+            "kind": "explicit",
+            "scope": "H5",
+            "value": "碗深 ≥8 cm，防止球弹出。",
+            "source_line": 729,
+            "source_lines": [
+              729
+            ],
+            "references": [
+              {
+                "line": 729,
+                "text": "- 碗深 ≥8 cm，防止球弹出。",
+                "url": "../spec.html#line-727"
+              }
+            ]
+          }
+        ],
+        "note": "各用途分别核对：S1 的 7 cm 高碗不能直接当作 H5 深 ≥8 cm 的碗。口径需实测；H5 未限定口径。",
+        "category": "explicit",
+        "label": "有尺寸要求 · 数值 / 上下限",
+        "has_numeric_size": true
+      }
+    },
+    {
+      "id": "B02",
+      "name": "大收纳箱",
+      "group": "日常道具",
+      "route": "直接购买",
+      "phase": "BASE 首批",
+      "spec": "约 30×25×20 cm",
+      "tasks": "H1、H-open",
+      "initial_qty": "1 个",
+      "note": "",
+      "original_route": "A",
+      "source_section": "8.1 物品与容器",
+      "source_line": 1020,
+      "photos": [
+        {
+          "key": "largebox-0",
+          "title": "صندوق تخزين قياس 20 × 30 × 20 سم",
+          "source": "https://www.sheeel.com/ar/k-809-storage-box-20-x-30-x-20-cm.html",
+          "image": "https://cdn.sheeel.com/catalog/product/cache/074f467fdf747a38ab5e8f88243fd86f/s/t/storage_box-2.jpg",
+          "caption": "大收纳箱外观",
+          "local_file": "reference_photos/largebox-0.jpg",
+          "sha256": "2031661ba3010e1897416196b2643ec136523157a5b722f0c2d647809f87c9b2",
+          "bytes": 71588,
+          "width": 700,
+          "height": 700,
+          "url": "images/largebox-0.jpg"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "大收纳箱 约 30×25×20 cm",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "approximate",
+            "scope": "H1 / H-open",
+            "value": "大收纳箱约 30×25×20 cm。",
+            "source_line": 678,
+            "source_lines": [
+              678
+            ],
+            "references": [
+              {
+                "line": 678,
+                "text": "- OOD：仿真面包、大号塑料瓶。箱子约 30×25×20 cm。",
+                "url": "../spec.html#line-674"
+              }
+            ]
+          }
+        ],
+        "note": "",
+        "category": "approximate",
+        "label": "有尺寸要求 · 约尺寸",
+        "has_numeric_size": true
+      }
+    },
+    {
+      "id": "B03",
+      "name": "盘子",
+      "group": "日常道具",
+      "route": "直接购买",
+      "phase": "BASE 首批",
+      "spec": "Ø18 cm",
+      "tasks": "S3、S8",
+      "initial_qty": "1–2 个",
+      "note": "",
+      "original_route": "A",
+      "source_section": "8.1 物品与容器",
+      "source_line": 1020,
+      "photos": [
+        {
+          "key": "plate-1",
+          "title": "Polar White Melamine Plates 7inch / 18cm - Utopia Melamine Tableware - MBS Wholesale",
+          "source": "https://www.mbswholesale.co.uk/carlisle-kingline-white-plate-18cm-48-pack/",
+          "image": "https://www.mbswholesale.co.uk/media/catalog/product/u/t/ut-cakl201ds02.jpg",
+          "caption": "浅盘外观",
+          "local_file": "reference_photos/plate-1.jpg",
+          "sha256": "f7f691b72390c2501e04d7f568b170b89c2a0d0ec6e33ae9adc2f27bbaf340e1",
+          "bytes": 9615,
+          "width": 750,
+          "height": 750,
+          "url": "images/plate-1.jpg"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "盘子 Ø18 cm",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "explicit",
+            "scope": "S3 / S8",
+            "value": "盘子直径 Ø18 cm。",
+            "source_line": 381,
+            "source_lines": [
+              381
+            ],
+            "references": [
+              {
+                "line": 381,
+                "text": "  - 目标盘 Ø18 cm，放在近端随机位置。",
+                "url": "../spec.html#line-371"
+              }
+            ]
+          }
+        ],
+        "note": "",
+        "category": "explicit",
+        "label": "有尺寸要求 · 数值 / 上下限",
+        "has_numeric_size": true
+      }
+    },
+    {
+      "id": "B04",
+      "name": "收纳盒",
+      "group": "日常道具",
+      "route": "直接购买",
+      "phase": "BASE 首批",
+      "spec": "约 25×20×10 cm",
+      "tasks": "S1、S10、S12",
+      "initial_qty": "1–2 个",
+      "note": "",
+      "original_route": "A",
+      "source_section": "8.1 物品与容器",
+      "source_line": 1020,
+      "photos": [
+        {
+          "key": "boxreal-0",
+          "title": "NOJIG box 20×25×10 cm – IKEA Cyprus",
+          "source": "https://www.ikea.com.cy/en/products/nojig-box-plastic-20x25x10-cm/20468105/",
+          "image": "https://ikeacyprus.akamaized.net/images/1860x1860/2/variantimages/20468105/0.JPG",
+          "caption": "收纳盒实物照片（25×20×10 cm 示例）",
+          "local_file": "reference_photos/boxreal-0.jpg",
+          "sha256": "1db44e70c93b3dc06784d95334d871d11c94e3fb2aacea8f68bd9045bc593d45",
+          "bytes": 125035,
+          "width": 1860,
+          "height": 1860,
+          "url": "images/boxreal-0.jpg"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "收纳盒 约 25×20×10 cm",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "approximate",
+            "scope": "S1 / S10 / S12",
+            "value": "收纳盒约 25×20×10 cm。",
+            "source_line": 344,
+            "source_lines": [
+              344
+            ],
+            "references": [
+              {
+                "line": 344,
+                "text": "| 收纳盒（ID 容器） | 约 25×20×10 cm | 3 | A |",
+                "url": "../spec.html#line-321"
+              }
+            ]
+          }
+        ],
+        "note": "S10 复用 S1 收纳盒；S12 未另规定盒子尺寸。",
+        "category": "approximate",
+        "label": "有尺寸要求 · 约尺寸",
+        "has_numeric_size": true
+      }
+    },
+    {
+      "id": "B05",
+      "name": "篮子",
+      "group": "日常道具",
+      "route": "直接购买",
+      "phase": "BASE 首批",
+      "spec": "口径 ≥20 cm",
+      "tasks": "S1（OOD）、A2、S7、S10（OOD）",
+      "initial_qty": "1 个",
+      "note": "",
+      "original_route": "A",
+      "source_section": "8.1 物品与容器",
+      "source_line": 1020,
+      "photos": [
+        {
+          "key": "basket-11",
+          "title": "SmartStore Essence Storage Basket - White - iQ living",
+          "source": "https://www.iqliving.com/products/smartstore-essence-storage-basket-white",
+          "image": "https://www.iqliving.com/cdn/shop/files/f64743_2000x.jpg?v=1747244899",
+          "caption": "开口篮子外观",
+          "local_file": "reference_photos/basket-11.jpg",
+          "sha256": "4cb9e71f6e0f23814034768a71b87a69786fb91e45f60437e20fd333c11cc864",
+          "bytes": 33781,
+          "width": 800,
+          "height": 800,
+          "url": "images/basket-11.jpg"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "篮子 口径 ≥20 cm",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "explicit",
+            "scope": "S1 OOD / A2",
+            "value": "篮子口径 ≥20 cm；复用这些道具的组合任务沿用。",
+            "source_line": 326,
+            "source_lines": [
+              326
+            ],
+            "references": [
+              {
+                "line": 326,
+                "text": "  - OOD 容器：篮子（口径 ≥20 cm）、托盘（判据改用 `on`）。",
+                "url": "../spec.html#line-321"
+              }
+            ]
+          }
+        ],
+        "note": "",
+        "category": "explicit",
+        "label": "有尺寸要求 · 数值 / 上下限",
+        "has_numeric_size": true
+      }
+    },
+    {
+      "id": "B06",
+      "name": "浅边托盘",
+      "group": "日常道具",
+      "route": "直接购买",
+      "phase": "BASE 首批",
+      "spec": "约 25×18 cm",
+      "tasks": "S1（OOD）、S9、S7、D7",
+      "initial_qty": "2 个",
+      "note": "",
+      "original_route": "A",
+      "source_section": "8.1 物品与容器",
+      "source_line": 1020,
+      "photos": [
+        {
+          "key": "tray-1",
+          "title": "Tacka biała plastikowa 25x18cm",
+          "source": "https://www.primpol.pl/prod_246-1-34-0.html",
+          "image": "https://www.primpol.pl/photo/1689237365-TACA-KUCHENNA-UNIWERSALNA-TACKA-25x18CM-BIALA-EAN-GTIN-5907631703544.jpg",
+          "caption": "浅边托盘外观",
+          "local_file": "reference_photos/tray-1.jpg",
+          "sha256": "3d52e6e312d9a177736451a086ce7b617741a7d29527e1d170922830f4e3133f",
+          "bytes": 17815,
+          "width": 800,
+          "height": 800,
+          "url": "images/tray-1.jpg"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "浅边托盘 约 25×18 cm",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "approximate",
+            "scope": "S1 OOD / S9",
+            "value": "浅边托盘约 25×18 cm；S7 / D7 复用时沿用。",
+            "source_line": 849,
+            "source_lines": [
+              849
+            ],
+            "references": [
+              {
+                "line": 849,
+                "text": "| 浅边托盘 | 约 25×18 cm | 共用 S1 OOD | A |",
+                "url": "../spec.html#line-828"
+              }
+            ]
+          }
+        ],
+        "note": "",
+        "category": "approximate",
+        "label": "有尺寸要求 · 约尺寸",
+        "has_numeric_size": true
+      }
+    },
+    {
+      "id": "B07",
+      "name": "仿真水果",
+      "group": "日常道具",
+      "route": "直接购买",
+      "phase": "BASE 首批",
+      "spec": "橙子 Ø7、苹果、草莓",
+      "tasks": "S1、S3、S10、S11、S12、D4",
+      "initial_qty": "橙子、苹果各 1；草莓先不买（OOD）",
+      "note": "买不能拆开的仿真道具；不要买魔术贴切切乐。橙子 Ø7 cm；图中尺寸不作为采购验收。",
+      "original_route": "A",
+      "source_section": "8.1 物品与容器",
+      "source_line": 1020,
+      "photos": [
+        {
+          "key": "fruit-1",
+          "title": "バナナ　オレンジ　リンゴ　3点セット　食品サンプル　果物　偽物　仏具　お供え物 仏壇 イミテーションフルーツ　果実　お盆飾り　フェイクフルーツ　お供え　 : 浜田商店 仏壇 仏具 - 通販 - Yahoo!ショッピング",
+          "source": "https://store.shopping.yahoo.co.jp/hamadasyouten/fruits3-sample-hamadasyoutenn.html",
+          "image": "https://item-shopping.c.yimg.jp/i/n/hamadasyouten_fruits3-sample-hamadasyoutenn",
+          "caption": "仿真水果外观",
+          "local_file": "reference_photos/fruit-1.jpg",
+          "sha256": "4e9f5e11f4e1f26af900ef6524cd042d2186014635ac8931a1567963c5502e36",
+          "bytes": 61543,
+          "width": 900,
+          "height": 900,
+          "url": "images/fruit-1.jpg"
+        },
+        {
+          "key": "strawberry-1",
+          "title": "فوكس واقعية مانجو مانجو مهرجان الفراولة الفاكهة الصناعية البلاستيكية الزخرفية للديكورات الداخلية والحفلة - الصين فاكهة اصطناعية، بلاستيك فواكه، ديكور فاكهة بلاستيكية، فطيرة فبل زاهية، فراولة مانجو من الفطيرة السعر",
+          "source": "https://sa.made-in-china.com/co_tinghong/product_Faux-Realistic-Pear-Mango-Strawberry-Festival-Decorative-Plastic-Artificial-Fruit-for-Home-and-Party-Decorations_ysyuoigorg.html",
+          "image": "https://image.made-in-china.com/2f0j00MYGkJlUdEncf/Faux-Realistic-Pear-Mango-Strawberry-Festival-Decorative-Plastic-Artificial-Fruit-for-Home-and-Party-Decorations.webp",
+          "caption": "仿真草莓（OOD）",
+          "local_file": "reference_photos/strawberry-1.webp",
+          "sha256": "297d253d5016b695c0ddc9492076a5ab52b48f5ec26b54a415e1424396417538",
+          "bytes": 543636,
+          "width": 750,
+          "height": 750,
+          "url": "images/strawberry-1.webp"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "仿真水果 橙子 Ø7、苹果、草莓",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "explicit",
+            "scope": "S1 / D4",
+            "value": "仿真橙子 Ø7 cm。",
+            "source_line": 323,
+            "source_lines": [
+              323
+            ],
+            "references": [
+              {
+                "line": 323,
+                "text": "  - ID 候选：红色木方块 4 cm、仿真橙子 Ø7 cm、绿色小 PET 瓶（不超过 Ø5×12 cm）、黄色香蕉玩具 15 cm、深灰色海绵 10×7×3 cm。",
+                "url": "../spec.html#line-321"
+              }
+            ]
+          },
+          {
+            "kind": "explicit",
+            "scope": "S11",
+            "value": "用于抽屉收纳的物体高度 ≤8 cm。",
+            "source_line": 880,
+            "source_lines": [
+              880
+            ],
+            "references": [
+              {
+                "line": 880,
+                "text": "  - 收纳物只用矮的：4 cm 木方块、海绵、小号胶带卷、仿真橙子。抽屉内高约 10 cm，物体高度 ≤8 cm。",
+                "url": "../spec.html#line-876"
+              }
+            ]
+          }
+        ],
+        "note": "苹果、草莓未单独规定直径；不要把橙子的 Ø7 cm 套到所有水果。",
+        "category": "explicit",
+        "label": "有尺寸要求 · 数值 / 上下限",
+        "has_numeric_size": true
+      }
+    },
+    {
+      "id": "B08",
+      "name": "香蕉玩具",
+      "group": "日常道具",
+      "route": "直接购买",
+      "phase": "BASE 首批",
+      "spec": "15 cm，黄色",
+      "tasks": "S1",
+      "initial_qty": "1 个",
+      "note": "长约 15 cm、黄色；示例照片含其他水果，仅参考外形。",
+      "original_route": "A",
+      "source_section": "8.1 物品与容器",
+      "source_line": 1020,
+      "photos": [
+        {
+          "key": "fruit-0",
+          "title": "cite楽天市場 お供え果実 ３点セット2[オレンジ・りんご・バナナ]cite御供物 citeお供え cite供物 cite供物台 citeイミテーション citeフルーツ cite果物 cite月命日 cite好物 cite新盆 cite命日 cite四十九日 citeお盆 cite先祖供養 citeお彼岸 cite仏具 cite仏壇 cite盆飾り ：お香・数珠・仏壇のe-namu庵心堂",
+          "source": "https://item.rakuten.co.jp/ansindo/sun-044463/",
+          "image": "https://tshop.r10s.jp/ansindo/cabinet/butugu/05650704/411.jpg",
+          "caption": "仿真水果外观",
+          "local_file": "reference_photos/fruit-0.jpg",
+          "sha256": "3bf04d4bea8a0e08273620d90ca729a5f49de0d16a7d3887502de33b5b08aae6",
+          "bytes": 103012,
+          "width": 750,
+          "height": 750,
+          "url": "images/fruit-0.jpg"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "香蕉玩具 15 cm，黄色",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "explicit",
+            "scope": "S1",
+            "value": "香蕉玩具长 15 cm。",
+            "source_line": 323,
+            "source_lines": [
+              323
+            ],
+            "references": [
+              {
+                "line": 323,
+                "text": "  - ID 候选：红色木方块 4 cm、仿真橙子 Ø7 cm、绿色小 PET 瓶（不超过 Ø5×12 cm）、黄色香蕉玩具 15 cm、深灰色海绵 10×7×3 cm。",
+                "url": "../spec.html#line-321"
+              }
+            ]
+          }
+        ],
+        "note": "",
+        "category": "explicit",
+        "label": "有尺寸要求 · 数值 / 上下限",
+        "has_numeric_size": true
+      }
+    },
+    {
+      "id": "B09",
+      "name": "海绵",
+      "group": "日常道具",
+      "route": "直接购买",
+      "phase": "BASE 首批",
+      "spec": "10×7×3 cm，深灰色",
+      "tasks": "S1、S11",
+      "initial_qty": "1 块",
+      "note": "",
+      "original_route": "A",
+      "source_section": "8.1 物品与容器",
+      "source_line": 1020,
+      "photos": [
+        {
+          "key": "sponge-0",
+          "title": "Foam & Rubber Shop |29-400 Density Foam",
+          "source": "https://www.thefoamandrubbershop.com/product-page/29-400-density-foam",
+          "image": "https://static.wixstatic.com/media/1507b1_b240295efd604e0ead5ad4753eb4ed8c~mv2.jpg/v1/fill/w_1512%2Ch_1512%2Cal_c%2Cq_90%2Cenc_avif%2Cquality_auto/1507b1_b240295efd604e0ead5ad4753eb4ed8c~mv2.jpg",
+          "caption": "深灰色海绵材料",
+          "local_file": "reference_photos/sponge-0.jpg",
+          "sha256": "2caa31903d3453d7cbee7cce5643b9fd67e79e33c79b2eed9e14d0708b042628",
+          "bytes": 169479,
+          "width": 1512,
+          "height": 1512,
+          "url": "images/sponge-0.jpg"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "海绵 10×7×3 cm，深灰色",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "explicit",
+            "scope": "S1",
+            "value": "海绵 10×7×3 cm。",
+            "source_line": 323,
+            "source_lines": [
+              323
+            ],
+            "references": [
+              {
+                "line": 323,
+                "text": "  - ID 候选：红色木方块 4 cm、仿真橙子 Ø7 cm、绿色小 PET 瓶（不超过 Ø5×12 cm）、黄色香蕉玩具 15 cm、深灰色海绵 10×7×3 cm。",
+                "url": "../spec.html#line-321"
+              }
+            ]
+          },
+          {
+            "kind": "explicit",
+            "scope": "S11",
+            "value": "收纳姿态下物体高度 ≤8 cm。",
+            "source_line": 880,
+            "source_lines": [
+              880
+            ],
+            "references": [
+              {
+                "line": 880,
+                "text": "  - 收纳物只用矮的：4 cm 木方块、海绵、小号胶带卷、仿真橙子。抽屉内高约 10 cm，物体高度 ≤8 cm。",
+                "url": "../spec.html#line-876"
+              }
+            ]
+          }
+        ],
+        "note": "",
+        "category": "explicit",
+        "label": "有尺寸要求 · 数值 / 上下限",
+        "has_numeric_size": true
+      }
+    },
+    {
+      "id": "B10",
+      "name": "小 PET 瓶",
+      "group": "日常道具",
+      "route": "直接购买",
+      "phase": "BASE 首批",
+      "spec": "≤12 cm，绿色，带盖",
+      "tasks": "S1、S6",
+      "initial_qty": "1–2 个",
+      "note": "带盖总高 ≤12 cm、直径 ≤5 cm；不要按商品容量猜高度。",
+      "original_route": "A",
+      "source_section": "8.1 物品与容器",
+      "source_line": 1020,
+      "photos": [
+        {
+          "key": "bottle-0",
+          "title": "100ml cosmetic plastic bottle china,pet cosmetic plastic bottle china,custom plastic cosmetic bottle china",
+          "source": "https://www.plasticbottlesupplier.com/news/ZH-P90206-100ml-Colorful-PET-Cosmetic-Bottle-Containers.html",
+          "image": "https://cdn.cloudbf.com/thumb/format/mini_xsize/files/101/img/2025/08/02/202508021439290119983.jpg.webp",
+          "caption": "小 PET 瓶外观；大瓶 OOD 需另选尺寸",
+          "local_file": "reference_photos/bottle-0.webp",
+          "sha256": "5ef533a983b540f8e34103d0f2e986ff3f11e2840876aec8560c424d8f4ab86e",
+          "bytes": 17610,
+          "width": 800,
+          "height": 800,
+          "url": "images/bottle-0.webp"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "小 PET 瓶 ≤12 cm，绿色，带盖",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "explicit",
+            "scope": "S1 / S6",
+            "value": "小 PET 瓶直径 ≤5 cm、总高 ≤12 cm，带盖；S6 另明确高度 ≤12 cm。",
+            "source_line": 323,
+            "source_lines": [
+              323,
+              450
+            ],
+            "references": [
+              {
+                "line": 323,
+                "text": "  - ID 候选：红色木方块 4 cm、仿真橙子 Ø7 cm、绿色小 PET 瓶（不超过 Ø5×12 cm）、黄色香蕉玩具 15 cm、深灰色海绵 10×7×3 cm。",
+                "url": "../spec.html#line-321"
+              },
+              {
+                "line": 450,
+                "text": "    - 小 PET 瓶（≤12 cm，带盖）；",
+                "url": "../spec.html#line-446"
+              }
+            ]
+          }
+        ],
+        "note": "按带盖实物测量，商品容量不能代替尺寸。",
+        "category": "explicit",
+        "label": "有尺寸要求 · 数值 / 上下限",
+        "has_numeric_size": true
+      }
+    },
+    {
+      "id": "B11",
+      "name": "塑料杯、马克杯",
+      "group": "日常道具",
+      "route": "直接购买",
+      "phase": "BASE 首批",
+      "spec": "蓝色塑料杯；白色矮马克杯，高 ≤9 cm",
+      "tasks": "S1（OOD）、S7、S10",
+      "initial_qty": "蓝色厚壁 PP 杯 1 个；白色矮马克杯待 OOD",
+      "note": "",
+      "original_route": "A",
+      "source_section": "8.1 物品与容器",
+      "source_line": 1020,
+      "photos": [
+        {
+          "key": "cup-0",
+          "title": "Vaso Plástico Reutilizable Liso :: Regalos Pro - Regalos corporativos",
+          "source": "https://tienda.regalospro.cl/producto/vaso-plastico-reutilizable-liso-6158",
+          "image": "https://tienda.regalospro.cl/productos/6158/m151_azul.jpg",
+          "caption": "塑料杯外观",
+          "local_file": "reference_photos/cup-0.jpg",
+          "sha256": "c07bfbbbf47afd61afc32da7f34b7996e5890e77d855b360503bd2b486825c2e",
+          "bytes": 134213,
+          "width": 1600,
+          "height": 1600,
+          "url": "images/cup-0.jpg"
+        },
+        {
+          "key": "mug-0",
+          "title": "GET TM-1408-W 8 oz. White Stackable Tritan™ Mug - 24/Case",
+          "source": "https://www.webstaurantstore.com/get-tm-1408-w-8-oz-white-stackable-tritan-mug-case/375TM1408W.html",
+          "image": "https://cdnimg.webstaurantstore.com/images/products/large/374942/1414985.jpg",
+          "caption": "白色矮马克杯外观",
+          "local_file": "reference_photos/mug-0.jpg",
+          "sha256": "e1908c6b43c1aea569dafc79c5c42e26afac290b233b727c5c7e2560bf36c9d1",
+          "bytes": 26584,
+          "width": 600,
+          "height": 600,
+          "url": "images/mug-0.jpg"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "塑料杯、马克杯 蓝色塑料杯；白色矮马克杯，高 ≤9 cm",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "explicit",
+            "scope": "S1 OOD",
+            "value": "白色矮马克杯高 ≤9 cm。",
+            "source_line": 325,
+            "source_lines": [
+              325
+            ],
+            "references": [
+              {
+                "line": 325,
+                "text": "  - OOD 候选：蓝色塑料杯、仿真苹果、钢罐（八宝粥空罐）、胶带卷、白色矮马克杯（高 ≤9 cm）。",
+                "url": "../spec.html#line-321"
+              }
+            ]
+          },
+          {
+            "kind": "fit",
+            "scope": "S7-O2",
+            "value": "杯子要能放进所配碗里；蓝色塑料杯未给定口径或高度。",
+            "source_line": 474,
+            "source_lines": [
+              474
+            ],
+            "references": [
+              {
+                "line": 474,
+                "text": "- O2：杯子放进碗里，再把方块放到关闭的抽屉柜顶上。",
+                "url": "../spec.html#line-472"
+              }
+            ]
+          }
+        ],
+        "note": "≤9 cm 是白色矮马克杯的要求，不是所有塑料杯的统一高度。",
+        "category": "explicit",
+        "label": "有尺寸要求 · 数值 / 上下限",
+        "has_numeric_size": true
+      }
+    },
+    {
+      "id": "B12",
+      "name": "钢罐",
+      "group": "日常道具",
+      "route": "直接购买",
+      "phase": "BASE 首批",
+      "spec": "八宝粥空罐，罐口封住",
+      "tasks": "S1（OOD）、S6",
+      "initial_qty": "1 个空罐并封口",
+      "note": "",
+      "original_route": "A",
+      "source_section": "8.1 物品与容器",
+      "source_line": 1020,
+      "photos": [
+        {
+          "key": "can-1",
+          "title": " 泰山八寶粥375ml箱購(24罐裝)",
+          "source": "https://www.momoshop.com.tw/TP/TP0008773/goodsDetail/TP00087730000017",
+          "image": "https://i5.momoshop.com.tw/1769019112/goodsimg/TP000/8773/0000/017/TP00087730000017_O_m.jpg",
+          "caption": "钢罐外观；使用空罐并封口",
+          "local_file": "reference_photos/can-1.jpg",
+          "sha256": "fd467010fef986ad56db4b782328788c58b274409d1127402b7df3e201f8e1c7",
+          "bytes": 37266,
+          "width": 1000,
+          "height": 1000,
+          "url": "images/can-1.jpg"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "钢罐 八宝粥空罐，罐口封住",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "none",
+            "scope": "S1 / S6",
+            "value": "原文选八宝粥空钢罐，未给罐径或罐高数值。",
+            "source_line": 451,
+            "source_lines": [
+              451
+            ],
+            "references": [
+              {
+                "line": 451,
+                "text": "    - 钢罐（八宝粥空罐，罐口封住）；",
+                "url": "../spec.html#line-446"
+              }
+            ]
+          }
+        ],
+        "note": "封住罐口；材质、抗夹持要求仍需满足。",
+        "category": "none",
+        "label": "清单未规定具体尺寸",
+        "has_numeric_size": false
+      }
+    },
+    {
+      "id": "B13",
+      "name": "胶带卷",
+      "group": "日常道具",
+      "route": "直接购买",
+      "phase": "BASE 首批",
+      "spec": "小号",
+      "tasks": "S1（OOD）、S3、S11",
+      "initial_qty": "1 个",
+      "note": "",
+      "original_route": "A",
+      "source_section": "8.1 物品与容器",
+      "source_line": 1020,
+      "photos": [
+        {
+          "key": "tape-1",
+          "title": "古藤工業 リピールテープミニ  小巻養生テープ　黄　幅25mm×5m - アスクル",
+          "source": "https://www.askul.co.jp/p/6010668/",
+          "image": "https://cdn.askul.co.jp/img/product/3L2/6010668_3L2.jpg",
+          "caption": "小号胶带卷",
+          "local_file": "reference_photos/tape-1.jpg",
+          "sha256": "cd6d6d745f25f6d958baac959ed522590a7b87664a4f398a7e3e865d7f2a9871",
+          "bytes": 32614,
+          "width": 600,
+          "height": 600,
+          "url": "images/tape-1.jpg"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "胶带卷 小号",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "explicit",
+            "scope": "S11",
+            "value": "用于抽屉收纳的胶带卷高度 ≤8 cm。",
+            "source_line": 880,
+            "source_lines": [
+              880
+            ],
+            "references": [
+              {
+                "line": 880,
+                "text": "  - 收纳物只用矮的：4 cm 木方块、海绵、小号胶带卷、仿真橙子。抽屉内高约 10 cm，物体高度 ≤8 cm。",
+                "url": "../spec.html#line-876"
+              }
+            ]
+          },
+          {
+            "kind": "none",
+            "scope": "S1 / S3",
+            "value": "只写“小号胶带卷”，没有规定卷的外径、内径。",
+            "source_line": 345,
+            "source_lines": [
+              345
+            ],
+            "references": [
+              {
+                "line": 345,
+                "text": "| OOD 候选 | 蓝色塑料杯、仿真苹果、钢罐（罐口封住）、小号胶带卷、白色矮马克杯（高 ≤9 cm） | 各 2 | A |",
+                "url": "../spec.html#line-321"
+              }
+            ]
+          }
+        ],
+        "note": "",
+        "category": "explicit",
+        "label": "有尺寸要求 · 数值 / 上下限",
+        "has_numeric_size": true
+      }
+    },
+    {
+      "id": "B14",
+      "name": "木方块",
+      "group": "日常道具",
+      "route": "购买后加工",
+      "phase": "BASE 首批",
+      "spec": "4 cm 红色 ×8；4 cm 四色 ×2 套；3 cm 五色 ×2 套；2 cm ×20",
+      "tasks": "S1、S3、S5、S8、S9、S10、S11、S12、A2、D4",
+      "initial_qty": "4 cm：红 5、蓝至少 2、黄/绿各 1；3 cm 五色各 1；2 cm 至少 4 块",
+      "note": "保留木材，不用塑料打印件替换标准木块；红色同款候选和多色组可以跨任务复用。",
+      "original_route": "A/B",
+      "source_section": "8.1 物品与容器",
+      "source_line": 1020,
+      "photos": [
+        {
+          "key": "wood-0",
+          "title": "Кубики деревянные 4 см цветные 20 шт - Полесье игрушки",
+          "source": "https://polesie-igrushki.ru/catalog/derevyannie_kubiki/kubiki-derevyannye-tsvetnye-20-sht.html",
+          "image": "https://polesie-igrushki.ru/upload/iblock/85c/e8itbum3vl5rj46vs4oqp461ism91pia/6774599723.jpg",
+          "caption": "彩色木方块",
+          "local_file": "reference_photos/wood-0.jpg",
+          "sha256": "0e859f287cc27d4ffd6502dbe26e3b80b2c2d97e478b68b2bebdcf9d14825976",
+          "bytes": 17452,
+          "width": 500,
+          "height": 500,
+          "url": "images/wood-0.jpg"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "木方块 4 cm 红色 ×8；4 cm 四色 ×2 套；3 cm 五色 ×2 套；2 cm ×20",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "explicit",
+            "scope": "S1 / A2 / S9 / S10 / S11",
+            "value": "木方块边长 4 cm。",
+            "source_line": 1037,
+            "source_lines": [
+              1037
+            ],
+            "references": [
+              {
+                "line": 1037,
+                "text": "| 木方块 | 4 cm 红色 ×8；4 cm 四色 ×2 套；3 cm 五色 ×2 套；2 cm ×20 | S1、S3、S5、S8、S9、S10、S11、S12、A2、D4 | A/B | 现货彩色木块，或原木块自己喷漆 |",
+                "url": "../spec.html#line-1020"
+              }
+            ]
+          },
+          {
+            "kind": "explicit",
+            "scope": "S3 / S8",
+            "value": "木方块边长 3 cm。",
+            "source_line": 379,
+            "source_lines": [
+              379,
+              805
+            ],
+            "references": [
+              {
+                "line": 379,
+                "text": "  - ID：3 cm 木方块、Ø4×3 cm 木圆柱、小号胶带卷。",
+                "url": "../spec.html#line-371"
+              },
+              {
+                "line": 805,
+                "text": "  - 5 色木方块 3 cm（红、黄、蓝、绿、紫）。",
+                "url": "../spec.html#line-801"
+              }
+            ]
+          },
+          {
+            "kind": "explicit",
+            "scope": "S5",
+            "value": "木方块边长 2 cm，同一批次。",
+            "source_line": 429,
+            "source_lines": [
+              429
+            ],
+            "references": [
+              {
+                "line": 429,
+                "text": "  - 方块：2 cm 木方块，同一批次，质量一致。",
+                "url": "../spec.html#line-425"
+              }
+            ]
+          }
+        ],
+        "note": "不同任务使用不同尺寸，不能只买一种边长替代全部任务。S9 顶面的 20 mm ArUco 见 T07。",
+        "category": "explicit",
+        "label": "有尺寸要求 · 数值 / 上下限",
+        "has_numeric_size": true
+      }
+    },
+    {
+      "id": "B15",
+      "name": "木圆柱",
+      "group": "日常道具",
+      "route": "购买后加工",
+      "phase": "BASE 首批",
+      "spec": "Ø4×3 cm；红色 Ø4×4 cm；绿色 Ø4×4 cm ×5；Ø4×4 cm 四色；Ø3×3 cm 五色",
+      "tasks": "S3、S1-C、S10（OOD）、S9（OOD）、S8（OOD）",
+      "initial_qty": "先备 Ø4×3 cm 1 个，其余颜色/尺寸待 OOD",
+      "note": "",
+      "original_route": "A/B",
+      "source_section": "8.1 物品与容器",
+      "source_line": 1020,
+      "photos": [
+        {
+          "key": "cylinder-1",
+          "title": "Buy Beech Wood Cylinder Montessori Teaching Aids Material Unfinished Wooden Craft Blocks Cylinders from Dongguan Be Green Wood Crafts Co., Ltd., China | Tradewheel.com",
+          "source": "https://www.tradewheel.com/p/beech-wood-cylinder-montessori-teaching-aids-1992343/",
+          "image": "https://img2.tradewheel.com/uploads/images/products/0/3/beech-wood-cylinder-montessori-teaching-aids-material-unfinished-wooden-craft-blocks-cylinders1-0894454001629877481.jpg.webp",
+          "caption": "木圆柱",
+          "local_file": "reference_photos/cylinder-1.webp",
+          "sha256": "fa2a11263cc355d8afe4df729289e10e957f3681eb69a63dc586877b3e9ada18",
+          "bytes": 26302,
+          "width": 750,
+          "height": 542,
+          "url": "images/cylinder-1.webp"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "木圆柱 Ø4×3 cm；红色 Ø4×4 cm；绿色 Ø4×4 cm ×5；Ø4×4 cm 四色；Ø3×3 cm 五色",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "explicit",
+            "scope": "S3",
+            "value": "木圆柱 Ø4×3 cm。",
+            "source_line": 379,
+            "source_lines": [
+              379
+            ],
+            "references": [
+              {
+                "line": 379,
+                "text": "  - ID：3 cm 木方块、Ø4×3 cm 木圆柱、小号胶带卷。",
+                "url": "../spec.html#line-371"
+              }
+            ]
+          },
+          {
+            "kind": "explicit",
+            "scope": "S1-C / S9 OOD / S10 OOD",
+            "value": "木圆柱 Ø4×4 cm。",
+            "source_line": 1038,
+            "source_lines": [
+              1038
+            ],
+            "references": [
+              {
+                "line": 1038,
+                "text": "| 木圆柱 | Ø4×3 cm；红色 Ø4×4 cm；绿色 Ø4×4 cm ×5；Ø4×4 cm 四色；Ø3×3 cm 五色 | S3、S1-C、S10（OOD）、S9（OOD）、S8（OOD） | A/B | |",
+                "url": "../spec.html#line-1020"
+              }
+            ]
+          },
+          {
+            "kind": "explicit",
+            "scope": "S8 OOD",
+            "value": "木圆柱 Ø3×3 cm。",
+            "source_line": 807,
+            "source_lines": [
+              807
+            ],
+            "references": [
+              {
+                "line": 807,
+                "text": "  - OOD：被盖物换成 5 色木圆柱 Ø3×3 cm。",
+                "url": "../spec.html#line-801"
+              }
+            ]
+          }
+        ],
+        "note": "",
+        "category": "explicit",
+        "label": "有尺寸要求 · 数值 / 上下限",
+        "has_numeric_size": true
+      }
+    },
+    {
+      "id": "B16",
+      "name": "木方棒、木圆棒",
+      "group": "日常道具",
+      "route": "购买后加工",
+      "phase": "BASE 首批",
+      "spec": "截面 2.5×2.5 cm，以及直径 2.5 cm",
+      "tasks": "D1",
+      "initial_qty": "先做 15 cm 方棒 3 色各 1；短棒/圆棒待评测",
+      "note": "BASE 是 L1 的 15 cm 方棒；截面 25×25 mm。买木条后切割、打磨、上色即可。",
+      "original_route": "B",
+      "source_section": "8.1 物品与容器",
+      "source_line": 1020,
+      "photos": [
+        {
+          "key": "bar-1",
+          "title": "ไม้แท่งสี่เหลี่ยม ไม้ยางพารา ขนาด 25x25มม.ยาว 25มม.- 500มม.สำหรับงานเฟอร์นิเจอร์ งานไม้ DIY (แพคละ 2 ชิ้น/10 ชิ้น) | Shopee Thailand",
+          "source": "https://shopee.co.th/%E0%B9%84%E0%B8%A1%E0%B9%89%E0%B8%97%E0%B8%A3%E0%B8%87%E0%B8%AA%E0%B8%B5%E0%B9%88%E0%B9%80%E0%B8%AB%E0%B8%A5%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%A1-%E0%B8%82%E0%B8%99%E0%B8%B2%E0%B8%94-25%E0%B8%A1%E0%B8%A1.x-25%E0%B8%A1%E0%B8%A1.%E0%B8%A2%E0%B8%B2%E0%B8%A7-25%E0%B8%A1%E0%B8%A1.-500%E0%B8%A1%E0%B8%A1.%E0%B9%84%E0%B8%A1%E0%B9%89%E0%B8%82%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%9A-%E0%B8%AA%E0%B8%B3%E0%B8%AB%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%97%E0%B8%B3%E0%B9%80%E0%B8%9F%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%99%E0%B8%B4%E0%B9%80%E0%B8%88%E0%B8%AD%E0%B8%A3%E0%B9%8C-%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B9%84%E0%B8%A1%E0%B9%89-DIY-%28%E0%B9%81%E0%B8%9E%E0%B8%84%E0%B8%A5%E0%B8%B0-2-%E0%B8%8A%E0%B8%B4%E0%B9%89%E0%B8%99-10-%E0%B8%8A%E0%B8%B4%E0%B9%89%E0%B8%99%29-i.146538163.24273413778",
+          "image": "https://down-th.img.susercontent.com/file/th-11134207-7r98o-ltxyinuho3i94f",
+          "caption": "方木条；按长度切割",
+          "local_file": "reference_photos/bar-1.jpg",
+          "sha256": "b655cc2a683dd09b42ce165259cb8bcb0fd62e9e431816d562f82fa3da6348a9",
+          "bytes": 767526,
+          "width": 1024,
+          "height": 1024,
+          "url": "images/bar-1.jpg"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "木方棒、木圆棒 截面 2.5×2.5 cm，以及直径 2.5 cm",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "explicit",
+            "scope": "D1",
+            "value": "方棒截面 2.5×2.5 cm；长度 15 / 10 / 8 / 6 cm，BASE 为 15 cm。",
+            "source_line": 501,
+            "source_lines": [
+              501,
+              506
+            ],
+            "references": [
+              {
+                "line": 501,
+                "text": "  - 截面 2.5×2.5 cm 的木方棒，按档切成不同长度，两端各留出抓取区。",
+                "url": "../spec.html#line-499"
+              },
+              {
+                "line": 506,
+                "text": "- **阶梯**：方棒长度 L1 15 cm（BASE）；L2 10 cm；L3 8 cm；L4 6 cm。（v0.3.0 为 15/10/6/4；4 cm 时两只夹爪的手指会相碰，闸门若证明 6 cm 仍可行可再降。）",
+                "url": "../spec.html#line-499"
+              }
+            ]
+          },
+          {
+            "kind": "explicit",
+            "scope": "D1 OOD",
+            "value": "圆棒直径 Ø2.5 cm，长度按相同阶梯；目标和干扰棒尺寸相同。",
+            "source_line": 519,
+            "source_lines": [
+              519
+            ],
+            "references": [
+              {
+                "line": 519,
+                "text": "| OOD 圆棒 | Ø2.5 cm，长度同档 | 每档 1 套 | B |",
+                "url": "../spec.html#line-499"
+              }
+            ]
+          }
+        ],
+        "note": "",
+        "category": "explicit",
+        "label": "有尺寸要求 · 数值 / 上下限",
+        "has_numeric_size": true
+      }
+    },
+    {
+      "id": "B17",
+      "name": "木珠或塑料珠",
+      "group": "日常道具",
+      "route": "直接购买",
+      "phase": "BASE 首批",
+      "spec": "Ø10 mm 实心，约 200 颗",
+      "tasks": "S4、H9",
+      "initial_qty": "同批次约 200 颗（单次只装 30）",
+      "note": "",
+      "original_route": "A",
+      "source_section": "8.1 物品与容器",
+      "source_line": 1020,
+      "photos": [
+        {
+          "key": "beads-1",
+          "title": "Drewniana kula surowa 10mm bez otworu | Akwileja",
+          "source": "https://akwileja.pl/surowe-bez-otworu/570-drewniana-kula-surowa-10mm-bez-otworu-5906449722938.html",
+          "image": "https://akwileja.pl/3880-thickbox_default/drewniana-kula-surowa-10mm-bez-otworu.jpg",
+          "caption": "无孔实心木珠",
+          "local_file": "reference_photos/beads-1.jpg",
+          "sha256": "ca8eb587ef1a665f5527a431da855a4656f0fc2ddeb0140d4f15f98a635c2091",
+          "bytes": 183062,
+          "width": 1100,
+          "height": 1422,
+          "url": "images/beads-1.jpg"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "木珠或塑料珠 Ø10 mm 实心，约 200 颗",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "explicit",
+            "scope": "S4 / H9",
+            "value": "实心木珠或塑料珠直径 Ø10 mm。",
+            "source_line": 404,
+            "source_lines": [
+              404
+            ],
+            "references": [
+              {
+                "line": 404,
+                "text": "  - 珠子：Ø10 mm 实心木珠或塑料珠，30 颗，颜色与杯、碗、桌面都要有对比。不用真豆子，真豆子大小不一，还会碎。",
+                "url": "../spec.html#line-401"
+              }
+            ]
+          }
+        ],
+        "note": "",
+        "category": "explicit",
+        "label": "有尺寸要求 · 数值 / 上下限",
+        "has_numeric_size": true
+      }
+    },
+    {
+      "id": "B18",
+      "name": "防散托盘",
+      "group": "日常道具",
+      "route": "直接购买",
+      "phase": "BASE 首批",
+      "spec": "约 60×40 cm，边高 2 cm",
+      "tasks": "S4、H9",
+      "initial_qty": "1 个",
+      "note": "",
+      "original_route": "A",
+      "source_section": "8.1 物品与容器",
+      "source_line": 1020,
+      "photos": [
+        {
+          "key": "spilltray-0",
+          "title": "Kunststof lekbak 60x40 - Producten -  Versu Verhuur",
+          "source": "https://www.versu-verhuur.be/producten/detail/kunststof-lekbak-60x40",
+          "image": "https://www.versu-verhuur.be/src/Frontend/Files/webshop/products/cover_image/740x1020/black-line-kunststof-lekbak-2-1750428165.png",
+          "caption": "浅边防散托盘外观",
+          "local_file": "reference_photos/spilltray-0.png",
+          "sha256": "8c8731467c8cd928915d7735ae43f388dba5d31af9611a9b7aa2d5b923ae4930",
+          "bytes": 181514,
+          "width": 740,
+          "height": 1020,
+          "url": "images/spilltray-0.png"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "防散托盘 约 60×40 cm，边高 2 cm",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "approximate",
+            "scope": "S4 / H9",
+            "value": "防散托盘平面约 60×40 cm。",
+            "source_line": 422,
+            "source_lines": [
+              422
+            ],
+            "references": [
+              {
+                "line": 422,
+                "text": "| 防散托盘 | 约 60×40 cm，边高 2 cm | 1 | A |",
+                "url": "../spec.html#line-401"
+              }
+            ]
+          },
+          {
+            "kind": "explicit",
+            "scope": "S4 / H9",
+            "value": "托盘边高 2 cm。",
+            "source_line": 407,
+            "source_lines": [
+              407
+            ],
+            "references": [
+              {
+                "line": 407,
+                "text": "  - 倾倒区下方铺一个带 2 cm 边的浅托盘，防止珠子滚丢。",
+                "url": "../spec.html#line-401"
+              }
+            ]
+          }
+        ],
+        "note": "",
+        "category": "explicit",
+        "label": "有尺寸要求 · 数值 / 上下限",
+        "has_numeric_size": true
+      }
+    },
+    {
+      "id": "B19",
+      "name": "扫把簸箕套装",
+      "group": "日常道具",
+      "route": "直接购买",
+      "phase": "BASE 首批",
+      "spec": "桌面清洁用小号",
+      "tasks": "S5",
+      "initial_qty": "1 套",
+      "note": "",
+      "original_route": "A",
+      "source_section": "8.1 物品与容器",
+      "source_line": 1020,
+      "photos": [
+        {
+          "key": "brush-1",
+          "title": "Mini Dustpan & Brush Set, Plant Fibre - Heima",
+          "source": "https://heima.uk/products/mini-dustpan-brush-set",
+          "image": "https://heima.uk/cdn/shop/products/mini-dustpan-brush_1600x.jpg?v=1612379725",
+          "caption": "刷子与簸箕外观",
+          "local_file": "reference_photos/brush-1.jpg",
+          "sha256": "57db9037f2df09c152e823a042b110b9d48a4d82d3676de72255da442436ba10",
+          "bytes": 70324,
+          "width": 1057,
+          "height": 1057,
+          "url": "images/brush-1.jpg"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "扫把簸箕套装 桌面清洁用小号",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "approximate",
+            "scope": "S5 刷子",
+            "value": "刷柄约 Ø2.5×15 cm，刷头约 10×3 cm。",
+            "source_line": 427,
+            "source_lines": [
+              427
+            ],
+            "references": [
+              {
+                "line": 427,
+                "text": "  - 小刷子：柄约 Ø2.5×15 cm，刷头约 10×3 cm。从现成的桌面清洁扫把簸箕套装里选。",
+                "url": "../spec.html#line-425"
+              }
+            ]
+          },
+          {
+            "kind": "explicit",
+            "scope": "S5 簸箕",
+            "value": "簸箕开口 15 cm；打印替代件入口斜坡 ≤15°。",
+            "source_line": 428,
+            "source_lines": [
+              428
+            ],
+            "references": [
+              {
+                "line": 428,
+                "text": "  - 簸箕：开口 15 cm，口沿薄、入口斜坡平缓，底部用磁铁固定在右侧。现货口沿太厚时，改用 3D 打印的簸箕（入口斜坡 ≤15°）。",
+                "url": "../spec.html#line-425"
+              }
+            ]
+          }
+        ],
+        "note": "购买套装也需分别核对刷子与簸箕。打印替代件见 P04。",
+        "category": "explicit",
+        "label": "有尺寸要求 · 数值 / 上下限",
+        "has_numeric_size": true
+      }
+    },
+    {
+      "id": "B20",
+      "name": "塑料收纳盒（桶）",
+      "group": "日常道具",
+      "route": "直接购买",
+      "phase": "BASE 首批",
+      "spec": "约 20×15×15 cm，蓝、灰、黄",
+      "tasks": "S6",
+      "initial_qty": "蓝、灰、黄各 1，共 3 个",
+      "note": "",
+      "original_route": "A",
+      "source_section": "8.1 物品与容器",
+      "source_line": 1020,
+      "photos": [
+        {
+          "key": "bins-1",
+          "title": " 収納ボックス 持ち手付き 収納ケース squ+ インボックス S プラスチック 日本製 （ 取っ手付き トート 小物入れ 収納 カラーボックス インナーボックス おもちゃ箱 コンテナ 積み重ね スタッキング 小物収納 ） ：インテリアパレット",
+          "source": "https://item.rakuten.co.jp/interior-palette/312765/",
+          "image": "https://image.rakuten.co.jp/livingut/cabinet/maker_sanka3/312765-co.jpg",
+          "caption": "塑料分类桶外观；按要求配三色",
+          "local_file": "reference_photos/bins-1.jpg",
+          "sha256": "ef1424c7130d12f2492778f14002a975aaf1cdb514c46b59a8b3fe3eb4e26277",
+          "bytes": 44966,
+          "width": 600,
+          "height": 600,
+          "url": "images/bins-1.jpg"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "塑料收纳盒 约 20×15×15 cm，蓝、灰、黄",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "approximate",
+            "scope": "S6",
+            "value": "三个分类桶各约 20×15×15 cm。",
+            "source_line": 448,
+            "source_lines": [
+              448
+            ],
+            "references": [
+              {
+                "line": 448,
+                "text": "  - **桶**：三个约 20×15×15 cm 的塑料收纳盒，颜色和类别为蓝（塑料）、灰（金属）、黄（纸），正面贴回收标识，固定在远端。",
+                "url": "../spec.html#line-446"
+              }
+            ]
+          }
+        ],
+        "note": "",
+        "category": "approximate",
+        "label": "有尺寸要求 · 约尺寸",
+        "has_numeric_size": true
+      }
+    },
+    {
+      "id": "B21",
+      "name": "S6 物品",
+      "group": "日常道具",
+      "route": "直接购买",
+      "phase": "BASE 首批",
+      "spec": "厚壁 PP 杯、小纸盒、铁皮小圆盒、塑料药瓶、卷纸芯、透明 PET 瓶、亚克力瓶",
+      "tasks": "S6、S11（OOD）",
+      "initial_qty": "先补厚壁 PP 杯及 A4 纸；OOD/PROBE 物品另放",
+      "note": "厚壁 PP 杯、钢罐、纸团、小 PET 瓶为 BASE；小纸盒/铁皮圆盒/药瓶/卷纸芯为 OOD；透明 PET 与亚克力瓶为 PROBE。照片可以逐张切换。",
+      "original_route": "A",
+      "source_section": "8.1 物品与容器",
+      "source_line": 1020,
+      "photos": [
+        {
+          "key": "cup-0",
+          "title": "Vaso Plástico Reutilizable Liso :: Regalos Pro - Regalos corporativos",
+          "source": "https://tienda.regalospro.cl/producto/vaso-plastico-reutilizable-liso-6158",
+          "image": "https://tienda.regalospro.cl/productos/6158/m151_azul.jpg",
+          "caption": "塑料杯外观",
+          "local_file": "reference_photos/cup-0.jpg",
+          "sha256": "c07bfbbbf47afd61afc32da7f34b7996e5890e77d855b360503bd2b486825c2e",
+          "bytes": 134213,
+          "width": 1600,
+          "height": 1600,
+          "url": "images/cup-0.jpg"
+        },
+        {
+          "key": "paper-5",
+          "title": "紙くず | フリー写真素材 Photo-pot",
+          "source": "https://photo-pot.com/?p=55014",
+          "image": "https://photo-pot.com/data2/2023/12/kamikuzu/kamikuzu01.jpg",
+          "caption": "纸团实拍；用 A4 纸自制",
+          "local_file": "reference_photos/paper-5.jpg",
+          "sha256": "30e23faa16c82efe6c7e88be8cedf87a98d4503a1cf18ff6e1c070b759c098ea",
+          "bytes": 49324,
+          "width": 640,
+          "height": 480,
+          "url": "images/paper-5.jpg"
+        },
+        {
+          "key": "tinbox-0",
+          "title": "280 Adet Gümüş Yuvarlak Sıvama Metal Kutu | 83 mm x 35 mm | Krem Kutusu — Tinsbymasas",
+          "source": "https://tinsbymasas.com/products/140-adet-gumus-yuvarlak-sivama-metal-kutu-83mm-35mm?srsltid=AfmBOore3KGT67Ja6PqaK1S-FjmmUIJxTCtKMu4KfLITH9-Xr0CHgHIg",
+          "image": "https://tinsbymasas.com/cdn/shop/products/b_21_1_512x512.jpg?v=1646936498",
+          "caption": "铁皮圆盒（OOD）",
+          "local_file": "reference_photos/tinbox-0.jpg",
+          "sha256": "95654a823c8c988c14c55c9cbb1c90569cb766e3b90ef27d0cad86a384f6b34d",
+          "bytes": 11151,
+          "width": 512,
+          "height": 512,
+          "url": "images/tinbox-0.jpg"
+        },
+        {
+          "key": "paperbox-1",
+          "title": "Kraft Paper Packing Box Brown Small Gift Craft Wrapping Box Wedding Party Favor | eBay",
+          "source": "https://www.ebay.com/itm/204831396301",
+          "image": "https://i.ebayimg.com/images/g/EgoAAOSw8i9aXB8Y/s-l1200.jpg",
+          "caption": "小纸盒（OOD）",
+          "local_file": "reference_photos/paperbox-1.jpg",
+          "sha256": "4936d05672fd4fac568c563ba4b55a7c5e5d209ed8dd32f9cb89f83e54a8b469",
+          "bytes": 150353,
+          "width": 1000,
+          "height": 1000,
+          "url": "images/paperbox-1.jpg"
+        },
+        {
+          "key": "medicine-0",
+          "title": "White Plastic Round Medicine Bottles w/ Caps, 0.5 oz. - 21314 - Health Care Logistics®",
+          "source": "https://www.gohcl.com/products/white-plastic-round-medicine-bottles-w-caps-0-5-oz-/21314",
+          "image": "https://www.gohcl.com/cdn-cgi/image/width%3D800%2Cheight%3D800%2Cformat%3Dauto%2Cfit%3Dcontain/assets/e8/91/e8910935-30c9-49f5-828a-1ef166df2c2c/21314_1.jpg",
+          "caption": "塑料药瓶（OOD）",
+          "local_file": "reference_photos/medicine-0.jpg",
+          "sha256": "267f86ba4a8cae4f9846a0b7195daff6bf479ace3026486e7bb02b09876afa83",
+          "bytes": 11053,
+          "width": 800,
+          "height": 800,
+          "url": "images/medicine-0.jpg"
+        },
+        {
+          "key": "papertube-0",
+          "title": "Toilet Roll Tubes - Etsy",
+          "source": "https://www.etsy.com/listing/1333442250/toilet-roll-tubes",
+          "image": "https://i.etsystatic.com/38972370/r/il/eb21ac/4397061891/il_fullxfull.4397061891_dh8t.jpg",
+          "caption": "卷纸芯（OOD）",
+          "local_file": "reference_photos/papertube-0.jpg",
+          "sha256": "1299e83374c174fc3a0a851e7fc92d2d697b0ac0b732ec7b708a1999b462b5de",
+          "bytes": 61912,
+          "width": 891,
+          "height": 745,
+          "url": "images/papertube-0.jpg"
+        },
+        {
+          "key": "acrylicbottle-1",
+          "title": "50ml圓形壓克力化妝瓶 | 台灣高品質50ml圓形壓克力化妝瓶製造商 | 通永和企業股份有限公司",
+          "source": "https://www.tyhcontainer.com/zh-TW/product/JN50.html",
+          "image": "https://www.tyhcontainer.com/Templates/pic/JN50-zoom_2.jpg?v=833b9811",
+          "caption": "亚克力瓶外观（PROBE）",
+          "local_file": "reference_photos/acrylicbottle-1.jpg",
+          "sha256": "9f3fd4453bd5560c469a43d7272c83f68fc2d4045f718391c8258957740cefca",
+          "bytes": 164101,
+          "width": 2400,
+          "height": 2400,
+          "url": "images/acrylicbottle-1.jpg"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "S6 物品 厚壁 PP 杯、小纸盒、铁皮小圆盒、塑料药瓶、卷纸芯、透明 PET 瓶、亚克力瓶",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "approximate",
+            "scope": "S6 纸团",
+            "value": "A4 纸揉成约 Ø6 cm，用胶带定形。",
+            "source_line": 452,
+            "source_lines": [
+              452
+            ],
+            "references": [
+              {
+                "line": 452,
+                "text": "    - 纸团（A4 纸揉成约 Ø6 cm，用胶带定形，每 20 次换一个）；",
+                "url": "../spec.html#line-446"
+              }
+            ]
+          },
+          {
+            "kind": "explicit",
+            "scope": "S11 OOD",
+            "value": "作为抽屉收纳物的小纸盒、铁皮小圆盒，高度 ≤8 cm。",
+            "source_line": 880,
+            "source_lines": [
+              880,
+              882
+            ],
+            "references": [
+              {
+                "line": 880,
+                "text": "  - 收纳物只用矮的：4 cm 木方块、海绵、小号胶带卷、仿真橙子。抽屉内高约 10 cm，物体高度 ≤8 cm。",
+                "url": "../spec.html#line-876"
+              },
+              {
+                "line": 882,
+                "text": "  - OOD：铁皮小圆盒、小纸盒（与 S6 的 OOD 物品共用）。",
+                "url": "../spec.html#line-876"
+              }
+            ]
+          },
+          {
+            "kind": "fit",
+            "scope": "S6 OOD",
+            "value": "小纸盒、铁皮小圆盒、药瓶、卷纸芯的尺寸和抓取难度与 ID 物品相当；未给统一数值。",
+            "source_line": 454,
+            "source_lines": [
+              454
+            ],
+            "references": [
+              {
+                "line": 454,
+                "text": "  - **OOD 物品**：铁皮小圆盒（金属）、小纸盒（纸）、塑料药瓶（塑料）、卷纸芯（纸）。尺寸和抓取难度与 ID 物品相当。",
+                "url": "../spec.html#line-446"
+              }
+            ]
+          }
+        ],
+        "note": "PP 杯、透明 PET 瓶、亚克力瓶没有另定固定外形尺寸；不要把纸团直径套用到其他物品。",
+        "category": "explicit",
+        "label": "有尺寸要求 · 数值 / 上下限",
+        "has_numeric_size": true
+      }
+    },
+    {
+      "id": "B22",
+      "name": "带把手收纳箱",
+      "group": "日常道具",
+      "route": "直接购买",
+      "phase": "BASE 首批",
+      "spec": "约 30×20×12 cm，2 款",
+      "tasks": "D2、D7",
+      "initial_qty": "1 个，另款 OOD 后补",
+      "note": "箱体约 30×20×12 cm；图片仅参考箱体。需要两侧可抓的横杆把手，现货提手不合适时打印把手加螺丝。",
+      "original_route": "A",
+      "source_section": "8.1 物品与容器",
+      "source_line": 1020,
+      "photos": [
+        {
+          "key": "bigbox-0",
+          "title": "NCRGB 7 대형 수납함 플라스틱 수납 바구니 손잡이 30 X 20 X 12 CM 욕실 주방 캐비닛 정리함 수납 바구니 수납 상자 주방 박스 주방 욕실 수납 회색-Freehip.co.kr",
+          "source": "https://m.freeship.co.kr/mobile/content.asp?guid=4945506&sitecate=de",
+          "image": "https://m.media-amazon.com/images/I/419Rc5NswXL._AC_.jpg",
+          "caption": "带把手收纳箱外观；横杆把手需另核对",
+          "local_file": "reference_photos/bigbox-0.jpg",
+          "sha256": "e131af62fe4d67396b1969f07f7e4da11382421fdbf5dedff7df7465886bb59c",
+          "bytes": 30000,
+          "width": 773,
+          "height": 761,
+          "url": "images/bigbox-0.jpg"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "带把手收纳箱 约 30×20×12 cm，2 款",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "approximate",
+            "scope": "D2 / D7",
+            "value": "带把手开口箱约 30×20×12 cm；OOD 选另一款尺寸相近的。",
+            "source_line": 523,
+            "source_lines": [
+              523
+            ],
+            "references": [
+              {
+                "line": 523,
+                "text": "  - 开口塑料收纳箱，约 30×20×12 cm，两侧带横杆把手。现货把手不适合 ARX 夹爪时，3D 打印把手，用螺丝装上。",
+                "url": "../spec.html#line-521"
+              }
+            ]
+          },
+          {
+            "kind": "fit",
+            "scope": "D2 把手",
+            "value": "把手按 ARX 夹爪实际开口适配，清单未给把手直径或净空数值。",
+            "source_line": 537,
+            "source_lines": [
+              537
+            ],
+            "references": [
+              {
+                "line": 537,
+                "text": "| 带把手开口收纳箱 | 约 30×20×12 cm；把手不合适时 3D 打印把手上螺丝 | 2（+ OOD 另一款 1） | A（+C） |",
+                "url": "../spec.html#line-521"
+              }
+            ]
+          }
+        ],
+        "note": "S3 抽屉把手的 ≥4 cm 净空不是 D2 箱把手的原文尺寸。",
+        "category": "approximate",
+        "label": "有尺寸要求 · 约尺寸",
+        "has_numeric_size": true
+      }
+    },
+    {
+      "id": "B23",
+      "name": "配重",
+      "group": "日常道具",
+      "route": "直接购买",
+      "phase": "BASE 首批",
+      "spec": "钢片或铅块",
+      "tasks": "D2、S4（P 轴）",
+      "initial_qty": "一组可固定小配重，调到任务要求的总质量",
+      "note": "按含箱体的总质量配到 BASE 0.8 kg；D6 瓶内沙/塑料珠 300 g。小钢片或垫圈固定住，不能在箱内滑动；不必采购标准砝码品牌。",
+      "original_route": "A",
+      "source_section": "8.1 物品与容器",
+      "source_line": 1020,
+      "photos": [
+        {
+          "key": "weights-1",
+          "title": "Precision weights of accuracy class M1 | BOSCHE",
+          "source": "https://www.bosche.eu/en/calibration-weights/precision-weights-m1",
+          "image": "https://www.bosche.eu/media/d7/13/5b/1725969274/schlitzgewichte_Set_0.jpg?ts=1725969964",
+          "caption": "可固定配重外观",
+          "local_file": "reference_photos/weights-1.jpg",
+          "sha256": "4c26a4aad721a12cd8abeb380231cc4ff7bf4e0b06a6499ff107b8eecb147778",
+          "bytes": 80066,
+          "width": 1920,
+          "height": 1920,
+          "url": "images/weights-1.jpg"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "配重 钢片或铅块",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "none",
+            "scope": "D2 / S4",
+            "value": "配重块未规定长、宽、厚；按容纳空间选型并固定。",
+            "source_line": 524,
+            "source_lines": [
+              524
+            ],
+            "references": [
+              {
+                "line": 524,
+                "text": "  - 配重：钢片或铅块，用螺丝或胶固定在箱底，不能滑动。",
+                "url": "../spec.html#line-521"
+              }
+            ]
+          }
+        ],
+        "note": "0.5 / 0.8 / 1.1 / 1.4 kg 是含箱体的质量阶梯，不是尺寸要求。",
+        "category": "none",
+        "label": "清单未规定具体尺寸",
+        "has_numeric_size": false
+      }
+    },
+    {
+      "id": "B24",
+      "name": "防滑垫",
+      "group": "日常道具",
+      "route": "直接购买",
+      "phase": "BASE 首批",
+      "spec": "35×25 cm",
+      "tasks": "D2、D7",
+      "initial_qty": "1 块",
+      "note": "",
+      "original_route": "A",
+      "source_section": "8.1 物品与容器",
+      "source_line": 1020,
+      "photos": [
+        {
+          "key": "mat-11",
+          "title": "Dycem 4-eckige Anti-Rutsch-Unterlage 35 x 25 cm",
+          "source": "https://www.care-idee-shop.de/Dycem-4-eckige-Anti-Rutsch-Unterlage-35-x-25-cm",
+          "image": "https://www.care-idee-shop.de/WebRoot/Store13/Shops/64311870/566A/BDA2/8250/CCEB/5100/C0A8/2AB9/CD3A/Dycem22335.JPG",
+          "caption": "防滑垫",
+          "local_file": "reference_photos/mat-11.jpg",
+          "sha256": "9fe7d6f6083409f558c88fa719504bfa307f84430838d269d4c517078a5a317e",
+          "bytes": 40289,
+          "width": 855,
+          "height": 537,
+          "url": "images/mat-11.jpg"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "防滑垫 35×25 cm",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "explicit",
+            "scope": "D2 / D7",
+            "value": "防滑目标垫 35×25 cm。",
+            "source_line": 525,
+            "source_lines": [
+              525
+            ],
+            "references": [
+              {
+                "line": 525,
+                "text": "  - 目标垫：35×25 cm 防滑垫。",
+                "url": "../spec.html#line-521"
+              }
+            ]
+          }
+        ],
+        "note": "",
+        "category": "explicit",
+        "label": "有尺寸要求 · 数值 / 上下限",
+        "has_numeric_size": true
+      }
+    },
+    {
+      "id": "B25",
+      "name": "打印试管（配套试管架）",
+      "group": "日常道具",
+      "route": "配套塑料打印",
+      "phase": "BASE 首批",
+      "spec": "外径 Ø12×75 mm；空心、上端开口、封底；距底 30 mm 画色带",
+      "tasks": "D3、D7",
+      "initial_qty": "先打印 2 支，与 BASE Ø15 mm 孔架及 V 托配套；通过后补备件",
+      "note": "用户选择配套打印，原 PS/PP 耗材改为打印塑料。当前模型壁厚 1.6 mm、底厚 2 mm、底缘 R1.2 为设计值；外径、间隙及夹持时是否变形需实测。OOD Ø12 mm 铝棒仍另备。",
+      "original_route": "A",
+      "source_section": "8.1 物品与容器",
+      "source_line": 1020,
+      "photos": [
+        {
+          "key": "tubes-1",
+          "title": "MTC Bio Test Tube 12mm x 75mm (5mL) Polystyrene or Polypropylene",
+          "source": "https://www.universalmedicalinc.com/test-tube-12mm-x-75mm-5ml.html",
+          "image": "https://www.universalmedicalinc.com/media/catalog/product/cache/6e3e3d728e107fc40a233ccb76c3360a/t/1/t1211_t1221_test-tubes-12x75mm-5ml-with-dims.jpg",
+          "caption": "12×75 mm 塑料试管",
+          "local_file": "reference_photos/tubes-1.jpg",
+          "sha256": "248295339ca38b2806342012eee2b64e554d910ee0a4226388187ecda3c481c9",
+          "bytes": 44461,
+          "width": 1200,
+          "height": 1200,
+          "url": "images/tubes-1.jpg"
+        }
+      ],
+      "plastic_print": true,
+      "manufacturing_cad_available": true,
+      "search_terms": "打印试管 12×75 空心 封底 配套试管架",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "explicit",
+            "scope": "D3 / D7",
+            "value": "塑料试管外径 Ø12 mm、长 75 mm；距底端 30 mm 做色带。",
+            "source_line": 545,
+            "source_lines": [
+              545
+            ],
+            "references": [
+              {
+                "line": 545,
+                "text": "  - **试管**：PS 或 PP 塑料试管 Ø12×75 mm（实验室耗材），实测外径。不用玻璃管。管身距底端 30 mm 处画一道色带。",
+                "url": "../spec.html#line-543"
+              }
+            ]
+          },
+          {
+            "kind": "explicit",
+            "scope": "D3 OOD",
+            "value": "铝棒直径 Ø12 mm。",
+            "source_line": 550,
+            "source_lines": [
+              550
+            ],
+            "references": [
+              {
+                "line": 550,
+                "text": "  - **OOD**：Ø12 mm 铝棒，直径相同、外观不同。",
+                "url": "../spec.html#line-543"
+              }
+            ]
+          }
+        ],
+        "note": "保留 Ø12×75 mm 和距底 30 mm 色带；材料按用户选择改为打印塑料。壁厚 1.6 mm、底厚 2 mm 为当前 CAD 设计值，实际配合需量测。",
+        "category": "explicit",
+        "label": "有尺寸要求 · 数值 / 上下限",
+        "has_numeric_size": true
+      },
+      "original_spec": "PS/PP Ø12×75 mm，约 50 支；Ø12 mm 铝棒若干",
+      "update_source": "../USER_PROP_UPDATES_2026-10-21.md",
+      "update_notice": "用户调整：ID 试管与试管架、V 托一起打印。",
+      "paired_zip": "../cad/packages/D3_tubes_and_rack.zip",
+      "paired_label": "下载试管 + 试管架 + V 托整套",
+      "cad_url": "../cad/#B25",
+      "cad_status": "用户调整 · 待试印 · 尚未实体试印",
+      "cad_part_count": 1,
+      "cad_preview": {
+        "key": "cad-B25",
+        "kind": "cad",
+        "url": "../cad/previews/printed_tube_12x75.png",
+        "source": "../cad/#B25",
+        "caption": "本项目打印试管（配套试管架） CAD 预览；尚未实体试印"
+      }
+    },
+    {
+      "id": "B26",
+      "name": "帆布束口袋",
+      "group": "日常道具",
+      "route": "购买后加工",
+      "phase": "先取样验证",
+      "spec": "袋口周长 50/44/38 cm，每档 10 个",
+      "tasks": "D4、H8",
+      "initial_qty": "BASE 周长 44 cm、深约 20 cm 样品 1 个",
+      "note": "44 cm 是袋口一圈的长度，平铺袋口宽约 22 cm；袋深约 20 cm。参考照片是同类帆布袋，不是按图中 15×20 cm 直接下单。",
+      "original_route": "A/B",
+      "source_section": "8.1 物品与容器",
+      "source_line": 1020,
+      "photos": [
+        {
+          "key": "bag-0",
+          "title": "Canvas opbergzakje - Katoenen zakjes met koord - 15 x 20 cm - DIY bedrukken | bol",
+          "source": "https://www.bol.com/nl/nl/p/canvas-opbergzakje-met-koord-15-x-20-cm-bedrukbaar-canvas-zakje/9200000097295581/",
+          "image": "https://media.s-bol.com/qmnLX1zGJrM0/WkE99g/550x698.jpg",
+          "caption": "帆布束口袋外观；本项目另按周长选尺寸",
+          "local_file": "reference_photos/bag-0.jpg",
+          "sha256": "6abef70838844acc89b6d5d637dd055b519d9a1bc614f1f9a266c12663c5c647",
+          "bytes": 35469,
+          "width": 550,
+          "height": 698,
+          "url": "images/bag-0.jpg"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "帆布束口袋 袋口周长 50/44/38 cm，每档 10 个",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "explicit",
+            "scope": "D4 / H8",
+            "value": "袋口周长 50 / 44 / 38 cm；BASE 为 44 cm。",
+            "source_line": 568,
+            "source_lines": [
+              568
+            ],
+            "references": [
+              {
+                "line": 568,
+                "text": "- **阶梯**：袋口周长 L1 50 cm；L2 44 cm（BASE）；L3 38 cm。D4 是 H8 的夹爪版本，袋子相同，装的是能从窄缝放进去的小物件。",
+                "url": "../spec.html#line-564"
+              }
+            ]
+          },
+          {
+            "kind": "approximate",
+            "scope": "D4 / H8",
+            "value": "袋深约 20 cm。",
+            "source_line": 566,
+            "source_lines": [
+              566
+            ],
+            "references": [
+              {
+                "line": 566,
+                "text": "  - 帆布束口袋，袋口缝成周长 50/44/38 cm（约 Ø16/14/12 cm），袋深约 20 cm，每档 10 个。帆布袋可以按尺寸定做。塑料袋容易撕、会反光，不用。",
+                "url": "../spec.html#line-564"
+              }
+            ]
+          },
+          {
+            "kind": "explicit",
+            "scope": "H8（推迟）",
+            "value": "袋口外沿两侧各缝 3×3 cm 色块，色块中心与口沿平齐。",
+            "source_line": 764,
+            "source_lines": [
+              764
+            ],
+            "references": [
+              {
+                "line": 764,
+                "text": "  - 帆布束口袋，与 D4 同款，平放在桌上，袋口朝向撑袋手一侧。袋口外沿两侧相对的位置各缝一块 3×3 cm 的色块，色块中心与口沿平齐，用来测开口宽度。",
+                "url": "../spec.html#line-761"
+              }
+            ]
+          }
+        ],
+        "note": "44 cm 是一圈周长，不是平铺口宽；平铺宽约 22 cm 是换算参考。",
+        "category": "explicit",
+        "label": "有尺寸要求 · 数值 / 上下限",
+        "has_numeric_size": true
+      }
+    },
+    {
+      "id": "B27",
+      "name": "超细纤维方巾",
+      "group": "日常道具",
+      "route": "购买后加工",
+      "phase": "先取样验证",
+      "spec": "25/30/40 cm，每档 10 条",
+      "tasks": "D5",
+      "initial_qty": "BASE 30×30 cm 1 条，四角各缝 3×3 cm 色贴",
+      "note": "同批次材质，先 30×30 cm；缝 4 块不同色 3×3 cm 布贴。布厚 k 实测后确定。",
+      "original_route": "A+B",
+      "source_section": "8.1 物品与容器",
+      "source_line": 1020,
+      "photos": [
+        {
+          "key": "towel-0",
+          "title": "Microfiber Cloth/Towel / Cleaning Cloths 30cm x 30cm | Shopee Malaysia",
+          "source": "https://shopee.com.my/Microfiber-Cloth-Towel-Cleaning-Cloths-30cm-x-30cm-i.30885760.25438524800",
+          "image": "https://down-my.img.susercontent.com/file/my-11134207-7rash-m2t06sbzf0o6a1",
+          "caption": "超细纤维方巾",
+          "local_file": "reference_photos/towel-0.jpg",
+          "sha256": "42dff66e0909fea4772f9e28dad8f74de34019061cab5232b26dcf9901c6d559",
+          "bytes": 174762,
+          "width": 800,
+          "height": 800,
+          "url": "images/towel-0.jpg"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "超细纤维方巾 25/30/40 cm，每档 10 条",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "explicit",
+            "scope": "D5",
+            "value": "方巾 25×25 / 30×30 / 40×40 cm；BASE 为 30×30 cm。",
+            "source_line": 581,
+            "source_lines": [
+              581
+            ],
+            "references": [
+              {
+                "line": 581,
+                "text": "  - 超细纤维方巾 25×25 / 30×30 / 40×40 cm（市售常见尺寸），每档 10 条，同一批次洗涤。",
+                "url": "../spec.html#line-579"
+              }
+            ]
+          },
+          {
+            "kind": "explicit",
+            "scope": "D5",
+            "value": "四角各缝一块 3×3 cm 的不同色布贴。",
+            "source_line": 582,
+            "source_lines": [
+              582
+            ],
+            "references": [
+              {
+                "line": 582,
+                "text": "  - 四个角各缝一块 3×3 cm 的布贴，颜色各不相同；训练和评测都带着。",
+                "url": "../spec.html#line-579"
+              }
+            ]
+          }
+        ],
+        "note": "厚度没有固定数值；评分中的 k 需按实际布厚测定，不能把仿真厚度当采购要求。",
+        "category": "explicit",
+        "label": "有尺寸要求 · 数值 / 上下限",
+        "has_numeric_size": true
+      }
+    },
+    {
+      "id": "B28",
+      "name": "橡胶球",
+      "group": "日常道具",
+      "route": "直接购买",
+      "phase": "BASE 首批",
+      "spec": "约 Ø9/11/13/15 cm，带纹理",
+      "tasks": "H1",
+      "initial_qty": "最接近 Ø11 cm 的纹理球 1 个并实测",
+      "note": "优先买最接近 11 cm 的带纹理球；照片仅展示同类材质与表面，图中商品直径可能不同。",
+      "original_route": "A",
+      "source_section": "8.1 物品与容器",
+      "source_line": 1020,
+      "photos": [
+        {
+          "key": "rubbertexture-0",
+          "title": "Homemate",
+          "source": "https://www.homemate.com.mt/product/trixie-natural-rubber-sport-ball-5-5-cm-assorted-colours/",
+          "image": "https://www.homemate.com.mt/itemimages/4011905348438.jpg",
+          "caption": "纹理橡胶球外观；本项目另选约 11 cm",
+          "local_file": "reference_photos/rubbertexture-0.jpg",
+          "sha256": "0888bc9a017f1b78abc01977e776b3463d2c9cdacac8be4fbbd8b7387473a168",
+          "bytes": 176830,
+          "width": 700,
+          "height": 525,
+          "url": "images/rubbertexture-0.jpg"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "橡胶球 约 Ø9/11/13/15 cm，带纹理",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "approximate",
+            "scope": "H1",
+            "value": "直径约 Ø9 / 11 / 13 / 15 cm，BASE 为约 Ø11 cm；买最接近的现货并实测。",
+            "source_line": 682,
+            "source_lines": [
+              682
+            ],
+            "references": [
+              {
+                "line": 682,
+                "text": "| 橡胶球 | 带纹理，最接近 Ø9/11/13/15 cm 的现货 | 每档 2 | A |",
+                "url": "../spec.html#line-674"
+              }
+            ]
+          }
+        ],
+        "note": "这些是难度档的目标直径；保留“最接近、实测”的原文口径。",
+        "category": "approximate",
+        "label": "有尺寸要求 · 约尺寸",
+        "has_numeric_size": true
+      }
+    },
+    {
+      "id": "B29",
+      "name": "PU 海绵球",
+      "group": "日常道具",
+      "route": "直接购买",
+      "phase": "暂缓",
+      "spec": "Ø10 cm",
+      "tasks": "H8",
+      "initial_qty": "暂不买，H8 推迟",
+      "note": "H8 本期推迟；以后买柔软可压缩 PU 海绵球，不买 EPS/保丽龙手工球。",
+      "original_route": "A",
+      "source_section": "8.1 物品与容器",
+      "source_line": 1020,
+      "photos": [
+        {
+          "key": "foamsoft-0",
+          "title": "AFH Schaumstoffbälle 5er Sparset online kaufen",
+          "source": "https://premium-therapie.de/de/kraft-fitness-balance/gymnastikbaelle-softbaelle/5er-set-afh-schaumstoffblle-deluxe-ohne-beschichtung-blau",
+          "image": "https://premium-therapie.de/media/images/org/AFH-Schaumstoffbaelle-Deluxe-blau-Groessen_37211.jpg",
+          "caption": "柔软海绵球外观（不是保丽龙球）",
+          "local_file": "reference_photos/foamsoft-0.jpg",
+          "sha256": "d73f09ce1ae285dcb6ef03f66ce05fbe27d032e1033f64f0c4f8f81ddfc25913",
+          "bytes": 40410,
+          "width": 1000,
+          "height": 1000,
+          "url": "images/foamsoft-0.jpg"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "PU 海绵球 Ø10 cm",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "explicit",
+            "scope": "H8（推迟）",
+            "value": "PU 海绵球直径 Ø10 cm。",
+            "source_line": 765,
+            "source_lines": [
+              765
+            ],
+            "references": [
+              {
+                "line": 765,
+                "text": "  - 待装物：Ø10 cm 的 PU 海绵球，放在装物手一侧的随机位置。",
+                "url": "../spec.html#line-761"
+              }
+            ]
+          }
+        ],
+        "note": "",
+        "category": "explicit",
+        "label": "有尺寸要求 · 数值 / 上下限",
+        "has_numeric_size": true
+      }
+    },
+    {
+      "id": "B30",
+      "name": "仿真面包、大塑料瓶",
+      "group": "日常道具",
+      "route": "直接购买",
+      "phase": "后续 OOD",
+      "spec": "—",
+      "tasks": "H1（OOD）",
+      "initial_qty": "先不买，OOD 阶段各 2",
+      "note": "",
+      "original_route": "A",
+      "source_section": "8.1 物品与容器",
+      "source_line": 1020,
+      "photos": [
+        {
+          "key": "bread-0",
+          "title": "Pão Fake Super Realista C/ Aroma 19cm 25931 - Vencedor - Atacado Vencedor",
+          "source": "https://www.atacadovencedor.com/pao-fake-super-realista-c-aroma-19cm-25931-vencedor",
+          "image": "https://images.tcdn.com.br/img/img_prod/1180967/pao_fake_super_realista_c_aroma_19cm_25931_vencedor_32750_1_6448fa9bcf333ef76683c26646739580.jpg",
+          "caption": "仿真面包（OOD）",
+          "local_file": "reference_photos/bread-0.jpg",
+          "sha256": "d04f81644ed86ad6a7372cf94ff612648aaa14ba877f9e26a2dd647a56a8fd39",
+          "bytes": 58569,
+          "width": 1080,
+          "height": 1080,
+          "url": "images/bread-0.jpg"
+        },
+        {
+          "key": "bottle-0",
+          "title": "100ml cosmetic plastic bottle china,pet cosmetic plastic bottle china,custom plastic cosmetic bottle china",
+          "source": "https://www.plasticbottlesupplier.com/news/ZH-P90206-100ml-Colorful-PET-Cosmetic-Bottle-Containers.html",
+          "image": "https://cdn.cloudbf.com/thumb/format/mini_xsize/files/101/img/2025/08/02/202508021439290119983.jpg.webp",
+          "caption": "小 PET 瓶外观；大瓶 OOD 需另选尺寸",
+          "local_file": "reference_photos/bottle-0.webp",
+          "sha256": "5ef533a983b540f8e34103d0f2e986ff3f11e2840876aec8560c424d8f4ab86e",
+          "bytes": 17610,
+          "width": 800,
+          "height": 800,
+          "url": "images/bottle-0.webp"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "仿真面包、大塑料瓶 —",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "none",
+            "scope": "H1 OOD",
+            "value": "仿真面包、大号塑料瓶未给具体长宽或直径。",
+            "source_line": 678,
+            "source_lines": [
+              678
+            ],
+            "references": [
+              {
+                "line": 678,
+                "text": "- OOD：仿真面包、大号塑料瓶。箱子约 30×25×20 cm。",
+                "url": "../spec.html#line-674"
+              }
+            ]
+          }
+        ],
+        "note": "按实际手型及容器试握、试放；不沿用 ID 橡胶球直径作为固定尺寸。",
+        "category": "none",
+        "label": "清单未规定具体尺寸",
+        "has_numeric_size": false
+      }
+    },
+    {
+      "id": "B31",
+      "name": "喷壶",
+      "group": "日常道具",
+      "route": "购买后加工",
+      "phase": "BASE 首批",
+      "spec": "普通扳机式",
+      "tasks": "H2、H-open",
+      "initial_qty": "1 个空扳机式喷壶",
+      "note": "必须扳机式，不是按压式香水喷头。使用空壶，不装水；后续加微动开关与低功率激光计次/对准。",
+      "original_route": "A+D",
+      "source_section": "8.1 物品与容器",
+      "source_line": 1020,
+      "photos": [
+        {
+          "key": "spray-4",
+          "title": "Recycling PET bottle RIGOLETTO 100 ml clear with Mini trigger sprayer 24/410 white, tube length 113 mm | Top quality packaging",
+          "source": "https://www.packari.com/en/Recycling-PET-bottle-RIGOLETTO-100-ml-clear-with-Mini-trigger-sprayer-24-410-white-tube-length-113-mm.html",
+          "image": "https://www.packari.com/out/pictures/master/product/1/902081_Z00200_5.jpg",
+          "caption": "扳机式空喷壶外观",
+          "local_file": "reference_photos/spray-4.jpg",
+          "sha256": "ff9eaefdf9088f116a7a10f1ec0e8c37ee9a3344b77b95aeb6a013b5bf4deba5",
+          "bytes": 46195,
+          "width": 1000,
+          "height": 1400,
+          "url": "images/spray-4.jpg"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "喷壶 普通扳机式",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "fit",
+            "scope": "H2 / H-open",
+            "value": "喷壶外形、瓶颈直径、扳机行程未给定；按实际喷壶匹配手型、开关和激光模块。",
+            "source_line": 688,
+            "source_lines": [
+              688
+            ],
+            "references": [
+              {
+                "line": 688,
+                "text": "- 不喷水：电机和相机附近不能有液体。用空喷壶改装：",
+                "url": "../spec.html#line-687"
+              }
+            ]
+          }
+        ],
+        "note": "仿真壶高或 CAD 默认颈径属于实现参数，不是任务规定尺寸。",
+        "category": "fit",
+        "label": "需实测适配 · 未定固定尺寸",
+        "has_numeric_size": false
+      }
+    },
+    {
+      "id": "B32",
+      "name": "打印卡片（配套卡槽）",
+      "group": "日常道具",
+      "route": "配套塑料打印",
+      "phase": "BASE 首批",
+      "spec": "85×54 mm；厚度 3 / 2 / 1 / 0.8 mm；统一圆角",
+      "tasks": "H3",
+      "initial_qty": "先打印 2 mm BASE 卡片 3 张 + 对应卡槽 1 个",
+      "note": "用户选择卡片与卡槽成套塑料打印，替代原 PVC 板材采购。各档平面尺寸一致，R3 圆角为设计值；不加凸字、凸边或抓取辅助。打印后核对厚度、平整度与表面摩擦。",
+      "original_route": "A/B",
+      "source_section": "8.1 物品与容器",
+      "source_line": 1020,
+      "photos": [
+        {
+          "key": "card-1",
+          "title": "PVC SHEET 1220mm x 2440mm x 2mm (WHITE)",
+          "source": "https://www.nbp.co.uk/WHITE-PVC-SHEET-1220mm-x-2440mm-x-2mm",
+          "image": "https://www.nbp.co.uk/site/images/Items/PVCSHEETW2_01.jpg?resizeh=500&resizeid=2&resizew=500",
+          "caption": "硬质白色 PVC 板材",
+          "local_file": "reference_photos/card-1.jpg",
+          "sha256": "fa58b39daa416f2d0dc5b582c935ab613a9fef3255a3848f31b4c599d0f39c5c",
+          "bytes": 6072,
+          "width": 500,
+          "height": 500,
+          "url": "images/card-1.jpg"
+        }
+      ],
+      "plastic_print": true,
+      "manufacturing_cad_available": true,
+      "search_terms": "打印卡片 85×54 0.8 1 2 3 mm 配套卡槽",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "explicit",
+            "scope": "H3",
+            "value": "卡片平面 85×54 mm，圆角统一；圆角半径未给定。",
+            "source_line": 703,
+            "source_lines": [
+              703
+            ],
+            "references": [
+              {
+                "line": 703,
+                "text": "- 卡片：PVC 白卡 0.76 mm 对应 0.8 mm 档，另用 1/2/3 mm 的 PVC 板切成 85×54 mm，圆角统一。",
+                "url": "../spec.html#line-701"
+              }
+            ]
+          },
+          {
+            "kind": "explicit",
+            "scope": "H3 阶梯",
+            "value": "打印厚度 L1 3 mm / L2 2 mm（BASE）/ L3 1 mm / L4 0.8 mm。",
+            "source_line": 703,
+            "source_lines": [
+              703
+            ],
+            "references": [
+              {
+                "line": 703,
+                "text": "- 卡片：PVC 白卡 0.76 mm 对应 0.8 mm 档，另用 1/2/3 mm 的 PVC 板切成 85×54 mm，圆角统一。",
+                "url": "../spec.html#line-701"
+              }
+            ]
+          }
+        ],
+        "note": "原文的 PVC 白卡/板材已按用户选择改成打印塑料；L4 打印名义厚度 0.8 mm。原 PVC 白卡可用 0.76 mm 的说明只保留在原规范中。",
+        "category": "explicit",
+        "label": "有尺寸要求 · 数值 / 上下限",
+        "has_numeric_size": true
+      },
+      "original_spec": "0.76 mm 白卡；1/2/3 mm 板",
+      "update_source": "../USER_PROP_UPDATES_2026-10-21.md",
+      "update_notice": "用户调整：卡片本体也打印，和对应厚度卡槽配套。",
+      "paired_zip": "../cad/packages/H3_cards_and_slots.zip",
+      "paired_label": "下载四档卡片 + 卡槽整套",
+      "cad_url": "../cad/#B32",
+      "cad_status": "用户调整 · 待试印 · 尚未实体试印",
+      "cad_part_count": 4,
+      "cad_preview": {
+        "key": "cad-B32",
+        "kind": "cad",
+        "url": "../cad/previews/card_t2.png",
+        "source": "../cad/#B32",
+        "caption": "本项目打印卡片（配套卡槽） CAD 预览；尚未实体试印"
+      }
+    },
+    {
+      "id": "B33",
+      "name": "卡槽",
+      "group": "日常道具",
+      "route": "塑料打印",
+      "phase": "BASE 首批",
+      "spec": "名片座",
+      "tasks": "H3",
+      "initial_qty": "打印 1 个",
+      "note": "四档卡槽对应四档打印卡片，一起试印、实测配合。槽宽比名义卡厚多 0.6 mm 是当前设计参数，不是额外评分公差。",
+      "original_route": "A",
+      "source_section": "8.1 物品与容器",
+      "source_line": 1020,
+      "photos": [
+        {
+          "key": "cardholder-0",
+          "title": "Minimalism Business Card Holder by 3DinPlastic MakerWorld: Download Free 3D Models",
+          "source": "https://makerworld.com/en/models/31441",
+          "image": "https://makerworld.bblmw.com/makerworld/model/USe608b2f9ed2351/design/2024-03-13_0c857b2725b57.png?image_process=resize%2Cw_1000%2Fformat%2Cwebp",
+          "caption": "打印卡座实例；本项目需按薄卡厚度改槽",
+          "local_file": "reference_photos/cardholder-0.webp",
+          "sha256": "e3b6b3c4e4150b4f8f3f461202b4d6a2cc04fcc9634f766db261f879131a80d2",
+          "bytes": 90982,
+          "width": 1000,
+          "height": 750,
+          "url": "images/cardholder-0.webp"
+        }
+      ],
+      "plastic_print": true,
+      "manufacturing_cad_available": true,
+      "search_terms": "卡槽 名片座",
+      "cad_url": "../cad/#B33",
+      "cad_status": "尺寸原型 · 尚未实体试印",
+      "cad_part_count": 4,
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "fit",
+            "scope": "H3",
+            "value": "卡槽要匹配 85×54 mm、四档厚度的 打印卡片；清单未固定槽宽、槽深、底座外形。",
+            "source_line": 703,
+            "source_lines": [
+              703
+            ],
+            "references": [
+              {
+                "line": 703,
+                "text": "- 卡片：PVC 白卡 0.76 mm 对应 0.8 mm 档，另用 1/2/3 mm 的 PVC 板切成 85×54 mm，圆角统一。",
+                "url": "../spec.html#line-701"
+              }
+            ]
+          }
+        ],
+        "note": "当前 CAD 的槽间隙和底座大小是设计值，不属于任务清单的固定尺寸。",
+        "category": "fit",
+        "label": "需实测适配 · 未定固定尺寸",
+        "has_numeric_size": false
+      },
+      "original_spec": "名片座",
+      "update_source": "../USER_PROP_UPDATES_2026-10-21.md",
+      "update_notice": "当前配套：B32 打印卡片 + B33 卡槽。",
+      "paired_zip": "../cad/packages/H3_cards_and_slots.zip",
+      "paired_label": "下载四档卡片 + 卡槽整套"
+    },
+    {
+      "id": "B34",
+      "name": "乒乓球",
+      "group": "日常道具",
+      "route": "直接购买",
+      "phase": "BASE 首批",
+      "spec": "约 20 个",
+      "tasks": "H5、D2-B、S3（OOD）",
+      "initial_qty": "买 1 盒约 20 个，BASE 同时使用 3 个",
+      "note": "",
+      "original_route": "A",
+      "source_section": "8.1 物品与容器",
+      "source_line": 1020,
+      "photos": [
+        {
+          "key": "pingpong-0",
+          "title": "Franklin 40mm 3-star White Table Tennis Balls 6-pack 57102 – Good's Store Online",
+          "source": "https://goodsstores.com/products/40mm-3-star-white-table-tennis-balls-6-pack-57102",
+          "image": "https://goodsstores.com/cdn/shop/products/3-star-white-40mm-table-tennis-balls-57102-pkg.jpg?v=1678995885",
+          "caption": "40 mm 乒乓球",
+          "local_file": "reference_photos/pingpong-0.jpg",
+          "sha256": "c7ed61ea508ae7aa38e89de4a5ef95be53db67914ebfe154a316b9882272a01c",
+          "bytes": 118575,
+          "width": 1200,
+          "height": 1200,
+          "url": "images/pingpong-0.jpg"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "乒乓球 约 20 个",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "none",
+            "scope": "H5 / D2-B / S3 OOD",
+            "value": "清单只写乒乓球，没有另给球径数值。",
+            "source_line": 734,
+            "source_lines": [
+              734
+            ],
+            "references": [
+              {
+                "line": 734,
+                "text": "| 乒乓球 | — | 20（D2-B、S3 OOD 共用） | A |",
+                "url": "../spec.html#line-727"
+              }
+            ]
+          }
+        ],
+        "note": "H5 的 5 cm 是球之间的距离，不是球的直径；按同款实物配球托。",
+        "category": "none",
+        "label": "清单未规定具体尺寸",
+        "has_numeric_size": false
+      }
+    },
+    {
+      "id": "B35",
+      "name": "钥匙扣",
+      "group": "日常道具",
+      "route": "直接购买",
+      "phase": "后续 OOD",
+      "spec": "小号",
+      "tasks": "S3（OOD）",
+      "initial_qty": "先不买，OOD 阶段 2 个",
+      "note": "",
+      "original_route": "A",
+      "source_section": "8.1 物品与容器",
+      "source_line": 1020,
+      "photos": [
+        {
+          "key": "keyring-1",
+          "title": "Argola Plástica Preta – Ø6cm, Material Rígido para Artesanato",
+          "source": "https://lojadamarta.pt/argola-plastica-preta-50mm",
+          "image": "https://lojadamarta.pt/image/cache/catalog/PRODUTOS/APLICACOES/argolas-metalicas-porta-chaves-585x650.jpg",
+          "caption": "金属钥匙扣（OOD）",
+          "local_file": "reference_photos/keyring-1.jpg",
+          "sha256": "cbb83fa6c0963c5a4df1cf1cf178f92074c612d22320245f323d4022eb51c251",
+          "bytes": 19782,
+          "width": 585,
+          "height": 650,
+          "url": "images/keyring-1.jpg"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "钥匙扣 小号",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "none",
+            "scope": "S3 OOD",
+            "value": "只要求小号钥匙扣，未给直径或长度。",
+            "source_line": 1058,
+            "source_lines": [
+              1058
+            ],
+            "references": [
+              {
+                "line": 1058,
+                "text": "| 钥匙扣 | 小号 | S3（OOD） | A | |",
+                "url": "../spec.html#line-1020"
+              }
+            ]
+          }
+        ],
+        "note": "",
+        "category": "none",
+        "label": "清单未规定具体尺寸",
+        "has_numeric_size": false
+      }
+    },
+    {
+      "id": "B36",
+      "name": "四翻盖小纸箱",
+      "group": "日常道具",
+      "route": "直接购买",
+      "phase": "先取样验证",
+      "spec": "约 20×15×12 cm，三层和五层瓦楞，每档 30 个",
+      "tasks": "H7",
+      "initial_qty": "约 20×15×12 cm，先取三层/五层各 1 个样箱",
+      "note": "先验证实际翻盖的柔度、长度和角缝能否单手互扣；每档 30 个是通过闸门后的耗材量，不建议首轮就全买。",
+      "original_route": "A",
+      "source_section": "8.1 物品与容器",
+      "source_line": 1020,
+      "photos": [
+        {
+          "key": "carton-1",
+          "title": "Hộp Carton 20x15x12 Giao Hàng Online",
+          "source": "https://genbox.vn/hop-carton-doi-khau-20x15x12",
+          "image": "https://genbox.vn/storage/product/20.15.12.webp",
+          "caption": "四翻盖瓦楞纸箱",
+          "local_file": "reference_photos/carton-1.webp",
+          "sha256": "e9cd5b2fab4a5b8d390ff95b4fb136be031142f06d4dc0a16aec588c288a7583",
+          "bytes": 61244,
+          "width": 800,
+          "height": 800,
+          "url": "images/carton-1.webp"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "四翻盖小纸箱 约 20×15×12 cm，三层和五层瓦楞，每档 30 个",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "approximate",
+            "scope": "H7",
+            "value": "同款四翻盖纸箱约 20×15×12 cm。",
+            "source_line": 750,
+            "source_lines": [
+              750
+            ],
+            "references": [
+              {
+                "line": 750,
+                "text": "- 用同款上开口、四翻盖的小纸箱（约 20×15×12 cm）。",
+                "url": "../spec.html#line-749"
+              }
+            ]
+          }
+        ],
+        "note": "三层 / 五层是瓦楞结构，不是毫米厚度；翻盖刚度另外实测分档。",
+        "category": "approximate",
+        "label": "有尺寸要求 · 约尺寸",
+        "has_numeric_size": true
+      }
+    },
+    {
+      "id": "B37",
+      "name": "亚克力直筒杯",
+      "group": "日常道具",
+      "route": "购买后加工",
+      "phase": "BASE 首批",
+      "spec": "约 Ø8×10 cm，12 只",
+      "tasks": "S8",
+      "initial_qty": "同款 12 只，6 只透明、6 只外壁喷哑光漆",
+      "note": "透明和不透明组必须同款同形。需要约 Ø8×10 cm，可用亚克力圆管定尺加底；不要买玻璃，也不要买成 8 英寸。",
+      "original_route": "A+B",
+      "source_section": "8.1 物品与容器",
+      "source_line": 1020,
+      "photos": [
+        {
+          "key": "clearcup-0",
+          "title": "Unbreakable Clear Acrylic Terrariums Aquatic Plants Cylinder Round Vase for Home Decor - Acrylic Vase and Acrylic Cylinder price",
+          "source": "https://zxdisplay.en.made-in-china.com/product/ZFmtySAOQwYB/China-Unbreakable-Clear-Acrylic-Terrariums-Aquatic-Plants-Cylinder-Round-Vase-for-Home-Decor.html",
+          "image": "https://image.made-in-china.com/202f0j00KJBWCkOspNuE/Unbreakable-Clear-Acrylic-Terrariums-Aquatic-Plants-Cylinder-Round-Vase-for-Home-Decor.webp",
+          "caption": "亚克力圆筒外观；另按 Ø8×10 cm 制作",
+          "local_file": "reference_photos/clearcup-0.webp",
+          "sha256": "6e4c651333693c9568ec10bc2d08e54b26ff0eb81ff00b91b240c4c53dfc893b",
+          "bytes": 6548,
+          "width": 550,
+          "height": 548,
+          "url": "images/clearcup-0.webp"
+        },
+        {
+          "key": "paint-0",
+          "title": "Spraymaling 400 ml | For innendørs og utendørs bruk | Hard Head | Jula",
+          "source": "https://www.jula.no/catalog/bygg-og-maling/maling-og-fugemasse/spraymaling/spraylakk/spraymaling-025031/",
+          "image": "https://assets.cdn.jula.com/v2/w%3A2048/187030?lastmodified=20230605114811",
+          "caption": "外壁哑光遮光涂料",
+          "local_file": "reference_photos/paint-0.png",
+          "sha256": "15a6484f759242d1bb9769f9a35e22e84fc815d8078cdcc251a2ce71ac03519f",
+          "bytes": 1009021,
+          "width": 2048,
+          "height": 2048,
+          "url": "images/paint-0.png"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "亚克力直筒杯 约 Ø8×10 cm，12 只",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "approximate",
+            "scope": "S8",
+            "value": "同款亚克力直筒杯约 Ø8×10 cm；透明与不透明组形状一致。",
+            "source_line": 804,
+            "source_lines": [
+              804
+            ],
+            "references": [
+              {
+                "line": 804,
+                "text": "  - 同款透明亚克力直筒杯 12 只（约 Ø8×10 cm），其中 6 只外壁喷哑光漆，做成不透明组，两组形状完全一样。",
+                "url": "../spec.html#line-801"
+              }
+            ]
+          }
+        ],
+        "note": "",
+        "category": "approximate",
+        "label": "有尺寸要求 · 约尺寸",
+        "has_numeric_size": true
+      }
+    },
+    {
+      "id": "B38",
+      "name": "杯垫",
+      "group": "日常道具",
+      "route": "直接购买",
+      "phase": "BASE 首批",
+      "spec": "Ø9 cm",
+      "tasks": "S9",
+      "initial_qty": "Ø9 cm 4 个",
+      "note": "",
+      "original_route": "A",
+      "source_section": "8.1 物品与容器",
+      "source_line": 1020,
+      "photos": [
+        {
+          "key": "coaster-0",
+          "title": "コルク製コースター 丸型 90mm ｜ 大王製作所B2Bショップ",
+          "source": "https://order.daiomfg.co.jp/products/NVACC90C-------/",
+          "image": "https://order.daiomfg.co.jp/upload/save_image/product/lifegoods/kc_cr_img1.jpg",
+          "caption": "Ø9 cm 圆杯垫",
+          "local_file": "reference_photos/coaster-0.jpg",
+          "sha256": "08747cfa678b29a6461e6b12cb8848e6a43eeb6357d62e92abf680c6b80d9f65",
+          "bytes": 401273,
+          "width": 1600,
+          "height": 1600,
+          "url": "images/coaster-0.jpg"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "杯垫 Ø9 cm",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "explicit",
+            "scope": "S9 对照组",
+            "value": "杯垫直径 Ø9 cm。",
+            "source_line": 833,
+            "source_lines": [
+              833
+            ],
+            "references": [
+              {
+                "line": 833,
+                "text": "  - 对照组用杯垫 Ø9 cm。",
+                "url": "../spec.html#line-828"
+              }
+            ]
+          }
+        ],
+        "note": "",
+        "category": "explicit",
+        "label": "有尺寸要求 · 数值 / 上下限",
+        "has_numeric_size": true
+      }
+    },
+    {
+      "id": "B39",
+      "name": "桌面输送带",
+      "group": "日常道具",
+      "route": "直接购买",
+      "phase": "可选 S12",
+      "spec": "带宽约 10 cm、长 60–80 cm，可调速，带急停",
+      "tasks": "S12",
+      "initial_qty": "可选，先不下单",
+      "note": "S12 可选；带宽约 10 cm、总长 60–80 cm、速度可稳定调到 2 cm/s，并有急停。参考图不能替代询问低速范围。",
+      "original_route": "A",
+      "source_section": "8.1 物品与容器",
+      "source_line": 1020,
+      "photos": [
+        {
+          "key": "conveyor-1",
+          "title": "New Metal Desktop Conveyor Belt Small Assembly Line Electric Conveyor AC100-240V | eBay",
+          "source": "https://www.ebay.com/itm/405890139650",
+          "image": "https://i.ebayimg.com/images/g/QjUAAOSwd1Vl-Wc5/s-l1200.jpg",
+          "caption": "小型桌面输送带外观",
+          "local_file": "reference_photos/conveyor-1.jpg",
+          "sha256": "2ce57863a84d659c4b24ac03493f9e22d8a074ff7b5f57506b301767050d6436",
+          "bytes": 68003,
+          "width": 1000,
+          "height": 1000,
+          "url": "images/conveyor-1.jpg"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "桌面输送带 带宽约 10 cm、长 60–80 cm，可调速，带急停",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "approximate",
+            "scope": "S12",
+            "value": "输送带带宽约 10 cm。",
+            "source_line": 901,
+            "source_lines": [
+              901
+            ],
+            "references": [
+              {
+                "line": 901,
+                "text": "  - 桌面小型皮带输送机：带宽约 10 cm、长 60–80 cm，速度可调，带急停。",
+                "url": "../spec.html#line-898"
+              }
+            ]
+          },
+          {
+            "kind": "explicit",
+            "scope": "S12",
+            "value": "输送机长 60–80 cm。",
+            "source_line": 901,
+            "source_lines": [
+              901
+            ],
+            "references": [
+              {
+                "line": 901,
+                "text": "  - 桌面小型皮带输送机：带宽约 10 cm、长 60–80 cm，速度可调，带急停。",
+                "url": "../spec.html#line-898"
+              }
+            ]
+          }
+        ],
+        "note": "2 cm/s 等数字为速度档，单独核对，不归入外形尺寸。",
+        "category": "explicit",
+        "label": "有尺寸要求 · 数值 / 上下限",
+        "has_numeric_size": true
+      }
+    },
+    {
+      "id": "P01",
+      "name": "销与底座",
+      "group": "定制与打印",
+      "route": "塑料精密打印",
+      "phase": "BASE 首批",
+      "spec": "见 S2：4 档孔径各 2 套，另加方销方孔、80 mm 长销",
+      "tasks": "S2",
+      "initial_qty": "先 1 套 BASE：Ø20×60 mm 销 + Ø24 mm 孔底座",
+      "note": "按用户选择全部用塑料：用户已选拓竹 H2S；提供 FDM 模型，打印后实测并按需修孔，L3/L4 未经检验不能用于精度评测。销 Ø20×60 mm、六角法兰；底座 100×100×30 mm、孔深 30 mm、入口 1 mm×45°。4 档孔径 28/24/22/21 mm，先做 24 mm；小间隙档以实测为准，不能把打印标称精度当孔径。图为插销装配实物参考，非本项目定制成品。",
+      "original_route": "D",
+      "source_section": "8.2 定制件",
+      "source_line": 1064,
+      "photos": [
+        {
+          "key": "peg-0",
+          "title": "NIST Grant Awarded to SwRI for Agile Robotic Assembly — ROS-Industrial",
+          "source": "https://rosindustrial.org/news/2021/3/18/nist-grant-agile-assembly",
+          "image": "https://images.squarespace-cdn.com/content/v1/51df34b1e4b08840dcfd2841/1616078711741-7CKNXZ8PWQRNULJ2U30E/Siemens%2BChallenge%2BImage.png",
+          "caption": "插销装配实物参考；不是本项目尺寸的成品",
+          "local_file": "reference_photos/peg-0.png",
+          "sha256": "86d02318a1ffaa9ac25983cd60dd3a429f94adab95b90daf0a5577c8fa14771f",
+          "bytes": 333345,
+          "width": 461,
+          "height": 388,
+          "url": "images/peg-0.png"
+        }
+      ],
+      "plastic_print": true,
+      "manufacturing_cad_available": true,
+      "search_terms": "销与底座 见 S2：4 档孔径各 2 套，另加方销方孔、80 mm 长销",
+      "cad_url": "../cad/#P01",
+      "cad_status": "尺寸原型 · 尚未实体试印",
+      "cad_part_count": 12,
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "explicit",
+            "scope": "S2 销",
+            "value": "圆销 Ø20×60 mm；OOD 方销截面 20×20 mm、长销 80 mm；色带距底 5 / 25 mm。",
+            "source_line": 351,
+            "source_lines": [
+              351,
+              354
+            ],
+            "references": [
+              {
+                "line": 351,
+                "text": "  - 圆销 Ø20×60 mm，顶部是六角法兰，既便于抓取，平放时也不会滚。销身距底端 5 mm 和 25 mm 处各画一道色带。",
+                "url": "../spec.html#line-349"
+              },
+              {
+                "line": 354,
+                "text": "  - OOD：方销 20×20 mm 配方孔（间隙同档）；销长 80 mm。",
+                "url": "../spec.html#line-349"
+              }
+            ]
+          },
+          {
+            "kind": "explicit",
+            "scope": "S2 底座",
+            "value": "100×100×30 mm；孔深 30 mm，孔口倒角 1 mm×45°。",
+            "source_line": 352,
+            "source_lines": [
+              352
+            ],
+            "references": [
+              {
+                "line": 352,
+                "text": "  - 底座 100×100×30 mm，中央圆孔深 30 mm，孔口倒角 1 mm × 45°（四档一致）。底部嵌 4 颗钕磁铁，吸在桌面贴图下面的钢板上。",
+                "url": "../spec.html#line-349"
+              }
+            ]
+          },
+          {
+            "kind": "explicit",
+            "scope": "S2 孔径",
+            "value": "圆孔 Ø28 / 24 / 22 / 21 mm，BASE Ø24 mm；方孔按相同间隙档。",
+            "source_line": 353,
+            "source_lines": [
+              353,
+              354
+            ],
+            "references": [
+              {
+                "line": 353,
+                "text": "  - 孔径按档：L1 28 mm（间隙 8 mm）；L2 24 mm（4 mm，BASE）；L3 22 mm（2 mm）；L4 21 mm（1 mm）。",
+                "url": "../spec.html#line-349"
+              },
+              {
+                "line": 354,
+                "text": "  - OOD：方销 20×20 mm 配方孔（间隙同档）；销长 80 mm。",
+                "url": "../spec.html#line-349"
+              }
+            ]
+          }
+        ],
+        "note": "孔径和间隙需实测。磁铁直径、法兰具体外形等未给固定尺寸，不能用 CAD 默认值充当规范要求。",
+        "category": "explicit",
+        "label": "有尺寸要求 · 数值 / 上下限",
+        "has_numeric_size": true
+      }
+    },
+    {
+      "id": "P02",
+      "name": "抽屉柜与分度转台",
+      "group": "定制与打印",
+      "route": "塑料打印 + 外购组装",
+      "phase": "BASE 首批",
+      "spec": "见 S3",
+      "tasks": "S3、S11、S7",
+      "initial_qty": "1 套，柜体供 S3/S7/S11 共用",
+      "note": "主体/把手/分度底板用塑料打印，分块拼装可适配打印机。柜约 25×30×15 cm，行程 ≥20 cm；把手 Ø2 cm，表面到面板净空 ≥4 cm。转台设 0/±10/±20/±30° 定位孔。外购滚珠滑轨、紧固件、定位销；参考打印抽屉照片仅示外形，实际需加滚珠滑轨和横杆把手。",
+      "original_route": "B/C",
+      "source_section": "8.2 定制件",
+      "source_line": 1064,
+      "photos": [
+        {
+          "key": "plasticdrawer-0",
+          "title": "Mini Drawer (Household) by Arm0red - MakerWorld",
+          "source": "https://makerworld.com/en/models/1079123-mini-drawer-household",
+          "image": "https://makerworld.bblmw.com/makerworld/model/US74e6b6ea17621d/design/2025-02-06_611e5baedc389.jpg?x-oss-process=image%2Fresize%2Cw_1000%2Fformat%2Cwebp",
+          "caption": "塑料打印抽屉实例；本任务需横杆把手、滑轨与分度底板",
+          "local_file": "reference_photos/plasticdrawer-0.webp",
+          "sha256": "03102b8134181f6cb9dcf8e8b29df6c649cfd778c96484295e5b04a50ab1992e",
+          "bytes": 24728,
+          "width": 1000,
+          "height": 960,
+          "url": "images/plasticdrawer-0.webp"
+        },
+        {
+          "key": "slide-1",
+          "title": "The information is not available right now",
+          "source": "https://kelack-hardware.en.made-in-china.com/product/jQIUCZnDHAYq/China-3-Section-Mini-Drawer-Guide-Rail-Sliding-8-Inch-200mm-Channel-Telescopic-Super-Small-Ultra-Short-Mini-200mm-Drawer-Slides-Rails.html",
+          "image": "https://image.made-in-china.com/2f0j00rReqPghdaiuz/3-Section-Mini-Drawer-Guide-Rail-Sliding-8-Inch-200mm-Channel-Telescopic-Super-Small-Ultra-Short-Mini-200mm-Drawer-Slides-Rails.jpg",
+          "caption": "外购滚珠滑轨",
+          "local_file": "reference_photos/slide-1.jpg",
+          "sha256": "de240760e8071d8b886e134822fcbbff2bbf1744988a9219cdc8d685f40fd669",
+          "bytes": 96690,
+          "width": 800,
+          "height": 800,
+          "url": "images/slide-1.jpg"
+        },
+        {
+          "key": "indexplate-0",
+          "title": "Printable dividing head with 120 mm turntable by Holm_Hansen MakerWorld: Download Free 3D Models",
+          "source": "https://makerworld.com/en/models/883870-printable-dividing-head-with-120-mm-turntable",
+          "image": "https://makerworld.bblmw.com/makerworld/model/US1c68cb64784477/design/2024-12-26_5debea10d80fe8.jpg?x-oss-process=image%2Fresize%2Cw_1200%2Fignore-error%2C1",
+          "caption": "打印分度机构实例；孔位按本任务重做",
+          "local_file": "reference_photos/indexplate-0.webp",
+          "sha256": "7c47bfd8b37b26efdf8c7c259a7c1b6087e89871b2c22e59aff843ecbbcf00ae",
+          "bytes": 101646,
+          "width": 1200,
+          "height": 1182,
+          "url": "images/indexplate-0.webp"
+        }
+      ],
+      "plastic_print": true,
+      "manufacturing_cad_available": true,
+      "search_terms": "抽屉柜与分度转台 见 S3",
+      "cad_url": "../cad/#P02",
+      "cad_status": "接口待测 · 尚未实体试印",
+      "cad_part_count": 6,
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "approximate",
+            "scope": "S3 / S11 柜体",
+            "value": "柜体约 25×30×15 cm；S11 抽屉内高约 10 cm。",
+            "source_line": 373,
+            "source_lines": [
+              373,
+              880
+            ],
+            "references": [
+              {
+                "line": 373,
+                "text": "  - 单抽屉柜，外形约 25×30×15 cm，抽屉行程 ≥20 cm，滚珠滑轨。可以用椴木板或亚克力激光切割，配迷你三节滑轨。",
+                "url": "../spec.html#line-371"
+              },
+              {
+                "line": 880,
+                "text": "  - 收纳物只用矮的：4 cm 木方块、海绵、小号胶带卷、仿真橙子。抽屉内高约 10 cm，物体高度 ≤8 cm。",
+                "url": "../spec.html#line-876"
+              }
+            ]
+          },
+          {
+            "kind": "explicit",
+            "scope": "S3 行程 / 把手",
+            "value": "抽屉行程 ≥20 cm；横杆把手 Ø2 cm，与面板净空 ≥4 cm（已确认口径）。",
+            "source_line": 373,
+            "source_lines": [
+              373,
+              374
+            ],
+            "references": [
+              {
+                "line": 373,
+                "text": "  - 单抽屉柜，外形约 25×30×15 cm，抽屉行程 ≥20 cm，滚珠滑轨。可以用椴木板或亚克力激光切割，配迷你三节滑轨。",
+                "url": "../spec.html#line-371"
+              },
+              {
+                "line": 374,
+                "text": "  - 把手为 Ø2 cm 横杆，与面板间距 ≥4 cm，保证 AG-95 的指尖伸得进去。",
+                "url": "../spec.html#line-371"
+              }
+            ]
+          },
+          {
+            "kind": "explicit",
+            "scope": "S3 分度",
+            "value": "分度孔对应 0°、±10°、±20°、±30°。",
+            "source_line": 375,
+            "source_lines": [
+              375
+            ],
+            "references": [
+              {
+                "line": 375,
+                "text": "  - 柜体装在带分度孔的转台上（0°、±10°、±20°、±30°），转台夹紧在桌面远端中央。",
+                "url": "../spec.html#line-371"
+              }
+            ]
+          }
+        ],
+        "note": "滑轨厚度、安装孔距、板厚与转盘外径按实际零件适配，不是原文固定尺寸。",
+        "category": "explicit",
+        "label": "有尺寸要求 · 数值 / 上下限",
+        "has_numeric_size": true
+      }
+    },
+    {
+      "id": "P03",
+      "name": "配重杯",
+      "group": "定制与打印",
+      "route": "塑料打印",
+      "phase": "BASE 首批",
+      "spec": "Ø7×9 cm，带配重腔",
+      "tasks": "S4、H9",
+      "initial_qty": "1 个样件，通过后 3 个",
+      "note": "塑料打印 Ø7×9 cm 圆杯，底部留可封闭配重腔；只装干珠，不涉及饮用。参考杯不含本项目配重腔。",
+      "original_route": "C",
+      "source_section": "8.2 定制件",
+      "source_line": 1064,
+      "photos": [
+        {
+          "key": "weightedcup-6",
+          "title": "3Dプリンタ製カップ | ELEMENTA",
+          "source": "https://elementa.base.shop/items/124428213",
+          "image": "https://baseec-img-mng.akamaized.net/images/item/origin/2ba0299ed4f5e5d53fad385d37b59acc.jpg?im=Resize%2Cwidth%3D1200%2Ctype%3Dnormal&imformat=generic&q=90",
+          "caption": "3D 打印杯实例；底部配重腔需另设计",
+          "local_file": "reference_photos/weightedcup-6.jpg",
+          "sha256": "1d9a9cca0151aa0693d5b89453aadfd3d31a1235f5298d43da32aa15d78a8257",
+          "bytes": 379941,
+          "width": 1200,
+          "height": 1200,
+          "url": "images/weightedcup-6.jpg"
+        }
+      ],
+      "plastic_print": true,
+      "manufacturing_cad_available": true,
+      "search_terms": "配重杯 Ø7×9 cm，带配重腔",
+      "cad_url": "../cad/#P03",
+      "cad_status": "尺寸原型 · 尚未实体试印",
+      "cad_part_count": 2,
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "explicit",
+            "scope": "S4 / H9",
+            "value": "杯体 Ø7×9 cm，底部带配重腔。",
+            "source_line": 403,
+            "source_lines": [
+              403
+            ],
+            "references": [
+              {
+                "line": 403,
+                "text": "  - 杯 Ø7×9 cm，3D 打印，底部留配重腔（P 轴用）。",
+                "url": "../spec.html#line-401"
+              }
+            ]
+          },
+          {
+            "kind": "fit",
+            "scope": "配重腔",
+            "value": "配重腔大小、盖板与螺钉接口未给固定值，按配重与结构适配。",
+            "source_line": 403,
+            "source_lines": [
+              403
+            ],
+            "references": [
+              {
+                "line": 403,
+                "text": "  - 杯 Ø7×9 cm，3D 打印，底部留配重腔（P 轴用）。",
+                "url": "../spec.html#line-401"
+              }
+            ]
+          }
+        ],
+        "note": "",
+        "category": "explicit",
+        "label": "有尺寸要求 · 数值 / 上下限",
+        "has_numeric_size": true
+      }
+    },
+    {
+      "id": "P04",
+      "name": "簸箕",
+      "group": "定制与打印",
+      "route": "塑料打印（可选）",
+      "phase": "BASE 首批",
+      "spec": "开口 15 cm，入口斜坡 ≤15°",
+      "tasks": "S5",
+      "initial_qty": "仅现货口沿/开口不合适时打印 1 个",
+      "note": "塑料打印开口 15 cm、薄口沿、入口斜坡 ≤15°，底部留磁铁位。现货满足要求时不用重复打印。",
+      "original_route": "C",
+      "source_section": "8.2 定制件",
+      "source_line": 1064,
+      "photos": [
+        {
+          "key": "plasticpan-0",
+          "title": "DustPan by Tommoo MakerWorld: Download Free 3D Models",
+          "source": "https://makerworld.com/en/models/1055849-dustpan",
+          "image": "https://makerworld.bblmw.com/makerworld/model/US9bbf28891a95/design/2025-01-30_29e1b4ec1abe5.jpg?x-oss-process=image%2Fresize%2Cw_1000%2Fformat%2Cwebp",
+          "caption": "塑料打印簸箕实例；按本任务改为 15 cm 开口",
+          "local_file": "reference_photos/plasticpan-0.webp",
+          "sha256": "6d7f7dff176c0980b1f2ed27a669d366ccb40d3d7d002924296353b472e81dad",
+          "bytes": 56156,
+          "width": 1000,
+          "height": 1333,
+          "url": "images/plasticpan-0.webp"
+        }
+      ],
+      "plastic_print": true,
+      "manufacturing_cad_available": true,
+      "search_terms": "簸箕 开口 15 cm，入口斜坡 ≤15°",
+      "cad_url": "../cad/#P04",
+      "cad_status": "尺寸原型 · 尚未实体试印",
+      "cad_part_count": 1,
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "explicit",
+            "scope": "S5",
+            "value": "净开口 15 cm，入口斜坡 ≤15°。",
+            "source_line": 428,
+            "source_lines": [
+              428
+            ],
+            "references": [
+              {
+                "line": 428,
+                "text": "  - 簸箕：开口 15 cm，口沿薄、入口斜坡平缓，底部用磁铁固定在右侧。现货口沿太厚时，改用 3D 打印的簸箕（入口斜坡 ≤15°）。",
+                "url": "../spec.html#line-425"
+              }
+            ]
+          }
+        ],
+        "note": "口沿要薄；具体口沿厚度、整体深度、磁铁孔尺寸未给定。",
+        "category": "explicit",
+        "label": "有尺寸要求 · 数值 / 上下限",
+        "has_numeric_size": true
+      }
+    },
+    {
+      "id": "P05",
+      "name": "试管架与管托",
+      "group": "定制与打印",
+      "route": "塑料打印 + 外购组装",
+      "phase": "BASE 首批",
+      "spec": "见 D3，4 档各 2 套",
+      "tasks": "D3、D7",
+      "initial_qty": "BASE 架 1 个 + 管托 2 个",
+      "note": "塑料打印架约 100×60×80 mm，4 孔，孔深 ≥40 mm、倒角 1 mm×45°；BASE 孔径 15 mm（其他 16/14/13.5 mm）。加配重到 0.15 kg、4 个统一毛毡脚垫。管托做 V 槽；照片是同类打印实物，需要按任务改孔径与孔数。",
+      "original_route": "C",
+      "source_section": "8.2 定制件",
+      "source_line": 1064,
+      "photos": [
+        {
+          "key": "rack-0",
+          "title": "Test tube rack – customizable (printed example)",
+          "source": "https://makerworld.com/en/models/1432555-test-tube-rack-customizable",
+          "image": "https://makerworld.bblmw.com/makerworld/model/USf307c3b7e4adb1/design/2025-05-19_03487cfee2c3a.jpeg?x-oss-process=image%2Fresize%2Cw_1000%2Fformat%2Cwebp",
+          "caption": "打印试管架实例；本任务改为四孔",
+          "local_file": "reference_photos/rack-0.webp",
+          "sha256": "fd363d4cea2987837b73d0d1944ec0cdfc0e0ee0f1f2265e00935e7ec4edf4c3",
+          "bytes": 69120,
+          "width": 640,
+          "height": 480,
+          "url": "images/rack-0.webp"
+        },
+        {
+          "key": "vblock-1",
+          "title": "1-2-3 Block & V-Block Jig Set - Pinshape",
+          "source": "https://pinshape.com/items/7872-3d-printed-1-2-3-block-v-block-jig-set",
+          "image": "https://assets.pinshape.com/uploads/image/file/28833/large_1-2-3-block-v-block-jig-set-3d-printing-28833.JPG",
+          "caption": "打印 V 槽托块实例",
+          "local_file": "reference_photos/vblock-1.jpg",
+          "sha256": "e8104c1a58b9bc8948b4c5b46070d15337e1d7720a0bc138e53b190da706de47",
+          "bytes": 146269,
+          "width": 800,
+          "height": 598,
+          "url": "images/vblock-1.jpg"
+        }
+      ],
+      "plastic_print": true,
+      "manufacturing_cad_available": true,
+      "search_terms": "试管架与管托 见 D3，4 档各 2 套",
+      "cad_url": "../cad/#P05",
+      "cad_status": "尺寸原型 · 尚未实体试印",
+      "cad_part_count": 7,
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "approximate",
+            "scope": "D3 架体",
+            "value": "试管架约 100×60×80 mm。",
+            "source_line": 547,
+            "source_lines": [
+              547
+            ],
+            "references": [
+              {
+                "line": 547,
+                "text": "    - 3D 打印，约 100×60×80 mm，4 个孔；孔深 ≥40 mm，孔口倒角 1 mm × 45°（四档一致）。",
+                "url": "../spec.html#line-543"
+              }
+            ]
+          },
+          {
+            "kind": "explicit",
+            "scope": "D3 导向孔",
+            "value": "4 个孔；孔深 ≥40 mm，入口倒角 1 mm×45°；孔径 Ø16 / 15 / 14 / 13.5 mm，BASE Ø15 mm。",
+            "source_line": 547,
+            "source_lines": [
+              547,
+              552
+            ],
+            "references": [
+              {
+                "line": 547,
+                "text": "    - 3D 打印，约 100×60×80 mm，4 个孔；孔深 ≥40 mm，孔口倒角 1 mm × 45°（四档一致）。",
+                "url": "../spec.html#line-543"
+              },
+              {
+                "line": 552,
+                "text": "- **阶梯**：孔径 L1 16 mm（间隙 4 mm）；L2 15 mm（3 mm，BASE）；L3 14 mm（2 mm）；L4 13.5 mm（1.5 mm）。实测孔径写入记录。",
+                "url": "../spec.html#line-543"
+              }
+            ]
+          },
+          {
+            "kind": "fit",
+            "scope": "D3 管托",
+            "value": "V 形管托匹配 Ø12×75 mm 试管；管托外形、槽深未给数值。",
+            "source_line": 549,
+            "source_lines": [
+              549
+            ],
+            "references": [
+              {
+                "line": 549,
+                "text": "  - **管托**：带 V 形槽的小托架，试管平躺其中，防止滚动。",
+                "url": "../spec.html#line-543"
+              }
+            ]
+          }
+        ],
+        "note": "150 g 是装配后的质量要求；CAD 的导向孔 45 mm、脚柱和底板尺寸属于实现选择。",
+        "category": "explicit",
+        "label": "有尺寸要求 · 数值 / 上下限",
+        "has_numeric_size": true
+      },
+      "original_spec": "见 D3，4 档各 2 套",
+      "update_source": "../USER_PROP_UPDATES_2026-10-21.md",
+      "update_notice": "当前配套：B25 打印试管 + P05 架体与 V 托。",
+      "paired_zip": "../cad/packages/D3_tubes_and_rack.zip",
+      "paired_label": "下载试管 + 试管架 + V 托整套"
+    },
+    {
+      "id": "P06",
+      "name": "现成矿泉水瓶 + 原装盖",
+      "group": "定制与打印",
+      "route": "复用现成瓶 / 购买",
+      "phase": "BASE 首批",
+      "spec": "同一款矿泉水瓶及其原装螺旋瓶盖；品牌、容量、盖径与螺纹参数待实测",
+      "tasks": "D6、D7",
+      "initial_qty": "先用现有同款空瓶 + 原装盖 1 套；验证后准备同款备件，无需打印",
+      "note": "用户改为现成瓶，原打印方瓶的 2 mm/圈、2.5 圈及约 Ø40 mm 盖不直接沿用。先测有效啮合角、拧紧阻力与瓶体抗夹能力；原 180/360/540/720° 档逐档验证，不能把未啮合空转算作拧盖。瓶中不装水；需要配重时用干燥沙/塑料珠并称重。当前仿真仍是原方瓶版本，尚未完成现成瓶适配。",
+      "original_route": "C",
+      "source_section": "8.2 定制件",
+      "source_line": 1064,
+      "photos": [
+        {
+          "key": "existing-water-bottle",
+          "title": "evian 500 mL bottle — manufacturer photograph",
+          "source": "https://www.evian.com/en_us/natural-spring-water/bottled-water/500ml",
+          "image": "https://www.evian.com/en_us/wp-content/uploads/2020/03/evian-water-500-ml-bottle-everyday.webp",
+          "caption": "现成矿泉水瓶与原装盖外观参考；不是指定品牌或容量，实际型号待定",
+          "local_file": "reference_photos/existing-water-bottle.webp",
+          "sha256": "b5e79290b70c748b7894cf827b341870b7cb740f3acfa6e31e7cc96d114d68ac",
+          "bytes": 17822,
+          "width": 206,
+          "height": 701,
+          "url": "images/existing-water-bottle.webp"
+        },
+        {
+          "key": "screwbottle-1",
+          "title": "3D Printed Bottle and Screw Cap 37 by David Mussaffi | Pinshape",
+          "source": "https://pinshape.com/items/12703-3d-printed-bottle-and-screw-cap-37",
+          "image": "https://assets.pinshape.com/uploads/image/file/45044/container_bottle-and-screw-cap-37-3d-printing-45044.JPG",
+          "caption": "历史打印方瓶外观参考；当前方案不再打印",
+          "local_file": "reference_photos/screwbottle-1.jpg",
+          "sha256": "66d74fe5c5486b69f5a798ac26ea99b0f20aca14d128a574c8869312390637e2",
+          "bytes": 22037,
+          "width": 667,
+          "height": 500,
+          "url": "images/screwbottle-1.jpg"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": false,
+      "search_terms": "现成矿泉水瓶 原装盖 拧瓶盖 同款 空瓶 不打印",
+      "dimensions": {
+        "category": "fit",
+        "label": "用户现成瓶方案 · 尺寸待实测",
+        "has_numeric_size": false,
+        "note": "下面折叠保留原文参数供追溯；它们不是这只矿泉水瓶已经具备的尺寸。",
+        "requirements": [
+          {
+            "kind": "fit",
+            "scope": "D6 / D7 当前实物",
+            "value": "实测瓶高、抓持部位直径、盖径、每圈下降量及有效啮合角；暂不指定瓶口尺寸或拧紧圈数。",
+            "references": [
+              {
+                "url": "../USER_PROP_UPDATES_2026-10-21.md",
+                "label": "用户实物调整（2026-10-21）",
+                "text": "现成矿泉水瓶与原装盖替代打印方瓶"
+              }
+            ]
+          }
+        ]
+      },
+      "original_spec": "单头螺纹，螺距 2 mm，2.5 圈",
+      "update_source": "../USER_PROP_UPDATES_2026-10-21.md",
+      "dimensions_original": {
+        "requirements": [
+          {
+            "kind": "explicit",
+            "scope": "D6 / D7 螺纹",
+            "value": "单头螺纹，螺距 2 mm；从刚啮合到拧紧共 2.5 圈。",
+            "source_line": 600,
+            "source_lines": [
+              600
+            ],
+            "references": [
+              {
+                "line": 600,
+                "text": "    - 螺纹：单头，螺距 2 mm（与仿真\"每 360° 下降 2 mm\"一致），从刚啮合到拧紧共 2.5 圈。",
+                "url": "../spec.html#line-597"
+              }
+            ]
+          },
+          {
+            "kind": "approximate",
+            "scope": "D6 瓶盖",
+            "value": "瓶盖外径约 Ø40 mm，外圈滚花。",
+            "source_line": 601,
+            "source_lines": [
+              601
+            ],
+            "references": [
+              {
+                "line": 601,
+                "text": "    - 瓶盖直径约 40 mm，外圈带滚花。",
+                "url": "../spec.html#line-597"
+              }
+            ]
+          },
+          {
+            "kind": "fit",
+            "scope": "D6 瓶体",
+            "value": "须为方形瓶身；外形长宽高、瓶颈直径、壁厚未给固定数值。",
+            "source_line": 599,
+            "source_lines": [
+              599
+            ],
+            "references": [
+              {
+                "line": 599,
+                "text": "  - **瓶子（推荐 3D 打印）**：方形瓶身配瓶盖。",
+                "url": "../spec.html#line-597"
+              }
+            ]
+          }
+        ],
+        "note": "当前 CAD 瓶身 60×60×150 mm 是设计值。300 g 是配重要求，不是尺寸。",
+        "category": "explicit",
+        "label": "有尺寸要求 · 数值 / 上下限",
+        "has_numeric_size": true
+      },
+      "update_notice": "用户调整：瓶体和瓶盖均用现成品，已从默认打印清单移除。"
+    },
+    {
+      "id": "P07",
+      "name": "防滚底座、凹槽托盘、配重盒",
+      "group": "定制与打印",
+      "route": "塑料打印 + 配重",
+      "phase": "BASE 首批",
+      "spec": "见 H1、H5、H6",
+      "tasks": "H1、H5、H6",
+      "initial_qty": "H1 环座 1、H5 三球托盘 1、H6 配重盒 1",
+      "note": "均为塑料打印：H1 低圆环座；H5 球中心距 5 cm、BASE 3 球，托盘给手指留底部净空（仿真总高约 4.5 cm 仅作参考）；H6 盒 10×6×4 cm，加配重到 150 g。照片是环座/球托/盒子的同类参考，不是本项目制造图。",
+      "original_route": "C",
+      "source_section": "8.2 定制件",
+      "source_line": 1064,
+      "photos": [
+        {
+          "key": "ballringreal-0",
+          "title": "Suport pentru sfera din PLA premium, forma circulara cu trei picioare - texturat - negru",
+          "source": "https://www.stonemania.ro/suport-pentru-sfera-din-pla-premium-forma-circulara-cu-trei-picioare-texturat-negru/",
+          "image": "https://www.stonemania.ro/images/detailed/267/suport-pentru-sfera-din-pla-premium-forma-circulara-cu-trei-picioare-texturat-negru-73670-2.jpg",
+          "caption": "塑料打印环座实例",
+          "local_file": "reference_photos/ballringreal-0.jpg",
+          "sha256": "22685573e3fea390115fa4ed117884aba2192ca7749501e84fe47b39d6208ba9",
+          "bytes": 40895,
+          "width": 1200,
+          "height": 1200,
+          "url": "images/ballringreal-0.jpg"
+        },
+        {
+          "key": "balltray-0",
+          "title": "Golf ball Pyramid holder - GLBRT Labs | Nexprint: Free 3D Model Downloads",
+          "source": "https://www.nexprint.com/en/models/G2010168",
+          "image": "https://np.nexprint.com/images/3d3da2e66bdc2ce548b6d72ad4301b11b80eeb0763a2d1788f5fe184fcfa56c1-1772690690138-fd2821242d74d700441ab91d9b19e5dba88aebd0c006cac14833e3aa69de206a.jpg?x-oss-process=image%2Fresize%2Cw_1200%2Fformat%2Cwebp",
+          "caption": "打印球托实例；本任务改为 5 cm 球距",
+          "local_file": "reference_photos/balltray-0.webp",
+          "sha256": "838f20fe57a658d031cda81350301c31c5b66959bbc31d2dd7032773ffaf43b6",
+          "bytes": 119922,
+          "width": 1200,
+          "height": 900,
+          "url": "images/balltray-0.webp"
+        },
+        {
+          "key": "boxprint-3",
+          "title": "3D Printed Box for a Sliding Lid: Memory Box by DIYDanielle MakerWorld: Download Free 3D Models",
+          "source": "https://makerworld.com/en/models/752700-3d-printed-box-for-a-sliding-lid-memory-box",
+          "image": "https://makerworld.bblmw.com/makerworld/model/UScf3b0f413920da/design/2024-11-02_49884e92c068e.jpg?x-oss-process=image%2Fresize%2Cw_1000%2Fformat%2Cwebp",
+          "caption": "塑料打印盒体实例；本任务为 10×6×4 cm",
+          "local_file": "reference_photos/boxprint-3.webp",
+          "sha256": "de84b17ae61ced017ba262b41c51cf5be37a557311b72b4f3917c78c1933210f",
+          "bytes": 92336,
+          "width": 1000,
+          "height": 753,
+          "url": "images/boxprint-3.webp"
+        }
+      ],
+      "plastic_print": true,
+      "manufacturing_cad_available": true,
+      "search_terms": "防滚底座、凹槽托盘、配重盒 见 H1、H5、H6",
+      "cad_url": "../cad/#P07",
+      "cad_status": "尺寸原型 · 尚未实体试印",
+      "cad_part_count": 11,
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "fit",
+            "scope": "H1 防滚底座",
+            "value": "小圆环按所购球匹配，清单未规定环内径、外径或高度。",
+            "source_line": 676,
+            "source_lines": [
+              676
+            ],
+            "references": [
+              {
+                "line": 676,
+                "text": "- 每个球放在 3D 打印的小圆环底座上，防止滚动。",
+                "url": "../spec.html#line-674"
+              }
+            ]
+          },
+          {
+            "kind": "explicit",
+            "scope": "H5 浅槽托盘",
+            "value": "球距 5 cm；托盘外形、厚度和高度未给固定数值。",
+            "source_line": 728,
+            "source_lines": [
+              728
+            ],
+            "references": [
+              {
+                "line": 728,
+                "text": "- 乒乓球放在 3D 打印的浅凹槽托盘里，球距 5 cm。",
+                "url": "../spec.html#line-727"
+              }
+            ]
+          },
+          {
+            "kind": "explicit",
+            "scope": "H6 配重盒",
+            "value": "盒子 10×6×4 cm。",
+            "source_line": 741,
+            "source_lines": [
+              741
+            ],
+            "references": [
+              {
+                "line": 741,
+                "text": "- 盒子 10×6×4 cm、150 g，3D 打印，内带配重。",
+                "url": "../spec.html#line-738"
+              }
+            ]
+          }
+        ],
+        "note": "当前托盘 220×200 mm、总高 45 mm 等属于 CAD 设计值；150 g 是 H6 盒子的质量要求。",
+        "category": "explicit",
+        "label": "有尺寸要求 · 数值 / 上下限",
+        "has_numeric_size": true
+      }
+    },
+    {
+      "id": "P08",
+      "name": "旋钮台",
+      "group": "定制与打印",
+      "route": "塑料打印 + 外购组装",
+      "phase": "BASE 首批",
+      "spec": "旋钮 + 轴承 + 摩擦刹车 + 电位器",
+      "tasks": "H4",
+      "initial_qty": "1 套",
+      "note": "塑料打印台座和 Ø5 cm 光滑圆钮；外购轴承、转轴、电位器、O 型圈、调节螺丝。BASE 阻力矩 0.2 N·m（其他 0.1/0.3/0.4），用扭力计实测。参考小旋钮不能照尺寸使用，也不要把外齿、手柄引入光滑旋钮任务。",
+      "original_route": "C+D",
+      "source_section": "8.2 定制件",
+      "source_line": 1064,
+      "photos": [
+        {
+          "key": "knob-0",
+          "title": "Custom 3D Printed MIDI Controller Knobs - Ian Smith",
+          "source": "https://iansmith.is/blog/custom-3D-printed-midi-controller-knobs",
+          "image": "https://iansmith.is/images/midi-controller/finished-knob.jpg",
+          "caption": "塑料打印旋钮实例；本任务为 Ø5 cm 光滑圆钮",
+          "local_file": "reference_photos/knob-0.jpg",
+          "sha256": "eadb7cec273d2a58fc3390d3a336282b67097ba5ef1112c93371d34bed554a35",
+          "bytes": 291135,
+          "width": 1024,
+          "height": 1024,
+          "url": "images/knob-0.jpg"
+        },
+        {
+          "key": "pot-1",
+          "title": "PRV6SAABGYB25104KA Vishay Sfernice | Rotary Potentiometers, Rheostats | DigiKey",
+          "source": "https://www.digikey.com/en/products/detail/vishay-sfernice/PRV6SAABGYB25104KA/10763613",
+          "image": "https://media.digikey.com/Photos/Vishay%20Sfernice/PRV6SAABGYB25104KA.jpg",
+          "caption": "外购旋转电位器",
+          "local_file": "reference_photos/pot-1.jpg",
+          "sha256": "4b2db57b805bf38bbb95aa17e91f3ca5bb2bc1c294c6f21c26d05c758debd826",
+          "bytes": 62689,
+          "width": 640,
+          "height": 640,
+          "url": "images/pot-1.jpg"
+        },
+        {
+          "key": "bearing-0",
+          "title": "Efficient and Reliable 608 2RS Bearing Essential for Angle Grinder Work - Walmart.com",
+          "source": "https://www.walmart.com/ip/5575380934",
+          "image": "https://i5.walmartimages.com/seo/Efficient-and-Reliable-608-2RS-Bearing-Essential-for-Angle-Grinder-Work_276bc704-50f5-44d2-901a-c004da5d5505.dca06544bd4fd17a7066fe8ff02b71ac.jpeg",
+          "caption": "外购轴承",
+          "local_file": "reference_photos/bearing-0.jpg",
+          "sha256": "e98452cb6bfa255c8c88ff013aa8c978f473c16f5f814f74114f9b4a73275b5d",
+          "bytes": 49196,
+          "width": 1001,
+          "height": 1001,
+          "url": "images/bearing-0.jpg"
+        },
+        {
+          "key": "oring-1",
+          "title": "Litzee – Kit de joints toriques 225 pièces – Caoutchouc NBR noir – 18 tailles pour réparations hydrauliques et pneumatiques – Récipient de rangement inclus",
+          "source": "https://www.manomano.fr/p/litzee-joint-torique-kit-225-rondelle-caoutchouc-anti-vibration-18-tailles-coffret-de-joints-toriques-assortiment-set-anneau-de-joint-jeu-joint-torique-rondelle-kit-assortiment-de-joints-noir-31978908",
+          "image": "https://cdn.manomano.com/images/images_products/33062330/P/135091837_1.jpg",
+          "caption": "外购 O 型圈",
+          "local_file": "reference_photos/oring-1.jpg",
+          "sha256": "7a0b95957c4fd56511220f0062d4e1c30a9d07052b933937f3e525eac62d8c08",
+          "bytes": 36508,
+          "width": 470,
+          "height": 470,
+          "url": "images/oring-1.jpg"
+        }
+      ],
+      "plastic_print": true,
+      "manufacturing_cad_available": true,
+      "search_terms": "旋钮台 旋钮 + 轴承 + 摩擦刹车 + 电位器",
+      "cad_url": "../cad/#P08",
+      "cad_status": "接口待测 · 尚未实体试印",
+      "cad_part_count": 9,
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "explicit",
+            "scope": "H4",
+            "value": "旋钮 Ø5 cm；OOD 罐盖造型旋钮 Ø8 cm。",
+            "source_line": 714,
+            "source_lines": [
+              714,
+              718
+            ],
+            "references": [
+              {
+                "line": 714,
+                "text": "  - 3D 打印 Ø5 cm 旋钮，装在带轴承的轴上；",
+                "url": "../spec.html#line-712"
+              },
+              {
+                "line": 718,
+                "text": "- OOD：Ø8 cm 罐盖造型的旋钮。不用真罐子，因为每次拧紧的松紧都不一样，复位也不一致。",
+                "url": "../spec.html#line-712"
+              }
+            ]
+          },
+          {
+            "kind": "fit",
+            "scope": "H4 轴系",
+            "value": "台座、轴径、轴承座、刹车和电位器接口按实物适配，未给统一数值。",
+            "source_line": 714,
+            "source_lines": [
+              714,
+              715,
+              716
+            ],
+            "references": [
+              {
+                "line": 714,
+                "text": "  - 3D 打印 Ø5 cm 旋钮，装在带轴承的轴上；",
+                "url": "../spec.html#line-712"
+              },
+              {
+                "line": 715,
+                "text": "  - 轴上加可调摩擦刹车（用螺丝压 O 形圈）；",
+                "url": "../spec.html#line-712"
+              },
+              {
+                "line": 716,
+                "text": "  - 轴上装电位器，由 Arduino 自动记录转角。",
+                "url": "../spec.html#line-712"
+              }
+            ]
+          }
+        ],
+        "note": "CAD 选用的 Ø8 轴与 608 轴承不是清单限定规格；阻力矩另行标定。",
+        "category": "explicit",
+        "label": "有尺寸要求 · 数值 / 上下限",
+        "has_numeric_size": true
+      }
+    },
+    {
+      "id": "P09",
+      "name": "大键键盘",
+      "group": "定制与打印",
+      "route": "塑料打印 + 外购组装",
+      "phase": "BASE 首批",
+      "spec": "4 个 Ø30 mm 街机按钮 + Pro Micro",
+      "tasks": "H6",
+      "initial_qty": "1 套，4 个 Ø30 mm 按钮",
+      "note": "外壳、面板塑料打印；4 个 Ø30 mm 街机按钮，按钮间净距至少 2 cm，表面编号 1–4。外购支持 USB HID 的 Pro Micro（ATmega32U4）和线材。另做的配重盒见前一组，不要把按钮做在盒子上。",
+      "original_route": "D",
+      "source_section": "8.2 定制件",
+      "source_line": 1064,
+      "photos": [
+        {
+          "key": "keypad4-1",
+          "title": "Custom USB Buttons — USBButtons.com",
+          "source": "https://www.usbbuttons.com/customusbbuttons",
+          "image": "https://images.squarespace-cdn.com/content/v1/5c5df55911f7843dd6117d4c/1550428832689-65O1OQITGM314A08G86H/IMG_5210.JPG",
+          "caption": "大按钮控制盒实物参考",
+          "local_file": "reference_photos/keypad4-1.jpg",
+          "sha256": "4025b94e4716ad175cddf3c3a6abc91b0a16d6269309bfa75256a693a6b204f1",
+          "bytes": 668954,
+          "width": 2500,
+          "height": 1875,
+          "url": "images/keypad4-1.jpg"
+        },
+        {
+          "key": "buttons-0",
+          "title": "Arcade Button 30mm Translucent Green - 475",
+          "source": "https://www.electromaker.io/shop/product/arcade-button-30mm-translucent-green",
+          "image": "https://www.electromaker.io/uploads/media-library/869056/arcade-button-30mm-translucent-green-product_images_additional-3.jpg",
+          "caption": "30 mm 街机按钮",
+          "local_file": "reference_photos/buttons-0.jpg",
+          "sha256": "9608c203f021e0e273352d9f0570748a0099998aba3641125af4f460a7016380",
+          "bytes": 199564,
+          "width": 970,
+          "height": 728,
+          "url": "images/buttons-0.jpg"
+        },
+        {
+          "key": "arduino-1",
+          "title": "Pro Micro - 5V/16MHz - PiShop.ca",
+          "source": "https://www.pishop.ca/product/pro-micro-5v-16mhz/",
+          "image": "https://cdn11.bigcommerce.com/s-am5zt8xfow/images/stencil/1280x1280/products/3046/9364/12640-01a__12139.1660664580.jpg?c=2",
+          "caption": "Pro Micro 控制板",
+          "local_file": "reference_photos/arduino-1.jpg",
+          "sha256": "f9fecf6598f45f5a922fa35cc9a95c82b0b7903058bae4d6625a3fa02c4e1a96",
+          "bytes": 85097,
+          "width": 600,
+          "height": 600,
+          "url": "images/arduino-1.jpg"
+        }
+      ],
+      "plastic_print": true,
+      "manufacturing_cad_available": true,
+      "search_terms": "大键键盘 4 个 Ø30 mm 街机按钮 + Pro Micro",
+      "cad_url": "../cad/#P09",
+      "cad_status": "接口待测 · 尚未实体试印",
+      "cad_part_count": 3,
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "explicit",
+            "scope": "H6",
+            "value": "4 个 Ø30 mm 街机按钮，间距 ≥2 cm。",
+            "source_line": 739,
+            "source_lines": [
+              739
+            ],
+            "references": [
+              {
+                "line": 739,
+                "text": "- 自制大键键盘：4 个 Ø30 mm 街机按钮，间距 ≥2 cm，接 Pro Micro 模拟 USB 键盘，键面印 1–4。标准 19 mm 键距下，机器手指容易按到相邻键。",
+                "url": "../spec.html#line-738"
+              }
+            ]
+          },
+          {
+            "kind": "fit",
+            "scope": "H6 外壳",
+            "value": "外壳外形、PCB 孔位、按钮安装孔和面板厚度按实物适配。",
+            "source_line": 739,
+            "source_lines": [
+              739
+            ],
+            "references": [
+              {
+                "line": 739,
+                "text": "- 自制大键键盘：4 个 Ø30 mm 街机按钮，间距 ≥2 cm，接 Pro Micro 模拟 USB 键盘，键面印 1–4。标准 19 mm 键距下，机器手指容易按到相邻键。",
+                "url": "../spec.html#line-738"
+              }
+            ]
+          }
+        ],
+        "note": "现有 CAD 把间距按按钮边缘净距实现；55 mm 中心距及 30.2 mm 安装孔为设计参数，不是原文数值。",
+        "category": "explicit",
+        "label": "有尺寸要求 · 数值 / 上下限",
+        "has_numeric_size": true
+      }
+    },
+    {
+      "id": "P10",
+      "name": "扳机计数与激光",
+      "group": "定制与打印",
+      "route": "外购改装 + 塑料支架",
+      "phase": "BASE 首批",
+      "spec": "微动开关 + ≤1 mW 激光模块 + Arduino，含靶板支架",
+      "tasks": "H2、H-open",
+      "initial_qty": "1 套，共用 H2/H-open",
+      "note": "支架/靶板座塑料打印；外购微动开关、Arduino、可装入喷嘴的小型 ≤1 mW Class 2 激光模块和挡板。所示激光为外形参考，采购核对功率与体积，不能随手买 5 mW 模块。",
+      "original_route": "D",
+      "source_section": "8.2 定制件",
+      "source_line": 1064,
+      "photos": [
+        {
+          "key": "switch-10",
+          "title": "V-152-1C25 Omron Electronics Inc-EMC Div | Limit Switches | DigiKey",
+          "source": "https://www.digikey.com/en/products/detail/omron-electronics-inc-emc-div/V-152-1C25/5237018",
+          "image": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/2583/V-15G2-1C25-K%2C%20V-15G2-1C26-K%2C%20V-10G2-1C25-K.jpg?hidebanner=true",
+          "caption": "微动开关",
+          "local_file": "reference_photos/switch-10.jpg",
+          "sha256": "fcf3f20b7421010014d3db977ab4c6d62deebe6a4ed62023b4ccaa58141f26a9",
+          "bytes": 99284,
+          "width": 640,
+          "height": 640,
+          "url": "images/switch-10.jpg"
+        },
+        {
+          "key": "laserpoint-0",
+          "title": "Picotronic MD650-1-5 red dot 1 mW module – Conrad",
+          "source": "https://www.conrad.com/en/p/picotronic-laser-module-dot-red-1-mw-md650-1-5-12x34-1283358.html",
+          "image": "https://asset.conrad.com/media10/isa/160267/c1/-/en/1283358_BB_00_FB/image.jpg?align=center&ex=400&ey=400&format=jpg&x=400&y=400",
+          "caption": "1 mW 点激光模块参考；安装空间需实测",
+          "local_file": "reference_photos/laserpoint-0.jpg",
+          "sha256": "9b6c97d0391adee082ee74da87e15e232ce716a5a95c82e3af474f8f85ba787b",
+          "bytes": 7987,
+          "width": 400,
+          "height": 400,
+          "url": "images/laserpoint-0.jpg"
+        },
+        {
+          "key": "arduino-1",
+          "title": "Pro Micro - 5V/16MHz - PiShop.ca",
+          "source": "https://www.pishop.ca/product/pro-micro-5v-16mhz/",
+          "image": "https://cdn11.bigcommerce.com/s-am5zt8xfow/images/stencil/1280x1280/products/3046/9364/12640-01a__12139.1660664580.jpg?c=2",
+          "caption": "Pro Micro 控制板",
+          "local_file": "reference_photos/arduino-1.jpg",
+          "sha256": "f9fecf6598f45f5a922fa35cc9a95c82b0b7903058bae4d6625a3fa02c4e1a96",
+          "bytes": 85097,
+          "width": 600,
+          "height": 600,
+          "url": "images/arduino-1.jpg"
+        }
+      ],
+      "plastic_print": true,
+      "manufacturing_cad_available": true,
+      "search_terms": "扳机计数与激光 微动开关 + ≤1 mW 激光模块 + Arduino，含靶板支架",
+      "cad_url": "../cad/#P10",
+      "cad_status": "接口待测 · 尚未实体试印",
+      "cad_part_count": 7,
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "explicit",
+            "scope": "H2 / H-open 靶纸",
+            "value": "使用 A4 靶纸（纸张尺寸 210×297 mm）。",
+            "source_line": 691,
+            "source_lines": [
+              691
+            ],
+            "references": [
+              {
+                "line": 691,
+                "text": "- 靶板用 A4 纸打印靶圈，固定在桌边支架上，背后加挡板。激光点落在靶圈内时扣动才算有效。",
+                "url": "../spec.html#line-687"
+              }
+            ]
+          },
+          {
+            "kind": "fit",
+            "scope": "开关 / 激光 / 支架",
+            "value": "安装位置和夹环孔径按实际喷壶、开关、激光管适配；支架/挡板外形和靶圈直径未给定。",
+            "source_line": 689,
+            "source_lines": [
+              689,
+              690,
+              691
+            ],
+            "references": [
+              {
+                "line": 689,
+                "text": "  - 扳机后装微动开关，接 Arduino 做 USB 计数；",
+                "url": "../spec.html#line-687"
+              },
+              {
+                "line": 690,
+                "text": "  - 喷嘴里装一个随扳机点亮的激光模块，功率 ≤1 mW（Class 2）。",
+                "url": "../spec.html#line-687"
+              },
+              {
+                "line": 691,
+                "text": "- 靶板用 A4 纸打印靶圈，固定在桌边支架上，背后加挡板。激光点落在靶圈内时扣动才算有效。",
+                "url": "../spec.html#line-687"
+              }
+            ]
+          }
+        ],
+        "note": "A4 约束靶纸，不要求整个支架必须等于 A4 大小；≤1 mW 是功率要求。",
+        "category": "explicit",
+        "label": "有尺寸要求 · 数值 / 上下限",
+        "has_numeric_size": true
+      }
+    },
+    {
+      "id": "P11",
+      "name": "弹簧组",
+      "group": "定制与打印",
+      "route": "直接购买",
+      "phase": "BASE 首批",
+      "spec": "扳机弹簧，4 种力",
+      "tasks": "H2",
+      "initial_qty": "4 档候选弹簧，先校出 BASE 2 N",
+      "note": "弹簧为外购金属零件；1/2/3/4 N 是装到扳机端后的实测力，不能仅凭弹簧型号认定。先校出 BASE 2 N。",
+      "original_route": "A",
+      "source_section": "8.2 定制件",
+      "source_line": 1064,
+      "photos": [
+        {
+          "key": "spring-1",
+          "title": "Пружины кручения – виды, сферы применения и для чего нужны | ООО \"Солид-Агро\"",
+          "source": "https://prugina-solid.ru/stati/pruzhiny-krucheniya-vidy-primenenie-i-naznachenie.html",
+          "image": "https://prugina-solid.ru/upload/resize_cache/iblock/dad/800_800_1/fxf4nimka6o8vcywex774yq2s2h5naw0.jpg",
+          "caption": "外购扭簧实例；装入扳机后测力",
+          "local_file": "reference_photos/spring-1.jpg",
+          "sha256": "199e683a23eaee1ce5af1499b3ad9fe0f2e2c71caa875aaeb8ac54477ddbdc4d",
+          "bytes": 278477,
+          "width": 800,
+          "height": 668,
+          "url": "images/spring-1.jpg"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "弹簧组 扳机弹簧，4 种力",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "fit",
+            "scope": "H2",
+            "value": "弹簧外径、线径、自由长度按实际扳机机构适配，未给固定尺寸。",
+            "source_line": 692,
+            "source_lines": [
+              692
+            ],
+            "references": [
+              {
+                "line": 692,
+                "text": "- 弹簧力靠更换弹簧调节，用推拉力计在扳机端实测。",
+                "url": "../spec.html#line-687"
+              }
+            ]
+          }
+        ],
+        "note": "难度由扳机端实测力分档，不能按弹簧外形或商品颜色直接分档。",
+        "category": "fit",
+        "label": "需实测适配 · 未定固定尺寸",
+        "has_numeric_size": false
+      }
+    },
+    {
+      "id": "P12",
+      "name": "翻盖复位夹具",
+      "group": "定制与打印",
+      "route": "塑料打印",
+      "phase": "BASE 首批",
+      "spec": "把翻盖立到 90°",
+      "tasks": "H7",
+      "initial_qty": "复位与箱体固定各 1 套",
+      "note": "塑料打印 90° 翻盖定位块和箱体固定夹具；可带螺丝/磁铁。不能在任务执行中用夹具替代互扣或把翻盖锁住。",
+      "original_route": "C",
+      "source_section": "8.2 定制件",
+      "source_line": 1064,
+      "photos": [
+        {
+          "key": "clamp-1",
+          "title": "3Dプリンターで便利グッズを自作してみる 〜その4〜 - ブルーの趣味Log",
+          "source": "https://www.blue-weblog.com/entry/2018/09/02/173613",
+          "image": "https://cdn-ak.f.st-hatena.com/images/fotolife/r/redskybluemoon/20180902/20180902172815.jpg",
+          "caption": "塑料打印夹具实例",
+          "local_file": "reference_photos/clamp-1.jpg",
+          "sha256": "1cb56f45a3f46c6f24fdf908af69d1d93455a218f8ae67a8a047e735e978361f",
+          "bytes": 342572,
+          "width": 1024,
+          "height": 768,
+          "url": "images/clamp-1.jpg"
+        }
+      ],
+      "plastic_print": true,
+      "manufacturing_cad_available": true,
+      "search_terms": "翻盖复位夹具 把翻盖立到 90°",
+      "cad_url": "../cad/#P12",
+      "cad_status": "尺寸原型 · 尚未实体试印",
+      "cad_part_count": 2,
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "fit",
+            "scope": "H7",
+            "value": "复位夹具与底角固定件按所购纸箱适配；未给夹具长宽、槽宽或厚度。",
+            "source_line": 753,
+            "source_lines": [
+              753
+            ],
+            "references": [
+              {
+                "line": 753,
+                "text": "- 复位：用夹具把翻盖立到 90°。纸箱用夹具固定在桌上。",
+                "url": "../spec.html#line-749"
+              }
+            ]
+          }
+        ],
+        "note": "复位姿态须为翻盖立到 90°；这不是夹具外形的长度要求。",
+        "category": "fit",
+        "label": "需实测适配 · 未定固定尺寸",
+        "has_numeric_size": false
+      }
+    },
+    {
+      "id": "P13",
+      "name": "D405 夹爪支架、Gemini 2 L 门架座、手–RM75-B 法兰转接",
+      "group": "定制与打印",
+      "route": "复用 / 塑料打印",
+      "phase": "BASE 首批",
+      "spec": "见总规范 §9",
+      "tasks": "全部",
+      "initial_qty": "有原装可复用；缺的按实际接口各打印 1 个样件",
+      "note": "新打印件均用塑料；原有合适连接件直接复用。相机/法兰孔距按现有设备测量设计，打印参数依据实际负载确定；图示 D405/机器人转接件不表示可直接装到 RM75-B。",
+      "original_route": "C",
+      "source_section": "8.2 定制件",
+      "source_line": 1064,
+      "photos": [
+        {
+          "key": "cameramount-6",
+          "title": "3DoF Robotic Head for Intel RealSense D415 by OverMyHead MakerWorld: Download Free 3D Models",
+          "source": "https://makerworld.com/en/models/250622-3dof-robotic-head-for-intel-realsense-d415",
+          "image": "https://makerworld.bblmw.com/makerworld/model/USc1ff824bbe363f/design/2024-03-12_01c5d9cb40565.png?x-oss-process=image%2Fresize%2Cw_1000%2Fformat%2Cwebp",
+          "caption": "塑料深度相机支架实例；实际按 D405 重做孔位",
+          "local_file": "reference_photos/cameramount-6.webp",
+          "sha256": "d2b8fac67c58b71a6225c90bdc8449178e9a4b6c1faf2903d7e362d707fd0c6c",
+          "bytes": 46724,
+          "width": 1000,
+          "height": 1221,
+          "url": "images/cameramount-6.webp"
+        },
+        {
+          "key": "flangeprint-0",
+          "title": "BaRiFlex: A Robotic Gripper with Versatility and Collision Robustness for Robot Learning",
+          "source": "https://robin-lab.cs.utexas.edu/bariflex/CAD.html",
+          "image": "https://robin-lab.cs.utexas.edu/bariflex/static/images/Website/Flange_adapter.jpeg",
+          "caption": "机器人塑料转接件实例；实际孔位按设备测量",
+          "local_file": "reference_photos/flangeprint-0.jpg",
+          "sha256": "8508eeff57d790b71b87e02f60fe817673326ebd4bc7a0a8a3036b9b1afd76bb",
+          "bytes": 989135,
+          "width": 1930,
+          "height": 2132,
+          "url": "images/flangeprint-0.jpg"
+        }
+      ],
+      "plastic_print": true,
+      "manufacturing_cad_available": true,
+      "search_terms": "D405 夹爪支架、Gemini 2 L 门架座、手–RM75-B 法兰转接 见总规范 §9",
+      "cad_url": "../cad/#P13",
+      "cad_status": "接口待测 · 尚未实体试印",
+      "cad_part_count": 3,
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "fit",
+            "scope": "相机 / 机械臂 / 手",
+            "value": "支架孔距、螺纹、法兰止口、厚度与避让按实际设备核对；本清单未给可直接加工的接口尺寸表。",
+            "source_line": 1080,
+            "source_lines": [
+              1080
+            ],
+            "references": [
+              {
+                "line": 1080,
+                "text": "| D405 夹爪支架、Gemini 2 L 门架座、手–RM75-B 法兰转接 | 见总规范 §9 | 全部 | C | |",
+                "url": "../spec.html#line-1064"
+              }
+            ]
+          }
+        ],
+        "note": "现有长孔板和无孔法兰毛坯不能视为已经匹配的安装接口。",
+        "category": "fit",
+        "label": "需实测适配 · 未定固定尺寸",
+        "has_numeric_size": false
+      }
+    },
+    {
+      "id": "T01",
+      "name": "游标卡尺",
+      "group": "测量与工位",
+      "route": "盘点后补购",
+      "phase": "盘点补齐",
+      "spec": "孔径、管径、厚度",
+      "tasks": "共用工位",
+      "initial_qty": "已有则复用，否则 1 把",
+      "note": "",
+      "original_route": "A",
+      "source_section": "8.3 测量工具与场地",
+      "source_line": 1082,
+      "photos": [
+        {
+          "key": "caliper-1",
+          "title": "Mitutoyo Precision Tools Philippines – GIGATOOLS Industrial Center",
+          "source": "https://www.gigatools.ph/collections/mitutoyo",
+          "image": "https://www.gigatools.ph/cdn/shop/products/MITUTOYO_SERIES_500_500-151-30.jpg?v=1658682047",
+          "caption": "数显游标卡尺",
+          "local_file": "reference_photos/caliper-1.jpg",
+          "sha256": "36b1bab33ce942ea6711cd76af772b52140a1676f3d3395915eef0d5df3b98ca",
+          "bytes": 31969,
+          "width": 1000,
+          "height": 1000,
+          "url": "images/caliper-1.jpg"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "游标卡尺 孔径、管径、厚度",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "none",
+            "scope": "量具",
+            "value": "游标卡尺外形尺寸未限定。",
+            "source_line": 1086,
+            "source_lines": [
+              1086
+            ],
+            "references": [
+              {
+                "line": 1086,
+                "text": "| 游标卡尺 | 孔径、管径、厚度 | A |",
+                "url": "../spec.html#line-1082"
+              }
+            ]
+          }
+        ],
+        "note": "用于核对销孔、管径和厚度；按所需测量范围选型。",
+        "category": "none",
+        "label": "清单未规定具体尺寸",
+        "has_numeric_size": false
+      }
+    },
+    {
+      "id": "T02",
+      "name": "电子秤：0.1 g 一台，5 kg 一台",
+      "group": "测量与工位",
+      "route": "盘点后补购",
+      "phase": "盘点补齐",
+      "spec": "珠子计数、配重",
+      "tasks": "共用工位",
+      "initial_qty": "各 1 台，已有则复用",
+      "note": "",
+      "original_route": "A",
+      "source_section": "8.3 测量工具与场地",
+      "source_line": 1082,
+      "photos": [
+        {
+          "key": "scale01-0",
+          "title": " キッチンスケール 0.1g 3kg 3000g デジタルスケール コンパクト DL-YU218 送料無料：いま何度",
+          "source": "https://item.rakuten.co.jp/akio/dl-yu218/",
+          "image": "https://shop.r10s.jp/akio/cabinet/scale/yu218.jpg",
+          "caption": "0.1 g 精细电子秤外观",
+          "local_file": "reference_photos/scale01-0.jpg",
+          "sha256": "03b89193cf9ee57c3fa4ffe3220bb34badddb7f2a7f1e470082eaecab935d2e4",
+          "bytes": 75011,
+          "width": 600,
+          "height": 600,
+          "url": "images/scale01-0.jpg"
+        },
+        {
+          "key": "scale5-1",
+          "title": "Alloet Electronic Digital Weighing Scale Silver 18centimeter | Best Price Egypt | Cairo, Giza",
+          "source": "https://www.noon.com/egypt-en/electronic-digital-weighing-scale-silver-18centimeter/N25581149A/p/",
+          "image": "https://f.nooncdn.com/p/v1635188583/N25581149A_1.jpg?width=1200",
+          "caption": "5 kg 电子秤外观",
+          "local_file": "reference_photos/scale5-1.jpg",
+          "sha256": "0032134aad044e684925924aedd1452d627c1f6b46930ddcddccaf82218b0cd6",
+          "bytes": 26245,
+          "width": 660,
+          "height": 900,
+          "url": "images/scale5-1.jpg"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "电子秤：0.1 g 一台，5 kg 一台 珠子计数、配重",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "none",
+            "scope": "量具",
+            "value": "电子秤外形/称台大小未给数值。",
+            "source_line": 1087,
+            "source_lines": [
+              1087
+            ],
+            "references": [
+              {
+                "line": 1087,
+                "text": "| 电子秤：0.1 g 一台，5 kg 一台 | 珠子计数、配重 | A |",
+                "url": "../spec.html#line-1082"
+              }
+            ]
+          }
+        ],
+        "note": "0.1 g 与 5 kg 是称量指标，不是长宽高。",
+        "category": "none",
+        "label": "清单未规定具体尺寸",
+        "has_numeric_size": false
+      }
+    },
+    {
+      "id": "T03",
+      "name": "推拉力计（0–50 N）",
+      "group": "测量与工位",
+      "route": "盘点后补购",
+      "phase": "盘点补齐",
+      "spec": "弹簧力、拉开力、翻盖刚度",
+      "tasks": "共用工位",
+      "initial_qty": "1 台，已有则复用",
+      "note": "",
+      "original_route": "A",
+      "source_section": "8.3 测量工具与场地",
+      "source_line": 1082,
+      "photos": [
+        {
+          "key": "forcescale-1",
+          "title": "精準科技 數位推拉力計 彈簧拉力機 測力計 測試儀 推力拉力計 測力計 5公斤 拉力壓力試驗機 拉壓測力計 壓力計 550-DFG5 - PChome 24h購物",
+          "source": "https://24h.pchome.com.tw/prod/DQBB7S-A900GGBU5",
+          "image": "https://img.pchome.com.tw/cs/items/DQBB7SA900GGBU5/000001_1688372163.jpg",
+          "caption": "推拉力计外观",
+          "local_file": "reference_photos/forcescale-1.jpg",
+          "sha256": "163f5a9eafbcfc239807b79adb42ee8e4ecfb31a8aded5597b33db177c22cf13",
+          "bytes": 95193,
+          "width": 1000,
+          "height": 1000,
+          "url": "images/forcescale-1.jpg"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "推拉力计 弹簧力、拉开力、翻盖刚度",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "none",
+            "scope": "量具",
+            "value": "推拉力计外形未限定。",
+            "source_line": 1088,
+            "source_lines": [
+              1088
+            ],
+            "references": [
+              {
+                "line": 1088,
+                "text": "| 推拉力计（0–50 N） | 弹簧力、拉开力、翻盖刚度 | A |",
+                "url": "../spec.html#line-1082"
+              }
+            ]
+          }
+        ],
+        "note": "0–50 N 是力的量程，不是尺寸。",
+        "category": "none",
+        "label": "清单未规定具体尺寸",
+        "has_numeric_size": false
+      }
+    },
+    {
+      "id": "T04",
+      "name": "扭力计（0–1 N·m）",
+      "group": "测量与工位",
+      "route": "盘点后补购",
+      "phase": "盘点补齐",
+      "spec": "H4 阻力矩",
+      "tasks": "共用工位",
+      "initial_qty": "1 台，已有则复用",
+      "note": "",
+      "original_route": "A",
+      "source_section": "8.3 测量工具与场地",
+      "source_line": 1082,
+      "photos": [
+        {
+          "key": "torque-1",
+          "title": "HP-1｜HIOS",
+          "source": "https://hios.com/EN/products/torque/HP-1/",
+          "image": "https://api.hios.com/v0/resource/data/49ed7440-9171-11e7-b1fb-8d467f843b9d/1200.jpg",
+          "caption": "扭力计外观",
+          "local_file": "reference_photos/torque-1.jpg",
+          "sha256": "3a1471b58ff1fe07fb819c73d38cf0b54f903d6157ea84b79f6870dd8f2f5123",
+          "bytes": 89439,
+          "width": 1200,
+          "height": 809,
+          "url": "images/torque-1.jpg"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "扭力计 H4 阻力矩",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "none",
+            "scope": "量具",
+            "value": "扭力计外形未限定。",
+            "source_line": 1089,
+            "source_lines": [
+              1089
+            ],
+            "references": [
+              {
+                "line": 1089,
+                "text": "| 扭力计（0–1 N·m） | H4 阻力矩 | A |",
+                "url": "../spec.html#line-1082"
+              }
+            ]
+          }
+        ],
+        "note": "0–1 N·m 是力矩量程，不是尺寸。",
+        "category": "none",
+        "label": "清单未规定具体尺寸",
+        "has_numeric_size": false
+      }
+    },
+    {
+      "id": "T05",
+      "name": "照度计",
+      "group": "测量与工位",
+      "route": "盘点后补购",
+      "phase": "盘点补齐",
+      "spec": "光照记录、N 轴",
+      "tasks": "共用工位",
+      "initial_qty": "1 台，已有则复用",
+      "note": "",
+      "original_route": "A",
+      "source_section": "8.3 测量工具与场地",
+      "source_line": 1082,
+      "photos": [
+        {
+          "key": "lux-6",
+          "title": "Leading Measuring Instruments Manufacturers in India | Metrix Plus",
+          "source": "https://metrixinstrument.in/",
+          "image": "https://www.metrixinstrument.in/products/small/37_57.jpg",
+          "caption": "照度计外观",
+          "local_file": "reference_photos/lux-6.jpg",
+          "sha256": "f2013f415d3ce0785f852d7c60be7e1ba860e8a66779e56e414c11f80a5e37ab",
+          "bytes": 77851,
+          "width": 400,
+          "height": 1055,
+          "url": "images/lux-6.jpg"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "照度计 光照记录、N 轴",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "none",
+            "scope": "量具",
+            "value": "照度计外形尺寸未限定。",
+            "source_line": 1090,
+            "source_lines": [
+              1090
+            ],
+            "references": [
+              {
+                "line": 1090,
+                "text": "| 照度计 | 光照记录、N 轴 | A |",
+                "url": "../spec.html#line-1082"
+              }
+            ]
+          }
+        ],
+        "note": "",
+        "category": "none",
+        "label": "清单未规定具体尺寸",
+        "has_numeric_size": false
+      }
+    },
+    {
+      "id": "T06",
+      "name": "数显倾角仪",
+      "group": "测量与工位",
+      "route": "盘点后补购",
+      "phase": "盘点补齐",
+      "spec": "转台角度、倾角校验",
+      "tasks": "共用工位",
+      "initial_qty": "1 台，已有则复用",
+      "note": "",
+      "original_route": "A",
+      "source_section": "8.3 测量工具与场地",
+      "source_line": 1082,
+      "photos": [
+        {
+          "key": "angle-7",
+          "title": "ANENG Magnetic Digital Level Box LCD Angle Finder Protractor Inclinometer Gauge | eBay",
+          "source": "https://www.ebay.com/itm/297835731707",
+          "image": "https://i.ebayimg.com/images/g/IYwAAeSwpO5pOol7/s-l1200.jpg",
+          "caption": "数字倾角仪外观",
+          "local_file": "reference_photos/angle-7.jpg",
+          "sha256": "4829276e2e53d17a5f8b6c7a2014d1d02fbf119ed94d967f5e3b345ee3f7e4cc",
+          "bytes": 190283,
+          "width": 1000,
+          "height": 1000,
+          "url": "images/angle-7.jpg"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "数显倾角仪 转台角度、倾角校验",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "none",
+            "scope": "量具",
+            "value": "数显倾角仪外形尺寸未限定。",
+            "source_line": 1091,
+            "source_lines": [
+              1091
+            ],
+            "references": [
+              {
+                "line": 1091,
+                "text": "| 数显倾角仪 | 转台角度、倾角校验 | A |",
+                "url": "../spec.html#line-1082"
+              }
+            ]
+          }
+        ],
+        "note": "",
+        "category": "none",
+        "label": "清单未规定具体尺寸",
+        "has_numeric_size": false
+      }
+    },
+    {
+      "id": "T07",
+      "name": "ArUco 贴纸",
+      "group": "测量与工位",
+      "route": "二维印刷",
+      "phase": "盘点补齐",
+      "spec": "D2、D3、S3、S9",
+      "tasks": "共用工位",
+      "initial_qty": "1 批；S9 顶面标记为 20 mm",
+      "note": "这是二维图案印刷，不是塑料 3D 打印件；打印后量实际边长，贴平，不缩放。",
+      "original_route": "B（自己打印）",
+      "source_section": "8.3 测量工具与场地",
+      "source_line": 1082,
+      "photos": [
+        {
+          "key": "markers-6",
+          "title": "Thrifty Vision Calibration Board",
+          "source": "https://www.thethriftybot.com/products/thrifty-calibration-board",
+          "image": "https://www.thethriftybot.com/cdn/shop/files/20260408_161711.jpg?v=1775679747",
+          "caption": "带 ArUco 图案的标定板实物",
+          "local_file": "reference_photos/markers-6.jpg",
+          "sha256": "50b07b73e86684cdaa2f887770073673a6ca8b0f8aa56d68abf6ea0b14dcbbb1",
+          "bytes": 1081059,
+          "width": 4000,
+          "height": 3000,
+          "url": "images/markers-6.jpg"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "ArUco 贴纸 D2、D3、S3、S9",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "explicit",
+            "scope": "S9",
+            "value": "方块顶面使用 20 mm ArUco 标记；OOD 圆柱顶面也贴 ArUco。",
+            "source_line": 831,
+            "source_lines": [
+              831
+            ],
+            "references": [
+              {
+                "line": 831,
+                "text": "  - 4 色木方块 4 cm，顶面贴 20 mm ArUco。",
+                "url": "../spec.html#line-828"
+              }
+            ]
+          },
+          {
+            "kind": "none",
+            "scope": "S3 / D2 / D3",
+            "value": "这些任务另需标记，但未统一给出贴纸尺寸。",
+            "source_line": 1092,
+            "source_lines": [
+              1092
+            ],
+            "references": [
+              {
+                "line": 1092,
+                "text": "| ArUco 贴纸 | D2、D3、S3、S9 | B（自己打印） |",
+                "url": "../spec.html#line-1082"
+              }
+            ]
+          }
+        ],
+        "note": "20 mm 的明确要求来自 S9，不把它扩展为所有工位标记的统一尺寸。",
+        "category": "explicit",
+        "label": "有尺寸要求 · 数值 / 上下限",
+        "has_numeric_size": true
+      }
+    },
+    {
+      "id": "T08",
+      "name": "标定板（棋盘格或 ChArUco）",
+      "group": "测量与工位",
+      "route": "盘点后补购",
+      "phase": "盘点补齐",
+      "spec": "每天检查相机外参",
+      "tasks": "共用工位",
+      "initial_qty": "1 块，已有则复用",
+      "note": "图案尺寸与平整度要可靠；已有标定板可复用。建议现货硬质板，或将精确打印图贴到平整底板。",
+      "original_route": "A",
+      "source_section": "8.3 测量工具与场地",
+      "source_line": 1082,
+      "photos": [
+        {
+          "key": "markers-6",
+          "title": "Thrifty Vision Calibration Board",
+          "source": "https://www.thethriftybot.com/products/thrifty-calibration-board",
+          "image": "https://www.thethriftybot.com/cdn/shop/files/20260408_161711.jpg?v=1775679747",
+          "caption": "带 ArUco 图案的标定板实物",
+          "local_file": "reference_photos/markers-6.jpg",
+          "sha256": "50b07b73e86684cdaa2f887770073673a6ca8b0f8aa56d68abf6ea0b14dcbbb1",
+          "bytes": 1081059,
+          "width": 4000,
+          "height": 3000,
+          "url": "images/markers-6.jpg"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "标定板 每天检查相机外参",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "fit",
+            "scope": "相机标定",
+            "value": "格距、角点数和板面大小需匹配标定配置并实测；清单未固定这些数值。",
+            "source_line": 1093,
+            "source_lines": [
+              1093
+            ],
+            "references": [
+              {
+                "line": 1093,
+                "text": "| 标定板（棋盘格或 ChArUco） | 每天检查相机外参 | A |",
+                "url": "../spec.html#line-1082"
+              }
+            ]
+          }
+        ],
+        "note": "",
+        "category": "fit",
+        "label": "需实测适配 · 未定固定尺寸",
+        "has_numeric_size": false
+      }
+    },
+    {
+      "id": "T09",
+      "name": "遮光帘、可调光 LED 灯板 2–4 块",
+      "group": "测量与工位",
+      "route": "盘点后补购",
+      "phase": "盘点补齐",
+      "spec": "光照控制",
+      "tasks": "共用工位",
+      "initial_qty": "先盘点，补遮光帘与 2–4 块灯",
+      "note": "",
+      "original_route": "A",
+      "source_section": "8.3 测量工具与场地",
+      "source_line": 1082,
+      "photos": [
+        {
+          "key": "curtain-1",
+          "title": "10 FT x 10 FT Black Backdrop Curtain - Polyester Photography Backdrop Drapes ... | eBay",
+          "source": "https://www.ebay.com/itm/326106390554",
+          "image": "https://i.ebayimg.com/images/g/o2wAAOSw16ZmLjQa/s-l1200.jpg",
+          "caption": "遮光帘外观",
+          "local_file": "reference_photos/curtain-1.jpg",
+          "sha256": "19330c40da9f3246aada717b5b2ff8aa54f0d6fa38db1957ec58920599ca8b0f",
+          "bytes": 179983,
+          "width": 1200,
+          "height": 1200,
+          "url": "images/curtain-1.jpg"
+        },
+        {
+          "key": "light-1",
+          "title": "KEMA 珂玛-KM-H12B演播室平板灯",
+          "source": "https://www.kema.net/Products/kmh12b.html",
+          "image": "https://www.kema.net/uploadfiles/pictures/product/20230310101853_8702.jpg",
+          "caption": "可调光 LED 灯板",
+          "local_file": "reference_photos/light-1.jpg",
+          "sha256": "457bf9bd82253af82b6baab1bfc93859c051f39742acfea09be821c06283e06f",
+          "bytes": 111918,
+          "width": 800,
+          "height": 800,
+          "url": "images/light-1.jpg"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "遮光帘、可调光 LED 灯板 2–4 块 光照控制",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "none",
+            "scope": "光照工位",
+            "value": "窗帘及灯板未给外形长宽数值。",
+            "source_line": 1094,
+            "source_lines": [
+              1094
+            ],
+            "references": [
+              {
+                "line": 1094,
+                "text": "| 遮光帘、可调光 LED 灯板 2–4 块 | 光照控制 | A |",
+                "url": "../spec.html#line-1082"
+              }
+            ]
+          }
+        ],
+        "note": "2–4 块是灯板数量；位置与照度按工位记录。",
+        "category": "none",
+        "label": "清单未规定具体尺寸",
+        "has_numeric_size": false
+      }
+    },
+    {
+      "id": "T10",
+      "name": "铝型材相机门架 + 定位销",
+      "group": "测量与工位",
+      "route": "盘点后补购",
+      "phase": "盘点补齐",
+      "spec": "V 轴",
+      "tasks": "共用工位",
+      "initial_qty": "1 套，已有则复用",
+      "note": "门架购买现成铝型材、连接件和定位销；相机座/走线夹可塑料打印。“打印件用塑料”不意味着把现成型材、轴承和螺丝也打印。",
+      "original_route": "A/B",
+      "source_section": "8.3 测量工具与场地",
+      "source_line": 1082,
+      "photos": [
+        {
+          "key": "gantry-0",
+          "title": "Skip the Scanner: DIY Copy Stand for Camera Scanning — Hollyridge Photography",
+          "source": "https://www.hollyridgephoto.com/shutter-blog/skip-the-scanner-my-diy-copy-stand-setup",
+          "image": "https://images.squarespace-cdn.com/content/v1/66f2fe6a1d8d3d51aed68410/1755300848526-6YVJ2FWZXXS4WFW2QFRO/IMG_3482.jpg?format=2500w",
+          "caption": "型材相机架实物参考；按工位改为门架",
+          "local_file": "reference_photos/gantry-0.jpg",
+          "sha256": "4c3e4ad63e209eb7ec0f7a3af4f40791780a545a767f9917476e2135a3504096",
+          "bytes": 1019573,
+          "width": 2404,
+          "height": 3205,
+          "url": "images/gantry-0.jpg"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "铝型材相机门架 + 定位销 V 轴",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "fit",
+            "scope": "相机门架",
+            "value": "门架高度、型材截面与安装孔位按工位/相机机位适配；清单未给具体构件尺寸。",
+            "source_line": 205,
+            "source_lines": [
+              205,
+              972
+            ],
+            "references": [
+              {
+                "line": 205,
+                "text": "| V 相机 | `cam_head` 平移 ±2/5/10 cm，旋转 ±3/6/10° | 仿真改相机；真机门架三组预设孔位，用定位销 | 仿真 + 真机 |",
+                "url": "../spec.html#line-177"
+              },
+              {
+                "line": 972,
+                "text": "- 门架三组孔位用定位销固定，保证 V 轴可复现。",
+                "url": "../spec.html#line-968"
+              }
+            ]
+          }
+        ],
+        "note": "三组机位孔用定位销复现，不把 CAD 通用支架尺寸当作门架规范。",
+        "category": "fit",
+        "label": "需实测适配 · 未定固定尺寸",
+        "has_numeric_size": false
+      }
+    },
+    {
+      "id": "T11",
+      "name": "薄钢板 + 钕磁铁",
+      "group": "测量与工位",
+      "route": "盘点后补购",
+      "phase": "盘点补齐",
+      "spec": "道具固定",
+      "tasks": "共用工位",
+      "initial_qty": "1 块桌面钢板 + 各夹具所需磁铁",
+      "note": "",
+      "original_route": "A",
+      "source_section": "8.3 测量工具与场地",
+      "source_line": 1082,
+      "photos": [
+        {
+          "key": "magnet-0",
+          "title": "Why Do Magnets Lose Strength? | K&J Magnetics Blog",
+          "source": "https://www.kjmagnetics.com/blog/why-do-magnets-lose-strength",
+          "image": "https://www.kjmagnetics.com/images/blog/why-do-magnets-lose-strength/magnet-on-thin-steel--full.jpg",
+          "caption": "磁铁与薄钢板固定示例",
+          "local_file": "reference_photos/magnet-0.jpg",
+          "sha256": "16f393770de73224799e3d71d3a6ef0ceb693199cf7a34e6cd3a160a22fcd428",
+          "bytes": 31229,
+          "width": 800,
+          "height": 600,
+          "url": "images/magnet-0.jpg"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "薄钢板 + 钕磁铁 道具固定",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "fit",
+            "scope": "固定件",
+            "value": "钢板按桌面覆盖范围选型；磁铁按夹具凹槽适配，原文未固定直径、厚度。",
+            "source_line": 979,
+            "source_lines": [
+              979
+            ],
+            "references": [
+              {
+                "line": 979,
+                "text": "- 贴图下面铺一层薄钢板。需要随机摆放又要固定的道具（S2 底座、S5 簸箕、H4 旋钮台），底部嵌钕磁铁吸在钢板上。",
+                "url": "../spec.html#line-976"
+              }
+            ]
+          }
+        ],
+        "note": "当前 CAD 的 Ø10×3 mm 磁铁选型是设计假设，购买前核对孔位与实物。",
+        "category": "fit",
+        "label": "需实测适配 · 未定固定尺寸",
+        "has_numeric_size": false
+      }
+    },
+    {
+      "id": "T12",
+      "name": "5 种同材质印刷桌垫",
+      "group": "测量与工位",
+      "route": "定制印刷",
+      "phase": "后续 OOD",
+      "spec": "`ood_scene`",
+      "tasks": "共用工位",
+      "initial_qty": "先标准桌垫 1 张，OOD 阶段补到 5 款",
+      "note": "5 款必须同材质同厚度，只换印刷。S5/H3/D3 不参加桌面贴图变化；该项是二维印刷，不是 3D 打印。",
+      "original_route": "A（定制印刷）",
+      "source_section": "8.3 测量工具与场地",
+      "source_line": 1082,
+      "photos": [
+        {
+          "key": "deskmat-0",
+          "title": "Daisy Desk Mat",
+          "source": "https://www.mrphome.com/en_za/daisy-desk-mat-107235003",
+          "image": "https://cdn.media.amplience.net/i/mrpricegroup/02_107235003_SI_00",
+          "caption": "印刷桌垫外观；五款保持同材质同厚度",
+          "local_file": "reference_photos/deskmat-0.jpg",
+          "sha256": "883458299d0b04c02523d18428ad3756fca0dac147a35cabca524fc524018329",
+          "bytes": 93406,
+          "width": 2000,
+          "height": 3000,
+          "url": "images/deskmat-0.jpg"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "5 种同材质印刷桌垫 `ood_scene`",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "fit",
+            "scope": "桌面工位",
+            "value": "桌垫长宽按工作区覆盖；5 种贴图须同材质、同厚度，原文未给长宽或厚度数值。",
+            "source_line": 978,
+            "source_lines": [
+              978
+            ],
+            "references": [
+              {
+                "line": 978,
+                "text": "- 5 种桌面贴图用同一种材质和厚度，只换印刷图案，并用斜面法测摩擦系数。",
+                "url": "../spec.html#line-976"
+              }
+            ]
+          }
+        ],
+        "note": "",
+        "category": "fit",
+        "label": "需实测适配 · 未定固定尺寸",
+        "has_numeric_size": false
+      }
+    },
+    {
+      "id": "T13",
+      "name": "急停按钮",
+      "group": "测量与工位",
+      "route": "盘点后补购",
+      "phase": "盘点补齐",
+      "spec": "安全",
+      "tasks": "共用工位",
+      "initial_qty": "使用机器人现有急停；工位/传送带缺失部分补齐",
+      "note": "优先复用机器人原有急停；若增加输送带，确认联动停机接口。图片为现成按钮外形，不是接线方案。",
+      "original_route": "A",
+      "source_section": "8.3 测量工具与场地",
+      "source_line": 1082,
+      "photos": [
+        {
+          "key": "estop-1",
+          "title": "Pulsador de emergencia tipo Seta | Parada de emergencia",
+          "source": "https://celectricos.com/pulsadores-electricos/pulsador-tipo-seta-para-parada-de-emergencia?srsltid=AfmBOopK6KvOzdBE2n-wpW5oQHt87m18frpLiJ22Bx-7Z8urausQlOiK",
+          "image": "https://celectricos.com/1829-medium_default/pulsador-tipo-seta-para-parada-de-emergencia.jpg",
+          "caption": "现成急停按钮外观",
+          "local_file": "reference_photos/estop-1.webp",
+          "sha256": "0cd604cd54c9c28a0355b7cef6a8aaecdb9c6892be90c1ca0b29f69b37bc1932",
+          "bytes": 15582,
+          "width": 452,
+          "height": 584,
+          "url": "images/estop-1.webp"
+        }
+      ],
+      "plastic_print": false,
+      "manufacturing_cad_available": null,
+      "search_terms": "急停按钮 安全",
+      "dimensions": {
+        "requirements": [
+          {
+            "kind": "none",
+            "scope": "安全器材",
+            "value": "急停按钮未规定外径、面板尺寸等数值。",
+            "source_line": 989,
+            "source_lines": [
+              989
+            ],
+            "references": [
+              {
+                "line": 989,
+                "text": "- 急停按钮放在评测员手边；软件里设虚拟墙；碰撞检测灵敏度写入配置。",
+                "url": "../spec.html#line-986"
+              }
+            ]
+          }
+        ],
+        "note": "沿用机器人急停接口，放在评测员手边；尺寸未规定不代表接口可随意替换。",
+        "category": "none",
+        "label": "清单未规定具体尺寸",
+        "has_numeric_size": false
+      }
+    }
+  ],
+  "source_sha256": "23957455c1aa0c0cad76324ed84fae725a1c9021c6b3ab0426e2753cda1750e8",
+  "dimension_counts": {
+    "explicit": 34,
+    "approximate": 8,
+    "fit": 10,
+    "none": 13
+  },
+  "dimension_labels": {
+    "explicit": "有尺寸要求 · 数值 / 上下限",
+    "approximate": "有尺寸要求 · 约尺寸",
+    "fit": "需实测适配 · 未定固定尺寸",
+    "none": "清单未规定具体尺寸"
+  },
+  "user_prop_updates": {
+    "source": "../USER_PROP_UPDATES_2026-10-21.md",
+    "sha256": "48aa9eb0a8964737f18a4ebbf3cc711b71b7398c6266816f8010aa7e5d5e198a",
+    "date": "2026-10-21",
+    "ids": [
+      "B25",
+      "B32",
+      "B33",
+      "P05",
+      "P06"
+    ]
+  },
+  "dimension_policy": "仅将任务清单中的标称数值、上下限和约尺寸标为有尺寸要求；制造公差未给定时不推定零公差。CAD 默认尺寸、数量、质量、力、力矩和功率不冒充任务物体尺寸。接口适配单独标注。",
+  "print_policy": "用户指定：所有新增 3D 打印件均用塑料；金属加工不作为打印方案。现成滑轨、轴承、螺钉、配重与电子件外购。",
+  "photograph_policy": "照片来自公开商品/作者/机构页面，只用于辨认外观；不是本项目已采购或已打印实物，不保证图中商品尺寸与任务一致。定制件需要按任务重新设计。每图保留来源链接，图片原字节保存，未用 AI 生成。",
+  "scope": "完整 §8.1–§8.3 共 65 组，含 BASE 首批、后续评测、暂缓项目和盘点后补购的共用设备。机器人整机不重复列入。"
+}
