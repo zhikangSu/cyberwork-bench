@@ -1,0 +1,24 @@
+{
+  "source_sha256": "23e7002dca6671e742b4e8551ec07b93953b4a96cab0085bb9523f3633d13223",
+  "args": [
+    "-an",
+    "-vf",
+    "scale=960:-2:flags=lanczos",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "slow",
+    "-crf",
+    "28",
+    "-profile:v",
+    "main",
+    "-pix_fmt",
+    "yuv420p",
+    "-movflags",
+    "+faststart",
+    "-threads",
+    "1"
+  ],
+  "ffmpeg": "7.0.2-static",
+  "web_sha256": "96f52c35d0cd67c833707005510879744f988c9676a72a2b1f3e633a161f2f5b"
+}

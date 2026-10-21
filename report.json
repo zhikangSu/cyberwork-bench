@@ -54,7 +54,7 @@
   "report_groups_html": "<h3 id=\"line-1\">1.3 报告用的能力分组</h3><div class=\"table-scroll\"><table><thead><tr><th>分组</th><th>任务</th></tr></thead><tbody><tr><td>语义与指令</td><td>S1、S6（S10 进主榜后加入）</td></tr><tr><td>单臂精细操作与工具</td><td>S2、S3、S4、S5</td></tr><tr><td>双臂协调</td><td>D1、D2、D3、D6</td></tr><tr><td>记忆与长程</td><td>S11、S8、S9（三者进主榜后成组；之前不成组）</td></tr><tr><td>灵巧手</td><td>H1、H6（H2–H7 通过 DNI 后加入）</td></tr></tbody></table></div><p>每组至少 2 个任务，避免&quot;一个维度 = 一个任务&quot;。鲁棒性和泛化不单独成组，由变体和横切轴跨任务汇总（§10）。</p><hr>",
   "pending_html": "<h2 id=\"line-1\">附录 D：开工前待确认</h2><p class=\"md-list\" style=\"margin-left:0em\"><span class=\"list-marker\">1.</span>ARX L5 Pro 的额定负载、夹爪最大开口、腕部旋转范围。影响 D2 的质量上限和把手尺寸，以及 D6 的拧法。</p><p class=\"md-list\" style=\"margin-left:0em\"><span class=\"list-marker\">2.</span>AG-95 的实际有效开口（实测）。影响 H1 各档的 DNI。</p><p class=\"md-list\" style=\"margin-left:0em\"><span class=\"list-marker\">3.</span>S7-O2 的&quot;放到柜顶&quot;没有任何训练任务覆盖：是在 S11 的演示里加一部分&quot;放到柜顶&quot;变体，还是接受这题就是测零样本、单独标注。</p><p class=\"md-list\" style=\"margin-left:0em\"><span class=\"list-marker\">4.</span>评测框架是否支持 S8 的&quot;只观测&quot;模式和仿真异步时钟。</p><p class=\"md-list\" style=\"margin-left:0em\"><span class=\"list-marker\">5.</span>各任务可行性闸门的结果。正式超时、可行档位和 BASE 据此确定。</p><p class=\"md-list\" style=\"margin-left:0em\"><span class=\"list-marker\">6.</span>谁打分、谁保管隐藏布局；一个工位还是两个；安全限幅与急停演练（总规范 §11）。</p>",
   "schema": "cyberwork.website.v033",
-  "updated": "2026-10-21T02:18:27.777050+00:00",
+  "updated": "2026-10-21T10:44:46.250127+00:00",
   "tasks": [
     {
       "id": "A1",
@@ -99,6 +99,11 @@
       "demo": {
         "video": "demos/A1/demo.mp4",
         "poster": "demos/A1/poster.jpg",
+        "web": {
+          "video": "demos/A1/web.mp4",
+          "bytes": 164849,
+          "source_sha256": "94db5bb955b2f2836ccc76ac942635ee56921afc3e74a2c9c11eb3737577ab2a"
+        },
         "result": "demos/A1/result.json",
         "audit": "demos/A1/spec_audit.json",
         "recording_spec_version": "0.3.2",
@@ -210,6 +215,11 @@
       "demo": {
         "video": "demos/S1/demo.mp4",
         "poster": "demos/S1/poster.jpg",
+        "web": {
+          "video": "demos/S1/web.mp4",
+          "bytes": 236719,
+          "source_sha256": "4154928c761d17925a6ecafcd37fd0b5a73a47a6663a99b563ecbd1e759d4a7e"
+        },
         "result": "demos/S1/result.json",
         "audit": "demos/S1/spec_audit.json",
         "recording_spec_version": "0.3.3",
@@ -345,6 +355,11 @@
       "demo": {
         "video": "demos/S2/demo.mp4",
         "poster": "demos/S2/poster.jpg",
+        "web": {
+          "video": "demos/S2/web.mp4",
+          "bytes": 216297,
+          "source_sha256": "00f62f1e69ad2d3c2843f8c2744d525767652c649b5fe1ce3bec5d48704a7e97"
+        },
         "result": "demos/S2/result.json",
         "audit": "demos/S2/spec_audit.json",
         "recording_spec_version": "0.3.3",
@@ -484,6 +499,11 @@
       "demo": {
         "video": "demos/S3/demo.mp4",
         "poster": "demos/S3/poster.jpg",
+        "web": {
+          "video": "demos/S3/web.mp4",
+          "bytes": 446284,
+          "source_sha256": "4804e9ebc808cc0c6f2a4f448a09cc32ed009c774f39c481003b0e1cb97d730f"
+        },
         "result": "demos/S3/result.json",
         "audit": "demos/S3/spec_audit.json",
         "recording_spec_version": "0.3.3",
@@ -636,6 +656,11 @@
       "demo": {
         "video": "demos/S4/demo.mp4",
         "poster": "demos/S4/poster.jpg",
+        "web": {
+          "video": "demos/S4/web.mp4",
+          "bytes": 345658,
+          "source_sha256": "ad4dd448a06146b857db305a2c11d2e7a8e05ae6e3ee3e99beb68e3717565e24"
+        },
         "result": "demos/S4/result.json",
         "audit": "demos/S4/spec_audit.json",
         "recording_spec_version": "0.3.2",
@@ -775,6 +800,11 @@
       "demo": {
         "video": "demos/S5/demo.mp4",
         "poster": "demos/S5/poster.jpg",
+        "web": {
+          "video": "demos/S5/web.mp4",
+          "bytes": 313499,
+          "source_sha256": "bcbe091ac06da471ac4de9039480298526b478bcb6b4ffaf0f432500d31c5c11"
+        },
         "result": "demos/S5/result.json",
         "audit": "demos/S5/spec_audit.json",
         "recording_spec_version": "0.3.3",
@@ -909,6 +939,11 @@
       "demo": {
         "video": "demos/S6/demo.mp4",
         "poster": "demos/S6/poster.jpg",
+        "web": {
+          "video": "demos/S6/web.mp4",
+          "bytes": 862264,
+          "source_sha256": "efb49d91813ae5e11076805fd58dca3f964171d0e71bc960a64cc62505834a00"
+        },
         "result": "demos/S6/result.json",
         "audit": "demos/S6/spec_audit.json",
         "recording_spec_version": "0.3.3",
@@ -1094,6 +1129,11 @@
           "demo": {
             "video": "demos/S7/O1/demo.mp4",
             "poster": "demos/S7/O1/poster.jpg",
+            "web": {
+              "video": "demos/S7/O1/web.mp4",
+              "bytes": 671268,
+              "source_sha256": "ae6efaff58f730988eadce545587378e23833d140d97c78d9beb81f5e4a01068"
+            },
             "result": "demos/S7/O1/result.json",
             "audit": "demos/S7/O1/spec_audit.json",
             "recording_spec_version": "0.3.3",
@@ -1161,6 +1201,11 @@
           "demo": {
             "video": "demos/S7/O2/demo.mp4",
             "poster": "demos/S7/O2/poster.jpg",
+            "web": {
+              "video": "demos/S7/O2/web.mp4",
+              "bytes": 400355,
+              "source_sha256": "b326c802f9fe659ef547331e88aa60cadd10d52a7688d7ac5e5d569aa4a76de7"
+            },
             "result": "demos/S7/O2/result.json",
             "audit": "demos/S7/O2/spec_audit.json",
             "recording_spec_version": "0.3.3",
@@ -1221,6 +1266,11 @@
           "demo": {
             "video": "demos/S7/O3/demo.mp4",
             "poster": "demos/S7/O3/poster.jpg",
+            "web": {
+              "video": "demos/S7/O3/web.mp4",
+              "bytes": 168801,
+              "source_sha256": "fb9943b8ac994a2fcb7c3f01714283041d70becf4a6e51aa15128c04e28837a6"
+            },
             "result": "demos/S7/O3/result.json",
             "audit": "demos/S7/O3/spec_audit.json",
             "recording_spec_version": "0.3.3",
@@ -1358,6 +1408,11 @@
           "demo": {
             "video": "demos/S8/memory/demo.mp4",
             "poster": "demos/S8/memory/poster.jpg",
+            "web": {
+              "video": "demos/S8/memory/web.mp4",
+              "bytes": 744316,
+              "source_sha256": "5d52d1d5e479476a0e8031dbd441055a78f4bef2bce7a4ac7315532320d965a4"
+            },
             "result": "demos/S8/memory/result.json",
             "audit": "demos/S8/memory/spec_audit.json",
             "recording_spec_version": "0.3.3",
@@ -1424,6 +1479,11 @@
           "demo": {
             "video": "demos/S8/control/demo.mp4",
             "poster": "demos/S8/control/poster.jpg",
+            "web": {
+              "video": "demos/S8/control/web.mp4",
+              "bytes": 737245,
+              "source_sha256": "15baa7ea2569c6616cfff9a7316740c0c4b14c6d12380531a55305f087bcfb8b"
+            },
             "result": "demos/S8/control/result.json",
             "audit": "demos/S8/control/spec_audit.json",
             "recording_spec_version": "0.3.3",
@@ -1571,6 +1631,11 @@
           "demo": {
             "video": "demos/S9/memory/demo.mp4",
             "poster": "demos/S9/memory/poster.jpg",
+            "web": {
+              "video": "demos/S9/memory/web.mp4",
+              "bytes": 657614,
+              "source_sha256": "e907ca16dd08a9bc3accc97c9a9a49743f715dcf1e68d7f020bfd743f094b857"
+            },
             "result": "demos/S9/memory/result.json",
             "audit": "demos/S9/memory/spec_audit.json",
             "recording_spec_version": "0.3.3",
@@ -1639,6 +1704,11 @@
           "demo": {
             "video": "demos/S9/control/demo.mp4",
             "poster": "demos/S9/control/poster.jpg",
+            "web": {
+              "video": "demos/S9/control/web.mp4",
+              "bytes": 665078,
+              "source_sha256": "b0c4e060c86ea968662f94d0ad00f575546a6b6214252c646fa4c284ca6fc544"
+            },
             "result": "demos/S9/control/result.json",
             "audit": "demos/S9/control/spec_audit.json",
             "recording_spec_version": "0.3.3",
@@ -1747,6 +1817,11 @@
       "demo": {
         "video": "demos/S10/demo.mp4",
         "poster": "demos/S10/poster.jpg",
+        "web": {
+          "video": "demos/S10/web.mp4",
+          "bytes": 184277,
+          "source_sha256": "92a401d118bcdbb00bbe349975718cd037d84c37aa2bfe6a98e9d6b9e623600d"
+        },
         "result": "demos/S10/result.json",
         "audit": "demos/S10/spec_audit.json",
         "recording_spec_version": "0.3.3",
@@ -1886,6 +1961,11 @@
       "demo": {
         "video": "demos/S11/demo.mp4",
         "poster": "demos/S11/poster.jpg",
+        "web": {
+          "video": "demos/S11/web.mp4",
+          "bytes": 590619,
+          "source_sha256": "680fba2773ea8632cc7e853c2d705e3a72758fffef61b67c37dffb6ac3dd5fc5"
+        },
         "result": "demos/S11/result.json",
         "audit": "demos/S11/spec_audit.json",
         "recording_spec_version": "0.3.3",
@@ -2019,6 +2099,11 @@
       "demo": {
         "video": "demos/S12/demo.mp4",
         "poster": "demos/S12/poster.jpg",
+        "web": {
+          "video": "demos/S12/web.mp4",
+          "bytes": 170061,
+          "source_sha256": "352e9d24ad0dc3f93405e752afa89016d242cccd8421a36af22d92ebd4e0f700"
+        },
         "result": "demos/S12/result.json",
         "audit": "demos/S12/spec_audit.json",
         "recording_spec_version": "0.3.3",
@@ -2144,6 +2229,11 @@
       "demo": {
         "video": "demos/A2/demo.mp4",
         "poster": "demos/A2/poster.jpg",
+        "web": {
+          "video": "demos/A2/web.mp4",
+          "bytes": 165863,
+          "source_sha256": "65a5a7a650f5400f2b7d51cdf363a312438364fef678e8ea98f16e6cd8531810"
+        },
         "result": "demos/A2/result.json",
         "audit": "demos/A2/spec_audit.json",
         "recording_spec_version": "0.3.3",
@@ -2253,6 +2343,11 @@
       "demo": {
         "video": "demos/D1/demo.mp4",
         "poster": "demos/D1/poster.jpg",
+        "web": {
+          "video": "demos/D1/web.mp4",
+          "bytes": 355362,
+          "source_sha256": "d295b4deb260bfe5ab6e7ecef883926f84d16d92e430b27debc988ab30ad0b02"
+        },
         "result": "demos/D1/result.json",
         "audit": "demos/D1/spec_audit.json",
         "recording_spec_version": "0.3.3",
@@ -2396,6 +2491,11 @@
       "demo": {
         "video": "demos/D2/demo.mp4",
         "poster": "demos/D2/poster.jpg",
+        "web": {
+          "video": "demos/D2/web.mp4",
+          "bytes": 351233,
+          "source_sha256": "abed40e9a5087dca7b8ac690185b11227d46eaeeab6af73d6a642357d6ec7a9b"
+        },
         "result": "demos/D2/result.json",
         "audit": "demos/D2/spec_audit.json",
         "recording_spec_version": "0.3.3",
@@ -2529,6 +2629,11 @@
       "demo": {
         "video": "demos/D3/demo.mp4",
         "poster": "demos/D3/poster.jpg",
+        "web": {
+          "video": "demos/D3/web.mp4",
+          "bytes": 692292,
+          "source_sha256": "18af74058fc0b6963d311a6247a65cdb3a5631e828cd05165a62de8ce5c53b90"
+        },
         "result": "demos/D3/result.json",
         "audit": "demos/D3/spec_audit.json",
         "recording_spec_version": "0.3.3",
@@ -2709,6 +2814,11 @@
       "partial_demo": {
         "video": "partial/D4/demo.mp4",
         "poster": "partial/D4/poster.jpg",
+        "web": {
+          "video": "partial/D4/web.mp4",
+          "bytes": 382947,
+          "source_sha256": "401ed8374078817ef184580667954d980be3a94dad90c2df5a12cf35b3f6c8b7"
+        },
         "result": "partial/D4/result.json",
         "audit": "partial/D4/spec_audit.json",
         "events": "partial/D4/assistance_events.jsonl",
@@ -2881,6 +2991,11 @@
       "partial_demo": {
         "video": "partial/D5/demo.mp4",
         "poster": "partial/D5/poster.jpg",
+        "web": {
+          "video": "partial/D5/web.mp4",
+          "bytes": 595195,
+          "source_sha256": "23e7002dca6671e742b4e8551ec07b93953b4a96cab0085bb9523f3633d13223"
+        },
         "result": "partial/D5/result.json",
         "audit": "partial/D5/spec_audit.json",
         "events": "partial/D5/assistance_events.jsonl",
@@ -3002,6 +3117,11 @@
       "demo": {
         "video": "demos/D6/demo.mp4",
         "poster": "demos/D6/poster.jpg",
+        "web": {
+          "video": "demos/D6/web.mp4",
+          "bytes": 750607,
+          "source_sha256": "aae7efc3ece9d0ccb094bdaf2dad6c1d16274e83a2b3cdf8b63905b7a18a6276"
+        },
         "result": "demos/D6/result.json",
         "audit": "demos/D6/spec_audit.json",
         "recording_spec_version": "0.3.2",
@@ -3190,6 +3310,11 @@
           "demo": {
             "video": "demos/D7/O1/demo.mp4",
             "poster": "demos/D7/O1/poster.jpg",
+            "web": {
+              "video": "demos/D7/O1/web.mp4",
+              "bytes": 284219,
+              "source_sha256": "5234f67bd06cbc41075c5fb285437cb17694fb5977abd3b2612633d5cfb4b017"
+            },
             "result": "demos/D7/O1/result.json",
             "audit": "demos/D7/O1/spec_audit.json",
             "recording_spec_version": "0.3.3",
@@ -3250,6 +3375,11 @@
           "demo": {
             "video": "demos/D7/O2/demo.mp4",
             "poster": "demos/D7/O2/poster.jpg",
+            "web": {
+              "video": "demos/D7/O2/web.mp4",
+              "bytes": 857732,
+              "source_sha256": "a82002e70eb3e480e512da9e1c326ea9d8f4c44cbc067dcfa3333303d1b3aefd"
+            },
             "result": "demos/D7/O2/result.json",
             "audit": "demos/D7/O2/spec_audit.json",
             "recording_spec_version": "0.3.3",
@@ -3311,6 +3441,11 @@
           "demo": {
             "video": "demos/D7/O3/demo.mp4",
             "poster": "demos/D7/O3/poster.jpg",
+            "web": {
+              "video": "demos/D7/O3/web.mp4",
+              "bytes": 382578,
+              "source_sha256": "22831365206a88f3569268f4b6c7d83a8b29892f70a9e0a5aa2c2bad6943ff68"
+            },
             "result": "demos/D7/O3/result.json",
             "audit": "demos/D7/O3/spec_audit.json",
             "recording_spec_version": "0.3.2",
@@ -3428,6 +3563,11 @@
       "demo": {
         "video": "demos/H1/demo.mp4",
         "poster": "demos/H1/poster.jpg",
+        "web": {
+          "video": "demos/H1/web.mp4",
+          "bytes": 216394,
+          "source_sha256": "ae469af4eab9d62e2d1bb56bd55830592a864cafe013e612b3a81eafa94de159"
+        },
         "result": "demos/H1/result.json",
         "audit": "demos/H1/spec_audit.json",
         "recording_spec_version": "0.3.2",
@@ -3567,6 +3707,11 @@
       "demo": {
         "video": "demos/H2/demo.mp4",
         "poster": "demos/H2/poster.jpg",
+        "web": {
+          "video": "demos/H2/web.mp4",
+          "bytes": 183755,
+          "source_sha256": "c49a34dcabd3d09f23695ece5dca8e7b2eb5808aa08ffb9138a2a5045b054fca"
+        },
         "result": "demos/H2/result.json",
         "audit": "demos/H2/spec_audit.json",
         "recording_spec_version": "0.3.2",
@@ -3725,6 +3870,11 @@
       "demo": {
         "video": "demos/H3/demo.mp4",
         "poster": "demos/H3/poster.jpg",
+        "web": {
+          "video": "demos/H3/web.mp4",
+          "bytes": 363856,
+          "source_sha256": "70fbef1ab9017fa560c6729bf28766befb8fdc9814a8fc6b7051b6b39727a582"
+        },
         "result": "demos/H3/result.json",
         "audit": "demos/H3/spec_audit.json",
         "recording_spec_version": "0.3.2",
@@ -3873,6 +4023,11 @@
       "demo": {
         "video": "demos/H4/demo.mp4",
         "poster": "demos/H4/poster.jpg",
+        "web": {
+          "video": "demos/H4/web.mp4",
+          "bytes": 193562,
+          "source_sha256": "51217aecdb31081eb5bf73dc67dc88780b630337f592f3020958ebdf4730617b"
+        },
         "result": "demos/H4/result.json",
         "audit": "demos/H4/spec_audit.json",
         "recording_spec_version": "0.3.2",
@@ -4016,6 +4171,11 @@
       "demo": {
         "video": "demos/H5/demo.mp4",
         "poster": "demos/H5/poster.jpg",
+        "web": {
+          "video": "demos/H5/web.mp4",
+          "bytes": 230044,
+          "source_sha256": "f5d4b0060907e64c336ad314c07b230c3f8c2110f545a1eafe58e7b4b11bcad4"
+        },
         "result": "demos/H5/result.json",
         "audit": "demos/H5/spec_audit.json",
         "recording_spec_version": "0.3.2",
@@ -4159,6 +4319,11 @@
       "demo": {
         "video": "demos/H6/demo.mp4",
         "poster": "demos/H6/poster.jpg",
+        "web": {
+          "video": "demos/H6/web.mp4",
+          "bytes": 307123,
+          "source_sha256": "12efecd8ba7647013e0d45d4d1d6a1493605c4b5b36a78c1207944a98d71c593"
+        },
         "result": "demos/H6/result.json",
         "audit": "demos/H6/spec_audit.json",
         "recording_spec_version": "0.3.3",
@@ -4355,6 +4520,11 @@
       "partial_demo": {
         "video": "partial/H7/demo.mp4",
         "poster": "partial/H7/poster.jpg",
+        "web": {
+          "video": "partial/H7/web.mp4",
+          "bytes": 547277,
+          "source_sha256": "1a7ea544e8a80aad9d01ac95f089044c91c790ae74f647a8b21dcb65112da167"
+        },
         "result": "partial/H7/result.json",
         "audit": "partial/H7/spec_audit.json",
         "events": null,
@@ -4597,6 +4767,11 @@
       "demo": {
         "video": "demos/H9/demo.mp4",
         "poster": "demos/H9/poster.jpg",
+        "web": {
+          "video": "demos/H9/web.mp4",
+          "bytes": 574751,
+          "source_sha256": "bf253e32c6e10b27ef1ffe8f4c20f36c1bc622aed95bbd3c5fdc5fc010d0904f"
+        },
         "result": "demos/H9/result.json",
         "audit": "demos/H9/spec_audit.json",
         "recording_spec_version": "0.3.2",
@@ -4788,6 +4963,11 @@
           "demo": {
             "video": "demos/H-open/O1/demo.mp4",
             "poster": "demos/H-open/O1/poster.jpg",
+            "web": {
+              "video": "demos/H-open/O1/web.mp4",
+              "bytes": 299244,
+              "source_sha256": "ff9977a3f27f4ecc44363cc5ae358ebc4b005576eb06be2ad7663093298f4b30"
+            },
             "result": "demos/H-open/O1/result.json",
             "audit": "demos/H-open/O1/spec_audit.json",
             "recording_spec_version": "0.3.2",
@@ -4853,6 +5033,11 @@
           "demo": {
             "video": "demos/H-open/O2/demo.mp4",
             "poster": "demos/H-open/O2/poster.jpg",
+            "web": {
+              "video": "demos/H-open/O2/web.mp4",
+              "bytes": 392936,
+              "source_sha256": "6d2440f2c66947dbac918fc159b250af95f0895a7d3b2702e6c95706c7d1efbd"
+            },
             "result": "demos/H-open/O2/result.json",
             "audit": "demos/H-open/O2/spec_audit.json",
             "recording_spec_version": "0.3.2",
@@ -4918,6 +5103,11 @@
           "demo": {
             "video": "demos/H-open/O3/demo.mp4",
             "poster": "demos/H-open/O3/poster.jpg",
+            "web": {
+              "video": "demos/H-open/O3/web.mp4",
+              "bytes": 518632,
+              "source_sha256": "6765f41d2ccf09b7cff4009a8b1f6fd47f85c8aa37f350cdcdb54591ecb22731"
+            },
             "result": "demos/H-open/O3/result.json",
             "audit": "demos/H-open/O3/spec_audit.json",
             "recording_spec_version": "0.3.2",
