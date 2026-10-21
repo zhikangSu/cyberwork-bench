@@ -1,0 +1,273 @@
+{
+  "task": "H7",
+  "layout": 0,
+  "level": "L2",
+  "instruction": "压下纸箱四个翻盖并互扣",
+  "controller": "operator_in_the_loop_motor_commands",
+  "classification": "DEMONSTRATION_NOT_BENCHMARK_SCORE",
+  "success": false,
+  "failure": "逐片压平尝试结束（各片是否达到压平以 trace 为准）；未形成循环互扣：顺序合盖时每个角都是先合者在下，无法形成四片循环",
+  "info": {
+    "stages": {
+      "front": true,
+      "back": true,
+      "left": true,
+      "right": false,
+      "interlock": false
+    },
+    "progress": 0.44999999999999996,
+    "score": 0.44999999999999996,
+    "success": false,
+    "terminal_hold_steps": 0,
+    "error": null,
+    "details": {
+      "flat": {
+        "front": false,
+        "back": false,
+        "left": false,
+        "right": false
+      },
+      "inward_panel_centroid": {
+        "front": true,
+        "back": true,
+        "left": false,
+        "right": true
+      },
+      "normal_alignment": {
+        "front": 9.416479511392263e-05,
+        "back": 9.418541607886367e-07,
+        "left": 0.000967858064453538,
+        "right": 0.011286169173385183
+      },
+      "mean_height_m": {
+        "front": 0.1607999184714975,
+        "back": 0.16079991860509785,
+        "left": 0.17329989527549347,
+        "right": 0.17329683579313884
+      },
+      "hinge_error_deg": {
+        "front": 89.99462118854792,
+        "back": 89.99994750355438,
+        "left": 90.05510602698814,
+        "right": 89.35720635340671
+      },
+      "overlap": {
+        "front_left": {
+          "height_differences_m": [],
+          "normal_force_n": 0.0,
+          "order": 0
+        },
+        "left_back": {
+          "height_differences_m": [],
+          "normal_force_n": 0.0,
+          "order": 0
+        },
+        "back_right": {
+          "height_differences_m": [],
+          "normal_force_n": 0.0,
+          "order": 0
+        },
+        "right_front": {
+          "height_differences_m": [],
+          "normal_force_n": 0.0,
+          "order": 0
+        }
+      },
+      "interlock_cycle": false,
+      "robot_released": true,
+      "fixture_height_m": -3.5609974605360782e-09,
+      "fixture_speed_m_s": 3.2498940342405766e-11,
+      "released_before_lift_steps": 0,
+      "lift_test_armed": false,
+      "lift_test_failed": false
+    },
+    "status": "development_grader_expert_validation_pending",
+    "terminal_current": false,
+    "formal_spec_score": null,
+    "full_spec_conformance_verified": false,
+    "done": false,
+    "reason": "running",
+    "time": 46.20000000003857,
+    "execution_time": 46.20000000003857,
+    "phase": "execution",
+    "ik": [],
+    "ik_pos_err": [],
+    "ik_rot_err": [],
+    "jerk_command_mean": 0.0,
+    "jerk_arm_joint_mean_rad_s3": 0.00014789665387708394,
+    "safety_stop": null,
+    "recovery_events": []
+  },
+  "events": [
+    {
+      "phase": "定义控制函数（读取仿真真值，只发关节/手指指令，不用约束辅助）",
+      "time": 0.0
+    },
+    {
+      "phase": "食指压平前翻盖（从机器人一侧推外侧面）",
+      "time": 0.0
+    },
+    {
+      "phase": "食指指点手形",
+      "time": 0.0
+    },
+    {
+      "phase": "front：食指移到翻盖外侧上沿",
+      "time": 0.48000000000000037
+    },
+    {
+      "phase": "front：食指沿折线圆弧向内压平",
+      "time": 2.8000000000001024
+    },
+    {
+      "phase": "front：抬手离开",
+      "time": 6.63999999999904
+    },
+    {
+      "phase": "手指从上方钩住并压平左翻盖",
+      "time": 8.719999999999166
+    },
+    {
+      "phase": "left：抬到安全高度",
+      "time": 8.719999999999166
+    },
+    {
+      "phase": "left：手指成钩",
+      "time": 9.680000000000339
+    },
+    {
+      "phase": "left：移到翻盖正上方",
+      "time": 10.080000000000828
+    },
+    {
+      "phase": "left：竖直下降，手指从上方钩住翻盖外侧上沿",
+      "time": 12.16000000000337
+    },
+    {
+      "phase": "left：沿折线圆弧向内拉、再压平",
+      "time": 13.880000000005472
+    },
+    {
+      "phase": "left：抬手离开",
+      "time": 18.600000000002
+    },
+    {
+      "phase": "手指从上方钩住并压平后翻盖",
+      "time": 20.199999999998273
+    },
+    {
+      "phase": "back：抬到安全高度",
+      "time": 20.199999999998273
+    },
+    {
+      "phase": "back：手指成钩",
+      "time": 20.199999999998273
+    },
+    {
+      "phase": "back：移到翻盖正上方",
+      "time": 20.59999999999734
+    },
+    {
+      "phase": "back：竖直下降，手指从上方钩住翻盖外侧上沿",
+      "time": 22.07999999999389
+    },
+    {
+      "phase": "back：沿折线圆弧向内拉、再压平",
+      "time": 23.799999999989883
+    },
+    {
+      "phase": "back：抬手离开",
+      "time": 29.319999999977018
+    },
+    {
+      "phase": "手指从上方钩住并压平右翻盖",
+      "time": 30.959999999973196
+    },
+    {
+      "phase": "right：抬到安全高度",
+      "time": 30.959999999973196
+    },
+    {
+      "phase": "right：手指成钩",
+      "time": 30.959999999973196
+    },
+    {
+      "phase": "right：移到翻盖正上方",
+      "time": 31.359999999972263
+    },
+    {
+      "phase": "right：竖直下降，手指从上方钩住翻盖外侧上沿",
+      "time": 33.439999999977644
+    },
+    {
+      "phase": "right：沿折线圆弧向内拉、再压平",
+      "time": 35.35999999998681
+    },
+    {
+      "phase": "right：抬手离开",
+      "time": 42.56000000002119
+    },
+    {
+      "phase": "手离开纸箱后停留",
+      "time": 44.24000000002921
+    },
+    {
+      "phase": "手离开，保持",
+      "time": 44.24000000002921
+    }
+  ],
+  "steps": 1155,
+  "duration_s": 46.20000000003857,
+  "no_object_teleport": true,
+  "no_grasp_weld": true,
+  "physics": "MuJoCo env.step; recorded physics steps [0.0005] s / 25 Hz control",
+  "source_hashes": {
+    "cwbench/contact_grasp.py": "467514a8339b7933d4f35464357409d16f2c74c89c5d24f2f33197ddc5f584ef",
+    "cwbench/foam_ball.py": "fba434d3af9939eb4f00af953e9632279c72e85fb8356128aebd0233011eaacf",
+    "cwbench/__init__.py": "f414b78723a0cee16f6378aff4814997c38ddf5e12edce9dfa1017849aa4256e",
+    "cwbench/cloth_bag.py": "33efa2ed21d3489b3163fbc587afc9e699b1c7c2dd5c676cd741a24b48b1aafe",
+    "cwbench/dexterity_o6.py": "68d90a4b89e5de99793ca4f91a933d21e9ae72e78ed65526337bcfaa7d610652",
+    "cwbench/experts.py": "67523994520cad00a9a0239cf97e5929191c38f657f6c4733205af98dfe1ee21",
+    "cwbench/record.py": "39d4e7ee6b7664d9f5443766551da122973a6d8ba04d9d17be899891cf0c88c8",
+    "cwbench/flex_runtime.py": "b36ff07603e5e3e459fb16808008fafd567890048de59a21153816ee4e7398b0",
+    "cwbench/geometry.py": "08bc854f00a86b2c3170bb6304b4caebfb29035aacaffed20931e29aaa3e0e99",
+    "cwbench/rubrics.py": "13bc8655a7d41bfcbcd30ea24b444b1d5ca365c690657b965648fffc543a71fa",
+    "cwbench/scenes_v024.py": "ad726a0cca666ed60ca1cb938f44404e15632b2c38af40e5182409e345941ec1",
+    "cwbench/errors.py": "324c0e1a2b4359e0f09e947adada58bdcebd6bce2ef72f3c6fe16be189c633e7",
+    "cwbench/scoring.py": "24cf03ff644bc89091725e22f23505c70c051c2011176b70ea2effc91b7d0a79",
+    "cwbench/grasp_assist.py": "306e744c412f641564c1a1e3a25aeea75e2103f12579217279d2a0b5bab8074c",
+    "cwbench/arm_motion.py": "63ece840caaa51a1effd6aca447362491edb5452d0c6ce62ef624fe16987450c",
+    "cwbench/dexterity.py": "0d8f34390e4825c49c56f8626ff55af458d11dc0c69ad6610a62198bc7189c9b",
+    "cwbench/flow_v033.py": "0ec232faf0abe6e079dec7f10cc6846c8f44fc21748407ddbbdf490416993e92",
+    "cwbench/scene_expect_v033.py": "b41f81adc010adae746a0d8ed180d014c5bafe543980f2f33cca721e0fcf7462",
+    "cwbench/contact_ik.py": "18e4c66a2b543b4ebcee9a34bb95e48a702d46872e05f257cac47b8386fa48df",
+    "cwbench/adaptive_bag.py": "ff665a5c8d0e76f959dba9b6a3f19f49390571abc648537ebad5235322e3f3fa",
+    "cwbench/capabilities.py": "4910760472fa4c175729e3f3318b0cccfbd023c3f24762480b0a1e8a92393bca",
+    "cwbench/web_spec_v033.py": "0d9799ee7127911334c59d44f32ed7ede4248be89ae658bce33725eee0a45084",
+    "cwbench/robots.py": "48e3e49dc5f06bc3790ddfd527c8ce319dfaa56917cfe9ecd8c9450ad8540be8",
+    "cwbench/ik.py": "dcebc5a182510725a3a093be8875f4d77f3d38bc9e8341cdaff3f6c7b0f52ce5",
+    "cwbench/scoring_v024.py": "64f98d048782991f7cc26f1a4b85f401e5b7ea7c0da6f7bc4b0704f533f7d6e2",
+    "cwbench/spec_contract.py": "d5ca0550f4f780a109ecb11e6336b5e4c5d671f5478f1d8481018d86ec69768a",
+    "cwbench/viewer.py": "1ae7503e5b198163767e6557668158e87e5b56fa021e65e66c2b1aaf0b342f32",
+    "cwbench/soft_control.py": "a3de14c4aca011d464d5ea8111b7cb7e48cbd314f1902e154edf39c37514267c",
+    "cwbench/scenes.py": "6bf272b9e7f73f968a487c942a0332628cae2006a701d5bd7e98029e7817d019",
+    "cwbench/paperboard.py": "3abf8d149d2e669b25eba5fc6295c4d75f09d5e1cfbb86e080148ff69da8ebd3",
+    "cwbench/adaptive_towel.py": "00fa1edfd408c4005c33689bd587d8373e240d6ed8fa5942e09f424ca21f528f",
+    "cwbench/env.py": "8e96891268f704845b07e45c09927c03dafc4cdc83be4fa7a0f73937c4a02360",
+    "tools/direct_control.py": "27ac6f3806fa7788ffd03b1a4ffceb6e88c114a53d3aa71b8bf04efe3c5028de",
+    "configs/scene.yaml": "51b146a1f469361ac9fca21c15d7a3941fa722ca42a5690c90298abfcd6c56b2",
+    "configs/H7.yaml": "671c08feabc48efb2e4d7a0c0110718ed5be610b57667e7abf6e0e98ece131f1"
+  },
+  "initial_instruction_idx": null,
+  "final_objects": {
+    "carton": [
+      0.0,
+      0.08,
+      0.001499996439002449
+    ]
+  },
+  "engine_version": "3.16.0",
+  "physics_timestep_values_s": [
+    0.0005
+  ]
+}

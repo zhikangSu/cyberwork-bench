@@ -1,0 +1,4314 @@
+{
+  "task": "D4",
+  "layout": 0,
+  "variant": "id",
+  "seed": 3981683495044343702,
+  "objects": [
+    {
+      "name": "item_a",
+      "role": "object",
+      "table_position": [
+        0.25,
+        -0.03,
+        0.02100000000000002
+      ],
+      "yaw": -0.06286790293667299,
+      "free": true,
+      "dimensions": [
+        0.04,
+        0.04,
+        0.04
+      ],
+      "shape": "box",
+      "half_size": [
+        0.02,
+        0.02,
+        0.02
+      ],
+      "bottom_offset": -0.02,
+      "kind": "cube",
+      "label": "红色方块",
+      "grasp_radius_m": 0.03,
+      "initial_table_pose_wxyz": [
+        0.25,
+        -0.03,
+        0.02100000000000002,
+        0.9995059940265524,
+        0.0,
+        0.0,
+        -0.03142877511124716
+      ]
+    },
+    {
+      "name": "item_b",
+      "role": "object",
+      "table_position": [
+        0.35,
+        0.09,
+        0.03600000000000003
+      ],
+      "yaw": 0,
+      "free": true,
+      "kind": "orange",
+      "label": "橙子",
+      "grasp_radius_m": 0.036,
+      "half_size": [
+        0.035,
+        0.035,
+        0.035
+      ],
+      "initial_table_pose_wxyz": [
+        0.35,
+        0.09,
+        0.03600000000000003,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "classification": "SIMULATION_ENVIRONMENT",
+  "approximations": [
+    "Bag mouth is deformable and can collapse; canvas bending and seam stiffness remain uncalibrated.",
+    "flex membrane with constrained edges; material bending parameters are not calibrated",
+    "仿真近似值，材料未标定：帆布袋弯曲刚度 B = 0.0003 N·m（E = 12B(1-ν²)/t³，ν = 0.3，名义弹性厚度 t = 1 mm），用于让撑开的袋口与袋身保持形状，不塌成窄缝；数值不是实测，真机帆布需按 KES-F 或悬臂法实测后替换。"
+  ],
+  "source_spec": "SPEC_v0.3.3.md",
+  "spec_version": "0.3.3",
+  "level": "L2",
+  "level_parameters": {
+    "mouth_circumference_m": 0.44
+  },
+  "seeds": {
+    "layout": 6103677215910331236,
+    "object": 1932780529287792195,
+    "instruction": 8315616551697323048
+  },
+  "track": "real_soft_experimental",
+  "eval_only": false,
+  "initial_joints": {},
+  "axes": {},
+  "regions": {},
+  "targets": [],
+  "grader_status": "development_not_expert_validated",
+  "instruction_idx": null,
+  "scoring_source": "supplied task-local descriptions; common predicates inherited from v0.2.4",
+  "bag_mesh": "sewn_rectangular_pouch",
+  "bag_mouth_vertices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "bag_bottom_vertices": [
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130
+  ],
+  "bag_depth_m": 0.2,
+  "bag_rest_circumference_m": 0.4400000000000001,
+  "simulation_adaptations": [
+    "Canvas bag uses two approximately rectangular panels joined along side folds and a shared-vertex bottom seam, instead of a thin elliptical fan cap. The 20 mouth vertices are uniformly spaced across each lip; rest perimeter matches the requested tier and depth stays 20 cm. A 0.2 mm collision margin supplements the existing 1 mm radius. No hand attachment is added; drawstring, seam thickness and canvas bending still need calibration.",
+    "D4 and H8 share the specified drawstring bag: its folded hem is a flexible 4 mm-diameter rim sharing the canvas vertices, with nominal 400 kg/m³ bulk density. The hem retains self, hand, object and table contact; only contact with its own embedded base canvas is excluded. There is no constraint to the hand and the task thresholds are unchanged. Earlier D4 trials omitted this hem and gripped bare canvas.",
+    "Canvas bag bending stiffness B=0.0003 N m (MuJoCo elastic2d bend, nominal t=0.001 m, poisson 0.3) is a simulation approximation, not a calibrated canvas. Without it the pressed double layer had no bending model, the opened mouth collapsed into a slit and the pouch pivoted about a single held point. Dimensions, mass, friction, edge constraints and task thresholds are unchanged.",
+    "D4 items are staged on the right for one arm to load while the other holds the bag. Upright uses an uncalibrated cap-centroid axis proxy: height >=5 cm, tilt <=30 deg, bottom <=2.5 cm.",
+    "Flexible-material edge lengths are monitored at every physics step; extension or compression beyond 10% stops the episode as a numerical/material-model failure. Cloth/bag structural equalities use 2 ms, high-impedance constraints to prevent artificial stretching at small grasp triangles; these are cloth edges, not hand attachments.",
+    "Contacts between thin flexible material, the hand/pads, and table use 2 ms stiff contact. A loaded H7 prototype otherwise permitted 10.8 mm pad-shell penetration through a 3 mm board. This resolves collision thickness without increasing friction, motor force limits, or adding attachments; compliance still requires measurement.",
+    "Isolated MuJoCo 3.16.0 discrete integrator / Newton solve: implicit elastic and contact stiffness, with unchanged geometry, friction, motor force caps and scoring. CG uses 1000 iterations for articulated shells; independent cloth uses Newton. A 100-iteration CG probe failed to resolve stiff cloth constraints. This is a separately recorded runtime, not a re-evaluation of the frozen 3.10 demonstrations.",
+    "Optional grasp-retention assistance: local cloth vertices connect to the contacting robot after positive physical contact. All connections are explicitly released before final success. No prop-prop constraints, teleportation or friction changes. This episode is not a pure-contact or policy benchmark result."
+  ],
+  "bag_contact_flexes": [
+    "bag",
+    "bag_hem"
+  ],
+  "bag_hem": {
+    "radius_m": 0.002,
+    "mass_kg": 0.0022116812281272142,
+    "status": "effective folded canvas/drawstring rim; nominal, uncalibrated"
+  },
+  "canvas_bending": {
+    "rigidity_nm": 0.0003,
+    "young_pa": 3275999.9999999995,
+    "poisson": 0.3,
+    "elastic_thickness_m": 0.001,
+    "damping_s": 0.003,
+    "model": "MuJoCo flexcomp elasticity elastic2d=bend",
+    "source": "configs/D4.yaml bag_material.canvas_bending",
+    "calibrated": false,
+    "status": "simulation approximation; material not calibrated",
+    "note_zh": "仿真近似值，材料未标定：帆布袋弯曲刚度 B = 0.0003 N·m（E = 12B(1-ν²)/t³，ν = 0.3，名义弹性厚度 t = 1 mm），用于让撑开的袋口与袋身保持形状，不塌成窄缝；数值不是实测，真机帆布需按 KES-F 或悬臂法实测后替换。",
+    "reason": "keep an opened canvas mouth open and the pouch from pivoting under a side push (simulation approximation)"
+  },
+  "required_mouth_area_m2": 0.011,
+  "bag_upright_min_axis_height_m": 0.05,
+  "bag_upright_max_tilt_deg": 30,
+  "bag_bottom_max_height_m": 0.025,
+  "instruction": "撑开袋口，放入两件物品，再直立放回",
+  "robots": [
+    {
+      "prefix": "left_",
+      "kind": "r5",
+      "joint_names": [
+        "left_joint1",
+        "left_joint2",
+        "left_joint3",
+        "left_joint4",
+        "left_joint5",
+        "left_joint6"
+      ],
+      "arm_dim": 6,
+      "eef_dim": 1,
+      "home": [
+        0.0,
+        0.8,
+        1.25,
+        -0.3,
+        0.0,
+        0.0
+      ],
+      "ee": {
+        "kind": "arx_parallel",
+        "actuators": [
+          "left_joint7"
+        ],
+        "joints": [
+          "left_joint7"
+        ],
+        "coupled_joints": [
+          "left_joint8"
+        ],
+        "home": [
+          0.045
+        ],
+        "site": "left_tcp",
+        "camera": "left_cam_wrist",
+        "eef_dim": 1,
+        "travel_m": 0.045,
+        "hardware": "ARX L5 Pro original gripper",
+        "simulation": "R5 URDF, 45 mm travel per finger"
+      },
+      "site": "left_tcp",
+      "camera": "left_cam_wrist",
+      "base_table_xyz": [
+        -0.3,
+        -0.45,
+        0.0
+      ],
+      "base_quat_wxyz": [
+        0.7071067811865476,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "flange": "left_flange",
+      "hardware_fk_status": "pending_measured_sdk_pairs",
+      "model": "ARX_Model/R5/R5a"
+    },
+    {
+      "prefix": "right_",
+      "kind": "r5",
+      "joint_names": [
+        "right_joint1",
+        "right_joint2",
+        "right_joint3",
+        "right_joint4",
+        "right_joint5",
+        "right_joint6"
+      ],
+      "arm_dim": 6,
+      "eef_dim": 1,
+      "home": [
+        0.0,
+        0.8,
+        1.25,
+        -0.3,
+        0.0,
+        0.0
+      ],
+      "ee": {
+        "kind": "arx_parallel",
+        "actuators": [
+          "right_joint7"
+        ],
+        "joints": [
+          "right_joint7"
+        ],
+        "coupled_joints": [
+          "right_joint8"
+        ],
+        "home": [
+          0.045
+        ],
+        "site": "right_tcp",
+        "camera": "right_cam_wrist",
+        "eef_dim": 1,
+        "travel_m": 0.045,
+        "hardware": "ARX L5 Pro original gripper",
+        "simulation": "R5 URDF, 45 mm travel per finger"
+      },
+      "site": "right_tcp",
+      "camera": "right_cam_wrist",
+      "base_table_xyz": [
+        0.3,
+        -0.45,
+        0.0
+      ],
+      "base_quat_wxyz": [
+        0.7071067811865476,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "flange": "right_flange",
+      "hardware_fk_status": "pending_measured_sdk_pairs",
+      "model": "ARX_Model/R5/R5a"
+    }
+  ],
+  "world_from_table": [
+    0,
+    0,
+    0.75
+  ],
+  "base_spacing_m": 0.6,
+  "layout_sampling": "independent_rng_streams_with_geometry_checks",
+  "action_dim": 14,
+  "hand": null,
+  "max_flex_edge_strain": 0.1,
+  "thin_material_contact": {
+    "solref": [
+      0.002,
+      1
+    ],
+    "solimp": [
+      0.999,
+      0.9999,
+      0.001
+    ],
+    "priority": 1,
+    "status": "numerical thickness resolution; not measured compliance"
+  },
+  "engine_version": "3.16.0",
+  "runtime_variant": "discrete_soft_material_development",
+  "integrator": "discrete",
+  "solver": "Newton",
+  "grasp_roll_slots": [],
+  "grasp_bundle_slots": [],
+  "grasp_assistance": {
+    "classification": "CONSTRAINT_ASSISTED_DEMONSTRATION_NOT_BENCHMARK_SCORE",
+    "mode": "contact_triggered_robot_material_connect",
+    "authorization": "User approved separate constraint-assisted demonstrations on 2026-10-20",
+    "slots": [
+      {
+        "name": "grasp_assist_0",
+        "anchor": "0:wrist",
+        "body": "bag_0"
+      },
+      {
+        "name": "grasp_assist_1",
+        "anchor": "0:wrist",
+        "body": "bag_1"
+      },
+      {
+        "name": "grasp_assist_2",
+        "anchor": "0:wrist",
+        "body": "bag_2"
+      },
+      {
+        "name": "grasp_assist_3",
+        "anchor": "0:wrist",
+        "body": "bag_3"
+      },
+      {
+        "name": "grasp_assist_4",
+        "anchor": "0:wrist",
+        "body": "bag_4"
+      },
+      {
+        "name": "grasp_assist_5",
+        "anchor": "0:wrist",
+        "body": "bag_5"
+      },
+      {
+        "name": "grasp_assist_6",
+        "anchor": "0:wrist",
+        "body": "bag_6"
+      },
+      {
+        "name": "grasp_assist_7",
+        "anchor": "0:wrist",
+        "body": "bag_7"
+      },
+      {
+        "name": "grasp_assist_8",
+        "anchor": "0:wrist",
+        "body": "bag_8"
+      },
+      {
+        "name": "grasp_assist_9",
+        "anchor": "0:wrist",
+        "body": "bag_9"
+      },
+      {
+        "name": "grasp_assist_10",
+        "anchor": "0:wrist",
+        "body": "bag_10"
+      },
+      {
+        "name": "grasp_assist_11",
+        "anchor": "0:wrist",
+        "body": "bag_11"
+      },
+      {
+        "name": "grasp_assist_12",
+        "anchor": "0:wrist",
+        "body": "bag_12"
+      },
+      {
+        "name": "grasp_assist_13",
+        "anchor": "0:wrist",
+        "body": "bag_13"
+      },
+      {
+        "name": "grasp_assist_14",
+        "anchor": "0:wrist",
+        "body": "bag_14"
+      },
+      {
+        "name": "grasp_assist_15",
+        "anchor": "0:wrist",
+        "body": "bag_15"
+      },
+      {
+        "name": "grasp_assist_16",
+        "anchor": "0:wrist",
+        "body": "bag_16"
+      },
+      {
+        "name": "grasp_assist_17",
+        "anchor": "0:wrist",
+        "body": "bag_17"
+      },
+      {
+        "name": "grasp_assist_18",
+        "anchor": "0:wrist",
+        "body": "bag_18"
+      },
+      {
+        "name": "grasp_assist_19",
+        "anchor": "0:wrist",
+        "body": "bag_19"
+      },
+      {
+        "name": "grasp_assist_20",
+        "anchor": "0:wrist",
+        "body": "bag_20"
+      },
+      {
+        "name": "grasp_assist_21",
+        "anchor": "0:wrist",
+        "body": "bag_21"
+      },
+      {
+        "name": "grasp_assist_22",
+        "anchor": "0:wrist",
+        "body": "bag_22"
+      },
+      {
+        "name": "grasp_assist_23",
+        "anchor": "0:wrist",
+        "body": "bag_23"
+      },
+      {
+        "name": "grasp_assist_24",
+        "anchor": "0:wrist",
+        "body": "bag_24"
+      },
+      {
+        "name": "grasp_assist_25",
+        "anchor": "0:wrist",
+        "body": "bag_25"
+      },
+      {
+        "name": "grasp_assist_26",
+        "anchor": "0:wrist",
+        "body": "bag_26"
+      },
+      {
+        "name": "grasp_assist_27",
+        "anchor": "0:wrist",
+        "body": "bag_27"
+      },
+      {
+        "name": "grasp_assist_28",
+        "anchor": "0:wrist",
+        "body": "bag_28"
+      },
+      {
+        "name": "grasp_assist_29",
+        "anchor": "0:wrist",
+        "body": "bag_29"
+      },
+      {
+        "name": "grasp_assist_30",
+        "anchor": "0:wrist",
+        "body": "bag_30"
+      },
+      {
+        "name": "grasp_assist_31",
+        "anchor": "0:wrist",
+        "body": "bag_31"
+      },
+      {
+        "name": "grasp_assist_32",
+        "anchor": "0:wrist",
+        "body": "bag_32"
+      },
+      {
+        "name": "grasp_assist_33",
+        "anchor": "0:wrist",
+        "body": "bag_33"
+      },
+      {
+        "name": "grasp_assist_34",
+        "anchor": "0:wrist",
+        "body": "bag_34"
+      },
+      {
+        "name": "grasp_assist_35",
+        "anchor": "0:wrist",
+        "body": "bag_35"
+      },
+      {
+        "name": "grasp_assist_36",
+        "anchor": "0:wrist",
+        "body": "bag_36"
+      },
+      {
+        "name": "grasp_assist_37",
+        "anchor": "0:wrist",
+        "body": "bag_37"
+      },
+      {
+        "name": "grasp_assist_38",
+        "anchor": "0:wrist",
+        "body": "bag_38"
+      },
+      {
+        "name": "grasp_assist_39",
+        "anchor": "0:wrist",
+        "body": "bag_39"
+      },
+      {
+        "name": "grasp_assist_40",
+        "anchor": "0:wrist",
+        "body": "bag_40"
+      },
+      {
+        "name": "grasp_assist_41",
+        "anchor": "0:wrist",
+        "body": "bag_41"
+      },
+      {
+        "name": "grasp_assist_42",
+        "anchor": "0:wrist",
+        "body": "bag_42"
+      },
+      {
+        "name": "grasp_assist_43",
+        "anchor": "0:wrist",
+        "body": "bag_43"
+      },
+      {
+        "name": "grasp_assist_44",
+        "anchor": "0:wrist",
+        "body": "bag_44"
+      },
+      {
+        "name": "grasp_assist_45",
+        "anchor": "0:wrist",
+        "body": "bag_45"
+      },
+      {
+        "name": "grasp_assist_46",
+        "anchor": "0:wrist",
+        "body": "bag_46"
+      },
+      {
+        "name": "grasp_assist_47",
+        "anchor": "0:wrist",
+        "body": "bag_47"
+      },
+      {
+        "name": "grasp_assist_48",
+        "anchor": "0:wrist",
+        "body": "bag_48"
+      },
+      {
+        "name": "grasp_assist_49",
+        "anchor": "0:wrist",
+        "body": "bag_49"
+      },
+      {
+        "name": "grasp_assist_50",
+        "anchor": "0:wrist",
+        "body": "bag_50"
+      },
+      {
+        "name": "grasp_assist_51",
+        "anchor": "0:wrist",
+        "body": "bag_51"
+      },
+      {
+        "name": "grasp_assist_52",
+        "anchor": "0:wrist",
+        "body": "bag_52"
+      },
+      {
+        "name": "grasp_assist_53",
+        "anchor": "0:wrist",
+        "body": "bag_53"
+      },
+      {
+        "name": "grasp_assist_54",
+        "anchor": "0:wrist",
+        "body": "bag_54"
+      },
+      {
+        "name": "grasp_assist_55",
+        "anchor": "0:wrist",
+        "body": "bag_55"
+      },
+      {
+        "name": "grasp_assist_56",
+        "anchor": "0:wrist",
+        "body": "bag_56"
+      },
+      {
+        "name": "grasp_assist_57",
+        "anchor": "0:wrist",
+        "body": "bag_57"
+      },
+      {
+        "name": "grasp_assist_58",
+        "anchor": "0:wrist",
+        "body": "bag_58"
+      },
+      {
+        "name": "grasp_assist_59",
+        "anchor": "0:wrist",
+        "body": "bag_59"
+      },
+      {
+        "name": "grasp_assist_60",
+        "anchor": "0:wrist",
+        "body": "bag_60"
+      },
+      {
+        "name": "grasp_assist_61",
+        "anchor": "0:wrist",
+        "body": "bag_61"
+      },
+      {
+        "name": "grasp_assist_62",
+        "anchor": "0:wrist",
+        "body": "bag_62"
+      },
+      {
+        "name": "grasp_assist_63",
+        "anchor": "0:wrist",
+        "body": "bag_63"
+      },
+      {
+        "name": "grasp_assist_64",
+        "anchor": "0:wrist",
+        "body": "bag_64"
+      },
+      {
+        "name": "grasp_assist_65",
+        "anchor": "0:wrist",
+        "body": "bag_65"
+      },
+      {
+        "name": "grasp_assist_66",
+        "anchor": "0:wrist",
+        "body": "bag_66"
+      },
+      {
+        "name": "grasp_assist_67",
+        "anchor": "0:wrist",
+        "body": "bag_67"
+      },
+      {
+        "name": "grasp_assist_68",
+        "anchor": "0:wrist",
+        "body": "bag_68"
+      },
+      {
+        "name": "grasp_assist_69",
+        "anchor": "0:wrist",
+        "body": "bag_69"
+      },
+      {
+        "name": "grasp_assist_70",
+        "anchor": "0:wrist",
+        "body": "bag_70"
+      },
+      {
+        "name": "grasp_assist_71",
+        "anchor": "0:wrist",
+        "body": "bag_71"
+      },
+      {
+        "name": "grasp_assist_72",
+        "anchor": "0:wrist",
+        "body": "bag_72"
+      },
+      {
+        "name": "grasp_assist_73",
+        "anchor": "0:wrist",
+        "body": "bag_73"
+      },
+      {
+        "name": "grasp_assist_74",
+        "anchor": "0:wrist",
+        "body": "bag_74"
+      },
+      {
+        "name": "grasp_assist_75",
+        "anchor": "0:wrist",
+        "body": "bag_75"
+      },
+      {
+        "name": "grasp_assist_76",
+        "anchor": "0:wrist",
+        "body": "bag_76"
+      },
+      {
+        "name": "grasp_assist_77",
+        "anchor": "0:wrist",
+        "body": "bag_77"
+      },
+      {
+        "name": "grasp_assist_78",
+        "anchor": "0:wrist",
+        "body": "bag_78"
+      },
+      {
+        "name": "grasp_assist_79",
+        "anchor": "0:wrist",
+        "body": "bag_79"
+      },
+      {
+        "name": "grasp_assist_80",
+        "anchor": "0:wrist",
+        "body": "bag_80"
+      },
+      {
+        "name": "grasp_assist_81",
+        "anchor": "0:wrist",
+        "body": "bag_81"
+      },
+      {
+        "name": "grasp_assist_82",
+        "anchor": "0:wrist",
+        "body": "bag_82"
+      },
+      {
+        "name": "grasp_assist_83",
+        "anchor": "0:wrist",
+        "body": "bag_83"
+      },
+      {
+        "name": "grasp_assist_84",
+        "anchor": "0:wrist",
+        "body": "bag_84"
+      },
+      {
+        "name": "grasp_assist_85",
+        "anchor": "0:wrist",
+        "body": "bag_85"
+      },
+      {
+        "name": "grasp_assist_86",
+        "anchor": "0:wrist",
+        "body": "bag_86"
+      },
+      {
+        "name": "grasp_assist_87",
+        "anchor": "0:wrist",
+        "body": "bag_87"
+      },
+      {
+        "name": "grasp_assist_88",
+        "anchor": "0:wrist",
+        "body": "bag_88"
+      },
+      {
+        "name": "grasp_assist_89",
+        "anchor": "0:wrist",
+        "body": "bag_89"
+      },
+      {
+        "name": "grasp_assist_90",
+        "anchor": "0:wrist",
+        "body": "bag_90"
+      },
+      {
+        "name": "grasp_assist_91",
+        "anchor": "0:wrist",
+        "body": "bag_91"
+      },
+      {
+        "name": "grasp_assist_92",
+        "anchor": "0:wrist",
+        "body": "bag_92"
+      },
+      {
+        "name": "grasp_assist_93",
+        "anchor": "0:wrist",
+        "body": "bag_93"
+      },
+      {
+        "name": "grasp_assist_94",
+        "anchor": "0:wrist",
+        "body": "bag_94"
+      },
+      {
+        "name": "grasp_assist_95",
+        "anchor": "0:wrist",
+        "body": "bag_95"
+      },
+      {
+        "name": "grasp_assist_96",
+        "anchor": "0:wrist",
+        "body": "bag_96"
+      },
+      {
+        "name": "grasp_assist_97",
+        "anchor": "0:wrist",
+        "body": "bag_97"
+      },
+      {
+        "name": "grasp_assist_98",
+        "anchor": "0:wrist",
+        "body": "bag_98"
+      },
+      {
+        "name": "grasp_assist_99",
+        "anchor": "0:wrist",
+        "body": "bag_99"
+      },
+      {
+        "name": "grasp_assist_100",
+        "anchor": "0:wrist",
+        "body": "bag_100"
+      },
+      {
+        "name": "grasp_assist_101",
+        "anchor": "0:wrist",
+        "body": "bag_101"
+      },
+      {
+        "name": "grasp_assist_102",
+        "anchor": "0:wrist",
+        "body": "bag_102"
+      },
+      {
+        "name": "grasp_assist_103",
+        "anchor": "0:wrist",
+        "body": "bag_103"
+      },
+      {
+        "name": "grasp_assist_104",
+        "anchor": "0:wrist",
+        "body": "bag_104"
+      },
+      {
+        "name": "grasp_assist_105",
+        "anchor": "0:wrist",
+        "body": "bag_105"
+      },
+      {
+        "name": "grasp_assist_106",
+        "anchor": "0:wrist",
+        "body": "bag_106"
+      },
+      {
+        "name": "grasp_assist_107",
+        "anchor": "0:wrist",
+        "body": "bag_107"
+      },
+      {
+        "name": "grasp_assist_108",
+        "anchor": "0:wrist",
+        "body": "bag_108"
+      },
+      {
+        "name": "grasp_assist_109",
+        "anchor": "0:wrist",
+        "body": "bag_109"
+      },
+      {
+        "name": "grasp_assist_110",
+        "anchor": "0:wrist",
+        "body": "bag_110"
+      },
+      {
+        "name": "grasp_assist_111",
+        "anchor": "0:wrist",
+        "body": "bag_111"
+      },
+      {
+        "name": "grasp_assist_112",
+        "anchor": "0:wrist",
+        "body": "bag_112"
+      },
+      {
+        "name": "grasp_assist_113",
+        "anchor": "0:wrist",
+        "body": "bag_113"
+      },
+      {
+        "name": "grasp_assist_114",
+        "anchor": "0:wrist",
+        "body": "bag_114"
+      },
+      {
+        "name": "grasp_assist_115",
+        "anchor": "0:wrist",
+        "body": "bag_115"
+      },
+      {
+        "name": "grasp_assist_116",
+        "anchor": "0:wrist",
+        "body": "bag_116"
+      },
+      {
+        "name": "grasp_assist_117",
+        "anchor": "0:wrist",
+        "body": "bag_117"
+      },
+      {
+        "name": "grasp_assist_118",
+        "anchor": "0:wrist",
+        "body": "bag_118"
+      },
+      {
+        "name": "grasp_assist_119",
+        "anchor": "0:wrist",
+        "body": "bag_119"
+      },
+      {
+        "name": "grasp_assist_120",
+        "anchor": "0:wrist",
+        "body": "bag_120"
+      },
+      {
+        "name": "grasp_assist_121",
+        "anchor": "0:wrist",
+        "body": "bag_121"
+      },
+      {
+        "name": "grasp_assist_122",
+        "anchor": "0:wrist",
+        "body": "bag_122"
+      },
+      {
+        "name": "grasp_assist_123",
+        "anchor": "0:wrist",
+        "body": "bag_123"
+      },
+      {
+        "name": "grasp_assist_124",
+        "anchor": "0:wrist",
+        "body": "bag_124"
+      },
+      {
+        "name": "grasp_assist_125",
+        "anchor": "0:wrist",
+        "body": "bag_125"
+      },
+      {
+        "name": "grasp_assist_126",
+        "anchor": "0:wrist",
+        "body": "bag_126"
+      },
+      {
+        "name": "grasp_assist_127",
+        "anchor": "0:wrist",
+        "body": "bag_127"
+      },
+      {
+        "name": "grasp_assist_128",
+        "anchor": "0:wrist",
+        "body": "bag_128"
+      },
+      {
+        "name": "grasp_assist_129",
+        "anchor": "0:wrist",
+        "body": "bag_129"
+      },
+      {
+        "name": "grasp_assist_130",
+        "anchor": "0:wrist",
+        "body": "bag_130"
+      },
+      {
+        "name": "grasp_assist_131",
+        "anchor": "1:wrist",
+        "body": "bag_0"
+      },
+      {
+        "name": "grasp_assist_132",
+        "anchor": "1:wrist",
+        "body": "bag_1"
+      },
+      {
+        "name": "grasp_assist_133",
+        "anchor": "1:wrist",
+        "body": "bag_2"
+      },
+      {
+        "name": "grasp_assist_134",
+        "anchor": "1:wrist",
+        "body": "bag_3"
+      },
+      {
+        "name": "grasp_assist_135",
+        "anchor": "1:wrist",
+        "body": "bag_4"
+      },
+      {
+        "name": "grasp_assist_136",
+        "anchor": "1:wrist",
+        "body": "bag_5"
+      },
+      {
+        "name": "grasp_assist_137",
+        "anchor": "1:wrist",
+        "body": "bag_6"
+      },
+      {
+        "name": "grasp_assist_138",
+        "anchor": "1:wrist",
+        "body": "bag_7"
+      },
+      {
+        "name": "grasp_assist_139",
+        "anchor": "1:wrist",
+        "body": "bag_8"
+      },
+      {
+        "name": "grasp_assist_140",
+        "anchor": "1:wrist",
+        "body": "bag_9"
+      },
+      {
+        "name": "grasp_assist_141",
+        "anchor": "1:wrist",
+        "body": "bag_10"
+      },
+      {
+        "name": "grasp_assist_142",
+        "anchor": "1:wrist",
+        "body": "bag_11"
+      },
+      {
+        "name": "grasp_assist_143",
+        "anchor": "1:wrist",
+        "body": "bag_12"
+      },
+      {
+        "name": "grasp_assist_144",
+        "anchor": "1:wrist",
+        "body": "bag_13"
+      },
+      {
+        "name": "grasp_assist_145",
+        "anchor": "1:wrist",
+        "body": "bag_14"
+      },
+      {
+        "name": "grasp_assist_146",
+        "anchor": "1:wrist",
+        "body": "bag_15"
+      },
+      {
+        "name": "grasp_assist_147",
+        "anchor": "1:wrist",
+        "body": "bag_16"
+      },
+      {
+        "name": "grasp_assist_148",
+        "anchor": "1:wrist",
+        "body": "bag_17"
+      },
+      {
+        "name": "grasp_assist_149",
+        "anchor": "1:wrist",
+        "body": "bag_18"
+      },
+      {
+        "name": "grasp_assist_150",
+        "anchor": "1:wrist",
+        "body": "bag_19"
+      },
+      {
+        "name": "grasp_assist_151",
+        "anchor": "1:wrist",
+        "body": "bag_20"
+      },
+      {
+        "name": "grasp_assist_152",
+        "anchor": "1:wrist",
+        "body": "bag_21"
+      },
+      {
+        "name": "grasp_assist_153",
+        "anchor": "1:wrist",
+        "body": "bag_22"
+      },
+      {
+        "name": "grasp_assist_154",
+        "anchor": "1:wrist",
+        "body": "bag_23"
+      },
+      {
+        "name": "grasp_assist_155",
+        "anchor": "1:wrist",
+        "body": "bag_24"
+      },
+      {
+        "name": "grasp_assist_156",
+        "anchor": "1:wrist",
+        "body": "bag_25"
+      },
+      {
+        "name": "grasp_assist_157",
+        "anchor": "1:wrist",
+        "body": "bag_26"
+      },
+      {
+        "name": "grasp_assist_158",
+        "anchor": "1:wrist",
+        "body": "bag_27"
+      },
+      {
+        "name": "grasp_assist_159",
+        "anchor": "1:wrist",
+        "body": "bag_28"
+      },
+      {
+        "name": "grasp_assist_160",
+        "anchor": "1:wrist",
+        "body": "bag_29"
+      },
+      {
+        "name": "grasp_assist_161",
+        "anchor": "1:wrist",
+        "body": "bag_30"
+      },
+      {
+        "name": "grasp_assist_162",
+        "anchor": "1:wrist",
+        "body": "bag_31"
+      },
+      {
+        "name": "grasp_assist_163",
+        "anchor": "1:wrist",
+        "body": "bag_32"
+      },
+      {
+        "name": "grasp_assist_164",
+        "anchor": "1:wrist",
+        "body": "bag_33"
+      },
+      {
+        "name": "grasp_assist_165",
+        "anchor": "1:wrist",
+        "body": "bag_34"
+      },
+      {
+        "name": "grasp_assist_166",
+        "anchor": "1:wrist",
+        "body": "bag_35"
+      },
+      {
+        "name": "grasp_assist_167",
+        "anchor": "1:wrist",
+        "body": "bag_36"
+      },
+      {
+        "name": "grasp_assist_168",
+        "anchor": "1:wrist",
+        "body": "bag_37"
+      },
+      {
+        "name": "grasp_assist_169",
+        "anchor": "1:wrist",
+        "body": "bag_38"
+      },
+      {
+        "name": "grasp_assist_170",
+        "anchor": "1:wrist",
+        "body": "bag_39"
+      },
+      {
+        "name": "grasp_assist_171",
+        "anchor": "1:wrist",
+        "body": "bag_40"
+      },
+      {
+        "name": "grasp_assist_172",
+        "anchor": "1:wrist",
+        "body": "bag_41"
+      },
+      {
+        "name": "grasp_assist_173",
+        "anchor": "1:wrist",
+        "body": "bag_42"
+      },
+      {
+        "name": "grasp_assist_174",
+        "anchor": "1:wrist",
+        "body": "bag_43"
+      },
+      {
+        "name": "grasp_assist_175",
+        "anchor": "1:wrist",
+        "body": "bag_44"
+      },
+      {
+        "name": "grasp_assist_176",
+        "anchor": "1:wrist",
+        "body": "bag_45"
+      },
+      {
+        "name": "grasp_assist_177",
+        "anchor": "1:wrist",
+        "body": "bag_46"
+      },
+      {
+        "name": "grasp_assist_178",
+        "anchor": "1:wrist",
+        "body": "bag_47"
+      },
+      {
+        "name": "grasp_assist_179",
+        "anchor": "1:wrist",
+        "body": "bag_48"
+      },
+      {
+        "name": "grasp_assist_180",
+        "anchor": "1:wrist",
+        "body": "bag_49"
+      },
+      {
+        "name": "grasp_assist_181",
+        "anchor": "1:wrist",
+        "body": "bag_50"
+      },
+      {
+        "name": "grasp_assist_182",
+        "anchor": "1:wrist",
+        "body": "bag_51"
+      },
+      {
+        "name": "grasp_assist_183",
+        "anchor": "1:wrist",
+        "body": "bag_52"
+      },
+      {
+        "name": "grasp_assist_184",
+        "anchor": "1:wrist",
+        "body": "bag_53"
+      },
+      {
+        "name": "grasp_assist_185",
+        "anchor": "1:wrist",
+        "body": "bag_54"
+      },
+      {
+        "name": "grasp_assist_186",
+        "anchor": "1:wrist",
+        "body": "bag_55"
+      },
+      {
+        "name": "grasp_assist_187",
+        "anchor": "1:wrist",
+        "body": "bag_56"
+      },
+      {
+        "name": "grasp_assist_188",
+        "anchor": "1:wrist",
+        "body": "bag_57"
+      },
+      {
+        "name": "grasp_assist_189",
+        "anchor": "1:wrist",
+        "body": "bag_58"
+      },
+      {
+        "name": "grasp_assist_190",
+        "anchor": "1:wrist",
+        "body": "bag_59"
+      },
+      {
+        "name": "grasp_assist_191",
+        "anchor": "1:wrist",
+        "body": "bag_60"
+      },
+      {
+        "name": "grasp_assist_192",
+        "anchor": "1:wrist",
+        "body": "bag_61"
+      },
+      {
+        "name": "grasp_assist_193",
+        "anchor": "1:wrist",
+        "body": "bag_62"
+      },
+      {
+        "name": "grasp_assist_194",
+        "anchor": "1:wrist",
+        "body": "bag_63"
+      },
+      {
+        "name": "grasp_assist_195",
+        "anchor": "1:wrist",
+        "body": "bag_64"
+      },
+      {
+        "name": "grasp_assist_196",
+        "anchor": "1:wrist",
+        "body": "bag_65"
+      },
+      {
+        "name": "grasp_assist_197",
+        "anchor": "1:wrist",
+        "body": "bag_66"
+      },
+      {
+        "name": "grasp_assist_198",
+        "anchor": "1:wrist",
+        "body": "bag_67"
+      },
+      {
+        "name": "grasp_assist_199",
+        "anchor": "1:wrist",
+        "body": "bag_68"
+      },
+      {
+        "name": "grasp_assist_200",
+        "anchor": "1:wrist",
+        "body": "bag_69"
+      },
+      {
+        "name": "grasp_assist_201",
+        "anchor": "1:wrist",
+        "body": "bag_70"
+      },
+      {
+        "name": "grasp_assist_202",
+        "anchor": "1:wrist",
+        "body": "bag_71"
+      },
+      {
+        "name": "grasp_assist_203",
+        "anchor": "1:wrist",
+        "body": "bag_72"
+      },
+      {
+        "name": "grasp_assist_204",
+        "anchor": "1:wrist",
+        "body": "bag_73"
+      },
+      {
+        "name": "grasp_assist_205",
+        "anchor": "1:wrist",
+        "body": "bag_74"
+      },
+      {
+        "name": "grasp_assist_206",
+        "anchor": "1:wrist",
+        "body": "bag_75"
+      },
+      {
+        "name": "grasp_assist_207",
+        "anchor": "1:wrist",
+        "body": "bag_76"
+      },
+      {
+        "name": "grasp_assist_208",
+        "anchor": "1:wrist",
+        "body": "bag_77"
+      },
+      {
+        "name": "grasp_assist_209",
+        "anchor": "1:wrist",
+        "body": "bag_78"
+      },
+      {
+        "name": "grasp_assist_210",
+        "anchor": "1:wrist",
+        "body": "bag_79"
+      },
+      {
+        "name": "grasp_assist_211",
+        "anchor": "1:wrist",
+        "body": "bag_80"
+      },
+      {
+        "name": "grasp_assist_212",
+        "anchor": "1:wrist",
+        "body": "bag_81"
+      },
+      {
+        "name": "grasp_assist_213",
+        "anchor": "1:wrist",
+        "body": "bag_82"
+      },
+      {
+        "name": "grasp_assist_214",
+        "anchor": "1:wrist",
+        "body": "bag_83"
+      },
+      {
+        "name": "grasp_assist_215",
+        "anchor": "1:wrist",
+        "body": "bag_84"
+      },
+      {
+        "name": "grasp_assist_216",
+        "anchor": "1:wrist",
+        "body": "bag_85"
+      },
+      {
+        "name": "grasp_assist_217",
+        "anchor": "1:wrist",
+        "body": "bag_86"
+      },
+      {
+        "name": "grasp_assist_218",
+        "anchor": "1:wrist",
+        "body": "bag_87"
+      },
+      {
+        "name": "grasp_assist_219",
+        "anchor": "1:wrist",
+        "body": "bag_88"
+      },
+      {
+        "name": "grasp_assist_220",
+        "anchor": "1:wrist",
+        "body": "bag_89"
+      },
+      {
+        "name": "grasp_assist_221",
+        "anchor": "1:wrist",
+        "body": "bag_90"
+      },
+      {
+        "name": "grasp_assist_222",
+        "anchor": "1:wrist",
+        "body": "bag_91"
+      },
+      {
+        "name": "grasp_assist_223",
+        "anchor": "1:wrist",
+        "body": "bag_92"
+      },
+      {
+        "name": "grasp_assist_224",
+        "anchor": "1:wrist",
+        "body": "bag_93"
+      },
+      {
+        "name": "grasp_assist_225",
+        "anchor": "1:wrist",
+        "body": "bag_94"
+      },
+      {
+        "name": "grasp_assist_226",
+        "anchor": "1:wrist",
+        "body": "bag_95"
+      },
+      {
+        "name": "grasp_assist_227",
+        "anchor": "1:wrist",
+        "body": "bag_96"
+      },
+      {
+        "name": "grasp_assist_228",
+        "anchor": "1:wrist",
+        "body": "bag_97"
+      },
+      {
+        "name": "grasp_assist_229",
+        "anchor": "1:wrist",
+        "body": "bag_98"
+      },
+      {
+        "name": "grasp_assist_230",
+        "anchor": "1:wrist",
+        "body": "bag_99"
+      },
+      {
+        "name": "grasp_assist_231",
+        "anchor": "1:wrist",
+        "body": "bag_100"
+      },
+      {
+        "name": "grasp_assist_232",
+        "anchor": "1:wrist",
+        "body": "bag_101"
+      },
+      {
+        "name": "grasp_assist_233",
+        "anchor": "1:wrist",
+        "body": "bag_102"
+      },
+      {
+        "name": "grasp_assist_234",
+        "anchor": "1:wrist",
+        "body": "bag_103"
+      },
+      {
+        "name": "grasp_assist_235",
+        "anchor": "1:wrist",
+        "body": "bag_104"
+      },
+      {
+        "name": "grasp_assist_236",
+        "anchor": "1:wrist",
+        "body": "bag_105"
+      },
+      {
+        "name": "grasp_assist_237",
+        "anchor": "1:wrist",
+        "body": "bag_106"
+      },
+      {
+        "name": "grasp_assist_238",
+        "anchor": "1:wrist",
+        "body": "bag_107"
+      },
+      {
+        "name": "grasp_assist_239",
+        "anchor": "1:wrist",
+        "body": "bag_108"
+      },
+      {
+        "name": "grasp_assist_240",
+        "anchor": "1:wrist",
+        "body": "bag_109"
+      },
+      {
+        "name": "grasp_assist_241",
+        "anchor": "1:wrist",
+        "body": "bag_110"
+      },
+      {
+        "name": "grasp_assist_242",
+        "anchor": "1:wrist",
+        "body": "bag_111"
+      },
+      {
+        "name": "grasp_assist_243",
+        "anchor": "1:wrist",
+        "body": "bag_112"
+      },
+      {
+        "name": "grasp_assist_244",
+        "anchor": "1:wrist",
+        "body": "bag_113"
+      },
+      {
+        "name": "grasp_assist_245",
+        "anchor": "1:wrist",
+        "body": "bag_114"
+      },
+      {
+        "name": "grasp_assist_246",
+        "anchor": "1:wrist",
+        "body": "bag_115"
+      },
+      {
+        "name": "grasp_assist_247",
+        "anchor": "1:wrist",
+        "body": "bag_116"
+      },
+      {
+        "name": "grasp_assist_248",
+        "anchor": "1:wrist",
+        "body": "bag_117"
+      },
+      {
+        "name": "grasp_assist_249",
+        "anchor": "1:wrist",
+        "body": "bag_118"
+      },
+      {
+        "name": "grasp_assist_250",
+        "anchor": "1:wrist",
+        "body": "bag_119"
+      },
+      {
+        "name": "grasp_assist_251",
+        "anchor": "1:wrist",
+        "body": "bag_120"
+      },
+      {
+        "name": "grasp_assist_252",
+        "anchor": "1:wrist",
+        "body": "bag_121"
+      },
+      {
+        "name": "grasp_assist_253",
+        "anchor": "1:wrist",
+        "body": "bag_122"
+      },
+      {
+        "name": "grasp_assist_254",
+        "anchor": "1:wrist",
+        "body": "bag_123"
+      },
+      {
+        "name": "grasp_assist_255",
+        "anchor": "1:wrist",
+        "body": "bag_124"
+      },
+      {
+        "name": "grasp_assist_256",
+        "anchor": "1:wrist",
+        "body": "bag_125"
+      },
+      {
+        "name": "grasp_assist_257",
+        "anchor": "1:wrist",
+        "body": "bag_126"
+      },
+      {
+        "name": "grasp_assist_258",
+        "anchor": "1:wrist",
+        "body": "bag_127"
+      },
+      {
+        "name": "grasp_assist_259",
+        "anchor": "1:wrist",
+        "body": "bag_128"
+      },
+      {
+        "name": "grasp_assist_260",
+        "anchor": "1:wrist",
+        "body": "bag_129"
+      },
+      {
+        "name": "grasp_assist_261",
+        "anchor": "1:wrist",
+        "body": "bag_130"
+      },
+      {
+        "name": "grasp_assist_262",
+        "anchor": "0:left_link7",
+        "body": "bag_0"
+      },
+      {
+        "name": "grasp_assist_263",
+        "anchor": "0:left_link7",
+        "body": "bag_1"
+      },
+      {
+        "name": "grasp_assist_264",
+        "anchor": "0:left_link7",
+        "body": "bag_2"
+      },
+      {
+        "name": "grasp_assist_265",
+        "anchor": "0:left_link7",
+        "body": "bag_3"
+      },
+      {
+        "name": "grasp_assist_266",
+        "anchor": "0:left_link7",
+        "body": "bag_4"
+      },
+      {
+        "name": "grasp_assist_267",
+        "anchor": "0:left_link7",
+        "body": "bag_5"
+      },
+      {
+        "name": "grasp_assist_268",
+        "anchor": "0:left_link7",
+        "body": "bag_6"
+      },
+      {
+        "name": "grasp_assist_269",
+        "anchor": "0:left_link7",
+        "body": "bag_7"
+      },
+      {
+        "name": "grasp_assist_270",
+        "anchor": "0:left_link7",
+        "body": "bag_8"
+      },
+      {
+        "name": "grasp_assist_271",
+        "anchor": "0:left_link7",
+        "body": "bag_9"
+      },
+      {
+        "name": "grasp_assist_272",
+        "anchor": "0:left_link7",
+        "body": "bag_10"
+      },
+      {
+        "name": "grasp_assist_273",
+        "anchor": "0:left_link7",
+        "body": "bag_11"
+      },
+      {
+        "name": "grasp_assist_274",
+        "anchor": "0:left_link7",
+        "body": "bag_12"
+      },
+      {
+        "name": "grasp_assist_275",
+        "anchor": "0:left_link7",
+        "body": "bag_13"
+      },
+      {
+        "name": "grasp_assist_276",
+        "anchor": "0:left_link7",
+        "body": "bag_14"
+      },
+      {
+        "name": "grasp_assist_277",
+        "anchor": "0:left_link7",
+        "body": "bag_15"
+      },
+      {
+        "name": "grasp_assist_278",
+        "anchor": "0:left_link7",
+        "body": "bag_16"
+      },
+      {
+        "name": "grasp_assist_279",
+        "anchor": "0:left_link7",
+        "body": "bag_17"
+      },
+      {
+        "name": "grasp_assist_280",
+        "anchor": "0:left_link7",
+        "body": "bag_18"
+      },
+      {
+        "name": "grasp_assist_281",
+        "anchor": "0:left_link7",
+        "body": "bag_19"
+      },
+      {
+        "name": "grasp_assist_282",
+        "anchor": "0:left_link7",
+        "body": "bag_20"
+      },
+      {
+        "name": "grasp_assist_283",
+        "anchor": "0:left_link7",
+        "body": "bag_21"
+      },
+      {
+        "name": "grasp_assist_284",
+        "anchor": "0:left_link7",
+        "body": "bag_22"
+      },
+      {
+        "name": "grasp_assist_285",
+        "anchor": "0:left_link7",
+        "body": "bag_23"
+      },
+      {
+        "name": "grasp_assist_286",
+        "anchor": "0:left_link7",
+        "body": "bag_24"
+      },
+      {
+        "name": "grasp_assist_287",
+        "anchor": "0:left_link7",
+        "body": "bag_25"
+      },
+      {
+        "name": "grasp_assist_288",
+        "anchor": "0:left_link7",
+        "body": "bag_26"
+      },
+      {
+        "name": "grasp_assist_289",
+        "anchor": "0:left_link7",
+        "body": "bag_27"
+      },
+      {
+        "name": "grasp_assist_290",
+        "anchor": "0:left_link7",
+        "body": "bag_28"
+      },
+      {
+        "name": "grasp_assist_291",
+        "anchor": "0:left_link7",
+        "body": "bag_29"
+      },
+      {
+        "name": "grasp_assist_292",
+        "anchor": "0:left_link7",
+        "body": "bag_30"
+      },
+      {
+        "name": "grasp_assist_293",
+        "anchor": "0:left_link7",
+        "body": "bag_31"
+      },
+      {
+        "name": "grasp_assist_294",
+        "anchor": "0:left_link7",
+        "body": "bag_32"
+      },
+      {
+        "name": "grasp_assist_295",
+        "anchor": "0:left_link7",
+        "body": "bag_33"
+      },
+      {
+        "name": "grasp_assist_296",
+        "anchor": "0:left_link7",
+        "body": "bag_34"
+      },
+      {
+        "name": "grasp_assist_297",
+        "anchor": "0:left_link7",
+        "body": "bag_35"
+      },
+      {
+        "name": "grasp_assist_298",
+        "anchor": "0:left_link7",
+        "body": "bag_36"
+      },
+      {
+        "name": "grasp_assist_299",
+        "anchor": "0:left_link7",
+        "body": "bag_37"
+      },
+      {
+        "name": "grasp_assist_300",
+        "anchor": "0:left_link7",
+        "body": "bag_38"
+      },
+      {
+        "name": "grasp_assist_301",
+        "anchor": "0:left_link7",
+        "body": "bag_39"
+      },
+      {
+        "name": "grasp_assist_302",
+        "anchor": "0:left_link7",
+        "body": "bag_40"
+      },
+      {
+        "name": "grasp_assist_303",
+        "anchor": "0:left_link7",
+        "body": "bag_41"
+      },
+      {
+        "name": "grasp_assist_304",
+        "anchor": "0:left_link7",
+        "body": "bag_42"
+      },
+      {
+        "name": "grasp_assist_305",
+        "anchor": "0:left_link7",
+        "body": "bag_43"
+      },
+      {
+        "name": "grasp_assist_306",
+        "anchor": "0:left_link7",
+        "body": "bag_44"
+      },
+      {
+        "name": "grasp_assist_307",
+        "anchor": "0:left_link7",
+        "body": "bag_45"
+      },
+      {
+        "name": "grasp_assist_308",
+        "anchor": "0:left_link7",
+        "body": "bag_46"
+      },
+      {
+        "name": "grasp_assist_309",
+        "anchor": "0:left_link7",
+        "body": "bag_47"
+      },
+      {
+        "name": "grasp_assist_310",
+        "anchor": "0:left_link7",
+        "body": "bag_48"
+      },
+      {
+        "name": "grasp_assist_311",
+        "anchor": "0:left_link7",
+        "body": "bag_49"
+      },
+      {
+        "name": "grasp_assist_312",
+        "anchor": "0:left_link7",
+        "body": "bag_50"
+      },
+      {
+        "name": "grasp_assist_313",
+        "anchor": "0:left_link7",
+        "body": "bag_51"
+      },
+      {
+        "name": "grasp_assist_314",
+        "anchor": "0:left_link7",
+        "body": "bag_52"
+      },
+      {
+        "name": "grasp_assist_315",
+        "anchor": "0:left_link7",
+        "body": "bag_53"
+      },
+      {
+        "name": "grasp_assist_316",
+        "anchor": "0:left_link7",
+        "body": "bag_54"
+      },
+      {
+        "name": "grasp_assist_317",
+        "anchor": "0:left_link7",
+        "body": "bag_55"
+      },
+      {
+        "name": "grasp_assist_318",
+        "anchor": "0:left_link7",
+        "body": "bag_56"
+      },
+      {
+        "name": "grasp_assist_319",
+        "anchor": "0:left_link7",
+        "body": "bag_57"
+      },
+      {
+        "name": "grasp_assist_320",
+        "anchor": "0:left_link7",
+        "body": "bag_58"
+      },
+      {
+        "name": "grasp_assist_321",
+        "anchor": "0:left_link7",
+        "body": "bag_59"
+      },
+      {
+        "name": "grasp_assist_322",
+        "anchor": "0:left_link7",
+        "body": "bag_60"
+      },
+      {
+        "name": "grasp_assist_323",
+        "anchor": "0:left_link7",
+        "body": "bag_61"
+      },
+      {
+        "name": "grasp_assist_324",
+        "anchor": "0:left_link7",
+        "body": "bag_62"
+      },
+      {
+        "name": "grasp_assist_325",
+        "anchor": "0:left_link7",
+        "body": "bag_63"
+      },
+      {
+        "name": "grasp_assist_326",
+        "anchor": "0:left_link7",
+        "body": "bag_64"
+      },
+      {
+        "name": "grasp_assist_327",
+        "anchor": "0:left_link7",
+        "body": "bag_65"
+      },
+      {
+        "name": "grasp_assist_328",
+        "anchor": "0:left_link7",
+        "body": "bag_66"
+      },
+      {
+        "name": "grasp_assist_329",
+        "anchor": "0:left_link7",
+        "body": "bag_67"
+      },
+      {
+        "name": "grasp_assist_330",
+        "anchor": "0:left_link7",
+        "body": "bag_68"
+      },
+      {
+        "name": "grasp_assist_331",
+        "anchor": "0:left_link7",
+        "body": "bag_69"
+      },
+      {
+        "name": "grasp_assist_332",
+        "anchor": "0:left_link7",
+        "body": "bag_70"
+      },
+      {
+        "name": "grasp_assist_333",
+        "anchor": "0:left_link7",
+        "body": "bag_71"
+      },
+      {
+        "name": "grasp_assist_334",
+        "anchor": "0:left_link7",
+        "body": "bag_72"
+      },
+      {
+        "name": "grasp_assist_335",
+        "anchor": "0:left_link7",
+        "body": "bag_73"
+      },
+      {
+        "name": "grasp_assist_336",
+        "anchor": "0:left_link7",
+        "body": "bag_74"
+      },
+      {
+        "name": "grasp_assist_337",
+        "anchor": "0:left_link7",
+        "body": "bag_75"
+      },
+      {
+        "name": "grasp_assist_338",
+        "anchor": "0:left_link7",
+        "body": "bag_76"
+      },
+      {
+        "name": "grasp_assist_339",
+        "anchor": "0:left_link7",
+        "body": "bag_77"
+      },
+      {
+        "name": "grasp_assist_340",
+        "anchor": "0:left_link7",
+        "body": "bag_78"
+      },
+      {
+        "name": "grasp_assist_341",
+        "anchor": "0:left_link7",
+        "body": "bag_79"
+      },
+      {
+        "name": "grasp_assist_342",
+        "anchor": "0:left_link7",
+        "body": "bag_80"
+      },
+      {
+        "name": "grasp_assist_343",
+        "anchor": "0:left_link7",
+        "body": "bag_81"
+      },
+      {
+        "name": "grasp_assist_344",
+        "anchor": "0:left_link7",
+        "body": "bag_82"
+      },
+      {
+        "name": "grasp_assist_345",
+        "anchor": "0:left_link7",
+        "body": "bag_83"
+      },
+      {
+        "name": "grasp_assist_346",
+        "anchor": "0:left_link7",
+        "body": "bag_84"
+      },
+      {
+        "name": "grasp_assist_347",
+        "anchor": "0:left_link7",
+        "body": "bag_85"
+      },
+      {
+        "name": "grasp_assist_348",
+        "anchor": "0:left_link7",
+        "body": "bag_86"
+      },
+      {
+        "name": "grasp_assist_349",
+        "anchor": "0:left_link7",
+        "body": "bag_87"
+      },
+      {
+        "name": "grasp_assist_350",
+        "anchor": "0:left_link7",
+        "body": "bag_88"
+      },
+      {
+        "name": "grasp_assist_351",
+        "anchor": "0:left_link7",
+        "body": "bag_89"
+      },
+      {
+        "name": "grasp_assist_352",
+        "anchor": "0:left_link7",
+        "body": "bag_90"
+      },
+      {
+        "name": "grasp_assist_353",
+        "anchor": "0:left_link7",
+        "body": "bag_91"
+      },
+      {
+        "name": "grasp_assist_354",
+        "anchor": "0:left_link7",
+        "body": "bag_92"
+      },
+      {
+        "name": "grasp_assist_355",
+        "anchor": "0:left_link7",
+        "body": "bag_93"
+      },
+      {
+        "name": "grasp_assist_356",
+        "anchor": "0:left_link7",
+        "body": "bag_94"
+      },
+      {
+        "name": "grasp_assist_357",
+        "anchor": "0:left_link7",
+        "body": "bag_95"
+      },
+      {
+        "name": "grasp_assist_358",
+        "anchor": "0:left_link7",
+        "body": "bag_96"
+      },
+      {
+        "name": "grasp_assist_359",
+        "anchor": "0:left_link7",
+        "body": "bag_97"
+      },
+      {
+        "name": "grasp_assist_360",
+        "anchor": "0:left_link7",
+        "body": "bag_98"
+      },
+      {
+        "name": "grasp_assist_361",
+        "anchor": "0:left_link7",
+        "body": "bag_99"
+      },
+      {
+        "name": "grasp_assist_362",
+        "anchor": "0:left_link7",
+        "body": "bag_100"
+      },
+      {
+        "name": "grasp_assist_363",
+        "anchor": "0:left_link7",
+        "body": "bag_101"
+      },
+      {
+        "name": "grasp_assist_364",
+        "anchor": "0:left_link7",
+        "body": "bag_102"
+      },
+      {
+        "name": "grasp_assist_365",
+        "anchor": "0:left_link7",
+        "body": "bag_103"
+      },
+      {
+        "name": "grasp_assist_366",
+        "anchor": "0:left_link7",
+        "body": "bag_104"
+      },
+      {
+        "name": "grasp_assist_367",
+        "anchor": "0:left_link7",
+        "body": "bag_105"
+      },
+      {
+        "name": "grasp_assist_368",
+        "anchor": "0:left_link7",
+        "body": "bag_106"
+      },
+      {
+        "name": "grasp_assist_369",
+        "anchor": "0:left_link7",
+        "body": "bag_107"
+      },
+      {
+        "name": "grasp_assist_370",
+        "anchor": "0:left_link7",
+        "body": "bag_108"
+      },
+      {
+        "name": "grasp_assist_371",
+        "anchor": "0:left_link7",
+        "body": "bag_109"
+      },
+      {
+        "name": "grasp_assist_372",
+        "anchor": "0:left_link7",
+        "body": "bag_110"
+      },
+      {
+        "name": "grasp_assist_373",
+        "anchor": "0:left_link7",
+        "body": "bag_111"
+      },
+      {
+        "name": "grasp_assist_374",
+        "anchor": "0:left_link7",
+        "body": "bag_112"
+      },
+      {
+        "name": "grasp_assist_375",
+        "anchor": "0:left_link7",
+        "body": "bag_113"
+      },
+      {
+        "name": "grasp_assist_376",
+        "anchor": "0:left_link7",
+        "body": "bag_114"
+      },
+      {
+        "name": "grasp_assist_377",
+        "anchor": "0:left_link7",
+        "body": "bag_115"
+      },
+      {
+        "name": "grasp_assist_378",
+        "anchor": "0:left_link7",
+        "body": "bag_116"
+      },
+      {
+        "name": "grasp_assist_379",
+        "anchor": "0:left_link7",
+        "body": "bag_117"
+      },
+      {
+        "name": "grasp_assist_380",
+        "anchor": "0:left_link7",
+        "body": "bag_118"
+      },
+      {
+        "name": "grasp_assist_381",
+        "anchor": "0:left_link7",
+        "body": "bag_119"
+      },
+      {
+        "name": "grasp_assist_382",
+        "anchor": "0:left_link7",
+        "body": "bag_120"
+      },
+      {
+        "name": "grasp_assist_383",
+        "anchor": "0:left_link7",
+        "body": "bag_121"
+      },
+      {
+        "name": "grasp_assist_384",
+        "anchor": "0:left_link7",
+        "body": "bag_122"
+      },
+      {
+        "name": "grasp_assist_385",
+        "anchor": "0:left_link7",
+        "body": "bag_123"
+      },
+      {
+        "name": "grasp_assist_386",
+        "anchor": "0:left_link7",
+        "body": "bag_124"
+      },
+      {
+        "name": "grasp_assist_387",
+        "anchor": "0:left_link7",
+        "body": "bag_125"
+      },
+      {
+        "name": "grasp_assist_388",
+        "anchor": "0:left_link7",
+        "body": "bag_126"
+      },
+      {
+        "name": "grasp_assist_389",
+        "anchor": "0:left_link7",
+        "body": "bag_127"
+      },
+      {
+        "name": "grasp_assist_390",
+        "anchor": "0:left_link7",
+        "body": "bag_128"
+      },
+      {
+        "name": "grasp_assist_391",
+        "anchor": "0:left_link7",
+        "body": "bag_129"
+      },
+      {
+        "name": "grasp_assist_392",
+        "anchor": "0:left_link7",
+        "body": "bag_130"
+      },
+      {
+        "name": "grasp_assist_393",
+        "anchor": "0:left_link8",
+        "body": "bag_0"
+      },
+      {
+        "name": "grasp_assist_394",
+        "anchor": "0:left_link8",
+        "body": "bag_1"
+      },
+      {
+        "name": "grasp_assist_395",
+        "anchor": "0:left_link8",
+        "body": "bag_2"
+      },
+      {
+        "name": "grasp_assist_396",
+        "anchor": "0:left_link8",
+        "body": "bag_3"
+      },
+      {
+        "name": "grasp_assist_397",
+        "anchor": "0:left_link8",
+        "body": "bag_4"
+      },
+      {
+        "name": "grasp_assist_398",
+        "anchor": "0:left_link8",
+        "body": "bag_5"
+      },
+      {
+        "name": "grasp_assist_399",
+        "anchor": "0:left_link8",
+        "body": "bag_6"
+      },
+      {
+        "name": "grasp_assist_400",
+        "anchor": "0:left_link8",
+        "body": "bag_7"
+      },
+      {
+        "name": "grasp_assist_401",
+        "anchor": "0:left_link8",
+        "body": "bag_8"
+      },
+      {
+        "name": "grasp_assist_402",
+        "anchor": "0:left_link8",
+        "body": "bag_9"
+      },
+      {
+        "name": "grasp_assist_403",
+        "anchor": "0:left_link8",
+        "body": "bag_10"
+      },
+      {
+        "name": "grasp_assist_404",
+        "anchor": "0:left_link8",
+        "body": "bag_11"
+      },
+      {
+        "name": "grasp_assist_405",
+        "anchor": "0:left_link8",
+        "body": "bag_12"
+      },
+      {
+        "name": "grasp_assist_406",
+        "anchor": "0:left_link8",
+        "body": "bag_13"
+      },
+      {
+        "name": "grasp_assist_407",
+        "anchor": "0:left_link8",
+        "body": "bag_14"
+      },
+      {
+        "name": "grasp_assist_408",
+        "anchor": "0:left_link8",
+        "body": "bag_15"
+      },
+      {
+        "name": "grasp_assist_409",
+        "anchor": "0:left_link8",
+        "body": "bag_16"
+      },
+      {
+        "name": "grasp_assist_410",
+        "anchor": "0:left_link8",
+        "body": "bag_17"
+      },
+      {
+        "name": "grasp_assist_411",
+        "anchor": "0:left_link8",
+        "body": "bag_18"
+      },
+      {
+        "name": "grasp_assist_412",
+        "anchor": "0:left_link8",
+        "body": "bag_19"
+      },
+      {
+        "name": "grasp_assist_413",
+        "anchor": "0:left_link8",
+        "body": "bag_20"
+      },
+      {
+        "name": "grasp_assist_414",
+        "anchor": "0:left_link8",
+        "body": "bag_21"
+      },
+      {
+        "name": "grasp_assist_415",
+        "anchor": "0:left_link8",
+        "body": "bag_22"
+      },
+      {
+        "name": "grasp_assist_416",
+        "anchor": "0:left_link8",
+        "body": "bag_23"
+      },
+      {
+        "name": "grasp_assist_417",
+        "anchor": "0:left_link8",
+        "body": "bag_24"
+      },
+      {
+        "name": "grasp_assist_418",
+        "anchor": "0:left_link8",
+        "body": "bag_25"
+      },
+      {
+        "name": "grasp_assist_419",
+        "anchor": "0:left_link8",
+        "body": "bag_26"
+      },
+      {
+        "name": "grasp_assist_420",
+        "anchor": "0:left_link8",
+        "body": "bag_27"
+      },
+      {
+        "name": "grasp_assist_421",
+        "anchor": "0:left_link8",
+        "body": "bag_28"
+      },
+      {
+        "name": "grasp_assist_422",
+        "anchor": "0:left_link8",
+        "body": "bag_29"
+      },
+      {
+        "name": "grasp_assist_423",
+        "anchor": "0:left_link8",
+        "body": "bag_30"
+      },
+      {
+        "name": "grasp_assist_424",
+        "anchor": "0:left_link8",
+        "body": "bag_31"
+      },
+      {
+        "name": "grasp_assist_425",
+        "anchor": "0:left_link8",
+        "body": "bag_32"
+      },
+      {
+        "name": "grasp_assist_426",
+        "anchor": "0:left_link8",
+        "body": "bag_33"
+      },
+      {
+        "name": "grasp_assist_427",
+        "anchor": "0:left_link8",
+        "body": "bag_34"
+      },
+      {
+        "name": "grasp_assist_428",
+        "anchor": "0:left_link8",
+        "body": "bag_35"
+      },
+      {
+        "name": "grasp_assist_429",
+        "anchor": "0:left_link8",
+        "body": "bag_36"
+      },
+      {
+        "name": "grasp_assist_430",
+        "anchor": "0:left_link8",
+        "body": "bag_37"
+      },
+      {
+        "name": "grasp_assist_431",
+        "anchor": "0:left_link8",
+        "body": "bag_38"
+      },
+      {
+        "name": "grasp_assist_432",
+        "anchor": "0:left_link8",
+        "body": "bag_39"
+      },
+      {
+        "name": "grasp_assist_433",
+        "anchor": "0:left_link8",
+        "body": "bag_40"
+      },
+      {
+        "name": "grasp_assist_434",
+        "anchor": "0:left_link8",
+        "body": "bag_41"
+      },
+      {
+        "name": "grasp_assist_435",
+        "anchor": "0:left_link8",
+        "body": "bag_42"
+      },
+      {
+        "name": "grasp_assist_436",
+        "anchor": "0:left_link8",
+        "body": "bag_43"
+      },
+      {
+        "name": "grasp_assist_437",
+        "anchor": "0:left_link8",
+        "body": "bag_44"
+      },
+      {
+        "name": "grasp_assist_438",
+        "anchor": "0:left_link8",
+        "body": "bag_45"
+      },
+      {
+        "name": "grasp_assist_439",
+        "anchor": "0:left_link8",
+        "body": "bag_46"
+      },
+      {
+        "name": "grasp_assist_440",
+        "anchor": "0:left_link8",
+        "body": "bag_47"
+      },
+      {
+        "name": "grasp_assist_441",
+        "anchor": "0:left_link8",
+        "body": "bag_48"
+      },
+      {
+        "name": "grasp_assist_442",
+        "anchor": "0:left_link8",
+        "body": "bag_49"
+      },
+      {
+        "name": "grasp_assist_443",
+        "anchor": "0:left_link8",
+        "body": "bag_50"
+      },
+      {
+        "name": "grasp_assist_444",
+        "anchor": "0:left_link8",
+        "body": "bag_51"
+      },
+      {
+        "name": "grasp_assist_445",
+        "anchor": "0:left_link8",
+        "body": "bag_52"
+      },
+      {
+        "name": "grasp_assist_446",
+        "anchor": "0:left_link8",
+        "body": "bag_53"
+      },
+      {
+        "name": "grasp_assist_447",
+        "anchor": "0:left_link8",
+        "body": "bag_54"
+      },
+      {
+        "name": "grasp_assist_448",
+        "anchor": "0:left_link8",
+        "body": "bag_55"
+      },
+      {
+        "name": "grasp_assist_449",
+        "anchor": "0:left_link8",
+        "body": "bag_56"
+      },
+      {
+        "name": "grasp_assist_450",
+        "anchor": "0:left_link8",
+        "body": "bag_57"
+      },
+      {
+        "name": "grasp_assist_451",
+        "anchor": "0:left_link8",
+        "body": "bag_58"
+      },
+      {
+        "name": "grasp_assist_452",
+        "anchor": "0:left_link8",
+        "body": "bag_59"
+      },
+      {
+        "name": "grasp_assist_453",
+        "anchor": "0:left_link8",
+        "body": "bag_60"
+      },
+      {
+        "name": "grasp_assist_454",
+        "anchor": "0:left_link8",
+        "body": "bag_61"
+      },
+      {
+        "name": "grasp_assist_455",
+        "anchor": "0:left_link8",
+        "body": "bag_62"
+      },
+      {
+        "name": "grasp_assist_456",
+        "anchor": "0:left_link8",
+        "body": "bag_63"
+      },
+      {
+        "name": "grasp_assist_457",
+        "anchor": "0:left_link8",
+        "body": "bag_64"
+      },
+      {
+        "name": "grasp_assist_458",
+        "anchor": "0:left_link8",
+        "body": "bag_65"
+      },
+      {
+        "name": "grasp_assist_459",
+        "anchor": "0:left_link8",
+        "body": "bag_66"
+      },
+      {
+        "name": "grasp_assist_460",
+        "anchor": "0:left_link8",
+        "body": "bag_67"
+      },
+      {
+        "name": "grasp_assist_461",
+        "anchor": "0:left_link8",
+        "body": "bag_68"
+      },
+      {
+        "name": "grasp_assist_462",
+        "anchor": "0:left_link8",
+        "body": "bag_69"
+      },
+      {
+        "name": "grasp_assist_463",
+        "anchor": "0:left_link8",
+        "body": "bag_70"
+      },
+      {
+        "name": "grasp_assist_464",
+        "anchor": "0:left_link8",
+        "body": "bag_71"
+      },
+      {
+        "name": "grasp_assist_465",
+        "anchor": "0:left_link8",
+        "body": "bag_72"
+      },
+      {
+        "name": "grasp_assist_466",
+        "anchor": "0:left_link8",
+        "body": "bag_73"
+      },
+      {
+        "name": "grasp_assist_467",
+        "anchor": "0:left_link8",
+        "body": "bag_74"
+      },
+      {
+        "name": "grasp_assist_468",
+        "anchor": "0:left_link8",
+        "body": "bag_75"
+      },
+      {
+        "name": "grasp_assist_469",
+        "anchor": "0:left_link8",
+        "body": "bag_76"
+      },
+      {
+        "name": "grasp_assist_470",
+        "anchor": "0:left_link8",
+        "body": "bag_77"
+      },
+      {
+        "name": "grasp_assist_471",
+        "anchor": "0:left_link8",
+        "body": "bag_78"
+      },
+      {
+        "name": "grasp_assist_472",
+        "anchor": "0:left_link8",
+        "body": "bag_79"
+      },
+      {
+        "name": "grasp_assist_473",
+        "anchor": "0:left_link8",
+        "body": "bag_80"
+      },
+      {
+        "name": "grasp_assist_474",
+        "anchor": "0:left_link8",
+        "body": "bag_81"
+      },
+      {
+        "name": "grasp_assist_475",
+        "anchor": "0:left_link8",
+        "body": "bag_82"
+      },
+      {
+        "name": "grasp_assist_476",
+        "anchor": "0:left_link8",
+        "body": "bag_83"
+      },
+      {
+        "name": "grasp_assist_477",
+        "anchor": "0:left_link8",
+        "body": "bag_84"
+      },
+      {
+        "name": "grasp_assist_478",
+        "anchor": "0:left_link8",
+        "body": "bag_85"
+      },
+      {
+        "name": "grasp_assist_479",
+        "anchor": "0:left_link8",
+        "body": "bag_86"
+      },
+      {
+        "name": "grasp_assist_480",
+        "anchor": "0:left_link8",
+        "body": "bag_87"
+      },
+      {
+        "name": "grasp_assist_481",
+        "anchor": "0:left_link8",
+        "body": "bag_88"
+      },
+      {
+        "name": "grasp_assist_482",
+        "anchor": "0:left_link8",
+        "body": "bag_89"
+      },
+      {
+        "name": "grasp_assist_483",
+        "anchor": "0:left_link8",
+        "body": "bag_90"
+      },
+      {
+        "name": "grasp_assist_484",
+        "anchor": "0:left_link8",
+        "body": "bag_91"
+      },
+      {
+        "name": "grasp_assist_485",
+        "anchor": "0:left_link8",
+        "body": "bag_92"
+      },
+      {
+        "name": "grasp_assist_486",
+        "anchor": "0:left_link8",
+        "body": "bag_93"
+      },
+      {
+        "name": "grasp_assist_487",
+        "anchor": "0:left_link8",
+        "body": "bag_94"
+      },
+      {
+        "name": "grasp_assist_488",
+        "anchor": "0:left_link8",
+        "body": "bag_95"
+      },
+      {
+        "name": "grasp_assist_489",
+        "anchor": "0:left_link8",
+        "body": "bag_96"
+      },
+      {
+        "name": "grasp_assist_490",
+        "anchor": "0:left_link8",
+        "body": "bag_97"
+      },
+      {
+        "name": "grasp_assist_491",
+        "anchor": "0:left_link8",
+        "body": "bag_98"
+      },
+      {
+        "name": "grasp_assist_492",
+        "anchor": "0:left_link8",
+        "body": "bag_99"
+      },
+      {
+        "name": "grasp_assist_493",
+        "anchor": "0:left_link8",
+        "body": "bag_100"
+      },
+      {
+        "name": "grasp_assist_494",
+        "anchor": "0:left_link8",
+        "body": "bag_101"
+      },
+      {
+        "name": "grasp_assist_495",
+        "anchor": "0:left_link8",
+        "body": "bag_102"
+      },
+      {
+        "name": "grasp_assist_496",
+        "anchor": "0:left_link8",
+        "body": "bag_103"
+      },
+      {
+        "name": "grasp_assist_497",
+        "anchor": "0:left_link8",
+        "body": "bag_104"
+      },
+      {
+        "name": "grasp_assist_498",
+        "anchor": "0:left_link8",
+        "body": "bag_105"
+      },
+      {
+        "name": "grasp_assist_499",
+        "anchor": "0:left_link8",
+        "body": "bag_106"
+      },
+      {
+        "name": "grasp_assist_500",
+        "anchor": "0:left_link8",
+        "body": "bag_107"
+      },
+      {
+        "name": "grasp_assist_501",
+        "anchor": "0:left_link8",
+        "body": "bag_108"
+      },
+      {
+        "name": "grasp_assist_502",
+        "anchor": "0:left_link8",
+        "body": "bag_109"
+      },
+      {
+        "name": "grasp_assist_503",
+        "anchor": "0:left_link8",
+        "body": "bag_110"
+      },
+      {
+        "name": "grasp_assist_504",
+        "anchor": "0:left_link8",
+        "body": "bag_111"
+      },
+      {
+        "name": "grasp_assist_505",
+        "anchor": "0:left_link8",
+        "body": "bag_112"
+      },
+      {
+        "name": "grasp_assist_506",
+        "anchor": "0:left_link8",
+        "body": "bag_113"
+      },
+      {
+        "name": "grasp_assist_507",
+        "anchor": "0:left_link8",
+        "body": "bag_114"
+      },
+      {
+        "name": "grasp_assist_508",
+        "anchor": "0:left_link8",
+        "body": "bag_115"
+      },
+      {
+        "name": "grasp_assist_509",
+        "anchor": "0:left_link8",
+        "body": "bag_116"
+      },
+      {
+        "name": "grasp_assist_510",
+        "anchor": "0:left_link8",
+        "body": "bag_117"
+      },
+      {
+        "name": "grasp_assist_511",
+        "anchor": "0:left_link8",
+        "body": "bag_118"
+      },
+      {
+        "name": "grasp_assist_512",
+        "anchor": "0:left_link8",
+        "body": "bag_119"
+      },
+      {
+        "name": "grasp_assist_513",
+        "anchor": "0:left_link8",
+        "body": "bag_120"
+      },
+      {
+        "name": "grasp_assist_514",
+        "anchor": "0:left_link8",
+        "body": "bag_121"
+      },
+      {
+        "name": "grasp_assist_515",
+        "anchor": "0:left_link8",
+        "body": "bag_122"
+      },
+      {
+        "name": "grasp_assist_516",
+        "anchor": "0:left_link8",
+        "body": "bag_123"
+      },
+      {
+        "name": "grasp_assist_517",
+        "anchor": "0:left_link8",
+        "body": "bag_124"
+      },
+      {
+        "name": "grasp_assist_518",
+        "anchor": "0:left_link8",
+        "body": "bag_125"
+      },
+      {
+        "name": "grasp_assist_519",
+        "anchor": "0:left_link8",
+        "body": "bag_126"
+      },
+      {
+        "name": "grasp_assist_520",
+        "anchor": "0:left_link8",
+        "body": "bag_127"
+      },
+      {
+        "name": "grasp_assist_521",
+        "anchor": "0:left_link8",
+        "body": "bag_128"
+      },
+      {
+        "name": "grasp_assist_522",
+        "anchor": "0:left_link8",
+        "body": "bag_129"
+      },
+      {
+        "name": "grasp_assist_523",
+        "anchor": "0:left_link8",
+        "body": "bag_130"
+      },
+      {
+        "name": "grasp_assist_524",
+        "anchor": "1:right_link7",
+        "body": "bag_0"
+      },
+      {
+        "name": "grasp_assist_525",
+        "anchor": "1:right_link7",
+        "body": "bag_1"
+      },
+      {
+        "name": "grasp_assist_526",
+        "anchor": "1:right_link7",
+        "body": "bag_2"
+      },
+      {
+        "name": "grasp_assist_527",
+        "anchor": "1:right_link7",
+        "body": "bag_3"
+      },
+      {
+        "name": "grasp_assist_528",
+        "anchor": "1:right_link7",
+        "body": "bag_4"
+      },
+      {
+        "name": "grasp_assist_529",
+        "anchor": "1:right_link7",
+        "body": "bag_5"
+      },
+      {
+        "name": "grasp_assist_530",
+        "anchor": "1:right_link7",
+        "body": "bag_6"
+      },
+      {
+        "name": "grasp_assist_531",
+        "anchor": "1:right_link7",
+        "body": "bag_7"
+      },
+      {
+        "name": "grasp_assist_532",
+        "anchor": "1:right_link7",
+        "body": "bag_8"
+      },
+      {
+        "name": "grasp_assist_533",
+        "anchor": "1:right_link7",
+        "body": "bag_9"
+      },
+      {
+        "name": "grasp_assist_534",
+        "anchor": "1:right_link7",
+        "body": "bag_10"
+      },
+      {
+        "name": "grasp_assist_535",
+        "anchor": "1:right_link7",
+        "body": "bag_11"
+      },
+      {
+        "name": "grasp_assist_536",
+        "anchor": "1:right_link7",
+        "body": "bag_12"
+      },
+      {
+        "name": "grasp_assist_537",
+        "anchor": "1:right_link7",
+        "body": "bag_13"
+      },
+      {
+        "name": "grasp_assist_538",
+        "anchor": "1:right_link7",
+        "body": "bag_14"
+      },
+      {
+        "name": "grasp_assist_539",
+        "anchor": "1:right_link7",
+        "body": "bag_15"
+      },
+      {
+        "name": "grasp_assist_540",
+        "anchor": "1:right_link7",
+        "body": "bag_16"
+      },
+      {
+        "name": "grasp_assist_541",
+        "anchor": "1:right_link7",
+        "body": "bag_17"
+      },
+      {
+        "name": "grasp_assist_542",
+        "anchor": "1:right_link7",
+        "body": "bag_18"
+      },
+      {
+        "name": "grasp_assist_543",
+        "anchor": "1:right_link7",
+        "body": "bag_19"
+      },
+      {
+        "name": "grasp_assist_544",
+        "anchor": "1:right_link7",
+        "body": "bag_20"
+      },
+      {
+        "name": "grasp_assist_545",
+        "anchor": "1:right_link7",
+        "body": "bag_21"
+      },
+      {
+        "name": "grasp_assist_546",
+        "anchor": "1:right_link7",
+        "body": "bag_22"
+      },
+      {
+        "name": "grasp_assist_547",
+        "anchor": "1:right_link7",
+        "body": "bag_23"
+      },
+      {
+        "name": "grasp_assist_548",
+        "anchor": "1:right_link7",
+        "body": "bag_24"
+      },
+      {
+        "name": "grasp_assist_549",
+        "anchor": "1:right_link7",
+        "body": "bag_25"
+      },
+      {
+        "name": "grasp_assist_550",
+        "anchor": "1:right_link7",
+        "body": "bag_26"
+      },
+      {
+        "name": "grasp_assist_551",
+        "anchor": "1:right_link7",
+        "body": "bag_27"
+      },
+      {
+        "name": "grasp_assist_552",
+        "anchor": "1:right_link7",
+        "body": "bag_28"
+      },
+      {
+        "name": "grasp_assist_553",
+        "anchor": "1:right_link7",
+        "body": "bag_29"
+      },
+      {
+        "name": "grasp_assist_554",
+        "anchor": "1:right_link7",
+        "body": "bag_30"
+      },
+      {
+        "name": "grasp_assist_555",
+        "anchor": "1:right_link7",
+        "body": "bag_31"
+      },
+      {
+        "name": "grasp_assist_556",
+        "anchor": "1:right_link7",
+        "body": "bag_32"
+      },
+      {
+        "name": "grasp_assist_557",
+        "anchor": "1:right_link7",
+        "body": "bag_33"
+      },
+      {
+        "name": "grasp_assist_558",
+        "anchor": "1:right_link7",
+        "body": "bag_34"
+      },
+      {
+        "name": "grasp_assist_559",
+        "anchor": "1:right_link7",
+        "body": "bag_35"
+      },
+      {
+        "name": "grasp_assist_560",
+        "anchor": "1:right_link7",
+        "body": "bag_36"
+      },
+      {
+        "name": "grasp_assist_561",
+        "anchor": "1:right_link7",
+        "body": "bag_37"
+      },
+      {
+        "name": "grasp_assist_562",
+        "anchor": "1:right_link7",
+        "body": "bag_38"
+      },
+      {
+        "name": "grasp_assist_563",
+        "anchor": "1:right_link7",
+        "body": "bag_39"
+      },
+      {
+        "name": "grasp_assist_564",
+        "anchor": "1:right_link7",
+        "body": "bag_40"
+      },
+      {
+        "name": "grasp_assist_565",
+        "anchor": "1:right_link7",
+        "body": "bag_41"
+      },
+      {
+        "name": "grasp_assist_566",
+        "anchor": "1:right_link7",
+        "body": "bag_42"
+      },
+      {
+        "name": "grasp_assist_567",
+        "anchor": "1:right_link7",
+        "body": "bag_43"
+      },
+      {
+        "name": "grasp_assist_568",
+        "anchor": "1:right_link7",
+        "body": "bag_44"
+      },
+      {
+        "name": "grasp_assist_569",
+        "anchor": "1:right_link7",
+        "body": "bag_45"
+      },
+      {
+        "name": "grasp_assist_570",
+        "anchor": "1:right_link7",
+        "body": "bag_46"
+      },
+      {
+        "name": "grasp_assist_571",
+        "anchor": "1:right_link7",
+        "body": "bag_47"
+      },
+      {
+        "name": "grasp_assist_572",
+        "anchor": "1:right_link7",
+        "body": "bag_48"
+      },
+      {
+        "name": "grasp_assist_573",
+        "anchor": "1:right_link7",
+        "body": "bag_49"
+      },
+      {
+        "name": "grasp_assist_574",
+        "anchor": "1:right_link7",
+        "body": "bag_50"
+      },
+      {
+        "name": "grasp_assist_575",
+        "anchor": "1:right_link7",
+        "body": "bag_51"
+      },
+      {
+        "name": "grasp_assist_576",
+        "anchor": "1:right_link7",
+        "body": "bag_52"
+      },
+      {
+        "name": "grasp_assist_577",
+        "anchor": "1:right_link7",
+        "body": "bag_53"
+      },
+      {
+        "name": "grasp_assist_578",
+        "anchor": "1:right_link7",
+        "body": "bag_54"
+      },
+      {
+        "name": "grasp_assist_579",
+        "anchor": "1:right_link7",
+        "body": "bag_55"
+      },
+      {
+        "name": "grasp_assist_580",
+        "anchor": "1:right_link7",
+        "body": "bag_56"
+      },
+      {
+        "name": "grasp_assist_581",
+        "anchor": "1:right_link7",
+        "body": "bag_57"
+      },
+      {
+        "name": "grasp_assist_582",
+        "anchor": "1:right_link7",
+        "body": "bag_58"
+      },
+      {
+        "name": "grasp_assist_583",
+        "anchor": "1:right_link7",
+        "body": "bag_59"
+      },
+      {
+        "name": "grasp_assist_584",
+        "anchor": "1:right_link7",
+        "body": "bag_60"
+      },
+      {
+        "name": "grasp_assist_585",
+        "anchor": "1:right_link7",
+        "body": "bag_61"
+      },
+      {
+        "name": "grasp_assist_586",
+        "anchor": "1:right_link7",
+        "body": "bag_62"
+      },
+      {
+        "name": "grasp_assist_587",
+        "anchor": "1:right_link7",
+        "body": "bag_63"
+      },
+      {
+        "name": "grasp_assist_588",
+        "anchor": "1:right_link7",
+        "body": "bag_64"
+      },
+      {
+        "name": "grasp_assist_589",
+        "anchor": "1:right_link7",
+        "body": "bag_65"
+      },
+      {
+        "name": "grasp_assist_590",
+        "anchor": "1:right_link7",
+        "body": "bag_66"
+      },
+      {
+        "name": "grasp_assist_591",
+        "anchor": "1:right_link7",
+        "body": "bag_67"
+      },
+      {
+        "name": "grasp_assist_592",
+        "anchor": "1:right_link7",
+        "body": "bag_68"
+      },
+      {
+        "name": "grasp_assist_593",
+        "anchor": "1:right_link7",
+        "body": "bag_69"
+      },
+      {
+        "name": "grasp_assist_594",
+        "anchor": "1:right_link7",
+        "body": "bag_70"
+      },
+      {
+        "name": "grasp_assist_595",
+        "anchor": "1:right_link7",
+        "body": "bag_71"
+      },
+      {
+        "name": "grasp_assist_596",
+        "anchor": "1:right_link7",
+        "body": "bag_72"
+      },
+      {
+        "name": "grasp_assist_597",
+        "anchor": "1:right_link7",
+        "body": "bag_73"
+      },
+      {
+        "name": "grasp_assist_598",
+        "anchor": "1:right_link7",
+        "body": "bag_74"
+      },
+      {
+        "name": "grasp_assist_599",
+        "anchor": "1:right_link7",
+        "body": "bag_75"
+      },
+      {
+        "name": "grasp_assist_600",
+        "anchor": "1:right_link7",
+        "body": "bag_76"
+      },
+      {
+        "name": "grasp_assist_601",
+        "anchor": "1:right_link7",
+        "body": "bag_77"
+      },
+      {
+        "name": "grasp_assist_602",
+        "anchor": "1:right_link7",
+        "body": "bag_78"
+      },
+      {
+        "name": "grasp_assist_603",
+        "anchor": "1:right_link7",
+        "body": "bag_79"
+      },
+      {
+        "name": "grasp_assist_604",
+        "anchor": "1:right_link7",
+        "body": "bag_80"
+      },
+      {
+        "name": "grasp_assist_605",
+        "anchor": "1:right_link7",
+        "body": "bag_81"
+      },
+      {
+        "name": "grasp_assist_606",
+        "anchor": "1:right_link7",
+        "body": "bag_82"
+      },
+      {
+        "name": "grasp_assist_607",
+        "anchor": "1:right_link7",
+        "body": "bag_83"
+      },
+      {
+        "name": "grasp_assist_608",
+        "anchor": "1:right_link7",
+        "body": "bag_84"
+      },
+      {
+        "name": "grasp_assist_609",
+        "anchor": "1:right_link7",
+        "body": "bag_85"
+      },
+      {
+        "name": "grasp_assist_610",
+        "anchor": "1:right_link7",
+        "body": "bag_86"
+      },
+      {
+        "name": "grasp_assist_611",
+        "anchor": "1:right_link7",
+        "body": "bag_87"
+      },
+      {
+        "name": "grasp_assist_612",
+        "anchor": "1:right_link7",
+        "body": "bag_88"
+      },
+      {
+        "name": "grasp_assist_613",
+        "anchor": "1:right_link7",
+        "body": "bag_89"
+      },
+      {
+        "name": "grasp_assist_614",
+        "anchor": "1:right_link7",
+        "body": "bag_90"
+      },
+      {
+        "name": "grasp_assist_615",
+        "anchor": "1:right_link7",
+        "body": "bag_91"
+      },
+      {
+        "name": "grasp_assist_616",
+        "anchor": "1:right_link7",
+        "body": "bag_92"
+      },
+      {
+        "name": "grasp_assist_617",
+        "anchor": "1:right_link7",
+        "body": "bag_93"
+      },
+      {
+        "name": "grasp_assist_618",
+        "anchor": "1:right_link7",
+        "body": "bag_94"
+      },
+      {
+        "name": "grasp_assist_619",
+        "anchor": "1:right_link7",
+        "body": "bag_95"
+      },
+      {
+        "name": "grasp_assist_620",
+        "anchor": "1:right_link7",
+        "body": "bag_96"
+      },
+      {
+        "name": "grasp_assist_621",
+        "anchor": "1:right_link7",
+        "body": "bag_97"
+      },
+      {
+        "name": "grasp_assist_622",
+        "anchor": "1:right_link7",
+        "body": "bag_98"
+      },
+      {
+        "name": "grasp_assist_623",
+        "anchor": "1:right_link7",
+        "body": "bag_99"
+      },
+      {
+        "name": "grasp_assist_624",
+        "anchor": "1:right_link7",
+        "body": "bag_100"
+      },
+      {
+        "name": "grasp_assist_625",
+        "anchor": "1:right_link7",
+        "body": "bag_101"
+      },
+      {
+        "name": "grasp_assist_626",
+        "anchor": "1:right_link7",
+        "body": "bag_102"
+      },
+      {
+        "name": "grasp_assist_627",
+        "anchor": "1:right_link7",
+        "body": "bag_103"
+      },
+      {
+        "name": "grasp_assist_628",
+        "anchor": "1:right_link7",
+        "body": "bag_104"
+      },
+      {
+        "name": "grasp_assist_629",
+        "anchor": "1:right_link7",
+        "body": "bag_105"
+      },
+      {
+        "name": "grasp_assist_630",
+        "anchor": "1:right_link7",
+        "body": "bag_106"
+      },
+      {
+        "name": "grasp_assist_631",
+        "anchor": "1:right_link7",
+        "body": "bag_107"
+      },
+      {
+        "name": "grasp_assist_632",
+        "anchor": "1:right_link7",
+        "body": "bag_108"
+      },
+      {
+        "name": "grasp_assist_633",
+        "anchor": "1:right_link7",
+        "body": "bag_109"
+      },
+      {
+        "name": "grasp_assist_634",
+        "anchor": "1:right_link7",
+        "body": "bag_110"
+      },
+      {
+        "name": "grasp_assist_635",
+        "anchor": "1:right_link7",
+        "body": "bag_111"
+      },
+      {
+        "name": "grasp_assist_636",
+        "anchor": "1:right_link7",
+        "body": "bag_112"
+      },
+      {
+        "name": "grasp_assist_637",
+        "anchor": "1:right_link7",
+        "body": "bag_113"
+      },
+      {
+        "name": "grasp_assist_638",
+        "anchor": "1:right_link7",
+        "body": "bag_114"
+      },
+      {
+        "name": "grasp_assist_639",
+        "anchor": "1:right_link7",
+        "body": "bag_115"
+      },
+      {
+        "name": "grasp_assist_640",
+        "anchor": "1:right_link7",
+        "body": "bag_116"
+      },
+      {
+        "name": "grasp_assist_641",
+        "anchor": "1:right_link7",
+        "body": "bag_117"
+      },
+      {
+        "name": "grasp_assist_642",
+        "anchor": "1:right_link7",
+        "body": "bag_118"
+      },
+      {
+        "name": "grasp_assist_643",
+        "anchor": "1:right_link7",
+        "body": "bag_119"
+      },
+      {
+        "name": "grasp_assist_644",
+        "anchor": "1:right_link7",
+        "body": "bag_120"
+      },
+      {
+        "name": "grasp_assist_645",
+        "anchor": "1:right_link7",
+        "body": "bag_121"
+      },
+      {
+        "name": "grasp_assist_646",
+        "anchor": "1:right_link7",
+        "body": "bag_122"
+      },
+      {
+        "name": "grasp_assist_647",
+        "anchor": "1:right_link7",
+        "body": "bag_123"
+      },
+      {
+        "name": "grasp_assist_648",
+        "anchor": "1:right_link7",
+        "body": "bag_124"
+      },
+      {
+        "name": "grasp_assist_649",
+        "anchor": "1:right_link7",
+        "body": "bag_125"
+      },
+      {
+        "name": "grasp_assist_650",
+        "anchor": "1:right_link7",
+        "body": "bag_126"
+      },
+      {
+        "name": "grasp_assist_651",
+        "anchor": "1:right_link7",
+        "body": "bag_127"
+      },
+      {
+        "name": "grasp_assist_652",
+        "anchor": "1:right_link7",
+        "body": "bag_128"
+      },
+      {
+        "name": "grasp_assist_653",
+        "anchor": "1:right_link7",
+        "body": "bag_129"
+      },
+      {
+        "name": "grasp_assist_654",
+        "anchor": "1:right_link7",
+        "body": "bag_130"
+      },
+      {
+        "name": "grasp_assist_655",
+        "anchor": "1:right_link8",
+        "body": "bag_0"
+      },
+      {
+        "name": "grasp_assist_656",
+        "anchor": "1:right_link8",
+        "body": "bag_1"
+      },
+      {
+        "name": "grasp_assist_657",
+        "anchor": "1:right_link8",
+        "body": "bag_2"
+      },
+      {
+        "name": "grasp_assist_658",
+        "anchor": "1:right_link8",
+        "body": "bag_3"
+      },
+      {
+        "name": "grasp_assist_659",
+        "anchor": "1:right_link8",
+        "body": "bag_4"
+      },
+      {
+        "name": "grasp_assist_660",
+        "anchor": "1:right_link8",
+        "body": "bag_5"
+      },
+      {
+        "name": "grasp_assist_661",
+        "anchor": "1:right_link8",
+        "body": "bag_6"
+      },
+      {
+        "name": "grasp_assist_662",
+        "anchor": "1:right_link8",
+        "body": "bag_7"
+      },
+      {
+        "name": "grasp_assist_663",
+        "anchor": "1:right_link8",
+        "body": "bag_8"
+      },
+      {
+        "name": "grasp_assist_664",
+        "anchor": "1:right_link8",
+        "body": "bag_9"
+      },
+      {
+        "name": "grasp_assist_665",
+        "anchor": "1:right_link8",
+        "body": "bag_10"
+      },
+      {
+        "name": "grasp_assist_666",
+        "anchor": "1:right_link8",
+        "body": "bag_11"
+      },
+      {
+        "name": "grasp_assist_667",
+        "anchor": "1:right_link8",
+        "body": "bag_12"
+      },
+      {
+        "name": "grasp_assist_668",
+        "anchor": "1:right_link8",
+        "body": "bag_13"
+      },
+      {
+        "name": "grasp_assist_669",
+        "anchor": "1:right_link8",
+        "body": "bag_14"
+      },
+      {
+        "name": "grasp_assist_670",
+        "anchor": "1:right_link8",
+        "body": "bag_15"
+      },
+      {
+        "name": "grasp_assist_671",
+        "anchor": "1:right_link8",
+        "body": "bag_16"
+      },
+      {
+        "name": "grasp_assist_672",
+        "anchor": "1:right_link8",
+        "body": "bag_17"
+      },
+      {
+        "name": "grasp_assist_673",
+        "anchor": "1:right_link8",
+        "body": "bag_18"
+      },
+      {
+        "name": "grasp_assist_674",
+        "anchor": "1:right_link8",
+        "body": "bag_19"
+      },
+      {
+        "name": "grasp_assist_675",
+        "anchor": "1:right_link8",
+        "body": "bag_20"
+      },
+      {
+        "name": "grasp_assist_676",
+        "anchor": "1:right_link8",
+        "body": "bag_21"
+      },
+      {
+        "name": "grasp_assist_677",
+        "anchor": "1:right_link8",
+        "body": "bag_22"
+      },
+      {
+        "name": "grasp_assist_678",
+        "anchor": "1:right_link8",
+        "body": "bag_23"
+      },
+      {
+        "name": "grasp_assist_679",
+        "anchor": "1:right_link8",
+        "body": "bag_24"
+      },
+      {
+        "name": "grasp_assist_680",
+        "anchor": "1:right_link8",
+        "body": "bag_25"
+      },
+      {
+        "name": "grasp_assist_681",
+        "anchor": "1:right_link8",
+        "body": "bag_26"
+      },
+      {
+        "name": "grasp_assist_682",
+        "anchor": "1:right_link8",
+        "body": "bag_27"
+      },
+      {
+        "name": "grasp_assist_683",
+        "anchor": "1:right_link8",
+        "body": "bag_28"
+      },
+      {
+        "name": "grasp_assist_684",
+        "anchor": "1:right_link8",
+        "body": "bag_29"
+      },
+      {
+        "name": "grasp_assist_685",
+        "anchor": "1:right_link8",
+        "body": "bag_30"
+      },
+      {
+        "name": "grasp_assist_686",
+        "anchor": "1:right_link8",
+        "body": "bag_31"
+      },
+      {
+        "name": "grasp_assist_687",
+        "anchor": "1:right_link8",
+        "body": "bag_32"
+      },
+      {
+        "name": "grasp_assist_688",
+        "anchor": "1:right_link8",
+        "body": "bag_33"
+      },
+      {
+        "name": "grasp_assist_689",
+        "anchor": "1:right_link8",
+        "body": "bag_34"
+      },
+      {
+        "name": "grasp_assist_690",
+        "anchor": "1:right_link8",
+        "body": "bag_35"
+      },
+      {
+        "name": "grasp_assist_691",
+        "anchor": "1:right_link8",
+        "body": "bag_36"
+      },
+      {
+        "name": "grasp_assist_692",
+        "anchor": "1:right_link8",
+        "body": "bag_37"
+      },
+      {
+        "name": "grasp_assist_693",
+        "anchor": "1:right_link8",
+        "body": "bag_38"
+      },
+      {
+        "name": "grasp_assist_694",
+        "anchor": "1:right_link8",
+        "body": "bag_39"
+      },
+      {
+        "name": "grasp_assist_695",
+        "anchor": "1:right_link8",
+        "body": "bag_40"
+      },
+      {
+        "name": "grasp_assist_696",
+        "anchor": "1:right_link8",
+        "body": "bag_41"
+      },
+      {
+        "name": "grasp_assist_697",
+        "anchor": "1:right_link8",
+        "body": "bag_42"
+      },
+      {
+        "name": "grasp_assist_698",
+        "anchor": "1:right_link8",
+        "body": "bag_43"
+      },
+      {
+        "name": "grasp_assist_699",
+        "anchor": "1:right_link8",
+        "body": "bag_44"
+      },
+      {
+        "name": "grasp_assist_700",
+        "anchor": "1:right_link8",
+        "body": "bag_45"
+      },
+      {
+        "name": "grasp_assist_701",
+        "anchor": "1:right_link8",
+        "body": "bag_46"
+      },
+      {
+        "name": "grasp_assist_702",
+        "anchor": "1:right_link8",
+        "body": "bag_47"
+      },
+      {
+        "name": "grasp_assist_703",
+        "anchor": "1:right_link8",
+        "body": "bag_48"
+      },
+      {
+        "name": "grasp_assist_704",
+        "anchor": "1:right_link8",
+        "body": "bag_49"
+      },
+      {
+        "name": "grasp_assist_705",
+        "anchor": "1:right_link8",
+        "body": "bag_50"
+      },
+      {
+        "name": "grasp_assist_706",
+        "anchor": "1:right_link8",
+        "body": "bag_51"
+      },
+      {
+        "name": "grasp_assist_707",
+        "anchor": "1:right_link8",
+        "body": "bag_52"
+      },
+      {
+        "name": "grasp_assist_708",
+        "anchor": "1:right_link8",
+        "body": "bag_53"
+      },
+      {
+        "name": "grasp_assist_709",
+        "anchor": "1:right_link8",
+        "body": "bag_54"
+      },
+      {
+        "name": "grasp_assist_710",
+        "anchor": "1:right_link8",
+        "body": "bag_55"
+      },
+      {
+        "name": "grasp_assist_711",
+        "anchor": "1:right_link8",
+        "body": "bag_56"
+      },
+      {
+        "name": "grasp_assist_712",
+        "anchor": "1:right_link8",
+        "body": "bag_57"
+      },
+      {
+        "name": "grasp_assist_713",
+        "anchor": "1:right_link8",
+        "body": "bag_58"
+      },
+      {
+        "name": "grasp_assist_714",
+        "anchor": "1:right_link8",
+        "body": "bag_59"
+      },
+      {
+        "name": "grasp_assist_715",
+        "anchor": "1:right_link8",
+        "body": "bag_60"
+      },
+      {
+        "name": "grasp_assist_716",
+        "anchor": "1:right_link8",
+        "body": "bag_61"
+      },
+      {
+        "name": "grasp_assist_717",
+        "anchor": "1:right_link8",
+        "body": "bag_62"
+      },
+      {
+        "name": "grasp_assist_718",
+        "anchor": "1:right_link8",
+        "body": "bag_63"
+      },
+      {
+        "name": "grasp_assist_719",
+        "anchor": "1:right_link8",
+        "body": "bag_64"
+      },
+      {
+        "name": "grasp_assist_720",
+        "anchor": "1:right_link8",
+        "body": "bag_65"
+      },
+      {
+        "name": "grasp_assist_721",
+        "anchor": "1:right_link8",
+        "body": "bag_66"
+      },
+      {
+        "name": "grasp_assist_722",
+        "anchor": "1:right_link8",
+        "body": "bag_67"
+      },
+      {
+        "name": "grasp_assist_723",
+        "anchor": "1:right_link8",
+        "body": "bag_68"
+      },
+      {
+        "name": "grasp_assist_724",
+        "anchor": "1:right_link8",
+        "body": "bag_69"
+      },
+      {
+        "name": "grasp_assist_725",
+        "anchor": "1:right_link8",
+        "body": "bag_70"
+      },
+      {
+        "name": "grasp_assist_726",
+        "anchor": "1:right_link8",
+        "body": "bag_71"
+      },
+      {
+        "name": "grasp_assist_727",
+        "anchor": "1:right_link8",
+        "body": "bag_72"
+      },
+      {
+        "name": "grasp_assist_728",
+        "anchor": "1:right_link8",
+        "body": "bag_73"
+      },
+      {
+        "name": "grasp_assist_729",
+        "anchor": "1:right_link8",
+        "body": "bag_74"
+      },
+      {
+        "name": "grasp_assist_730",
+        "anchor": "1:right_link8",
+        "body": "bag_75"
+      },
+      {
+        "name": "grasp_assist_731",
+        "anchor": "1:right_link8",
+        "body": "bag_76"
+      },
+      {
+        "name": "grasp_assist_732",
+        "anchor": "1:right_link8",
+        "body": "bag_77"
+      },
+      {
+        "name": "grasp_assist_733",
+        "anchor": "1:right_link8",
+        "body": "bag_78"
+      },
+      {
+        "name": "grasp_assist_734",
+        "anchor": "1:right_link8",
+        "body": "bag_79"
+      },
+      {
+        "name": "grasp_assist_735",
+        "anchor": "1:right_link8",
+        "body": "bag_80"
+      },
+      {
+        "name": "grasp_assist_736",
+        "anchor": "1:right_link8",
+        "body": "bag_81"
+      },
+      {
+        "name": "grasp_assist_737",
+        "anchor": "1:right_link8",
+        "body": "bag_82"
+      },
+      {
+        "name": "grasp_assist_738",
+        "anchor": "1:right_link8",
+        "body": "bag_83"
+      },
+      {
+        "name": "grasp_assist_739",
+        "anchor": "1:right_link8",
+        "body": "bag_84"
+      },
+      {
+        "name": "grasp_assist_740",
+        "anchor": "1:right_link8",
+        "body": "bag_85"
+      },
+      {
+        "name": "grasp_assist_741",
+        "anchor": "1:right_link8",
+        "body": "bag_86"
+      },
+      {
+        "name": "grasp_assist_742",
+        "anchor": "1:right_link8",
+        "body": "bag_87"
+      },
+      {
+        "name": "grasp_assist_743",
+        "anchor": "1:right_link8",
+        "body": "bag_88"
+      },
+      {
+        "name": "grasp_assist_744",
+        "anchor": "1:right_link8",
+        "body": "bag_89"
+      },
+      {
+        "name": "grasp_assist_745",
+        "anchor": "1:right_link8",
+        "body": "bag_90"
+      },
+      {
+        "name": "grasp_assist_746",
+        "anchor": "1:right_link8",
+        "body": "bag_91"
+      },
+      {
+        "name": "grasp_assist_747",
+        "anchor": "1:right_link8",
+        "body": "bag_92"
+      },
+      {
+        "name": "grasp_assist_748",
+        "anchor": "1:right_link8",
+        "body": "bag_93"
+      },
+      {
+        "name": "grasp_assist_749",
+        "anchor": "1:right_link8",
+        "body": "bag_94"
+      },
+      {
+        "name": "grasp_assist_750",
+        "anchor": "1:right_link8",
+        "body": "bag_95"
+      },
+      {
+        "name": "grasp_assist_751",
+        "anchor": "1:right_link8",
+        "body": "bag_96"
+      },
+      {
+        "name": "grasp_assist_752",
+        "anchor": "1:right_link8",
+        "body": "bag_97"
+      },
+      {
+        "name": "grasp_assist_753",
+        "anchor": "1:right_link8",
+        "body": "bag_98"
+      },
+      {
+        "name": "grasp_assist_754",
+        "anchor": "1:right_link8",
+        "body": "bag_99"
+      },
+      {
+        "name": "grasp_assist_755",
+        "anchor": "1:right_link8",
+        "body": "bag_100"
+      },
+      {
+        "name": "grasp_assist_756",
+        "anchor": "1:right_link8",
+        "body": "bag_101"
+      },
+      {
+        "name": "grasp_assist_757",
+        "anchor": "1:right_link8",
+        "body": "bag_102"
+      },
+      {
+        "name": "grasp_assist_758",
+        "anchor": "1:right_link8",
+        "body": "bag_103"
+      },
+      {
+        "name": "grasp_assist_759",
+        "anchor": "1:right_link8",
+        "body": "bag_104"
+      },
+      {
+        "name": "grasp_assist_760",
+        "anchor": "1:right_link8",
+        "body": "bag_105"
+      },
+      {
+        "name": "grasp_assist_761",
+        "anchor": "1:right_link8",
+        "body": "bag_106"
+      },
+      {
+        "name": "grasp_assist_762",
+        "anchor": "1:right_link8",
+        "body": "bag_107"
+      },
+      {
+        "name": "grasp_assist_763",
+        "anchor": "1:right_link8",
+        "body": "bag_108"
+      },
+      {
+        "name": "grasp_assist_764",
+        "anchor": "1:right_link8",
+        "body": "bag_109"
+      },
+      {
+        "name": "grasp_assist_765",
+        "anchor": "1:right_link8",
+        "body": "bag_110"
+      },
+      {
+        "name": "grasp_assist_766",
+        "anchor": "1:right_link8",
+        "body": "bag_111"
+      },
+      {
+        "name": "grasp_assist_767",
+        "anchor": "1:right_link8",
+        "body": "bag_112"
+      },
+      {
+        "name": "grasp_assist_768",
+        "anchor": "1:right_link8",
+        "body": "bag_113"
+      },
+      {
+        "name": "grasp_assist_769",
+        "anchor": "1:right_link8",
+        "body": "bag_114"
+      },
+      {
+        "name": "grasp_assist_770",
+        "anchor": "1:right_link8",
+        "body": "bag_115"
+      },
+      {
+        "name": "grasp_assist_771",
+        "anchor": "1:right_link8",
+        "body": "bag_116"
+      },
+      {
+        "name": "grasp_assist_772",
+        "anchor": "1:right_link8",
+        "body": "bag_117"
+      },
+      {
+        "name": "grasp_assist_773",
+        "anchor": "1:right_link8",
+        "body": "bag_118"
+      },
+      {
+        "name": "grasp_assist_774",
+        "anchor": "1:right_link8",
+        "body": "bag_119"
+      },
+      {
+        "name": "grasp_assist_775",
+        "anchor": "1:right_link8",
+        "body": "bag_120"
+      },
+      {
+        "name": "grasp_assist_776",
+        "anchor": "1:right_link8",
+        "body": "bag_121"
+      },
+      {
+        "name": "grasp_assist_777",
+        "anchor": "1:right_link8",
+        "body": "bag_122"
+      },
+      {
+        "name": "grasp_assist_778",
+        "anchor": "1:right_link8",
+        "body": "bag_123"
+      },
+      {
+        "name": "grasp_assist_779",
+        "anchor": "1:right_link8",
+        "body": "bag_124"
+      },
+      {
+        "name": "grasp_assist_780",
+        "anchor": "1:right_link8",
+        "body": "bag_125"
+      },
+      {
+        "name": "grasp_assist_781",
+        "anchor": "1:right_link8",
+        "body": "bag_126"
+      },
+      {
+        "name": "grasp_assist_782",
+        "anchor": "1:right_link8",
+        "body": "bag_127"
+      },
+      {
+        "name": "grasp_assist_783",
+        "anchor": "1:right_link8",
+        "body": "bag_128"
+      },
+      {
+        "name": "grasp_assist_784",
+        "anchor": "1:right_link8",
+        "body": "bag_129"
+      },
+      {
+        "name": "grasp_assist_785",
+        "anchor": "1:right_link8",
+        "body": "bag_130"
+      }
+    ],
+    "anchors": {
+      "0:wrist": "left_link6",
+      "1:wrist": "right_link6",
+      "0:left_link7": "left_link7",
+      "0:left_link8": "left_link8",
+      "1:right_link7": "right_link7",
+      "1:right_link8": "right_link8"
+    },
+    "release_required": true
+  },
+  "physics_timestep": 0.001,
+  "control_hz": 25,
+  "action_type": "absolute_joint_radians_plus_ee_commands",
+  "cameras": {
+    "cam_head": "cam_head",
+    "cam_third_view": "cam_third_view",
+    "cam_top": "cam_top",
+    "cam_left_wrist": "left_cam_wrist",
+    "cam_right_wrist": "right_cam_wrist"
+  },
+  "camera_sizes": {
+    "cam_head": [
+      640,
+      400
+    ],
+    "cam_third_view": [
+      640,
+      480
+    ],
+    "cam_top": [
+      640,
+      480
+    ],
+    "cam_left_wrist": [
+      640,
+      480
+    ],
+    "cam_right_wrist": [
+      640,
+      480
+    ]
+  },
+  "camera_timing": "synchronous_simulation_time; physical camera is 30 fps latest-frame at 25 Hz control",
+  "depth_route": "audit_only_not_policy",
+  "model_nq": 423,
+  "model_nv": 421,
+  "model_nu": 14,
+  "flex_count": 2,
+  "flex_vertices": 151,
+  "max_joint_delta_rad": 0.08,
+  "layout_audit": {
+    "table_margin_m": 0.03,
+    "footprint_valid": true,
+    "violations": [],
+    "reachability": "not certified by this audit"
+  },
+  "layout_split": "public"
+}

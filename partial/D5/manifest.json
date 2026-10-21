@@ -1,0 +1,2186 @@
+{
+  "task": "D5",
+  "layout": 0,
+  "variant": "id",
+  "seed": 1615048415152175741,
+  "objects": [],
+  "classification": "SIMULATION_ENVIRONMENT",
+  "approximations": [
+    "flex membrane with constrained edges; material bending parameters are not calibrated"
+  ],
+  "source_spec": "SPEC_v0.3.3.md",
+  "spec_version": "0.3.3",
+  "level": "L2",
+  "level_parameters": {
+    "towel_size_m": [
+      0.3,
+      0.3
+    ]
+  },
+  "seeds": {
+    "layout": 9969080729898884362,
+    "object": 10676265245203334977,
+    "instruction": 12159825900208716
+  },
+  "track": "real_soft_experimental",
+  "eval_only": false,
+  "initial_joints": {},
+  "axes": {},
+  "regions": {},
+  "targets": [],
+  "grader_status": "development_not_expert_validated",
+  "instruction_idx": null,
+  "scoring_source": "supplied task-local descriptions; common predicates inherited from v0.2.4",
+  "cloth_size_m": [
+    0.3,
+    0.3
+  ],
+  "cloth_height_threshold_m": 0.012,
+  "cloth_height_threshold_status": "simulation assumption; must calibrate against measured cloth thickness",
+  "corner_patch_size_m": 0.03,
+  "corner_patch_model": "surface texture, follows flexible mesh; added patch mass not modeled",
+  "cloth_grid_shape": [
+    13,
+    13
+  ],
+  "cloth_contact_margin_m": 0.0005,
+  "fold_plan": "two successive half-folds along table Y",
+  "cloth_table_contact": {
+    "solref": [
+      0.002,
+      1.0
+    ],
+    "solimp": [
+      0.999,
+      0.9999,
+      0.001
+    ],
+    "priority": 1,
+    "physics_timestep_s": 0.001,
+    "status": "numerical thin-sheet contact; not material calibration"
+  },
+  "simulation_adaptations": [
+    "Towel center y=-4 cm keeps a constant-orientation fold reachable. The mesh has half/quarter crease rows and 0.5 mm contact margin. k=12 mm is an uncalibrated simulation assumption.",
+    "Flexible-material edge lengths are monitored at every physics step; extension or compression beyond 10% stops the episode as a numerical/material-model failure. Cloth/bag structural equalities use 2 ms, high-impedance constraints to prevent artificial stretching at small grasp triangles; these are cloth edges, not hand attachments.",
+    "D5 gripper pads use the same 2 ms stiff contact as the tabletop to resolve the thin cloth. Default mixed 12 ms contacts compressed the modeled sheet by 1-1.7 mm. Geometry, friction and actuator force limits are unchanged; material compliance still requires calibration.",
+    "Isolated MuJoCo 3.16.0 discrete integrator / Newton solve: implicit elastic and contact stiffness, with unchanged geometry, friction, motor force caps and scoring. CG uses 1000 iterations for articulated shells; independent cloth uses Newton. A 100-iteration CG probe failed to resolve stiff cloth constraints. This is a separately recorded runtime, not a re-evaluation of the frozen 3.10 demonstrations.",
+    "Optional grasp-retention assistance: local cloth vertices connect to the contacting robot after positive physical contact. All connections are explicitly released before final success. No prop-prop constraints, teleportation or friction changes. This episode is not a pure-contact or policy benchmark result."
+  ],
+  "instruction": "把毛巾对折两次",
+  "robots": [
+    {
+      "prefix": "left_",
+      "kind": "r5",
+      "joint_names": [
+        "left_joint1",
+        "left_joint2",
+        "left_joint3",
+        "left_joint4",
+        "left_joint5",
+        "left_joint6"
+      ],
+      "arm_dim": 6,
+      "eef_dim": 1,
+      "home": [
+        0.0,
+        0.8,
+        1.25,
+        -0.3,
+        0.0,
+        0.0
+      ],
+      "ee": {
+        "kind": "arx_parallel",
+        "actuators": [
+          "left_joint7"
+        ],
+        "joints": [
+          "left_joint7"
+        ],
+        "coupled_joints": [
+          "left_joint8"
+        ],
+        "home": [
+          0.045
+        ],
+        "site": "left_tcp",
+        "camera": "left_cam_wrist",
+        "eef_dim": 1,
+        "travel_m": 0.045,
+        "hardware": "ARX L5 Pro original gripper",
+        "simulation": "R5 URDF, 45 mm travel per finger"
+      },
+      "site": "left_tcp",
+      "camera": "left_cam_wrist",
+      "base_table_xyz": [
+        -0.3,
+        -0.45,
+        0.0
+      ],
+      "base_quat_wxyz": [
+        0.7071067811865476,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "flange": "left_flange",
+      "hardware_fk_status": "pending_measured_sdk_pairs",
+      "model": "ARX_Model/R5/R5a"
+    },
+    {
+      "prefix": "right_",
+      "kind": "r5",
+      "joint_names": [
+        "right_joint1",
+        "right_joint2",
+        "right_joint3",
+        "right_joint4",
+        "right_joint5",
+        "right_joint6"
+      ],
+      "arm_dim": 6,
+      "eef_dim": 1,
+      "home": [
+        0.0,
+        0.8,
+        1.25,
+        -0.3,
+        0.0,
+        0.0
+      ],
+      "ee": {
+        "kind": "arx_parallel",
+        "actuators": [
+          "right_joint7"
+        ],
+        "joints": [
+          "right_joint7"
+        ],
+        "coupled_joints": [
+          "right_joint8"
+        ],
+        "home": [
+          0.045
+        ],
+        "site": "right_tcp",
+        "camera": "right_cam_wrist",
+        "eef_dim": 1,
+        "travel_m": 0.045,
+        "hardware": "ARX L5 Pro original gripper",
+        "simulation": "R5 URDF, 45 mm travel per finger"
+      },
+      "site": "right_tcp",
+      "camera": "right_cam_wrist",
+      "base_table_xyz": [
+        0.3,
+        -0.45,
+        0.0
+      ],
+      "base_quat_wxyz": [
+        0.7071067811865476,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "flange": "right_flange",
+      "hardware_fk_status": "pending_measured_sdk_pairs",
+      "model": "ARX_Model/R5/R5a"
+    }
+  ],
+  "world_from_table": [
+    0,
+    0,
+    0.75
+  ],
+  "base_spacing_m": 0.6,
+  "layout_sampling": "independent_rng_streams_with_geometry_checks",
+  "action_dim": 14,
+  "hand": null,
+  "max_flex_edge_strain": 0.1,
+  "cloth_pad_contact": {
+    "solref": [
+      0.002,
+      1
+    ],
+    "solimp": [
+      0.999,
+      0.9999,
+      0.001
+    ],
+    "priority": 1,
+    "status": "numerical thin-sheet contact; force caps and friction unchanged"
+  },
+  "engine_version": "3.16.0",
+  "runtime_variant": "discrete_soft_material_development",
+  "integrator": "discrete",
+  "solver": "Newton",
+  "grasp_roll_slots": [
+    {
+      "arm": 0,
+      "vertices": [
+        "towel_0",
+        "towel_12"
+      ],
+      "markers": [
+        "grasp_assist_bundle_0_towel_0_roll_a",
+        "grasp_assist_bundle_0_towel_0_roll_b"
+      ],
+      "paths": [
+        [
+          "grasp_bundle_vertex_towel_0",
+          "grasp_assist_bundle_0_towel_0_roll_a"
+        ],
+        [
+          "grasp_bundle_vertex_towel_0",
+          "grasp_assist_bundle_0_towel_0_roll_b"
+        ],
+        [
+          "grasp_bundle_vertex_towel_12",
+          "grasp_assist_bundle_0_towel_0_roll_a"
+        ],
+        [
+          "grasp_bundle_vertex_towel_12",
+          "grasp_assist_bundle_0_towel_0_roll_b"
+        ],
+        [
+          "grasp_bundle_vertex_towel_0",
+          "grasp_bundle_vertex_towel_12"
+        ]
+      ],
+      "equalities": [
+        "grasp_assist_bundle_0_towel_0_roll_e0",
+        "grasp_assist_bundle_0_towel_0_roll_e1",
+        "grasp_assist_bundle_0_towel_0_roll_e2",
+        "grasp_assist_bundle_0_towel_0_roll_e3",
+        "grasp_assist_bundle_0_towel_0_roll_e4"
+      ]
+    },
+    {
+      "arm": 1,
+      "vertices": [
+        "towel_0",
+        "towel_12"
+      ],
+      "markers": [
+        "grasp_assist_bundle_1_towel_0_roll_a",
+        "grasp_assist_bundle_1_towel_0_roll_b"
+      ],
+      "paths": [
+        [
+          "grasp_bundle_vertex_towel_0",
+          "grasp_assist_bundle_1_towel_0_roll_a"
+        ],
+        [
+          "grasp_bundle_vertex_towel_0",
+          "grasp_assist_bundle_1_towel_0_roll_b"
+        ],
+        [
+          "grasp_bundle_vertex_towel_12",
+          "grasp_assist_bundle_1_towel_0_roll_a"
+        ],
+        [
+          "grasp_bundle_vertex_towel_12",
+          "grasp_assist_bundle_1_towel_0_roll_b"
+        ],
+        [
+          "grasp_bundle_vertex_towel_0",
+          "grasp_bundle_vertex_towel_12"
+        ]
+      ],
+      "equalities": [
+        "grasp_assist_bundle_1_towel_0_roll_e0",
+        "grasp_assist_bundle_1_towel_0_roll_e1",
+        "grasp_assist_bundle_1_towel_0_roll_e2",
+        "grasp_assist_bundle_1_towel_0_roll_e3",
+        "grasp_assist_bundle_1_towel_0_roll_e4"
+      ]
+    },
+    {
+      "arm": 0,
+      "vertices": [
+        "towel_156",
+        "towel_168"
+      ],
+      "markers": [
+        "grasp_assist_bundle_0_towel_156_roll_a",
+        "grasp_assist_bundle_0_towel_156_roll_b"
+      ],
+      "paths": [
+        [
+          "grasp_bundle_vertex_towel_156",
+          "grasp_assist_bundle_0_towel_156_roll_a"
+        ],
+        [
+          "grasp_bundle_vertex_towel_156",
+          "grasp_assist_bundle_0_towel_156_roll_b"
+        ],
+        [
+          "grasp_bundle_vertex_towel_168",
+          "grasp_assist_bundle_0_towel_156_roll_a"
+        ],
+        [
+          "grasp_bundle_vertex_towel_168",
+          "grasp_assist_bundle_0_towel_156_roll_b"
+        ],
+        [
+          "grasp_bundle_vertex_towel_156",
+          "grasp_bundle_vertex_towel_168"
+        ]
+      ],
+      "equalities": [
+        "grasp_assist_bundle_0_towel_156_roll_e0",
+        "grasp_assist_bundle_0_towel_156_roll_e1",
+        "grasp_assist_bundle_0_towel_156_roll_e2",
+        "grasp_assist_bundle_0_towel_156_roll_e3",
+        "grasp_assist_bundle_0_towel_156_roll_e4"
+      ]
+    },
+    {
+      "arm": 1,
+      "vertices": [
+        "towel_156",
+        "towel_168"
+      ],
+      "markers": [
+        "grasp_assist_bundle_1_towel_156_roll_a",
+        "grasp_assist_bundle_1_towel_156_roll_b"
+      ],
+      "paths": [
+        [
+          "grasp_bundle_vertex_towel_156",
+          "grasp_assist_bundle_1_towel_156_roll_a"
+        ],
+        [
+          "grasp_bundle_vertex_towel_156",
+          "grasp_assist_bundle_1_towel_156_roll_b"
+        ],
+        [
+          "grasp_bundle_vertex_towel_168",
+          "grasp_assist_bundle_1_towel_156_roll_a"
+        ],
+        [
+          "grasp_bundle_vertex_towel_168",
+          "grasp_assist_bundle_1_towel_156_roll_b"
+        ],
+        [
+          "grasp_bundle_vertex_towel_156",
+          "grasp_bundle_vertex_towel_168"
+        ]
+      ],
+      "equalities": [
+        "grasp_assist_bundle_1_towel_156_roll_e0",
+        "grasp_assist_bundle_1_towel_156_roll_e1",
+        "grasp_assist_bundle_1_towel_156_roll_e2",
+        "grasp_assist_bundle_1_towel_156_roll_e3",
+        "grasp_assist_bundle_1_towel_156_roll_e4"
+      ]
+    }
+  ],
+  "grasp_bundle_slots": [
+    {
+      "name": "grasp_assist_bundle_0_towel_0",
+      "arm": 0,
+      "vertices": [
+        "towel_0",
+        "towel_12"
+      ],
+      "sites": [
+        "grasp_bundle_vertex_towel_0",
+        "grasp_assist_bundle_0_towel_0_centre",
+        "grasp_bundle_vertex_towel_12"
+      ],
+      "centre": "grasp_assist_bundle_0_towel_0_centre"
+    },
+    {
+      "name": "grasp_assist_bundle_1_towel_0",
+      "arm": 1,
+      "vertices": [
+        "towel_0",
+        "towel_12"
+      ],
+      "sites": [
+        "grasp_bundle_vertex_towel_0",
+        "grasp_assist_bundle_1_towel_0_centre",
+        "grasp_bundle_vertex_towel_12"
+      ],
+      "centre": "grasp_assist_bundle_1_towel_0_centre"
+    },
+    {
+      "name": "grasp_assist_bundle_0_towel_156",
+      "arm": 0,
+      "vertices": [
+        "towel_156",
+        "towel_168"
+      ],
+      "sites": [
+        "grasp_bundle_vertex_towel_156",
+        "grasp_assist_bundle_0_towel_156_centre",
+        "grasp_bundle_vertex_towel_168"
+      ],
+      "centre": "grasp_assist_bundle_0_towel_156_centre"
+    },
+    {
+      "name": "grasp_assist_bundle_1_towel_156",
+      "arm": 1,
+      "vertices": [
+        "towel_156",
+        "towel_168"
+      ],
+      "sites": [
+        "grasp_bundle_vertex_towel_156",
+        "grasp_assist_bundle_1_towel_156_centre",
+        "grasp_bundle_vertex_towel_168"
+      ],
+      "centre": "grasp_assist_bundle_1_towel_156_centre"
+    }
+  ],
+  "grasp_assistance": {
+    "classification": "CONSTRAINT_ASSISTED_DEMONSTRATION_NOT_BENCHMARK_SCORE",
+    "mode": "contact_triggered_robot_material_connect",
+    "authorization": "User approved separate constraint-assisted demonstrations on 2026-10-20",
+    "slots": [
+      {
+        "name": "grasp_assist_0",
+        "anchor": "0:wrist",
+        "body": "towel_0"
+      },
+      {
+        "name": "grasp_assist_1",
+        "anchor": "0:wrist",
+        "body": "towel_1"
+      },
+      {
+        "name": "grasp_assist_2",
+        "anchor": "0:wrist",
+        "body": "towel_2"
+      },
+      {
+        "name": "grasp_assist_3",
+        "anchor": "0:wrist",
+        "body": "towel_3"
+      },
+      {
+        "name": "grasp_assist_4",
+        "anchor": "0:wrist",
+        "body": "towel_4"
+      },
+      {
+        "name": "grasp_assist_5",
+        "anchor": "0:wrist",
+        "body": "towel_5"
+      },
+      {
+        "name": "grasp_assist_6",
+        "anchor": "0:wrist",
+        "body": "towel_6"
+      },
+      {
+        "name": "grasp_assist_7",
+        "anchor": "0:wrist",
+        "body": "towel_7"
+      },
+      {
+        "name": "grasp_assist_8",
+        "anchor": "0:wrist",
+        "body": "towel_8"
+      },
+      {
+        "name": "grasp_assist_9",
+        "anchor": "0:wrist",
+        "body": "towel_9"
+      },
+      {
+        "name": "grasp_assist_10",
+        "anchor": "0:wrist",
+        "body": "towel_10"
+      },
+      {
+        "name": "grasp_assist_11",
+        "anchor": "0:wrist",
+        "body": "towel_11"
+      },
+      {
+        "name": "grasp_assist_12",
+        "anchor": "0:wrist",
+        "body": "towel_12"
+      },
+      {
+        "name": "grasp_assist_13",
+        "anchor": "0:wrist",
+        "body": "towel_13"
+      },
+      {
+        "name": "grasp_assist_14",
+        "anchor": "0:wrist",
+        "body": "towel_14"
+      },
+      {
+        "name": "grasp_assist_15",
+        "anchor": "0:wrist",
+        "body": "towel_15"
+      },
+      {
+        "name": "grasp_assist_16",
+        "anchor": "0:wrist",
+        "body": "towel_16"
+      },
+      {
+        "name": "grasp_assist_17",
+        "anchor": "0:wrist",
+        "body": "towel_17"
+      },
+      {
+        "name": "grasp_assist_18",
+        "anchor": "0:wrist",
+        "body": "towel_18"
+      },
+      {
+        "name": "grasp_assist_19",
+        "anchor": "0:wrist",
+        "body": "towel_19"
+      },
+      {
+        "name": "grasp_assist_20",
+        "anchor": "0:wrist",
+        "body": "towel_20"
+      },
+      {
+        "name": "grasp_assist_21",
+        "anchor": "0:wrist",
+        "body": "towel_21"
+      },
+      {
+        "name": "grasp_assist_22",
+        "anchor": "0:wrist",
+        "body": "towel_22"
+      },
+      {
+        "name": "grasp_assist_23",
+        "anchor": "0:wrist",
+        "body": "towel_23"
+      },
+      {
+        "name": "grasp_assist_24",
+        "anchor": "0:wrist",
+        "body": "towel_24"
+      },
+      {
+        "name": "grasp_assist_25",
+        "anchor": "0:wrist",
+        "body": "towel_25"
+      },
+      {
+        "name": "grasp_assist_26",
+        "anchor": "0:wrist",
+        "body": "towel_26"
+      },
+      {
+        "name": "grasp_assist_27",
+        "anchor": "0:wrist",
+        "body": "towel_27"
+      },
+      {
+        "name": "grasp_assist_28",
+        "anchor": "0:wrist",
+        "body": "towel_28"
+      },
+      {
+        "name": "grasp_assist_29",
+        "anchor": "0:wrist",
+        "body": "towel_29"
+      },
+      {
+        "name": "grasp_assist_30",
+        "anchor": "0:wrist",
+        "body": "towel_30"
+      },
+      {
+        "name": "grasp_assist_31",
+        "anchor": "0:wrist",
+        "body": "towel_31"
+      },
+      {
+        "name": "grasp_assist_32",
+        "anchor": "0:wrist",
+        "body": "towel_32"
+      },
+      {
+        "name": "grasp_assist_33",
+        "anchor": "0:wrist",
+        "body": "towel_33"
+      },
+      {
+        "name": "grasp_assist_34",
+        "anchor": "0:wrist",
+        "body": "towel_34"
+      },
+      {
+        "name": "grasp_assist_35",
+        "anchor": "0:wrist",
+        "body": "towel_35"
+      },
+      {
+        "name": "grasp_assist_36",
+        "anchor": "0:wrist",
+        "body": "towel_36"
+      },
+      {
+        "name": "grasp_assist_37",
+        "anchor": "0:wrist",
+        "body": "towel_37"
+      },
+      {
+        "name": "grasp_assist_38",
+        "anchor": "0:wrist",
+        "body": "towel_38"
+      },
+      {
+        "name": "grasp_assist_39",
+        "anchor": "0:wrist",
+        "body": "towel_39"
+      },
+      {
+        "name": "grasp_assist_40",
+        "anchor": "0:wrist",
+        "body": "towel_40"
+      },
+      {
+        "name": "grasp_assist_41",
+        "anchor": "0:wrist",
+        "body": "towel_41"
+      },
+      {
+        "name": "grasp_assist_42",
+        "anchor": "0:wrist",
+        "body": "towel_42"
+      },
+      {
+        "name": "grasp_assist_43",
+        "anchor": "0:wrist",
+        "body": "towel_43"
+      },
+      {
+        "name": "grasp_assist_44",
+        "anchor": "0:wrist",
+        "body": "towel_44"
+      },
+      {
+        "name": "grasp_assist_45",
+        "anchor": "0:wrist",
+        "body": "towel_45"
+      },
+      {
+        "name": "grasp_assist_46",
+        "anchor": "0:wrist",
+        "body": "towel_46"
+      },
+      {
+        "name": "grasp_assist_47",
+        "anchor": "0:wrist",
+        "body": "towel_47"
+      },
+      {
+        "name": "grasp_assist_48",
+        "anchor": "0:wrist",
+        "body": "towel_48"
+      },
+      {
+        "name": "grasp_assist_49",
+        "anchor": "0:wrist",
+        "body": "towel_49"
+      },
+      {
+        "name": "grasp_assist_50",
+        "anchor": "0:wrist",
+        "body": "towel_50"
+      },
+      {
+        "name": "grasp_assist_51",
+        "anchor": "0:wrist",
+        "body": "towel_51"
+      },
+      {
+        "name": "grasp_assist_52",
+        "anchor": "0:wrist",
+        "body": "towel_52"
+      },
+      {
+        "name": "grasp_assist_53",
+        "anchor": "0:wrist",
+        "body": "towel_53"
+      },
+      {
+        "name": "grasp_assist_54",
+        "anchor": "0:wrist",
+        "body": "towel_54"
+      },
+      {
+        "name": "grasp_assist_55",
+        "anchor": "0:wrist",
+        "body": "towel_55"
+      },
+      {
+        "name": "grasp_assist_56",
+        "anchor": "0:wrist",
+        "body": "towel_56"
+      },
+      {
+        "name": "grasp_assist_57",
+        "anchor": "0:wrist",
+        "body": "towel_57"
+      },
+      {
+        "name": "grasp_assist_58",
+        "anchor": "0:wrist",
+        "body": "towel_58"
+      },
+      {
+        "name": "grasp_assist_59",
+        "anchor": "0:wrist",
+        "body": "towel_59"
+      },
+      {
+        "name": "grasp_assist_60",
+        "anchor": "0:wrist",
+        "body": "towel_60"
+      },
+      {
+        "name": "grasp_assist_61",
+        "anchor": "0:wrist",
+        "body": "towel_61"
+      },
+      {
+        "name": "grasp_assist_62",
+        "anchor": "0:wrist",
+        "body": "towel_62"
+      },
+      {
+        "name": "grasp_assist_63",
+        "anchor": "0:wrist",
+        "body": "towel_63"
+      },
+      {
+        "name": "grasp_assist_64",
+        "anchor": "0:wrist",
+        "body": "towel_64"
+      },
+      {
+        "name": "grasp_assist_65",
+        "anchor": "0:wrist",
+        "body": "towel_65"
+      },
+      {
+        "name": "grasp_assist_66",
+        "anchor": "0:wrist",
+        "body": "towel_66"
+      },
+      {
+        "name": "grasp_assist_67",
+        "anchor": "0:wrist",
+        "body": "towel_67"
+      },
+      {
+        "name": "grasp_assist_68",
+        "anchor": "0:wrist",
+        "body": "towel_68"
+      },
+      {
+        "name": "grasp_assist_69",
+        "anchor": "0:wrist",
+        "body": "towel_69"
+      },
+      {
+        "name": "grasp_assist_70",
+        "anchor": "0:wrist",
+        "body": "towel_70"
+      },
+      {
+        "name": "grasp_assist_71",
+        "anchor": "0:wrist",
+        "body": "towel_71"
+      },
+      {
+        "name": "grasp_assist_72",
+        "anchor": "0:wrist",
+        "body": "towel_72"
+      },
+      {
+        "name": "grasp_assist_73",
+        "anchor": "0:wrist",
+        "body": "towel_73"
+      },
+      {
+        "name": "grasp_assist_74",
+        "anchor": "0:wrist",
+        "body": "towel_74"
+      },
+      {
+        "name": "grasp_assist_75",
+        "anchor": "0:wrist",
+        "body": "towel_75"
+      },
+      {
+        "name": "grasp_assist_76",
+        "anchor": "0:wrist",
+        "body": "towel_76"
+      },
+      {
+        "name": "grasp_assist_77",
+        "anchor": "0:wrist",
+        "body": "towel_77"
+      },
+      {
+        "name": "grasp_assist_78",
+        "anchor": "0:wrist",
+        "body": "towel_78"
+      },
+      {
+        "name": "grasp_assist_79",
+        "anchor": "0:wrist",
+        "body": "towel_79"
+      },
+      {
+        "name": "grasp_assist_80",
+        "anchor": "0:wrist",
+        "body": "towel_80"
+      },
+      {
+        "name": "grasp_assist_81",
+        "anchor": "0:wrist",
+        "body": "towel_81"
+      },
+      {
+        "name": "grasp_assist_82",
+        "anchor": "0:wrist",
+        "body": "towel_82"
+      },
+      {
+        "name": "grasp_assist_83",
+        "anchor": "0:wrist",
+        "body": "towel_83"
+      },
+      {
+        "name": "grasp_assist_84",
+        "anchor": "0:wrist",
+        "body": "towel_84"
+      },
+      {
+        "name": "grasp_assist_85",
+        "anchor": "0:wrist",
+        "body": "towel_85"
+      },
+      {
+        "name": "grasp_assist_86",
+        "anchor": "0:wrist",
+        "body": "towel_86"
+      },
+      {
+        "name": "grasp_assist_87",
+        "anchor": "0:wrist",
+        "body": "towel_87"
+      },
+      {
+        "name": "grasp_assist_88",
+        "anchor": "0:wrist",
+        "body": "towel_88"
+      },
+      {
+        "name": "grasp_assist_89",
+        "anchor": "0:wrist",
+        "body": "towel_89"
+      },
+      {
+        "name": "grasp_assist_90",
+        "anchor": "0:wrist",
+        "body": "towel_90"
+      },
+      {
+        "name": "grasp_assist_91",
+        "anchor": "0:wrist",
+        "body": "towel_91"
+      },
+      {
+        "name": "grasp_assist_92",
+        "anchor": "0:wrist",
+        "body": "towel_92"
+      },
+      {
+        "name": "grasp_assist_93",
+        "anchor": "0:wrist",
+        "body": "towel_93"
+      },
+      {
+        "name": "grasp_assist_94",
+        "anchor": "0:wrist",
+        "body": "towel_94"
+      },
+      {
+        "name": "grasp_assist_95",
+        "anchor": "0:wrist",
+        "body": "towel_95"
+      },
+      {
+        "name": "grasp_assist_96",
+        "anchor": "0:wrist",
+        "body": "towel_96"
+      },
+      {
+        "name": "grasp_assist_97",
+        "anchor": "0:wrist",
+        "body": "towel_97"
+      },
+      {
+        "name": "grasp_assist_98",
+        "anchor": "0:wrist",
+        "body": "towel_98"
+      },
+      {
+        "name": "grasp_assist_99",
+        "anchor": "0:wrist",
+        "body": "towel_99"
+      },
+      {
+        "name": "grasp_assist_100",
+        "anchor": "0:wrist",
+        "body": "towel_100"
+      },
+      {
+        "name": "grasp_assist_101",
+        "anchor": "0:wrist",
+        "body": "towel_101"
+      },
+      {
+        "name": "grasp_assist_102",
+        "anchor": "0:wrist",
+        "body": "towel_102"
+      },
+      {
+        "name": "grasp_assist_103",
+        "anchor": "0:wrist",
+        "body": "towel_103"
+      },
+      {
+        "name": "grasp_assist_104",
+        "anchor": "0:wrist",
+        "body": "towel_104"
+      },
+      {
+        "name": "grasp_assist_105",
+        "anchor": "0:wrist",
+        "body": "towel_105"
+      },
+      {
+        "name": "grasp_assist_106",
+        "anchor": "0:wrist",
+        "body": "towel_106"
+      },
+      {
+        "name": "grasp_assist_107",
+        "anchor": "0:wrist",
+        "body": "towel_107"
+      },
+      {
+        "name": "grasp_assist_108",
+        "anchor": "0:wrist",
+        "body": "towel_108"
+      },
+      {
+        "name": "grasp_assist_109",
+        "anchor": "0:wrist",
+        "body": "towel_109"
+      },
+      {
+        "name": "grasp_assist_110",
+        "anchor": "0:wrist",
+        "body": "towel_110"
+      },
+      {
+        "name": "grasp_assist_111",
+        "anchor": "0:wrist",
+        "body": "towel_111"
+      },
+      {
+        "name": "grasp_assist_112",
+        "anchor": "0:wrist",
+        "body": "towel_112"
+      },
+      {
+        "name": "grasp_assist_113",
+        "anchor": "0:wrist",
+        "body": "towel_113"
+      },
+      {
+        "name": "grasp_assist_114",
+        "anchor": "0:wrist",
+        "body": "towel_114"
+      },
+      {
+        "name": "grasp_assist_115",
+        "anchor": "0:wrist",
+        "body": "towel_115"
+      },
+      {
+        "name": "grasp_assist_116",
+        "anchor": "0:wrist",
+        "body": "towel_116"
+      },
+      {
+        "name": "grasp_assist_117",
+        "anchor": "0:wrist",
+        "body": "towel_117"
+      },
+      {
+        "name": "grasp_assist_118",
+        "anchor": "0:wrist",
+        "body": "towel_118"
+      },
+      {
+        "name": "grasp_assist_119",
+        "anchor": "0:wrist",
+        "body": "towel_119"
+      },
+      {
+        "name": "grasp_assist_120",
+        "anchor": "0:wrist",
+        "body": "towel_120"
+      },
+      {
+        "name": "grasp_assist_121",
+        "anchor": "0:wrist",
+        "body": "towel_121"
+      },
+      {
+        "name": "grasp_assist_122",
+        "anchor": "0:wrist",
+        "body": "towel_122"
+      },
+      {
+        "name": "grasp_assist_123",
+        "anchor": "0:wrist",
+        "body": "towel_123"
+      },
+      {
+        "name": "grasp_assist_124",
+        "anchor": "0:wrist",
+        "body": "towel_124"
+      },
+      {
+        "name": "grasp_assist_125",
+        "anchor": "0:wrist",
+        "body": "towel_125"
+      },
+      {
+        "name": "grasp_assist_126",
+        "anchor": "0:wrist",
+        "body": "towel_126"
+      },
+      {
+        "name": "grasp_assist_127",
+        "anchor": "0:wrist",
+        "body": "towel_127"
+      },
+      {
+        "name": "grasp_assist_128",
+        "anchor": "0:wrist",
+        "body": "towel_128"
+      },
+      {
+        "name": "grasp_assist_129",
+        "anchor": "0:wrist",
+        "body": "towel_129"
+      },
+      {
+        "name": "grasp_assist_130",
+        "anchor": "0:wrist",
+        "body": "towel_130"
+      },
+      {
+        "name": "grasp_assist_131",
+        "anchor": "0:wrist",
+        "body": "towel_131"
+      },
+      {
+        "name": "grasp_assist_132",
+        "anchor": "0:wrist",
+        "body": "towel_132"
+      },
+      {
+        "name": "grasp_assist_133",
+        "anchor": "0:wrist",
+        "body": "towel_133"
+      },
+      {
+        "name": "grasp_assist_134",
+        "anchor": "0:wrist",
+        "body": "towel_134"
+      },
+      {
+        "name": "grasp_assist_135",
+        "anchor": "0:wrist",
+        "body": "towel_135"
+      },
+      {
+        "name": "grasp_assist_136",
+        "anchor": "0:wrist",
+        "body": "towel_136"
+      },
+      {
+        "name": "grasp_assist_137",
+        "anchor": "0:wrist",
+        "body": "towel_137"
+      },
+      {
+        "name": "grasp_assist_138",
+        "anchor": "0:wrist",
+        "body": "towel_138"
+      },
+      {
+        "name": "grasp_assist_139",
+        "anchor": "0:wrist",
+        "body": "towel_139"
+      },
+      {
+        "name": "grasp_assist_140",
+        "anchor": "0:wrist",
+        "body": "towel_140"
+      },
+      {
+        "name": "grasp_assist_141",
+        "anchor": "0:wrist",
+        "body": "towel_141"
+      },
+      {
+        "name": "grasp_assist_142",
+        "anchor": "0:wrist",
+        "body": "towel_142"
+      },
+      {
+        "name": "grasp_assist_143",
+        "anchor": "0:wrist",
+        "body": "towel_143"
+      },
+      {
+        "name": "grasp_assist_144",
+        "anchor": "0:wrist",
+        "body": "towel_144"
+      },
+      {
+        "name": "grasp_assist_145",
+        "anchor": "0:wrist",
+        "body": "towel_145"
+      },
+      {
+        "name": "grasp_assist_146",
+        "anchor": "0:wrist",
+        "body": "towel_146"
+      },
+      {
+        "name": "grasp_assist_147",
+        "anchor": "0:wrist",
+        "body": "towel_147"
+      },
+      {
+        "name": "grasp_assist_148",
+        "anchor": "0:wrist",
+        "body": "towel_148"
+      },
+      {
+        "name": "grasp_assist_149",
+        "anchor": "0:wrist",
+        "body": "towel_149"
+      },
+      {
+        "name": "grasp_assist_150",
+        "anchor": "0:wrist",
+        "body": "towel_150"
+      },
+      {
+        "name": "grasp_assist_151",
+        "anchor": "0:wrist",
+        "body": "towel_151"
+      },
+      {
+        "name": "grasp_assist_152",
+        "anchor": "0:wrist",
+        "body": "towel_152"
+      },
+      {
+        "name": "grasp_assist_153",
+        "anchor": "0:wrist",
+        "body": "towel_153"
+      },
+      {
+        "name": "grasp_assist_154",
+        "anchor": "0:wrist",
+        "body": "towel_154"
+      },
+      {
+        "name": "grasp_assist_155",
+        "anchor": "0:wrist",
+        "body": "towel_155"
+      },
+      {
+        "name": "grasp_assist_156",
+        "anchor": "0:wrist",
+        "body": "towel_156"
+      },
+      {
+        "name": "grasp_assist_157",
+        "anchor": "0:wrist",
+        "body": "towel_157"
+      },
+      {
+        "name": "grasp_assist_158",
+        "anchor": "0:wrist",
+        "body": "towel_158"
+      },
+      {
+        "name": "grasp_assist_159",
+        "anchor": "0:wrist",
+        "body": "towel_159"
+      },
+      {
+        "name": "grasp_assist_160",
+        "anchor": "0:wrist",
+        "body": "towel_160"
+      },
+      {
+        "name": "grasp_assist_161",
+        "anchor": "0:wrist",
+        "body": "towel_161"
+      },
+      {
+        "name": "grasp_assist_162",
+        "anchor": "0:wrist",
+        "body": "towel_162"
+      },
+      {
+        "name": "grasp_assist_163",
+        "anchor": "0:wrist",
+        "body": "towel_163"
+      },
+      {
+        "name": "grasp_assist_164",
+        "anchor": "0:wrist",
+        "body": "towel_164"
+      },
+      {
+        "name": "grasp_assist_165",
+        "anchor": "0:wrist",
+        "body": "towel_165"
+      },
+      {
+        "name": "grasp_assist_166",
+        "anchor": "0:wrist",
+        "body": "towel_166"
+      },
+      {
+        "name": "grasp_assist_167",
+        "anchor": "0:wrist",
+        "body": "towel_167"
+      },
+      {
+        "name": "grasp_assist_168",
+        "anchor": "0:wrist",
+        "body": "towel_168"
+      },
+      {
+        "name": "grasp_assist_169",
+        "anchor": "1:wrist",
+        "body": "towel_0"
+      },
+      {
+        "name": "grasp_assist_170",
+        "anchor": "1:wrist",
+        "body": "towel_1"
+      },
+      {
+        "name": "grasp_assist_171",
+        "anchor": "1:wrist",
+        "body": "towel_2"
+      },
+      {
+        "name": "grasp_assist_172",
+        "anchor": "1:wrist",
+        "body": "towel_3"
+      },
+      {
+        "name": "grasp_assist_173",
+        "anchor": "1:wrist",
+        "body": "towel_4"
+      },
+      {
+        "name": "grasp_assist_174",
+        "anchor": "1:wrist",
+        "body": "towel_5"
+      },
+      {
+        "name": "grasp_assist_175",
+        "anchor": "1:wrist",
+        "body": "towel_6"
+      },
+      {
+        "name": "grasp_assist_176",
+        "anchor": "1:wrist",
+        "body": "towel_7"
+      },
+      {
+        "name": "grasp_assist_177",
+        "anchor": "1:wrist",
+        "body": "towel_8"
+      },
+      {
+        "name": "grasp_assist_178",
+        "anchor": "1:wrist",
+        "body": "towel_9"
+      },
+      {
+        "name": "grasp_assist_179",
+        "anchor": "1:wrist",
+        "body": "towel_10"
+      },
+      {
+        "name": "grasp_assist_180",
+        "anchor": "1:wrist",
+        "body": "towel_11"
+      },
+      {
+        "name": "grasp_assist_181",
+        "anchor": "1:wrist",
+        "body": "towel_12"
+      },
+      {
+        "name": "grasp_assist_182",
+        "anchor": "1:wrist",
+        "body": "towel_13"
+      },
+      {
+        "name": "grasp_assist_183",
+        "anchor": "1:wrist",
+        "body": "towel_14"
+      },
+      {
+        "name": "grasp_assist_184",
+        "anchor": "1:wrist",
+        "body": "towel_15"
+      },
+      {
+        "name": "grasp_assist_185",
+        "anchor": "1:wrist",
+        "body": "towel_16"
+      },
+      {
+        "name": "grasp_assist_186",
+        "anchor": "1:wrist",
+        "body": "towel_17"
+      },
+      {
+        "name": "grasp_assist_187",
+        "anchor": "1:wrist",
+        "body": "towel_18"
+      },
+      {
+        "name": "grasp_assist_188",
+        "anchor": "1:wrist",
+        "body": "towel_19"
+      },
+      {
+        "name": "grasp_assist_189",
+        "anchor": "1:wrist",
+        "body": "towel_20"
+      },
+      {
+        "name": "grasp_assist_190",
+        "anchor": "1:wrist",
+        "body": "towel_21"
+      },
+      {
+        "name": "grasp_assist_191",
+        "anchor": "1:wrist",
+        "body": "towel_22"
+      },
+      {
+        "name": "grasp_assist_192",
+        "anchor": "1:wrist",
+        "body": "towel_23"
+      },
+      {
+        "name": "grasp_assist_193",
+        "anchor": "1:wrist",
+        "body": "towel_24"
+      },
+      {
+        "name": "grasp_assist_194",
+        "anchor": "1:wrist",
+        "body": "towel_25"
+      },
+      {
+        "name": "grasp_assist_195",
+        "anchor": "1:wrist",
+        "body": "towel_26"
+      },
+      {
+        "name": "grasp_assist_196",
+        "anchor": "1:wrist",
+        "body": "towel_27"
+      },
+      {
+        "name": "grasp_assist_197",
+        "anchor": "1:wrist",
+        "body": "towel_28"
+      },
+      {
+        "name": "grasp_assist_198",
+        "anchor": "1:wrist",
+        "body": "towel_29"
+      },
+      {
+        "name": "grasp_assist_199",
+        "anchor": "1:wrist",
+        "body": "towel_30"
+      },
+      {
+        "name": "grasp_assist_200",
+        "anchor": "1:wrist",
+        "body": "towel_31"
+      },
+      {
+        "name": "grasp_assist_201",
+        "anchor": "1:wrist",
+        "body": "towel_32"
+      },
+      {
+        "name": "grasp_assist_202",
+        "anchor": "1:wrist",
+        "body": "towel_33"
+      },
+      {
+        "name": "grasp_assist_203",
+        "anchor": "1:wrist",
+        "body": "towel_34"
+      },
+      {
+        "name": "grasp_assist_204",
+        "anchor": "1:wrist",
+        "body": "towel_35"
+      },
+      {
+        "name": "grasp_assist_205",
+        "anchor": "1:wrist",
+        "body": "towel_36"
+      },
+      {
+        "name": "grasp_assist_206",
+        "anchor": "1:wrist",
+        "body": "towel_37"
+      },
+      {
+        "name": "grasp_assist_207",
+        "anchor": "1:wrist",
+        "body": "towel_38"
+      },
+      {
+        "name": "grasp_assist_208",
+        "anchor": "1:wrist",
+        "body": "towel_39"
+      },
+      {
+        "name": "grasp_assist_209",
+        "anchor": "1:wrist",
+        "body": "towel_40"
+      },
+      {
+        "name": "grasp_assist_210",
+        "anchor": "1:wrist",
+        "body": "towel_41"
+      },
+      {
+        "name": "grasp_assist_211",
+        "anchor": "1:wrist",
+        "body": "towel_42"
+      },
+      {
+        "name": "grasp_assist_212",
+        "anchor": "1:wrist",
+        "body": "towel_43"
+      },
+      {
+        "name": "grasp_assist_213",
+        "anchor": "1:wrist",
+        "body": "towel_44"
+      },
+      {
+        "name": "grasp_assist_214",
+        "anchor": "1:wrist",
+        "body": "towel_45"
+      },
+      {
+        "name": "grasp_assist_215",
+        "anchor": "1:wrist",
+        "body": "towel_46"
+      },
+      {
+        "name": "grasp_assist_216",
+        "anchor": "1:wrist",
+        "body": "towel_47"
+      },
+      {
+        "name": "grasp_assist_217",
+        "anchor": "1:wrist",
+        "body": "towel_48"
+      },
+      {
+        "name": "grasp_assist_218",
+        "anchor": "1:wrist",
+        "body": "towel_49"
+      },
+      {
+        "name": "grasp_assist_219",
+        "anchor": "1:wrist",
+        "body": "towel_50"
+      },
+      {
+        "name": "grasp_assist_220",
+        "anchor": "1:wrist",
+        "body": "towel_51"
+      },
+      {
+        "name": "grasp_assist_221",
+        "anchor": "1:wrist",
+        "body": "towel_52"
+      },
+      {
+        "name": "grasp_assist_222",
+        "anchor": "1:wrist",
+        "body": "towel_53"
+      },
+      {
+        "name": "grasp_assist_223",
+        "anchor": "1:wrist",
+        "body": "towel_54"
+      },
+      {
+        "name": "grasp_assist_224",
+        "anchor": "1:wrist",
+        "body": "towel_55"
+      },
+      {
+        "name": "grasp_assist_225",
+        "anchor": "1:wrist",
+        "body": "towel_56"
+      },
+      {
+        "name": "grasp_assist_226",
+        "anchor": "1:wrist",
+        "body": "towel_57"
+      },
+      {
+        "name": "grasp_assist_227",
+        "anchor": "1:wrist",
+        "body": "towel_58"
+      },
+      {
+        "name": "grasp_assist_228",
+        "anchor": "1:wrist",
+        "body": "towel_59"
+      },
+      {
+        "name": "grasp_assist_229",
+        "anchor": "1:wrist",
+        "body": "towel_60"
+      },
+      {
+        "name": "grasp_assist_230",
+        "anchor": "1:wrist",
+        "body": "towel_61"
+      },
+      {
+        "name": "grasp_assist_231",
+        "anchor": "1:wrist",
+        "body": "towel_62"
+      },
+      {
+        "name": "grasp_assist_232",
+        "anchor": "1:wrist",
+        "body": "towel_63"
+      },
+      {
+        "name": "grasp_assist_233",
+        "anchor": "1:wrist",
+        "body": "towel_64"
+      },
+      {
+        "name": "grasp_assist_234",
+        "anchor": "1:wrist",
+        "body": "towel_65"
+      },
+      {
+        "name": "grasp_assist_235",
+        "anchor": "1:wrist",
+        "body": "towel_66"
+      },
+      {
+        "name": "grasp_assist_236",
+        "anchor": "1:wrist",
+        "body": "towel_67"
+      },
+      {
+        "name": "grasp_assist_237",
+        "anchor": "1:wrist",
+        "body": "towel_68"
+      },
+      {
+        "name": "grasp_assist_238",
+        "anchor": "1:wrist",
+        "body": "towel_69"
+      },
+      {
+        "name": "grasp_assist_239",
+        "anchor": "1:wrist",
+        "body": "towel_70"
+      },
+      {
+        "name": "grasp_assist_240",
+        "anchor": "1:wrist",
+        "body": "towel_71"
+      },
+      {
+        "name": "grasp_assist_241",
+        "anchor": "1:wrist",
+        "body": "towel_72"
+      },
+      {
+        "name": "grasp_assist_242",
+        "anchor": "1:wrist",
+        "body": "towel_73"
+      },
+      {
+        "name": "grasp_assist_243",
+        "anchor": "1:wrist",
+        "body": "towel_74"
+      },
+      {
+        "name": "grasp_assist_244",
+        "anchor": "1:wrist",
+        "body": "towel_75"
+      },
+      {
+        "name": "grasp_assist_245",
+        "anchor": "1:wrist",
+        "body": "towel_76"
+      },
+      {
+        "name": "grasp_assist_246",
+        "anchor": "1:wrist",
+        "body": "towel_77"
+      },
+      {
+        "name": "grasp_assist_247",
+        "anchor": "1:wrist",
+        "body": "towel_78"
+      },
+      {
+        "name": "grasp_assist_248",
+        "anchor": "1:wrist",
+        "body": "towel_79"
+      },
+      {
+        "name": "grasp_assist_249",
+        "anchor": "1:wrist",
+        "body": "towel_80"
+      },
+      {
+        "name": "grasp_assist_250",
+        "anchor": "1:wrist",
+        "body": "towel_81"
+      },
+      {
+        "name": "grasp_assist_251",
+        "anchor": "1:wrist",
+        "body": "towel_82"
+      },
+      {
+        "name": "grasp_assist_252",
+        "anchor": "1:wrist",
+        "body": "towel_83"
+      },
+      {
+        "name": "grasp_assist_253",
+        "anchor": "1:wrist",
+        "body": "towel_84"
+      },
+      {
+        "name": "grasp_assist_254",
+        "anchor": "1:wrist",
+        "body": "towel_85"
+      },
+      {
+        "name": "grasp_assist_255",
+        "anchor": "1:wrist",
+        "body": "towel_86"
+      },
+      {
+        "name": "grasp_assist_256",
+        "anchor": "1:wrist",
+        "body": "towel_87"
+      },
+      {
+        "name": "grasp_assist_257",
+        "anchor": "1:wrist",
+        "body": "towel_88"
+      },
+      {
+        "name": "grasp_assist_258",
+        "anchor": "1:wrist",
+        "body": "towel_89"
+      },
+      {
+        "name": "grasp_assist_259",
+        "anchor": "1:wrist",
+        "body": "towel_90"
+      },
+      {
+        "name": "grasp_assist_260",
+        "anchor": "1:wrist",
+        "body": "towel_91"
+      },
+      {
+        "name": "grasp_assist_261",
+        "anchor": "1:wrist",
+        "body": "towel_92"
+      },
+      {
+        "name": "grasp_assist_262",
+        "anchor": "1:wrist",
+        "body": "towel_93"
+      },
+      {
+        "name": "grasp_assist_263",
+        "anchor": "1:wrist",
+        "body": "towel_94"
+      },
+      {
+        "name": "grasp_assist_264",
+        "anchor": "1:wrist",
+        "body": "towel_95"
+      },
+      {
+        "name": "grasp_assist_265",
+        "anchor": "1:wrist",
+        "body": "towel_96"
+      },
+      {
+        "name": "grasp_assist_266",
+        "anchor": "1:wrist",
+        "body": "towel_97"
+      },
+      {
+        "name": "grasp_assist_267",
+        "anchor": "1:wrist",
+        "body": "towel_98"
+      },
+      {
+        "name": "grasp_assist_268",
+        "anchor": "1:wrist",
+        "body": "towel_99"
+      },
+      {
+        "name": "grasp_assist_269",
+        "anchor": "1:wrist",
+        "body": "towel_100"
+      },
+      {
+        "name": "grasp_assist_270",
+        "anchor": "1:wrist",
+        "body": "towel_101"
+      },
+      {
+        "name": "grasp_assist_271",
+        "anchor": "1:wrist",
+        "body": "towel_102"
+      },
+      {
+        "name": "grasp_assist_272",
+        "anchor": "1:wrist",
+        "body": "towel_103"
+      },
+      {
+        "name": "grasp_assist_273",
+        "anchor": "1:wrist",
+        "body": "towel_104"
+      },
+      {
+        "name": "grasp_assist_274",
+        "anchor": "1:wrist",
+        "body": "towel_105"
+      },
+      {
+        "name": "grasp_assist_275",
+        "anchor": "1:wrist",
+        "body": "towel_106"
+      },
+      {
+        "name": "grasp_assist_276",
+        "anchor": "1:wrist",
+        "body": "towel_107"
+      },
+      {
+        "name": "grasp_assist_277",
+        "anchor": "1:wrist",
+        "body": "towel_108"
+      },
+      {
+        "name": "grasp_assist_278",
+        "anchor": "1:wrist",
+        "body": "towel_109"
+      },
+      {
+        "name": "grasp_assist_279",
+        "anchor": "1:wrist",
+        "body": "towel_110"
+      },
+      {
+        "name": "grasp_assist_280",
+        "anchor": "1:wrist",
+        "body": "towel_111"
+      },
+      {
+        "name": "grasp_assist_281",
+        "anchor": "1:wrist",
+        "body": "towel_112"
+      },
+      {
+        "name": "grasp_assist_282",
+        "anchor": "1:wrist",
+        "body": "towel_113"
+      },
+      {
+        "name": "grasp_assist_283",
+        "anchor": "1:wrist",
+        "body": "towel_114"
+      },
+      {
+        "name": "grasp_assist_284",
+        "anchor": "1:wrist",
+        "body": "towel_115"
+      },
+      {
+        "name": "grasp_assist_285",
+        "anchor": "1:wrist",
+        "body": "towel_116"
+      },
+      {
+        "name": "grasp_assist_286",
+        "anchor": "1:wrist",
+        "body": "towel_117"
+      },
+      {
+        "name": "grasp_assist_287",
+        "anchor": "1:wrist",
+        "body": "towel_118"
+      },
+      {
+        "name": "grasp_assist_288",
+        "anchor": "1:wrist",
+        "body": "towel_119"
+      },
+      {
+        "name": "grasp_assist_289",
+        "anchor": "1:wrist",
+        "body": "towel_120"
+      },
+      {
+        "name": "grasp_assist_290",
+        "anchor": "1:wrist",
+        "body": "towel_121"
+      },
+      {
+        "name": "grasp_assist_291",
+        "anchor": "1:wrist",
+        "body": "towel_122"
+      },
+      {
+        "name": "grasp_assist_292",
+        "anchor": "1:wrist",
+        "body": "towel_123"
+      },
+      {
+        "name": "grasp_assist_293",
+        "anchor": "1:wrist",
+        "body": "towel_124"
+      },
+      {
+        "name": "grasp_assist_294",
+        "anchor": "1:wrist",
+        "body": "towel_125"
+      },
+      {
+        "name": "grasp_assist_295",
+        "anchor": "1:wrist",
+        "body": "towel_126"
+      },
+      {
+        "name": "grasp_assist_296",
+        "anchor": "1:wrist",
+        "body": "towel_127"
+      },
+      {
+        "name": "grasp_assist_297",
+        "anchor": "1:wrist",
+        "body": "towel_128"
+      },
+      {
+        "name": "grasp_assist_298",
+        "anchor": "1:wrist",
+        "body": "towel_129"
+      },
+      {
+        "name": "grasp_assist_299",
+        "anchor": "1:wrist",
+        "body": "towel_130"
+      },
+      {
+        "name": "grasp_assist_300",
+        "anchor": "1:wrist",
+        "body": "towel_131"
+      },
+      {
+        "name": "grasp_assist_301",
+        "anchor": "1:wrist",
+        "body": "towel_132"
+      },
+      {
+        "name": "grasp_assist_302",
+        "anchor": "1:wrist",
+        "body": "towel_133"
+      },
+      {
+        "name": "grasp_assist_303",
+        "anchor": "1:wrist",
+        "body": "towel_134"
+      },
+      {
+        "name": "grasp_assist_304",
+        "anchor": "1:wrist",
+        "body": "towel_135"
+      },
+      {
+        "name": "grasp_assist_305",
+        "anchor": "1:wrist",
+        "body": "towel_136"
+      },
+      {
+        "name": "grasp_assist_306",
+        "anchor": "1:wrist",
+        "body": "towel_137"
+      },
+      {
+        "name": "grasp_assist_307",
+        "anchor": "1:wrist",
+        "body": "towel_138"
+      },
+      {
+        "name": "grasp_assist_308",
+        "anchor": "1:wrist",
+        "body": "towel_139"
+      },
+      {
+        "name": "grasp_assist_309",
+        "anchor": "1:wrist",
+        "body": "towel_140"
+      },
+      {
+        "name": "grasp_assist_310",
+        "anchor": "1:wrist",
+        "body": "towel_141"
+      },
+      {
+        "name": "grasp_assist_311",
+        "anchor": "1:wrist",
+        "body": "towel_142"
+      },
+      {
+        "name": "grasp_assist_312",
+        "anchor": "1:wrist",
+        "body": "towel_143"
+      },
+      {
+        "name": "grasp_assist_313",
+        "anchor": "1:wrist",
+        "body": "towel_144"
+      },
+      {
+        "name": "grasp_assist_314",
+        "anchor": "1:wrist",
+        "body": "towel_145"
+      },
+      {
+        "name": "grasp_assist_315",
+        "anchor": "1:wrist",
+        "body": "towel_146"
+      },
+      {
+        "name": "grasp_assist_316",
+        "anchor": "1:wrist",
+        "body": "towel_147"
+      },
+      {
+        "name": "grasp_assist_317",
+        "anchor": "1:wrist",
+        "body": "towel_148"
+      },
+      {
+        "name": "grasp_assist_318",
+        "anchor": "1:wrist",
+        "body": "towel_149"
+      },
+      {
+        "name": "grasp_assist_319",
+        "anchor": "1:wrist",
+        "body": "towel_150"
+      },
+      {
+        "name": "grasp_assist_320",
+        "anchor": "1:wrist",
+        "body": "towel_151"
+      },
+      {
+        "name": "grasp_assist_321",
+        "anchor": "1:wrist",
+        "body": "towel_152"
+      },
+      {
+        "name": "grasp_assist_322",
+        "anchor": "1:wrist",
+        "body": "towel_153"
+      },
+      {
+        "name": "grasp_assist_323",
+        "anchor": "1:wrist",
+        "body": "towel_154"
+      },
+      {
+        "name": "grasp_assist_324",
+        "anchor": "1:wrist",
+        "body": "towel_155"
+      },
+      {
+        "name": "grasp_assist_325",
+        "anchor": "1:wrist",
+        "body": "towel_156"
+      },
+      {
+        "name": "grasp_assist_326",
+        "anchor": "1:wrist",
+        "body": "towel_157"
+      },
+      {
+        "name": "grasp_assist_327",
+        "anchor": "1:wrist",
+        "body": "towel_158"
+      },
+      {
+        "name": "grasp_assist_328",
+        "anchor": "1:wrist",
+        "body": "towel_159"
+      },
+      {
+        "name": "grasp_assist_329",
+        "anchor": "1:wrist",
+        "body": "towel_160"
+      },
+      {
+        "name": "grasp_assist_330",
+        "anchor": "1:wrist",
+        "body": "towel_161"
+      },
+      {
+        "name": "grasp_assist_331",
+        "anchor": "1:wrist",
+        "body": "towel_162"
+      },
+      {
+        "name": "grasp_assist_332",
+        "anchor": "1:wrist",
+        "body": "towel_163"
+      },
+      {
+        "name": "grasp_assist_333",
+        "anchor": "1:wrist",
+        "body": "towel_164"
+      },
+      {
+        "name": "grasp_assist_334",
+        "anchor": "1:wrist",
+        "body": "towel_165"
+      },
+      {
+        "name": "grasp_assist_335",
+        "anchor": "1:wrist",
+        "body": "towel_166"
+      },
+      {
+        "name": "grasp_assist_336",
+        "anchor": "1:wrist",
+        "body": "towel_167"
+      },
+      {
+        "name": "grasp_assist_337",
+        "anchor": "1:wrist",
+        "body": "towel_168"
+      }
+    ],
+    "anchors": {
+      "0:wrist": "left_link6",
+      "1:wrist": "right_link6"
+    },
+    "release_required": true
+  },
+  "physics_timestep": 0.001,
+  "control_hz": 25,
+  "action_type": "absolute_joint_radians_plus_ee_commands",
+  "cameras": {
+    "cam_head": "cam_head",
+    "cam_third_view": "cam_third_view",
+    "cam_top": "cam_top",
+    "cam_left_wrist": "left_cam_wrist",
+    "cam_right_wrist": "right_cam_wrist"
+  },
+  "camera_sizes": {
+    "cam_head": [
+      640,
+      400
+    ],
+    "cam_third_view": [
+      640,
+      480
+    ],
+    "cam_top": [
+      640,
+      480
+    ],
+    "cam_left_wrist": [
+      640,
+      480
+    ],
+    "cam_right_wrist": [
+      640,
+      480
+    ]
+  },
+  "camera_timing": "synchronous_simulation_time; physical camera is 30 fps latest-frame at 25 Hz control",
+  "depth_route": "audit_only_not_policy",
+  "model_nq": 523,
+  "model_nv": 523,
+  "model_nu": 14,
+  "flex_count": 1,
+  "flex_vertices": 169,
+  "max_joint_delta_rad": 0.08,
+  "layout_audit": {
+    "table_margin_m": 0.03,
+    "footprint_valid": true,
+    "violations": [],
+    "reachability": "not certified by this audit"
+  },
+  "layout_split": "public"
+}

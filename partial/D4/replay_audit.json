@@ -1,0 +1,17 @@
+{
+  "task": "D4",
+  "engine_version": "3.16.0",
+  "steps": 676,
+  "max_qpos_replay_error": 0.0,
+  "passed": true,
+  "method": "initial state once, recorded ctrl plus explicit contact-gated grasp-assistance events, fresh mj_step; no intermediate pose overwrite",
+  "limitation": "Physics replay audit, separate from task success adjudication",
+  "assistance_event_count": 3,
+  "assistance_active_at_end": 0,
+  "contact_gates_reverified": true,
+  "original_contact_masks_restored": true,
+  "contact_replacement_events": 0,
+  "physics_timestep_values_s": [
+    0.001
+  ]
+}

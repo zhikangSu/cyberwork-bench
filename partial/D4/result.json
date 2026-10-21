@@ -1,0 +1,1020 @@
+{
+  "task": "D4",
+  "layout": 0,
+  "level": "L2",
+  "instruction": "撑开袋口，放入两件物品，再直立放回",
+  "spec_version": "0.3.3",
+  "engine_version": "3.16.0",
+  "controller": "privileged_scripted_expert",
+  "controller_script": "tools/demos_v033/d4_bag_pack.py",
+  "classification": "CONSTRAINT_ASSISTED_DEMONSTRATION_NOT_BENCHMARK_SCORE",
+  "success": false,
+  "success_source": "cwbench/flow_v033.py evaluated live on every control step (the archived v0.3.2 grader output is kept in info)",
+  "failure": "flow stopped after phase cube (partial demonstration)",
+  "stopped_after_phase": "cube",
+  "info": {
+    "stages": {
+      "open_bag": true,
+      "item_a": true,
+      "item_b": false,
+      "upright": false
+    },
+    "progress": 0.55,
+    "score": 0.55,
+    "success": false,
+    "terminal_hold_steps": 0,
+    "error": null,
+    "details": {
+      "mouth_area_m2": 0.0034621199843746404,
+      "axis_height_m": -0.020788146400817942,
+      "axis_tilt_deg": 95.96492011069033,
+      "bottom_height_m": 0.034068810524995,
+      "bag_released": true,
+      "inside_fractions": {
+        "item_a": 0.9040000000000001,
+        "item_b": 0.0
+      }
+    },
+    "status": "development_grader_expert_validation_pending",
+    "terminal_current": false,
+    "formal_spec_score": null,
+    "full_spec_conformance_verified": false,
+    "done": false,
+    "reason": "running",
+    "time": 27.040000000010064,
+    "execution_time": 27.040000000010064,
+    "phase": "execution",
+    "ik": [],
+    "ik_pos_err": [],
+    "ik_rot_err": [],
+    "jerk_command_mean": 0.0,
+    "jerk_arm_joint_mean_rad_s3": 5.6736268063603086e-06,
+    "safety_stop": null,
+    "recovery_events": []
+  },
+  "events": [
+    {
+      "phase": "settle",
+      "time": 0.0
+    },
+    {
+      "phase": "left: press upper lip",
+      "time": 0.48000000000000037
+    },
+    {
+      "phase": "left: lift upper lip",
+      "time": 4.479999999999831
+    },
+    {
+      "phase": "right: pick cube",
+      "time": 7.640000000000886
+    },
+    {
+      "phase": "approach item_a",
+      "time": 7.640000000000886
+    },
+    {
+      "phase": "grasp item_a",
+      "time": 11.479999999999077
+    },
+    {
+      "phase": "lift item_a",
+      "time": 12.359999999998589
+    },
+    {
+      "phase": "right: carry cube to the mouth",
+      "time": 13.719999999997835
+    },
+    {
+      "phase": "right: insert cube",
+      "time": 16.679999999997403
+    },
+    {
+      "phase": "right: release cube",
+      "time": 19.720000000001118
+    },
+    {
+      "phase": "right: withdraw",
+      "time": 20.920000000002585
+    },
+    {
+      "phase": "stopped after cube: release assistance",
+      "time": 24.72000000000723
+    },
+    {
+      "phase": "stopped after cube: open both grippers",
+      "time": 24.72000000000723
+    }
+  ],
+  "steps": 676,
+  "duration_s": 27.040000000010064,
+  "no_object_teleport": true,
+  "no_grasp_weld": false,
+  "physics": "MuJoCo env.step, 1000 Hz physics / 25 Hz control",
+  "source_hashes": {
+    "cwbench/contact_grasp.py": "467514a8339b7933d4f35464357409d16f2c74c89c5d24f2f33197ddc5f584ef",
+    "cwbench/foam_ball.py": "fba434d3af9939eb4f00af953e9632279c72e85fb8356128aebd0233011eaacf",
+    "cwbench/__init__.py": "f414b78723a0cee16f6378aff4814997c38ddf5e12edce9dfa1017849aa4256e",
+    "cwbench/cloth_bag.py": "33efa2ed21d3489b3163fbc587afc9e699b1c7c2dd5c676cd741a24b48b1aafe",
+    "cwbench/dexterity_o6.py": "68d90a4b89e5de99793ca4f91a933d21e9ae72e78ed65526337bcfaa7d610652",
+    "cwbench/experts.py": "67523994520cad00a9a0239cf97e5929191c38f657f6c4733205af98dfe1ee21",
+    "cwbench/record.py": "39d4e7ee6b7664d9f5443766551da122973a6d8ba04d9d17be899891cf0c88c8",
+    "cwbench/flex_runtime.py": "b36ff07603e5e3e459fb16808008fafd567890048de59a21153816ee4e7398b0",
+    "cwbench/geometry.py": "08bc854f00a86b2c3170bb6304b4caebfb29035aacaffed20931e29aaa3e0e99",
+    "cwbench/rubrics.py": "13bc8655a7d41bfcbcd30ea24b444b1d5ca365c690657b965648fffc543a71fa",
+    "cwbench/scenes_v024.py": "ad726a0cca666ed60ca1cb938f44404e15632b2c38af40e5182409e345941ec1",
+    "cwbench/errors.py": "324c0e1a2b4359e0f09e947adada58bdcebd6bce2ef72f3c6fe16be189c633e7",
+    "cwbench/scoring.py": "24cf03ff644bc89091725e22f23505c70c051c2011176b70ea2effc91b7d0a79",
+    "cwbench/grasp_assist.py": "306e744c412f641564c1a1e3a25aeea75e2103f12579217279d2a0b5bab8074c",
+    "cwbench/arm_motion.py": "63ece840caaa51a1effd6aca447362491edb5452d0c6ce62ef624fe16987450c",
+    "cwbench/dexterity.py": "0d8f34390e4825c49c56f8626ff55af458d11dc0c69ad6610a62198bc7189c9b",
+    "cwbench/flow_v033.py": "0ec232faf0abe6e079dec7f10cc6846c8f44fc21748407ddbbdf490416993e92",
+    "cwbench/scene_expect_v033.py": "b41f81adc010adae746a0d8ed180d014c5bafe543980f2f33cca721e0fcf7462",
+    "cwbench/contact_ik.py": "18e4c66a2b543b4ebcee9a34bb95e48a702d46872e05f257cac47b8386fa48df",
+    "cwbench/adaptive_bag.py": "ff665a5c8d0e76f959dba9b6a3f19f49390571abc648537ebad5235322e3f3fa",
+    "cwbench/capabilities.py": "4910760472fa4c175729e3f3318b0cccfbd023c3f24762480b0a1e8a92393bca",
+    "cwbench/web_spec_v033.py": "0d9799ee7127911334c59d44f32ed7ede4248be89ae658bce33725eee0a45084",
+    "cwbench/robots.py": "48e3e49dc5f06bc3790ddfd527c8ce319dfaa56917cfe9ecd8c9450ad8540be8",
+    "cwbench/ik.py": "dcebc5a182510725a3a093be8875f4d77f3d38bc9e8341cdaff3f6c7b0f52ce5",
+    "cwbench/scoring_v024.py": "64f98d048782991f7cc26f1a4b85f401e5b7ea7c0da6f7bc4b0704f533f7d6e2",
+    "cwbench/spec_contract.py": "d5ca0550f4f780a109ecb11e6336b5e4c5d671f5478f1d8481018d86ec69768a",
+    "cwbench/viewer.py": "1ae7503e5b198163767e6557668158e87e5b56fa021e65e66c2b1aaf0b342f32",
+    "cwbench/soft_control.py": "a3de14c4aca011d464d5ea8111b7cb7e48cbd314f1902e154edf39c37514267c",
+    "cwbench/scenes.py": "6bf272b9e7f73f968a487c942a0332628cae2006a701d5bd7e98029e7817d019",
+    "cwbench/paperboard.py": "3abf8d149d2e669b25eba5fc6295c4d75f09d5e1cfbb86e080148ff69da8ebd3",
+    "cwbench/adaptive_towel.py": "00fa1edfd408c4005c33689bd587d8373e240d6ed8fa5942e09f424ca21f528f",
+    "cwbench/env.py": "8e96891268f704845b07e45c09927c03dafc4cdc83be4fa7a0f73937c4a02360",
+    "configs/scene.yaml": "51b146a1f469361ac9fca21c15d7a3941fa722ca42a5690c90298abfcd6c56b2",
+    "configs/D4.yaml": "a179a217bfa1e8ef632b9bd426f0afe597fb1fc2cfe80fc10a9935712816cf10",
+    "tools/demos_v033/d4_bag_pack.py": "e931ffaa0cc7ea696afba04f863e99be2efb962165adc8f06753461796efb8ae"
+  },
+  "initial_instruction_idx": null,
+  "parameters": {
+    "lip_tilt_deg": 45.0,
+    "lip_yaw_deg": 0.0,
+    "lip_dx_m": -0.03,
+    "lip_inset_m": 0.018,
+    "lip_open": 0.85,
+    "press_force_n": 0.2,
+    "press_max_n": 9.0,
+    "lip_vertices": 6,
+    "lip_radius_m": 0.02,
+    "lift_tcp_z_m": 0.13,
+    "lift_tcp_dy_m": 0.0,
+    "cube_pick_tilt_deg": 75.0,
+    "ins_tilt_deg": 80,
+    "ins_yaw_deg": 10.0,
+    "ins_len_m": 0.15,
+    "pre_y_m": -0.19,
+    "cube_x_m": 0.03,
+    "cube_z_m": 0.072,
+    "cube_deep_y_m": 0.005,
+    "orange_pick_tilt_deg": 75.0,
+    "orange_x_m": 0.015,
+    "orange_z_m": 0.06,
+    "orange_deep_y_m": 0.005,
+    "release_open": 1.0,
+    "withdraw_raise_m": 0.06,
+    "park_x_m": 0.22,
+    "withdraw_lift_m": 0.0,
+    "withdraw_s": 1.6,
+    "hang_tilt_deg": 50.0,
+    "hang_z_m": 0.26,
+    "rest_bottom_z_m": 0.004,
+    "carry_z_m": 0.3,
+    "drop_clear_x_m": 0.05,
+    "drop_above_m": 0.015,
+    "drop_approach_m": 0.06,
+    "drop_settle_s": 1.2,
+    "cube_radius_m": 0.035,
+    "orange_radius_m": 0.035,
+    "set_down_m": 0.02,
+    "stand_settle_s": 1.0,
+    "withdraw_back_m": 0.06,
+    "load_mode": "insert",
+    "push_m": 0,
+    "cube_back_m": 0.05,
+    "orange_back_m": 0.07,
+    "final_hold_s": 2.5
+  },
+  "motion_log": [
+    {
+      "phase": "left: press upper lip",
+      "label": "lip engaged",
+      "time": 4.28,
+      "strain": 0.0005,
+      "tcp": [
+        [
+          -0.0302,
+          -0.037,
+          0.029
+        ],
+        [
+          0.3,
+          -0.1869,
+          0.4886
+        ]
+      ],
+      "items": {
+        "item_a": [
+          0.25,
+          -0.03,
+          0.02
+        ],
+        "item_b": [
+          0.35,
+          0.09,
+          0.035
+        ]
+      },
+      "finger": "left_link7",
+      "vertices": [
+        "bag_8",
+        "bag_9"
+      ],
+      "forces": [
+        1.2976855615568836,
+        1.2976855615568836
+      ],
+      "v033": {
+        "bag_open": null,
+        "item_a_in_bag": null,
+        "item_b_in_bag": null,
+        "bag_upright_released": null
+      },
+      "v033_details": {
+        "item_a_sample_fraction_in_bag": 0.0,
+        "item_b_sample_fraction_in_bag": 0.0,
+        "bag_axis_tilt_deg": 98.3873497156133,
+        "bag_touching": [
+          "robot",
+          "table"
+        ],
+        "assistance_active": false
+      }
+    },
+    {
+      "phase": "left: press upper lip",
+      "label": "lip engaged",
+      "time": 4.28,
+      "strain": 0.0005,
+      "tcp": [
+        [
+          -0.0302,
+          -0.037,
+          0.029
+        ],
+        [
+          0.3,
+          -0.1869,
+          0.4886
+        ]
+      ],
+      "items": {
+        "item_a": [
+          0.25,
+          -0.03,
+          0.02
+        ],
+        "item_b": [
+          0.35,
+          0.09,
+          0.035
+        ]
+      },
+      "finger": "left_link8",
+      "vertices": [
+        "bag_5",
+        "bag_4"
+      ],
+      "forces": [
+        0.967887012106866,
+        0.43100547094988173
+      ],
+      "v033": {
+        "bag_open": null,
+        "item_a_in_bag": null,
+        "item_b_in_bag": null,
+        "bag_upright_released": null
+      },
+      "v033_details": {
+        "item_a_sample_fraction_in_bag": 0.0,
+        "item_b_sample_fraction_in_bag": 0.0,
+        "bag_axis_tilt_deg": 98.3873497156133,
+        "bag_touching": [
+          "robot",
+          "table"
+        ],
+        "assistance_active": false
+      }
+    },
+    {
+      "phase": "left: press upper lip",
+      "label": "pressed",
+      "time": 4.48,
+      "strain": 0.0003,
+      "tcp": [
+        [
+          -0.0298,
+          -0.0367,
+          0.0291
+        ],
+        [
+          0.3,
+          -0.1869,
+          0.4886
+        ]
+      ],
+      "items": {
+        "item_a": [
+          0.25,
+          -0.03,
+          0.02
+        ],
+        "item_b": [
+          0.35,
+          0.09,
+          0.035
+        ]
+      },
+      "force": {
+        "left_link7": 0.5655040840390143,
+        "left_link8": 0.6865371489513716
+      },
+      "unengaged": [],
+      "v033": {
+        "bag_open": null,
+        "item_a_in_bag": null,
+        "item_b_in_bag": null,
+        "bag_upright_released": null
+      },
+      "v033_details": {
+        "item_a_sample_fraction_in_bag": 0.0,
+        "item_b_sample_fraction_in_bag": 0.0,
+        "bag_axis_tilt_deg": 98.211824432513,
+        "bag_touching": [
+          "robot",
+          "table"
+        ],
+        "assistance_active": true
+      }
+    },
+    {
+      "phase": "left: lift upper lip",
+      "label": "mouth open",
+      "time": 7.64,
+      "strain": 0.0001,
+      "tcp": [
+        [
+          -0.0299,
+          -0.0368,
+          0.1294
+        ],
+        [
+          0.3,
+          -0.1869,
+          0.4886
+        ]
+      ],
+      "items": {
+        "item_a": [
+          0.25,
+          -0.03,
+          0.02
+        ],
+        "item_b": [
+          0.35,
+          0.09,
+          0.035
+        ]
+      },
+      "mouth": [
+        [
+          0.086,
+          -0.057,
+          0.06
+        ],
+        [
+          0.074,
+          -0.051,
+          0.079
+        ],
+        [
+          0.063,
+          -0.045,
+          0.097
+        ],
+        [
+          0.043,
+          -0.041,
+          0.105
+        ],
+        [
+          0.021,
+          -0.04,
+          0.107
+        ],
+        [
+          0.0,
+          -0.041,
+          0.107
+        ],
+        [
+          -0.021,
+          -0.041,
+          0.106
+        ],
+        [
+          -0.042,
+          -0.04,
+          0.109
+        ],
+        [
+          -0.064,
+          -0.04,
+          0.107
+        ],
+        [
+          -0.086,
+          -0.039,
+          0.107
+        ],
+        [
+          -0.106,
+          -0.043,
+          0.095
+        ],
+        [
+          -0.088,
+          -0.047,
+          0.081
+        ],
+        [
+          -0.071,
+          -0.05,
+          0.067
+        ],
+        [
+          -0.054,
+          -0.053,
+          0.053
+        ],
+        [
+          -0.036,
+          -0.056,
+          0.042
+        ],
+        [
+          -0.016,
+          -0.059,
+          0.034
+        ],
+        [
+          0.004,
+          -0.06,
+          0.029
+        ],
+        [
+          0.025,
+          -0.061,
+          0.03
+        ],
+        [
+          0.046,
+          -0.06,
+          0.037
+        ],
+        [
+          0.066,
+          -0.059,
+          0.048
+        ]
+      ],
+      "metrics": {
+        "mouth_area_m2": 0.010590896386535716,
+        "axis_height_m": 0.04894299667946522,
+        "axis_tilt_deg": 75.73781518899577,
+        "bottom_height_m": 0.026114022654389668,
+        "bag_released": false,
+        "inside_fractions": {
+          "item_a": 0.0,
+          "item_b": 0.0
+        }
+      },
+      "v033": {
+        "bag_open": null,
+        "item_a_in_bag": null,
+        "item_b_in_bag": null,
+        "bag_upright_released": null
+      },
+      "v033_details": {
+        "item_a_sample_fraction_in_bag": 0.0,
+        "item_b_sample_fraction_in_bag": 0.0,
+        "bag_axis_tilt_deg": 75.7631665655694,
+        "bag_touching": [
+          "table"
+        ],
+        "assistance_active": true
+      }
+    },
+    {
+      "phase": "lift item_a",
+      "label": "cube insertion pose",
+      "time": 13.72,
+      "strain": 0.0001,
+      "tcp": [
+        [
+          -0.0299,
+          -0.0368,
+          0.1294
+        ],
+        [
+          0.2498,
+          -0.0302,
+          0.0894
+        ]
+      ],
+      "items": {
+        "item_a": [
+          0.2513,
+          -0.0303,
+          0.0794
+        ],
+        "item_b": [
+          0.35,
+          0.09,
+          0.035
+        ]
+      },
+      "tilt_yaw": [
+        80,
+        10.0
+      ],
+      "v033": {
+        "bag_open": null,
+        "item_a_in_bag": null,
+        "item_b_in_bag": null,
+        "bag_upright_released": null
+      },
+      "v033_details": {
+        "item_a_sample_fraction_in_bag": 0.0,
+        "item_b_sample_fraction_in_bag": 0.0,
+        "bag_axis_tilt_deg": 75.75429284784205,
+        "bag_touching": [
+          "table"
+        ],
+        "assistance_active": true
+      }
+    },
+    {
+      "phase": "right: carry cube to the mouth",
+      "label": "cube at mouth",
+      "time": 16.68,
+      "strain": 0.0001,
+      "tcp": [
+        [
+          -0.0299,
+          -0.0368,
+          0.1294
+        ],
+        [
+          0.0545,
+          -0.1418,
+          0.1071
+        ]
+      ],
+      "items": {
+        "item_a": [
+          0.0557,
+          -0.1406,
+          0.0966
+        ],
+        "item_b": [
+          0.35,
+          0.09,
+          0.035
+        ]
+      },
+      "v033": {
+        "bag_open": null,
+        "item_a_in_bag": null,
+        "item_b_in_bag": null,
+        "bag_upright_released": null
+      },
+      "v033_details": {
+        "item_a_sample_fraction_in_bag": 0.0,
+        "item_b_sample_fraction_in_bag": 0.0,
+        "bag_axis_tilt_deg": 75.74751552116277,
+        "bag_touching": [
+          "table"
+        ],
+        "assistance_active": true
+      }
+    },
+    {
+      "phase": "right: insert cube",
+      "label": "cube insert s=0.25",
+      "time": 17.4,
+      "strain": 0.0001,
+      "tcp": [
+        [
+          -0.0299,
+          -0.0368,
+          0.1294
+        ],
+        [
+          0.0487,
+          -0.1055,
+          0.1005
+        ]
+      ],
+      "items": {
+        "item_a": [
+          0.0498,
+          -0.1043,
+          0.0901
+        ],
+        "item_b": [
+          0.35,
+          0.09,
+          0.035
+        ]
+      },
+      "grasped": true,
+      "v033": {
+        "bag_open": null,
+        "item_a_in_bag": null,
+        "item_b_in_bag": null,
+        "bag_upright_released": null
+      },
+      "v033_details": {
+        "item_a_sample_fraction_in_bag": 0.0,
+        "item_b_sample_fraction_in_bag": 0.0,
+        "bag_axis_tilt_deg": 75.74587594956456,
+        "bag_touching": [
+          "table"
+        ],
+        "assistance_active": true
+      }
+    },
+    {
+      "phase": "right: insert cube",
+      "label": "cube insert s=0.50",
+      "time": 18.12,
+      "strain": 0.0003,
+      "tcp": [
+        [
+          -0.0314,
+          -0.0358,
+          0.1286
+        ],
+        [
+          0.0414,
+          -0.0697,
+          0.0948
+        ]
+      ],
+      "items": {
+        "item_a": [
+          0.0425,
+          -0.0686,
+          0.0844
+        ],
+        "item_b": [
+          0.35,
+          0.09,
+          0.035
+        ]
+      },
+      "grasped": true,
+      "v033": {
+        "bag_open": null,
+        "item_a_in_bag": null,
+        "item_b_in_bag": null,
+        "bag_upright_released": null
+      },
+      "v033_details": {
+        "item_a_sample_fraction_in_bag": 0.125,
+        "item_b_sample_fraction_in_bag": 0.0,
+        "bag_axis_tilt_deg": 75.31031223121178,
+        "bag_touching": [
+          "robot",
+          "table"
+        ],
+        "assistance_active": true
+      }
+    },
+    {
+      "phase": "right: insert cube",
+      "label": "cube insert s=0.75",
+      "time": 18.84,
+      "strain": 0.0002,
+      "tcp": [
+        [
+          -0.0304,
+          -0.0364,
+          0.13
+        ],
+        [
+          0.0358,
+          -0.033,
+          0.0869
+        ]
+      ],
+      "items": {
+        "item_a": [
+          0.037,
+          -0.0318,
+          0.0765
+        ],
+        "item_b": [
+          0.35,
+          0.09,
+          0.035
+        ]
+      },
+      "grasped": true,
+      "v033": {
+        "bag_open": null,
+        "item_a_in_bag": null,
+        "item_b_in_bag": null,
+        "bag_upright_released": null
+      },
+      "v033_details": {
+        "item_a_sample_fraction_in_bag": 0.75,
+        "item_b_sample_fraction_in_bag": 0.0,
+        "bag_axis_tilt_deg": 73.40345603355323,
+        "bag_touching": [
+          "item_a_geom",
+          "table"
+        ],
+        "assistance_active": true
+      }
+    },
+    {
+      "phase": "right: insert cube",
+      "label": "cube insert s=1.00",
+      "time": 19.56,
+      "strain": 0.0001,
+      "tcp": [
+        [
+          -0.031,
+          -0.0356,
+          0.1302
+        ],
+        [
+          0.0289,
+          0.0029,
+          0.0803
+        ]
+      ],
+      "items": {
+        "item_a": [
+          0.0301,
+          0.0041,
+          0.07
+        ],
+        "item_b": [
+          0.35,
+          0.09,
+          0.035
+        ]
+      },
+      "grasped": true,
+      "v033": {
+        "bag_open": null,
+        "item_a_in_bag": null,
+        "item_b_in_bag": null,
+        "bag_upright_released": null
+      },
+      "v033_details": {
+        "item_a_sample_fraction_in_bag": 1.0,
+        "item_b_sample_fraction_in_bag": 0.0,
+        "bag_axis_tilt_deg": 76.17566779714822,
+        "bag_touching": [
+          "robot"
+        ],
+        "assistance_active": true
+      }
+    },
+    {
+      "phase": "right: release cube",
+      "label": "cube released",
+      "time": 20.92,
+      "strain": 0.0003,
+      "tcp": [
+        [
+          -0.0265,
+          -0.0355,
+          0.1316
+        ],
+        [
+          0.0209,
+          -0.0003,
+          0.0816
+        ]
+      ],
+      "items": {
+        "item_a": [
+          0.0328,
+          0.0035,
+          0.041
+        ],
+        "item_b": [
+          0.35,
+          0.09,
+          0.035
+        ]
+      },
+      "released": true,
+      "v033": {
+        "bag_open": 19.840000000001265,
+        "item_a_in_bag": 19.840000000001265,
+        "item_b_in_bag": null,
+        "bag_upright_released": null
+      },
+      "v033_details": {
+        "item_a_sample_fraction_in_bag": 0.75,
+        "item_b_sample_fraction_in_bag": 0.0,
+        "bag_axis_tilt_deg": 72.7896564656403,
+        "bag_touching": [
+          "item_a_geom",
+          "robot"
+        ],
+        "assistance_active": true
+      }
+    },
+    {
+      "phase": "right: withdraw",
+      "label": "cube loaded",
+      "time": 24.72,
+      "strain": 0.0001,
+      "tcp": [
+        [
+          -0.0293,
+          -0.0371,
+          0.1296
+        ],
+        [
+          0.2201,
+          -0.1458,
+          0.1677
+        ]
+      ],
+      "items": {
+        "item_a": [
+          0.0385,
+          0.0208,
+          0.0343
+        ],
+        "item_b": [
+          0.35,
+          0.09,
+          0.035
+        ]
+      },
+      "released": true,
+      "v033": {
+        "bag_open": 19.840000000001265,
+        "item_a_in_bag": 19.840000000001265,
+        "item_b_in_bag": null,
+        "bag_upright_released": null
+      },
+      "v033_details": {
+        "item_a_sample_fraction_in_bag": 0.75,
+        "item_b_sample_fraction_in_bag": 0.0,
+        "bag_axis_tilt_deg": 75.14372762859912,
+        "bag_touching": [
+          "item_a_geom",
+          "table"
+        ],
+        "assistance_active": true
+      }
+    },
+    {
+      "phase": "stopped after cube: open both grippers",
+      "label": "final",
+      "time": 27.04,
+      "strain": 0.0001,
+      "tcp": [
+        [
+          -0.0298,
+          -0.0367,
+          0.13
+        ],
+        [
+          0.22,
+          -0.1458,
+          0.1676
+        ]
+      ],
+      "items": {
+        "item_a": [
+          0.0251,
+          0.0002,
+          0.0245
+        ],
+        "item_b": [
+          0.35,
+          0.09,
+          0.035
+        ]
+      },
+      "v033": {
+        "bag_open": 19.840000000001265,
+        "item_a_in_bag": 19.840000000001265,
+        "item_b_in_bag": null,
+        "bag_upright_released": null
+      },
+      "v033_details": {
+        "item_a_sample_fraction_in_bag": 0.375,
+        "item_b_sample_fraction_in_bag": 0.0,
+        "bag_axis_tilt_deg": 95.96569480625352,
+        "bag_touching": [
+          "item_a_geom",
+          "table"
+        ],
+        "assistance_active": false
+      }
+    }
+  ],
+  "v033_flow": {
+    "progress": 0.55,
+    "success": false,
+    "stages": [
+      {
+        "name": "bag_open",
+        "weight": 0.3,
+        "requires": [],
+        "first_time_s": 19.840000000001265,
+        "achieved": true,
+        "blocked_at_s": null
+      },
+      {
+        "name": "item_a_in_bag",
+        "weight": 0.25,
+        "requires": [
+          "bag_open"
+        ],
+        "first_time_s": 19.840000000001265,
+        "achieved": true,
+        "blocked_at_s": null
+      },
+      {
+        "name": "item_b_in_bag",
+        "weight": 0.25,
+        "requires": [
+          "bag_open",
+          "item_a_in_bag"
+        ],
+        "first_time_s": null,
+        "achieved": false,
+        "blocked_at_s": null
+      },
+      {
+        "name": "bag_upright_released",
+        "weight": 0.2,
+        "requires": [
+          "bag_open",
+          "item_a_in_bag",
+          "item_b_in_bag"
+        ],
+        "first_time_s": null,
+        "achieved": false,
+        "blocked_at_s": null
+      }
+    ],
+    "failure_reasons": [
+      "阶段 item_b_in_bag 未按顺序达成",
+      "阶段 bag_upright_released 未按顺序达成",
+      "录像末帧终态谓词不成立"
+    ],
+    "details_at_end": {
+      "item_a_sample_fraction_in_bag": 0.375,
+      "item_b_sample_fraction_in_bag": 0.0,
+      "bag_axis_tilt_deg": 95.96569480625352,
+      "bag_touching": [
+        "item_a_geom",
+        "table"
+      ],
+      "assistance_active": false
+    }
+  },
+  "final_objects": {
+    "item_a": [
+      0.025056654209140175,
+      0.00019870342216910412,
+      0.024457581340937673
+    ],
+    "item_b": [
+      0.35,
+      0.09,
+      0.0349999606892657
+    ]
+  },
+  "no_grasp_constraint": false,
+  "grasp_assistance": true,
+  "assistance_event_count": 3,
+  "assistance_active_at_end": false,
+  "grasp_contact_replacement": false
+}

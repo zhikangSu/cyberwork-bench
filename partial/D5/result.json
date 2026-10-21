@@ -1,0 +1,580 @@
+{
+  "task": "D5",
+  "layout": 0,
+  "level": "L2",
+  "instruction": "把毛巾对折两次",
+  "engine_version": "3.16.0",
+  "controller": "privileged_scripted_expert",
+  "classification": "CONSTRAINT_ASSISTED_DEMONSTRATION_NOT_BENCHMARK_SCORE",
+  "success": false,
+  "failure": "terminal_predicate_not_reached",
+  "info": {
+    "stages": {
+      "first_fold": true,
+      "second_fold": true
+    },
+    "progress": 1.0,
+    "score": 1.0,
+    "success": false,
+    "terminal_hold_steps": 0,
+    "error": null,
+    "details": {
+      "area_ratio": 0.3215297377285122,
+      "max_height_m": 0.01588840977728645,
+      "paired_patch_distance_m": 0.003124750833954226,
+      "horizontal_area_fraction": 1.0,
+      "released": true,
+      "height_threshold_m": 0.012
+    },
+    "status": "development_grader_expert_validation_pending",
+    "terminal_current": false,
+    "formal_spec_score": null,
+    "full_spec_conformance_verified": false,
+    "done": false,
+    "reason": "running",
+    "time": 36.40000000000587,
+    "execution_time": 36.40000000000587,
+    "phase": "execution",
+    "ik": [],
+    "ik_pos_err": [],
+    "ik_rot_err": [],
+    "jerk_command_mean": 0.0,
+    "jerk_arm_joint_mean_rad_s3": 8.736660122206825e-08,
+    "safety_stop": null,
+    "recovery_events": []
+  },
+  "events": [
+    {
+      "phase": "fold 1 grasp back corners: reach above",
+      "time": 0.4000000000000003
+    },
+    {
+      "phase": "fold 1 grasp back corners: descend",
+      "time": 2.7199999999998115
+    },
+    {
+      "phase": "fold 1 arc back corners over the front corners",
+      "time": 4.399999999999804
+    },
+    {
+      "phase": "fold 1: open and release",
+      "time": 9.320000000000274
+    },
+    {
+      "phase": "fold 1: withdraw",
+      "time": 9.919999999999941
+    },
+    {
+      "phase": "adjust top layer forward: reach above",
+      "time": 13.319999999998057
+    },
+    {
+      "phase": "adjust top layer forward: descend",
+      "time": 15.47999999999686
+    },
+    {
+      "phase": "slide top layer forward",
+      "time": 16.959999999997745
+    },
+    {
+      "phase": "adjust top layer: open and release",
+      "time": 17.959999999998967
+    },
+    {
+      "phase": "adjust top layer: withdraw",
+      "time": 18.5599999999997
+    },
+    {
+      "phase": "fold 2 grasp crease ends: reach above",
+      "time": 21.960000000003856
+    },
+    {
+      "phase": "fold 2 grasp crease ends: descend",
+      "time": 24.520000000006984
+    },
+    {
+      "phase": "fold 2 arc crease over the front edge",
+      "time": 26.08000000000889
+    },
+    {
+      "phase": "fold 2: open and release",
+      "time": 30.00000000001368
+    },
+    {
+      "phase": "fold 2: withdraw",
+      "time": 30.600000000014415
+    },
+    {
+      "phase": "terminal hold, arms clear",
+      "time": 34.00000000001146
+    }
+  ],
+  "steps": 910,
+  "duration_s": 36.40000000000587,
+  "no_object_teleport": true,
+  "no_grasp_weld": true,
+  "physics": "MuJoCo env.step, 1000 Hz physics / 25 Hz control",
+  "source_hashes": {
+    "cwbench/contact_grasp.py": "467514a8339b7933d4f35464357409d16f2c74c89c5d24f2f33197ddc5f584ef",
+    "cwbench/foam_ball.py": "fba434d3af9939eb4f00af953e9632279c72e85fb8356128aebd0233011eaacf",
+    "cwbench/__init__.py": "f414b78723a0cee16f6378aff4814997c38ddf5e12edce9dfa1017849aa4256e",
+    "cwbench/cloth_bag.py": "a8c2c0e9ea47f7d275ea99229ad31010b03dd4933c1bdc82c893fa27d4e54507",
+    "cwbench/dexterity_o6.py": "68d90a4b89e5de99793ca4f91a933d21e9ae72e78ed65526337bcfaa7d610652",
+    "cwbench/experts.py": "67523994520cad00a9a0239cf97e5929191c38f657f6c4733205af98dfe1ee21",
+    "cwbench/record.py": "39d4e7ee6b7664d9f5443766551da122973a6d8ba04d9d17be899891cf0c88c8",
+    "cwbench/flex_runtime.py": "b36ff07603e5e3e459fb16808008fafd567890048de59a21153816ee4e7398b0",
+    "cwbench/geometry.py": "08bc854f00a86b2c3170bb6304b4caebfb29035aacaffed20931e29aaa3e0e99",
+    "cwbench/rubrics.py": "13bc8655a7d41bfcbcd30ea24b444b1d5ca365c690657b965648fffc543a71fa",
+    "cwbench/scenes_v024.py": "ad726a0cca666ed60ca1cb938f44404e15632b2c38af40e5182409e345941ec1",
+    "cwbench/errors.py": "324c0e1a2b4359e0f09e947adada58bdcebd6bce2ef72f3c6fe16be189c633e7",
+    "cwbench/scoring.py": "24cf03ff644bc89091725e22f23505c70c051c2011176b70ea2effc91b7d0a79",
+    "cwbench/grasp_assist.py": "306e744c412f641564c1a1e3a25aeea75e2103f12579217279d2a0b5bab8074c",
+    "cwbench/arm_motion.py": "63ece840caaa51a1effd6aca447362491edb5452d0c6ce62ef624fe16987450c",
+    "cwbench/dexterity.py": "0d8f34390e4825c49c56f8626ff55af458d11dc0c69ad6610a62198bc7189c9b",
+    "cwbench/flow_v033.py": "0ec232faf0abe6e079dec7f10cc6846c8f44fc21748407ddbbdf490416993e92",
+    "cwbench/scene_expect_v033.py": "b41f81adc010adae746a0d8ed180d014c5bafe543980f2f33cca721e0fcf7462",
+    "cwbench/contact_ik.py": "18e4c66a2b543b4ebcee9a34bb95e48a702d46872e05f257cac47b8386fa48df",
+    "cwbench/adaptive_bag.py": "ff665a5c8d0e76f959dba9b6a3f19f49390571abc648537ebad5235322e3f3fa",
+    "cwbench/capabilities.py": "4910760472fa4c175729e3f3318b0cccfbd023c3f24762480b0a1e8a92393bca",
+    "cwbench/web_spec_v033.py": "0d9799ee7127911334c59d44f32ed7ede4248be89ae658bce33725eee0a45084",
+    "cwbench/robots.py": "48e3e49dc5f06bc3790ddfd527c8ce319dfaa56917cfe9ecd8c9450ad8540be8",
+    "cwbench/ik.py": "dcebc5a182510725a3a093be8875f4d77f3d38bc9e8341cdaff3f6c7b0f52ce5",
+    "cwbench/scoring_v024.py": "64f98d048782991f7cc26f1a4b85f401e5b7ea7c0da6f7bc4b0704f533f7d6e2",
+    "cwbench/spec_contract.py": "d5ca0550f4f780a109ecb11e6336b5e4c5d671f5478f1d8481018d86ec69768a",
+    "cwbench/viewer.py": "1ae7503e5b198163767e6557668158e87e5b56fa021e65e66c2b1aaf0b342f32",
+    "cwbench/soft_control.py": "a3de14c4aca011d464d5ea8111b7cb7e48cbd314f1902e154edf39c37514267c",
+    "cwbench/scenes.py": "6bf272b9e7f73f968a487c942a0332628cae2006a701d5bd7e98029e7817d019",
+    "cwbench/paperboard.py": "3abf8d149d2e669b25eba5fc6295c4d75f09d5e1cfbb86e080148ff69da8ebd3",
+    "cwbench/adaptive_towel.py": "392bbbb0b5551b9d1002ad93c1e8209242758ac97483974e9be1b3fd2b829810",
+    "cwbench/env.py": "8e96891268f704845b07e45c09927c03dafc4cdc83be4fa7a0f73937c4a02360",
+    "tools/demos_v033/d5_fold.py": "f6f3ecbfd58efa09f04de938ad12b1765b0301c2c10d266e879292e1a55e27a4",
+    "configs/scene.yaml": "51b146a1f469361ac9fca21c15d7a3941fa722ca42a5690c90298abfcd6c56b2",
+    "configs/D5.yaml": "21891a5a626250513b3459a7ae5e6e4ea120c69a6df380f79eadea86be2f6f0f"
+  },
+  "initial_instruction_idx": null,
+  "final_objects": {},
+  "script": "tools/demos_v033/d5_fold.py",
+  "script_parameters": {
+    "physics_step": 0.0,
+    "tilt1_deg": 55.0,
+    "tilt2_deg": 20.0,
+    "yaw_deg": 0.0,
+    "grip_cmd": 0.08,
+    "pre_height_m": 0.05,
+    "contact_force_n": 0.3,
+    "press_depth_m": 0.004,
+    "inset_m": 0.006,
+    "arc1_scale": 0.97,
+    "arc2_scale": 0.97,
+    "fold1_s": 4.0,
+    "fold2_s": 3.0,
+    "release_open_cmd": 0.5,
+    "lift_off_m": 0.04,
+    "lift_off_s": 0.8,
+    "stop_after": 0,
+    "place1_dz_m": 0.005,
+    "place2_dz_m": 0.016,
+    "place1_dy_m": 0.002,
+    "place2_dy_m": -0.0065,
+    "lift_s": 0.8,
+    "retreat_dz_m": 0.07,
+    "retreat_dy_m": -0.03,
+    "settle_s": 1.6,
+    "final_hold_s": 2.4,
+    "assist_vertices": 1,
+    "fold2_axis": 0.0,
+    "yaw2_deg": 90.0,
+    "slide_top_m": 0.006,
+    "live_press_depth_m": 0.007,
+    "fold2_roles": 0,
+    "yaw2a_deg": 0.0,
+    "tilt2b_deg": 45.0,
+    "yaw2b_deg": 0.0,
+    "place2_dx_m": 0.004
+  },
+  "assist": true,
+  "peak_edge_strain": 0.0022243515872157893,
+  "live_flow": {
+    "success": false,
+    "progress": 1.0,
+    "stages": {
+      "first_fold": 10.159999999999808,
+      "second_fold": 30.640000000014464
+    },
+    "details_at_end": {
+      "area_ratio": 0.3214222222222223,
+      "paired_patch_distance_m": 0.0031247496963551936,
+      "max_patch_distance_info_m": 0.27004415950937904,
+      "max_height_m": 0.01588840977728645,
+      "k_m": 0.012,
+      "released_static": true,
+      "hull_area_ratio_info": 0.3215297377285122
+    },
+    "failure_reasons": [
+      "录像末帧终态谓词不成立"
+    ]
+  },
+  "checkpoints": [
+    {
+      "time": 0.4,
+      "label": "start",
+      "phase": "settle",
+      "tcp": [
+        [
+          -0.3,
+          -0.1869,
+          0.4886
+        ],
+        [
+          0.3,
+          -0.1869,
+          0.4886
+        ]
+      ],
+      "force": [
+        0.0,
+        0.0
+      ],
+      "peak_strain": 0.0,
+      "flow_stages": {},
+      "flow": {
+        "area": null,
+        "pair": 0.2699999968707547,
+        "top": 0.0034999939932764956,
+        "free": true,
+        "hull": 0.9999999999999832
+      },
+      "assist": []
+    },
+    {
+      "time": 4.4,
+      "label": "fold 1 grasp back corners: pressed",
+      "phase": "fold 1 grasp back corners: descend",
+      "tcp": [
+        [
+          -0.1438,
+          0.0971,
+          0.02
+        ],
+        [
+          0.1438,
+          0.0971,
+          0.02
+        ]
+      ],
+      "force": [
+        0.527,
+        0.526
+      ],
+      "peak_strain": 0.0001,
+      "flow_stages": {},
+      "flow": {
+        "area": null,
+        "pair": 0.2700001476410567,
+        "top": 0.003499994911445925,
+        "free": false,
+        "hull": 1.0000016985862872
+      },
+      "assist": [],
+      "pressed": {
+        "0": 0.004,
+        "1": 0.004
+      }
+    },
+    {
+      "time": 9.32,
+      "label": "fold 1 arc back corners over the front corners: arrived",
+      "phase": "fold 1 arc back corners over the front corners",
+      "tcp": [
+        [
+          -0.1435,
+          -0.2017,
+          0.0283
+        ],
+        [
+          0.1433,
+          -0.1942,
+          0.0281
+        ]
+      ],
+      "force": [
+        0.233,
+        1.342
+      ],
+      "peak_strain": 0.0021,
+      "flow_stages": {},
+      "flow": {
+        "area": null,
+        "pair": 0.011237882400118573,
+        "top": 0.01742739088918388,
+        "free": false,
+        "hull": 0.4976950219743264
+      },
+      "assist": [
+        "fold 1 grasp back corners_0",
+        "fold 1 grasp back corners_1"
+      ],
+      "vertex_error_m": {
+        "0": 0.0006746632469908327,
+        "1": 0.00032985306198627767
+      }
+    },
+    {
+      "time": 13.32,
+      "label": "fold 1 settled",
+      "phase": "fold 1: withdraw",
+      "tcp": [
+        [
+          -0.1433,
+          -0.2312,
+          0.1388
+        ],
+        [
+          0.1427,
+          -0.2236,
+          0.1388
+        ]
+      ],
+      "force": [
+        0.0,
+        0.0
+      ],
+      "peak_strain": 0.0021,
+      "flow_stages": {
+        "first_fold": 10.159999999999808
+      },
+      "flow": {
+        "area": 0.49942222222222227,
+        "pair": 0.0030591651085616423,
+        "top": 0.009736478972607432,
+        "free": true,
+        "hull": 0.4994380711371238
+      },
+      "assist": []
+    },
+    {
+      "time": 16.96,
+      "label": "adjust top layer forward: pressed",
+      "phase": "adjust top layer forward: descend",
+      "tcp": [
+        [
+          -0.1443,
+          -0.2047,
+          0.0231
+        ],
+        [
+          0.1433,
+          -0.1951,
+          0.0231
+        ]
+      ],
+      "force": [
+        0.629,
+        0.892
+      ],
+      "peak_strain": 0.0021,
+      "flow_stages": {
+        "first_fold": 10.159999999999808
+      },
+      "flow": {
+        "area": null,
+        "pair": 0.0033264537166429312,
+        "top": 0.00985556556974021,
+        "free": false,
+        "hull": 0.4993388371077642
+      },
+      "assist": [],
+      "pressed": {
+        "0": 0.0025,
+        "1": 0.0025
+      }
+    },
+    {
+      "time": 21.96,
+      "label": "top layer adjusted",
+      "phase": "adjust top layer: withdraw",
+      "tcp": [
+        [
+          -0.1435,
+          -0.2401,
+          0.1339
+        ],
+        [
+          0.1426,
+          -0.2304,
+          0.134
+        ]
+      ],
+      "force": [
+        0.0,
+        0.0
+      ],
+      "peak_strain": 0.0021,
+      "flow_stages": {
+        "first_fold": 10.159999999999808
+      },
+      "flow": {
+        "area": 0.49937777777777786,
+        "pair": 0.003108732864723556,
+        "top": 0.010561787429868352,
+        "free": true,
+        "hull": 0.4993899905591094
+      },
+      "assist": []
+    },
+    {
+      "time": 26.08,
+      "label": "fold 2 grasp crease ends: pressed",
+      "phase": "fold 2 grasp crease ends: descend",
+      "tcp": [
+        [
+          -0.1473,
+          -0.0469,
+          0.0286
+        ],
+        [
+          0.1369,
+          -0.0375,
+          0.0274
+        ]
+      ],
+      "force": [
+        0.122,
+        0.019
+      ],
+      "peak_strain": 0.0021,
+      "flow_stages": {
+        "first_fold": 10.159999999999808
+      },
+      "flow": {
+        "area": null,
+        "pair": 0.0030827783601364996,
+        "top": 0.009362118419243393,
+        "free": false,
+        "hull": 0.5000311047320318
+      },
+      "assist": [],
+      "pressed": {
+        "0": 0.004,
+        "1": 0.004
+      }
+    },
+    {
+      "time": 30.0,
+      "label": "fold 2 arc crease over the front edge: arrived",
+      "phase": "fold 2 arc crease over the front edge",
+      "tcp": [
+        [
+          -0.1429,
+          -0.1936,
+          0.0478
+        ],
+        [
+          0.1414,
+          -0.1849,
+          0.0488
+        ]
+      ],
+      "force": [
+        0.0,
+        0.0
+      ],
+      "peak_strain": 0.0022,
+      "flow_stages": {
+        "first_fold": 10.159999999999808
+      },
+      "flow": {
+        "area": null,
+        "pair": 0.0033311930155398017,
+        "top": 0.025842598182039156,
+        "free": false,
+        "hull": 0.2804775025201517
+      },
+      "assist": [
+        "fold 2 grasp crease ends_0",
+        "fold 2 grasp crease ends_1"
+      ],
+      "vertex_error_m": {
+        "0": 0.00652837744173534,
+        "1": 0.006886343723206297
+      }
+    },
+    {
+      "time": 34.0,
+      "label": "fold 2 settled",
+      "phase": "fold 2: withdraw",
+      "tcp": [
+        [
+          -0.1429,
+          -0.2269,
+          0.1534
+        ],
+        [
+          0.1411,
+          -0.2184,
+          0.154
+        ]
+      ],
+      "force": [
+        0.0,
+        0.0
+      ],
+      "peak_strain": 0.0022,
+      "flow_stages": {
+        "first_fold": 10.159999999999808,
+        "second_fold": 30.640000000014464
+      },
+      "flow": {
+        "area": 0.3215555555555556,
+        "pair": 0.003127571424620767,
+        "top": 0.015891294926669963,
+        "free": true,
+        "hull": 0.32158565846261783
+      },
+      "assist": []
+    },
+    {
+      "time": 36.4,
+      "label": "end",
+      "phase": "terminal hold, arms clear",
+      "tcp": [
+        [
+          -0.1429,
+          -0.2269,
+          0.1534
+        ],
+        [
+          0.1411,
+          -0.2184,
+          0.154
+        ]
+      ],
+      "force": [
+        0.0,
+        0.0
+      ],
+      "peak_strain": 0.0022,
+      "flow_stages": {
+        "first_fold": 10.159999999999808,
+        "second_fold": 30.640000000014464
+      },
+      "flow": {
+        "area": 0.3214222222222223,
+        "pair": 0.0031247496963551936,
+        "top": 0.01588840977728645,
+        "free": true,
+        "hull": 0.3215297377285122
+      },
+      "assist": []
+    }
+  ],
+  "wall_s": 587.1182870864868,
+  "physics_timestep_values_s": [
+    0.001
+  ],
+  "no_grasp_constraint": false,
+  "grasp_assistance": true,
+  "assistance_event_count": 9,
+  "assistance_active_at_end": false,
+  "grasp_contact_replacement": false
+}
