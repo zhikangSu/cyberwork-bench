@@ -235,7 +235,62 @@
         "label": "B 有硬约束、范围内随便买",
         "short": "B 有硬约束",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "A1",
+          "task": "A1"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "S1",
+          "task": "S1"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "S4",
+          "task": "S4"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "S7",
+          "task": "S7"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "S10",
+          "task": "S10"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "D1",
+          "task": "D1"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "D7",
+          "task": "D7"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "H5",
+          "task": "H5"
+        }
+      ]
     },
     {
       "id": "B02",
@@ -306,7 +361,20 @@
         "label": "C 差不多就行",
         "short": "C 差不多就行",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "H1",
+          "task": "H1"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "H-open",
+          "task": "H-open"
+        }
+      ]
     },
     {
       "id": "B03",
@@ -378,7 +446,20 @@
         "label": "C 差不多就行",
         "short": "C 差不多就行",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "S3",
+          "task": "S3"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "S8",
+          "task": "S8"
+        }
+      ]
     },
     {
       "id": "B04",
@@ -449,7 +530,27 @@
         "label": "C 差不多就行",
         "short": "C 差不多就行",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "S1",
+          "task": "S1"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "S10",
+          "task": "S10"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "S12",
+          "task": "S12"
+        }
+      ]
     },
     {
       "id": "B05",
@@ -515,7 +616,37 @@
         "label": "B 有硬约束、范围内随便买",
         "short": "B 有硬约束",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "S1",
+          "task": "S1"
+        },
+        {
+          "text": "（OOD）、"
+        },
+        {
+          "text": "A2",
+          "task": "A2"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "S7",
+          "task": "S7"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "S10",
+          "task": "S10"
+        },
+        {
+          "text": "（OOD）"
+        }
+      ]
     },
     {
       "id": "B06",
@@ -587,7 +718,34 @@
         "label": "C 差不多就行",
         "short": "C 差不多就行",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "S1",
+          "task": "S1"
+        },
+        {
+          "text": "（OOD）、"
+        },
+        {
+          "text": "S9",
+          "task": "S9"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "S7",
+          "task": "S7"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "D7",
+          "task": "D7"
+        }
+      ]
     },
     {
       "id": "B07",
@@ -690,7 +848,48 @@
         "label": "B 有硬约束、范围内随便买",
         "short": "B 有硬约束",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "S1",
+          "task": "S1"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "S3",
+          "task": "S3"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "S10",
+          "task": "S10"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "S11",
+          "task": "S11"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "S12",
+          "task": "S12"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "D4",
+          "task": "D4"
+        }
+      ]
     },
     {
       "id": "B08",
@@ -764,7 +963,13 @@
         "label": "B 有硬约束、范围内随便买",
         "short": "B 有硬约束",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "S1",
+          "task": "S1"
+        }
+      ]
     },
     {
       "id": "B09",
@@ -852,7 +1057,20 @@
         "label": "B 有硬约束、范围内随便买",
         "short": "B 有硬约束",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "S1",
+          "task": "S1"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "S11",
+          "task": "S11"
+        }
+      ]
     },
     {
       "id": "B10",
@@ -926,7 +1144,20 @@
         "label": "B 有硬约束、范围内随便买",
         "short": "B 有硬约束",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "S1",
+          "task": "S1"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "S6",
+          "task": "S6"
+        }
+      ]
     },
     {
       "id": "B11",
@@ -1023,7 +1254,27 @@
         "label": "B 有硬约束、范围内随便买",
         "short": "B 有硬约束",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "S1",
+          "task": "S1"
+        },
+        {
+          "text": "（OOD）、"
+        },
+        {
+          "text": "S7",
+          "task": "S7"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "S10",
+          "task": "S10"
+        }
+      ]
     },
     {
       "id": "B12",
@@ -1091,7 +1342,20 @@
         "label": "B 有硬约束、范围内随便买",
         "short": "B 有硬约束",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "S1",
+          "task": "S1"
+        },
+        {
+          "text": "（OOD）、"
+        },
+        {
+          "text": "S6",
+          "task": "S6"
+        }
+      ]
     },
     {
       "id": "B13",
@@ -1173,7 +1437,27 @@
         "label": "C 差不多就行",
         "short": "C 差不多就行",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "S1",
+          "task": "S1"
+        },
+        {
+          "text": "（OOD）、"
+        },
+        {
+          "text": "S3",
+          "task": "S3"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "S11",
+          "task": "S11"
+        }
+      ]
     },
     {
       "id": "B14",
@@ -1294,7 +1578,76 @@
         "label": "B 有硬约束、范围内随便买",
         "short": "B 有硬约束",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "S1",
+          "task": "S1"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "S3",
+          "task": "S3"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "S5",
+          "task": "S5"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "S8",
+          "task": "S8"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "S9",
+          "task": "S9"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "S10",
+          "task": "S10"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "S11",
+          "task": "S11"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "S12",
+          "task": "S12"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "A2",
+          "task": "A2"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "D4",
+          "task": "D4"
+        }
+      ]
     },
     {
       "id": "B15",
@@ -1409,7 +1762,44 @@
         "label": "B 有硬约束、范围内随便买",
         "short": "B 有硬约束",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "S3",
+          "task": "S3"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "S1",
+          "task": "S1"
+        },
+        {
+          "text": "-C、"
+        },
+        {
+          "text": "S10",
+          "task": "S10"
+        },
+        {
+          "text": "（OOD）、"
+        },
+        {
+          "text": "S9",
+          "task": "S9"
+        },
+        {
+          "text": "（OOD）、"
+        },
+        {
+          "text": "S8",
+          "task": "S8"
+        },
+        {
+          "text": "（OOD）"
+        }
+      ]
     },
     {
       "id": "B16",
@@ -1499,7 +1889,13 @@
         "label": "A 必须严格",
         "short": "A 必须严格",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "D1",
+          "task": "D1"
+        }
+      ]
     },
     {
       "id": "B17",
@@ -1573,7 +1969,20 @@
         "label": "B 有硬约束、范围内随便买",
         "short": "B 有硬约束",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "S4",
+          "task": "S4"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "H9",
+          "task": "H9"
+        }
+      ]
     },
     {
       "id": "B18",
@@ -1666,7 +2075,20 @@
         "label": "C 差不多就行",
         "short": "C 差不多就行",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "S4",
+          "task": "S4"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "H9",
+          "task": "H9"
+        }
+      ]
     },
     {
       "id": "B19",
@@ -1753,7 +2175,13 @@
         "label": "B 有硬约束、范围内随便买",
         "short": "B 有硬约束",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "S5",
+          "task": "S5"
+        }
+      ]
     },
     {
       "id": "B20",
@@ -1824,7 +2252,13 @@
         "label": "B 有硬约束、范围内随便买",
         "short": "B 有硬约束",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "S6",
+          "task": "S6"
+        }
+      ]
     },
     {
       "id": "B21",
@@ -2008,7 +2442,23 @@
         "label": "B 有硬约束、范围内随便买",
         "short": "B 有硬约束",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "S6",
+          "task": "S6"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "S11",
+          "task": "S11"
+        },
+        {
+          "text": "（OOD）"
+        }
+      ]
     },
     {
       "id": "B22",
@@ -2097,7 +2547,20 @@
         "label": "B 有硬约束、范围内随便买",
         "short": "B 有硬约束",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "D2",
+          "task": "D2"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "D7",
+          "task": "D7"
+        }
+      ]
     },
     {
       "id": "B23",
@@ -2163,7 +2626,23 @@
         "label": "B 有硬约束、范围内随便买",
         "short": "B 有硬约束",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "D2",
+          "task": "D2"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "S4",
+          "task": "S4"
+        },
+        {
+          "text": "（P 轴）"
+        }
+      ]
     },
     {
       "id": "B24",
@@ -2235,7 +2714,20 @@
         "label": "C 差不多就行",
         "short": "C 差不多就行",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "D2",
+          "task": "D2"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "D7",
+          "task": "D7"
+        }
+      ]
     },
     {
       "id": "B25",
@@ -2332,7 +2824,20 @@
         "label": "A 必须严格",
         "short": "A 必须严格",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "D3",
+          "task": "D3"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "D7",
+          "task": "D7"
+        }
+      ]
     },
     {
       "id": "B26",
@@ -2441,7 +2946,20 @@
         "label": "B 有硬约束、范围内随便买",
         "short": "B 有硬约束",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "D4",
+          "task": "D4"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "H8",
+          "task": "H8"
+        }
+      ]
     },
     {
       "id": "B27",
@@ -2536,7 +3054,13 @@
         "label": "B 有硬约束、范围内随便买",
         "short": "B 有硬约束",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "D5",
+          "task": "D5"
+        }
+      ]
     },
     {
       "id": "B28",
@@ -2609,7 +3133,13 @@
         "label": "B 有硬约束、范围内随便买",
         "short": "B 有硬约束",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "H1",
+          "task": "H1"
+        }
+      ]
     },
     {
       "id": "B29",
@@ -2675,7 +3205,13 @@
         "label": "C 差不多就行",
         "short": "C 差不多就行",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "H8",
+          "task": "H8"
+        }
+      ]
     },
     {
       "id": "B30",
@@ -2756,7 +3292,16 @@
         "label": "B 有硬约束、范围内随便买",
         "short": "B 有硬约束",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "H1",
+          "task": "H1"
+        },
+        {
+          "text": "（OOD）"
+        }
+      ]
     },
     {
       "id": "B31",
@@ -2822,7 +3367,20 @@
         "label": "B 有硬约束、范围内随便买",
         "short": "B 有硬约束",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "H2",
+          "task": "H2"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "H-open",
+          "task": "H-open"
+        }
+      ]
     },
     {
       "id": "B32",
@@ -2921,7 +3479,13 @@
         "label": "B 有硬约束、范围内随便买",
         "short": "B 有硬约束",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "H3",
+          "task": "H3"
+        }
+      ]
     },
     {
       "id": "B33",
@@ -3000,7 +3564,13 @@
         "label": "B 有硬约束、范围内随便买",
         "short": "B 有硬约束",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "H3",
+          "task": "H3"
+        }
+      ]
     },
     {
       "id": "B34",
@@ -3066,7 +3636,30 @@
         "label": "C 差不多就行",
         "short": "C 差不多就行",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "H5",
+          "task": "H5"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "D2",
+          "task": "D2"
+        },
+        {
+          "text": "-B、"
+        },
+        {
+          "text": "S3",
+          "task": "S3"
+        },
+        {
+          "text": "（OOD）"
+        }
+      ]
     },
     {
       "id": "B35",
@@ -3132,7 +3725,16 @@
         "label": "C 差不多就行",
         "short": "C 差不多就行",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "S3",
+          "task": "S3"
+        },
+        {
+          "text": "（OOD）"
+        }
+      ]
     },
     {
       "id": "B36",
@@ -3206,7 +3808,13 @@
         "label": "B 有硬约束、范围内随便买",
         "short": "B 有硬约束",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "H7",
+          "task": "H7"
+        }
+      ]
     },
     {
       "id": "B37",
@@ -3293,7 +3901,13 @@
         "label": "B 有硬约束、范围内随便买",
         "short": "B 有硬约束",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "S8",
+          "task": "S8"
+        }
+      ]
     },
     {
       "id": "B38",
@@ -3365,7 +3979,13 @@
         "label": "C 差不多就行",
         "short": "C 差不多就行",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "S9",
+          "task": "S9"
+        }
+      ]
     },
     {
       "id": "B39",
@@ -3447,7 +4067,13 @@
         "label": "B 有硬约束、范围内随便买",
         "short": "B 有硬约束",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "S12",
+          "task": "S12"
+        }
+      ]
     },
     {
       "id": "P01",
@@ -3579,7 +4205,13 @@
         "label": "A 必须严格",
         "short": "A 必须严格",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "S2",
+          "task": "S2"
+        }
+      ]
     },
     {
       "id": "P02",
@@ -3735,7 +4367,27 @@
         "label": "B 有硬约束、范围内随便买",
         "short": "B 有硬约束",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "S3",
+          "task": "S3"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "S11",
+          "task": "S11"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "S7",
+          "task": "S7"
+        }
+      ]
     },
     {
       "id": "P03",
@@ -3825,7 +4477,20 @@
         "label": "C 差不多就行",
         "short": "C 差不多就行",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "S4",
+          "task": "S4"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "H9",
+          "task": "H9"
+        }
+      ]
     },
     {
       "id": "P04",
@@ -3899,7 +4564,13 @@
         "label": "B 有硬约束、范围内随便买",
         "short": "B 有硬约束",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "S5",
+          "task": "S5"
+        }
+      ]
     },
     {
       "id": "P05",
@@ -4037,7 +4708,20 @@
         "label": "A 必须严格",
         "short": "A 必须严格",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "D3",
+          "task": "D3"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "D7",
+          "task": "D7"
+        }
+      ]
     },
     {
       "id": "P06",
@@ -4174,7 +4858,20 @@
         "label": "A 必须严格",
         "short": "A 必须严格",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "D6",
+          "task": "D6"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "D7",
+          "task": "D7"
+        }
+      ]
     },
     {
       "id": "P07",
@@ -4313,7 +5010,27 @@
         "label": "B 有硬约束、范围内随便买",
         "short": "B 有硬约束",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "H1",
+          "task": "H1"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "H5",
+          "task": "H5"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "H6",
+          "task": "H6"
+        }
+      ]
     },
     {
       "id": "P08",
@@ -4460,7 +5177,13 @@
         "label": "B 有硬约束、范围内随便买",
         "short": "B 有硬约束",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "H4",
+          "task": "H4"
+        }
+      ]
     },
     {
       "id": "P09",
@@ -4576,7 +5299,13 @@
         "label": "B 有硬约束、范围内随便买",
         "short": "B 有硬约束",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "H6",
+          "task": "H6"
+        }
+      ]
     },
     {
       "id": "P10",
@@ -4701,7 +5430,20 @@
         "label": "B 有硬约束、范围内随便买",
         "short": "B 有硬约束",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "H2",
+          "task": "H2"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "H-open",
+          "task": "H-open"
+        }
+      ]
     },
     {
       "id": "P11",
@@ -4767,7 +5509,13 @@
         "label": "B 有硬约束、范围内随便买",
         "short": "B 有硬约束",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "H2",
+          "task": "H2"
+        }
+      ]
     },
     {
       "id": "P12",
@@ -4836,7 +5584,13 @@
         "label": "C 差不多就行",
         "short": "C 差不多就行",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "H7",
+          "task": "H7"
+        }
+      ]
     },
     {
       "id": "P13",
@@ -4918,7 +5672,12 @@
         "label": "A 必须严格",
         "short": "A 必须严格",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "全部"
+        }
+      ]
     },
     {
       "id": "T01",
@@ -4984,7 +5743,12 @@
         "label": "C 差不多就行",
         "short": "C 差不多就行",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "共用工位"
+        }
+      ]
     },
     {
       "id": "T02",
@@ -5063,7 +5827,12 @@
         "label": "C 差不多就行",
         "short": "C 差不多就行",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "共用工位"
+        }
+      ]
     },
     {
       "id": "T03",
@@ -5129,7 +5898,12 @@
         "label": "C 差不多就行",
         "short": "C 差不多就行",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "共用工位"
+        }
+      ]
     },
     {
       "id": "T04",
@@ -5195,7 +5969,12 @@
         "label": "C 差不多就行",
         "short": "C 差不多就行",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "共用工位"
+        }
+      ]
     },
     {
       "id": "T05",
@@ -5261,7 +6040,12 @@
         "label": "C 差不多就行",
         "short": "C 差不多就行",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "共用工位"
+        }
+      ]
     },
     {
       "id": "T06",
@@ -5327,7 +6111,12 @@
         "label": "C 差不多就行",
         "short": "C 差不多就行",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "共用工位"
+        }
+      ]
     },
     {
       "id": "T07",
@@ -5409,7 +6198,12 @@
         "label": "B 有硬约束、范围内随便买",
         "short": "B 有硬约束",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "共用工位"
+        }
+      ]
     },
     {
       "id": "T08",
@@ -5475,7 +6269,12 @@
         "label": "C 差不多就行",
         "short": "C 差不多就行",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "共用工位"
+        }
+      ]
     },
     {
       "id": "T09",
@@ -5554,7 +6353,12 @@
         "label": "C 差不多就行",
         "short": "C 差不多就行",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "共用工位"
+        }
+      ]
     },
     {
       "id": "T10",
@@ -5626,7 +6430,12 @@
         "label": "B 有硬约束、范围内随便买",
         "short": "B 有硬约束",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "共用工位"
+        }
+      ]
     },
     {
       "id": "T11",
@@ -5692,7 +6501,12 @@
         "label": "C 差不多就行",
         "short": "C 差不多就行",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "共用工位"
+        }
+      ]
     },
     {
       "id": "T12",
@@ -5760,7 +6574,12 @@
         "label": "B 有硬约束、范围内随便买",
         "short": "B 有硬约束",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "共用工位"
+        }
+      ]
     },
     {
       "id": "T13",
@@ -5826,7 +6645,12 @@
         "label": "C 差不多就行",
         "short": "C 差不多就行",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "共用工位"
+        }
+      ]
     },
     {
       "id": "X01",
@@ -5888,7 +6712,13 @@
         "label": "B 有硬约束、范围内随便买",
         "short": "B 有硬约束",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "H3",
+          "task": "H3"
+        }
+      ]
     },
     {
       "id": "X02",
@@ -5970,7 +6800,16 @@
         "label": "B 有硬约束、范围内随便买",
         "short": "B 有硬约束",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "S4",
+          "task": "S4"
+        },
+        {
+          "text": "（OOD）"
+        }
+      ]
     },
     {
       "id": "X03",
@@ -6052,7 +6891,13 @@
         "label": "B 有硬约束、范围内随便买",
         "short": "B 有硬约束",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "S3",
+          "task": "S3"
+        }
+      ]
     },
     {
       "id": "X04",
@@ -6112,7 +6957,13 @@
         "label": "C 差不多就行",
         "short": "C 差不多就行",
         "source": "SIZE_TOLERANCE_REVIEW.md"
-      }
+      },
+      "task_segments": [
+        {
+          "text": "D5",
+          "task": "D5"
+        }
+      ]
     }
   ],
   "source_sha256": "23957455c1aa0c0cad76324ed84fae725a1c9021c6b3ab0426e2753cda1750e8",
@@ -6143,6 +6994,41 @@
   "dimension_policy": "仅将任务清单中的标称数值、上下限和约尺寸标为有尺寸要求；制造公差未给定时不推定零公差。CAD 默认尺寸、数量、质量、力、力矩和功率不冒充任务物体尺寸。接口适配单独标注。",
   "print_policy": "用户指定：所有新增 3D 打印件均用塑料；金属加工不作为打印方案。现成滑轨、轴承、螺钉、配重与电子件外购。",
   "photograph_policy": "照片来自公开商品/作者/机构页面，只用于辨认外观；不是本项目已采购或已打印实物，不保证图中商品尺寸与任务一致。定制件需要按任务重新设计。每图保留来源链接，图片原字节保存，未用 AI 生成。",
+  "task_link_base": "../#task-",
+  "task_link_title": "跳到主页的 {} 任务卡片",
+  "task_ids": [
+    "A1",
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7",
+    "S8",
+    "S9",
+    "S10",
+    "S11",
+    "S12",
+    "A2",
+    "D1",
+    "D2",
+    "D3",
+    "D4",
+    "D5",
+    "D6",
+    "D7",
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "H5",
+    "H6",
+    "H7",
+    "H8",
+    "H9",
+    "H-open"
+  ],
   "strictness_counts": {
     "A": 6,
     "B": 39,
